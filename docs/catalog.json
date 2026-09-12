@@ -1,0 +1,33 @@
+{
+  "artist": "",
+  "currency": "CAD",
+  "rate_per_cm2": 0.9,
+  "works": [
+    {
+      "id": "w01",
+      "title": "",
+      "medium": "",
+      "year": 2026,
+      "image_cm": { "w": 0, "h": 0 },
+      "framed_cm": { "w": 0, "h": 0, "d": 0 },
+      "boxed_cm": { "w": 0, "h": 0, "d": 0 },
+      "weight_kg": 0,
+      "price": 0,
+      "frame": "natural-oak",
+      "placeholder_hex": "#D3D1C7",
+      "image": "",
+      "usdz": "",
+      "status": "available"
+    }
+  ],
+  "frames": [
+    { "id": "natural-oak", "label": "Natural oak", "surcharge": 0 },
+    { "id": "black", "label": "Black", "surcharge": 0 },
+    { "id": "white", "label": "White", "surcharge": 0 },
+    { "id": "brass", "label": "Brass", "surcharge": 0 }
+  ],
+  "rules": {
+    "centreline_cm": 145,
+    "furniture_width_ratio": 0.66
+  }
+}

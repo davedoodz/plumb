@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Place it — David Lafond</title>
+<style>
+/* shadcn/ui tokens — new-york, neutral base. Port to Tailwind later; class names match shadcn component names. */
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --border: oklch(0.922 0 0);
+  --accent: oklch(0.97 0 0);
+  --radius: 0.625rem;
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --border: oklch(1 0 0 / 12%);
+    --accent: oklch(0.269 0 0);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+.narrow { max-width: 640px; }
+
+/* nav */
+.site-nav {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+}
+.site-nav .inner { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+.site-nav a { color: var(--muted-foreground); text-decoration: none; font-size: 14px; margin-left: 20px; }
+.site-nav a:hover, .site-nav a:focus-visible { color: var(--foreground); }
+.site-nav .brand { color: var(--foreground); font-weight: 500; margin: 0; }
+
+/* type scale */
+h1 { font-size: 40px; line-height: 1.15; font-weight: 500; letter-spacing: -0.02em; margin: 0 0 16px; }
+h2 { font-size: 26px; line-height: 1.25; font-weight: 500; letter-spacing: -0.01em; margin: 0 0 12px; }
+h3 { font-size: 17px; font-weight: 500; margin: 0 0 6px; }
+p  { margin: 0 0 16px; max-width: 68ch; }
+.lead { font-size: 19px; color: var(--muted-foreground); }
+.muted { color: var(--muted-foreground); }
+.small { font-size: 14px; }
+
+section { padding: 56px 0; border-top: 1px solid var(--border); }
+section.first { border-top: 0; padding-top: 40px; }
+
+/* section label — replaces an all-caps eyebrow */
+.section-label {
+  font-size: 13px; color: var(--muted-foreground);
+  margin: 0 0 24px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* badge */
+.badge {
+  display: inline-block; font-size: 12px; line-height: 1.4;
+  padding: 3px 9px; border: 1px solid var(--border);
+  border-radius: 9999px; color: var(--muted-foreground);
+  margin: 0 6px 6px 0;
+}
+
+/* meta grid (role / timeline / stack) */
+.meta { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin: 32px 0 0; }
+.meta dt { font-size: 13px; color: var(--muted-foreground); margin-bottom: 4px; }
+.meta dd { margin: 0; font-size: 15px; }
+
+/* card */
+.card {
+  background: var(--card); color: var(--card-foreground);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px;
+}
+
+/* media placeholder — swap for <video autoplay muted loop playsinline> */
+.media {
+  background: var(--muted); border: 1px solid var(--border);
+  border-radius: var(--radius); display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 6px;
+  color: var(--muted-foreground); font-family: var(--font-mono); font-size: 13px;
+  text-align: center; padding: 16px;
+}
+.media .len { font-size: 12px; opacity: 0.7; }
+.ratio-16-9 { aspect-ratio: 16 / 9; }
+.ratio-4-3  { aspect-ratio: 4 / 3; }
+.ratio-phone { aspect-ratio: 9 / 19.5; }
+.ratio-square { aspect-ratio: 1 / 1; }
+
+/* layouts */
+.stack > * + * { margin-top: 16px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.flow { display: grid; gap: 48px; }
+.flow-item .media { margin-bottom: 14px; }
+.phone-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+
+.separator { height: 1px; background: var(--border); border: 0; margin: 40px 0; }
+
+/* footer */
+footer { padding: 48px 0 72px; border-top: 1px solid var(--border); }
+.next { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+footer a { color: var(--foreground); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+a:focus-visible, .card:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
+
+@media (max-width: 720px) {
+  h1 { font-size: 30px; }
+  h2 { font-size: 22px; }
+  .meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-2, .grid-3, .phone-row { grid-template-columns: 1fr; }
+  section { padding: 40px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container inner">
+    <p class="brand">David Lafond</p>
+    <div>
+      <a href="index.html">Work</a>
+      <a href="#">About</a>
+      <a href="#">Resume</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- 1. HEADER -->
+<section class="first">
+  <div class="container">
+    <p class="muted small">Place it · Self-initiated · 2026</p>
+    <h1>Buying a lamp when you can’t see the room</h1>
+    <p class="lead">A native iOS flow that puts a pendant in your room at true scale and answers the three questions that actually stop a return.</p>
+    <dl class="meta">
+      <div><dt>Role</dt><dd>Design and build</dd></div>
+      <div><dt>Timeline</dt><dd>3 weeks</dd></div>
+      <div><dt>Stack</dt><dd>SwiftUI, AR Quick Look, Blender</dd></div>
+      <div><dt>Surface</dt><dd>iPhone</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 2. HERO LOOP -->
+<section>
+  <div class="container">
+    <div class="media ratio-16-9">
+      <span>hero loop — place, measure, swap finish, buy</span>
+      <span class="len">25s · device capture · muted, looping</span>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PROBLEM -->
+<section>
+  <div class="container narrow">
+    <p class="section-label">Problem</p>
+    <h2>Furniture comes back because it didn’t fit, not because they stopped liking it</h2>
+    <p>A product photo tells you what a lamp looks like. It can’t tell you whether it clears the table, blocks the sightline across it, or gets through the front door. So buyers guess, and the ones who guess wrong send it back.</p>
+    <div class="media ratio-4-3" style="margin-top:24px">
+      <span>diagram — where the decision breaks down</span>
+      <span class="len">static SVG, drawn in your line weight</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- 3b. RESEARCH -->
+<section>
+  <div class="container">
+    <p class="section-label">What the numbers say</p>
+    <div class="grid-2" style="align-items:start">
+      <div>
+        <h2 style="font-size:22px">Furniture bought online comes back four times as often as furniture bought in a store</h2>
+        <p class="muted">In-store furniture returns sit around 5%. Online, the same category runs 18–25%, and one large return costs the merchant $55–108 to process before restocking. 71% of US consumers now buy furniture online anyway.</p>
+      </div>
+      <svg viewBox="0 0 360 150" role="img" aria-label="Bar chart: in-store furniture return rate about 5 percent, online 18 to 25 percent" style="width:100%">
+        <text x="0" y="22" font-size="13" fill="currentColor" opacity="0.6">In store</text>
+        <rect x="110" y="10" width="42" height="18" rx="2" fill="currentColor" opacity="0.25"/>
+        <text x="160" y="24" font-size="13" fill="currentColor">~5%</text>
+        <text x="0" y="62" font-size="13" fill="currentColor" opacity="0.6">Online</text>
+        <rect x="110" y="50" width="200" height="18" rx="2" fill="currentColor"/>
+        <text x="318" y="64" font-size="13" fill="currentColor">18–25%</text>
+        <line x1="110" y1="90" x2="110" y2="140" stroke="currentColor" stroke-opacity="0.15"/>
+        <text x="0" y="112" font-size="13" fill="currentColor" opacity="0.6">Cost per</text>
+        <text x="0" y="128" font-size="13" fill="currentColor" opacity="0.6">large return</text>
+        <text x="120" y="122" font-size="20" fill="currentColor">$55–108</text>
+      </svg>
+    </div>
+
+    <hr class="separator">
+
+    <div class="grid-2" style="align-items:start">
+      <div>
+        <h2 style="font-size:22px">More than half of those returns are about size and space</h2>
+        <p class="muted">Furniture-specific return analysis puts size and space mismatch at 58% — split between “larger than expected” (34%) and “doesn’t fit the space” (24%). Colour and material gaps and transit damage follow, from separate broad-retail studies, so the bars overlap and don’t sum to 100.</p>
+      </div>
+      <svg viewBox="0 0 360 170" role="img" aria-label="Bar chart of furniture return reasons: larger than expected 34 percent, doesn't fit space 24 percent, colour or material 44 percent, transit damage 31 percent" style="width:100%">
+        <text x="0" y="20" font-size="13" fill="currentColor">Larger than expected</text>
+        <rect x="0" y="26" width="204" height="14" rx="2" fill="currentColor"/>
+        <text x="212" y="38" font-size="13" fill="currentColor">34%</text>
+        <text x="0" y="62" font-size="13" fill="currentColor">Doesn’t fit the space</text>
+        <rect x="0" y="68" width="144" height="14" rx="2" fill="currentColor"/>
+        <text x="152" y="80" font-size="13" fill="currentColor">24%</text>
+        <text x="0" y="104" font-size="13" fill="currentColor" opacity="0.6">Colour or material gap</text>
+        <rect x="0" y="110" width="264" height="14" rx="2" fill="currentColor" opacity="0.25"/>
+        <text x="272" y="122" font-size="13" fill="currentColor" opacity="0.6">44%</text>
+        <text x="0" y="146" font-size="13" fill="currentColor" opacity="0.6">Transit damage</text>
+        <rect x="0" y="152" width="186" height="14" rx="2" fill="currentColor" opacity="0.25"/>
+        <text x="194" y="164" font-size="13" fill="currentColor" opacity="0.6">31%</text>
+      </svg>
+    </div>
+    <p class="small muted" style="margin-top:20px">Sources: NRF / Happy Returns 2025 returns landscape; RocketReturns 2025 category analysis; YouGov 2025; Eightx and First Chair benchmark roundups (2026). Vendor figures are labelled as such on the page.</p>
+  </div>
+</section>
+
+<!-- 3c. LANDSCAPE -->
+<section>
+  <div class="container">
+    <p class="section-label">What already exists</p>
+    <h2>Putting the object in the room is solved. Deciding isn’t.</h2>
+    <p class="muted" style="margin-bottom:28px">Commerce platforms have shipped native 3D and AR on product pages for years — upload a GLB and USDZ and “view in your space” appears on iOS and Android with no app. IKEA Place did true-scale placement in 2017; IKEA Kreativ now scans a whole room at ~97% accuracy and toggles product dimensions and spacing. Vendors claim 25–40% fewer returns for shoppers who use AR. None of them tell you whether the pendant is hung right.</p>
+
+    <div class="card" style="padding:0;overflow:hidden">
+      <table style="width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border)">
+            <th style="text-align:left;padding:12px 16px;font-weight:500;width:34%">Tool</th>
+            <th style="text-align:left;padding:12px 8px;font-weight:500">True scale</th>
+            <th style="text-align:left;padding:12px 8px;font-weight:500">Shows dimensions</th>
+            <th style="text-align:left;padding:12px 8px;font-weight:500">Applies the rule</th>
+            <th style="text-align:left;padding:12px 8px;font-weight:500">At the buy moment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">Commerce-platform native AR (Quick Look)</td><td style="padding:12px 8px">yes</td><td style="padding:12px 8px" class="muted">no</td><td style="padding:12px 8px" class="muted">no</td><td style="padding:12px 8px">yes</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">IKEA Place</td><td style="padding:12px 8px">yes</td><td style="padding:12px 8px" class="muted">no</td><td style="padding:12px 8px" class="muted">no</td><td style="padding:12px 8px">yes</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">IKEA Kreativ</td><td style="padding:12px 8px">yes</td><td style="padding:12px 8px">L × W × H, spacing</td><td style="padding:12px 8px" class="muted">no</td><td style="padding:12px 8px" class="muted">planner, not PDP</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:12px 16px">Wayfair / Amazon view in room</td><td style="padding:12px 8px">yes</td><td style="padding:12px 8px" class="muted">no</td><td style="padding:12px 8px" class="muted">no</td><td style="padding:12px 8px">yes</td></tr>
+          <tr><td style="padding:12px 16px;font-weight:500">Place it</td><td style="padding:12px 8px">yes</td><td style="padding:12px 8px">three that matter</td><td style="padding:12px 8px">drop, clearance, door</td><td style="padding:12px 8px">yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 3d. THE RULES -->
+<section>
+  <div class="container">
+    <p class="section-label">Where the rules actually live</p>
+    <div class="grid-2" style="align-items:start">
+      <div>
+        <h2 style="font-size:22px">The decision is buried in blog posts, and the blog posts disagree</h2>
+        <p class="muted">How high should a pendant hang above a table? Lighting retailers say 28–34 in, 30–36 in, 36–42 in for taller ceilings, or 36–44 in — measured from the tabletop, except entryway pendants, which are measured from the floor. Add the inset rule (fixture at least 12 in narrower than the table), the 7 ft walkway clearance, and the cord-length arithmetic, and the buyer is doing an architect’s job with a tape measure and four browser tabs.</p>
+        <p class="muted">That’s the gap: the AR tools render the object, the guides hold the rules, and nothing puts the rule on the object in the room.</p>
+      </div>
+      <svg viewBox="0 0 360 300" role="img" aria-label="Section diagram of a pendant over a table showing the three checks: drop height 30 to 36 inches above the table, fixture inset 12 inches from each table edge, and 7 foot walkway clearance" style="width:100%;border:1px solid var(--border);border-radius:var(--radius)">
+        <line x1="0" y1="20" x2="360" y2="20" stroke="currentColor" stroke-opacity="0.3"/>
+        <text x="8" y="14" font-size="11" fill="currentColor" opacity="0.5">ceiling</text>
+        <line x1="180" y1="20" x2="180" y2="100" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M150 100 L210 100 L198 130 L162 130 Z" fill="currentColor"/>
+        <rect x="90" y="196" width="180" height="6" fill="currentColor" opacity="0.5"/>
+        <line x1="100" y1="202" x2="100" y2="250" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+        <line x1="260" y1="202" x2="260" y2="250" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+        <line x1="0" y1="250" x2="360" y2="250" stroke="currentColor" stroke-opacity="0.3"/>
+        <line x1="290" y1="130" x2="290" y2="196" stroke="currentColor" stroke-dasharray="3 3"/>
+        <line x1="284" y1="130" x2="296" y2="130" stroke="currentColor"/>
+        <line x1="284" y1="196" x2="296" y2="196" stroke="currentColor"/>
+        <text x="298" y="160" font-size="12" fill="currentColor">drop</text>
+        <text x="298" y="174" font-size="12" fill="currentColor">30–36 in</text>
+        <line x1="90" y1="186" x2="150" y2="186" stroke="currentColor" stroke-dasharray="3 3"/>
+        <line x1="90" y1="180" x2="90" y2="192" stroke="currentColor"/>
+        <line x1="150" y1="180" x2="150" y2="192" stroke="currentColor"/>
+        <text x="86" y="176" font-size="12" fill="currentColor">inset ≥ 12 in</text>
+        <line x1="40" y1="130" x2="40" y2="250" stroke="currentColor" stroke-opacity="0.5" stroke-dasharray="3 3"/>
+        <line x1="34" y1="130" x2="46" y2="130" stroke="currentColor" stroke-opacity="0.5"/>
+        <text x="8" y="120" font-size="12" fill="currentColor" opacity="0.7">walkway ≥ 7 ft</text>
+        <text x="8" y="270" font-size="11" fill="currentColor" opacity="0.5">reference point: tabletop, not floor</text>
+        <text x="8" y="286" font-size="11" fill="currentColor" opacity="0.5">door: boxed width vs frame, separate check</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 3e. DESIGN PRINCIPLES -->
+<section>
+  <div class="container">
+    <p class="section-label">What this means for the design</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Don’t compete on AR</h3>
+        <p class="muted small" style="margin:0">Placement at true scale is a solved, free layer. Use Quick Look. Spend the effort on what happens after the object lands.</p>
+      </div>
+      <div class="card">
+        <h3>Put the rule on the object</h3>
+        <p class="muted small" style="margin:0">Three checks — drop, inset, door — drawn where the buyer is looking, in the buyer’s units, with a pass or a fix. Not a dimensions panel.</p>
+      </div>
+      <div class="card">
+        <h3>Sell the cord length, not the lamp</h3>
+        <p class="muted small" style="margin:0">Ceiling height minus table height minus clearance is a number the shop can pre-fill. That’s the difference between a return and a repeat customer.</p>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:24px">Two things the research changed. The door check moved from a nice-to-have to a first-class flow, because “doesn’t fit the space” is a quarter of all furniture returns and no competitor touches it. And “larger than expected” at 34% means scale perception is the single biggest lever — so the object has to land at true scale before anything else is drawn, or the annotations inherit the wrong number.</p>
+  </div>
+</section>
+
+<!-- 4. CORE FLOWS -->
+<section>
+  <div class="container">
+    <p class="section-label">Core flows</p>
+    <div class="flow">
+
+      <div class="flow-item">
+        <div class="media ratio-phone" style="max-width:300px">
+          <span>place the lamp</span><span class="len">8s</span>
+        </div>
+        <h3>It lands at true scale, not app scale</h3>
+        <p class="muted">Placeholder: one sentence on anchoring and why scale is the whole trick.</p>
+      </div>
+
+      <div class="flow-item">
+        <div class="media ratio-phone" style="max-width:300px">
+          <span>three measurements</span><span class="len">8s</span>
+        </div>
+        <h3>Drop height, clearance, door width</h3>
+        <p class="muted">Placeholder: why three and not a full dimensioned drawing.</p>
+      </div>
+
+      <div class="flow-item">
+        <div class="media ratio-phone" style="max-width:300px">
+          <span>swap finish</span><span class="len">6s</span>
+        </div>
+        <h3>Finish changes in the room’s own light</h3>
+        <p class="muted">Placeholder: one sentence on material reading differently on screen.</p>
+      </div>
+
+      <div class="flow-item">
+        <div class="media ratio-phone" style="max-width:300px">
+          <span>review card</span><span class="len">8s</span>
+        </div>
+        <h3>The review carries the room it was shot in</h3>
+        <p class="muted">Placeholder: closing the loop — evidence, not decoration.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 5. EXPLORATIONS -->
+<section>
+  <div class="container">
+    <p class="section-label">What I tried and cut</p>
+    <div class="phone-row">
+      <div><div class="media ratio-phone"><span>full dimension set</span><span class="len">5s</span></div><p class="small muted" style="margin-top:8px">Reads as a drawing. Scared non-architects.</p></div>
+      <div><div class="media ratio-phone"><span>no annotations</span><span class="len">5s</span></div><p class="small muted" style="margin-top:8px">Pretty, decides nothing.</p></div>
+      <div><div class="media ratio-phone"><span>measurements in the sheet</span><span class="len">5s</span></div><p class="small muted" style="margin-top:8px">Splits attention from the room.</p></div>
+      <div><div class="media ratio-phone"><span>compare two heights</span><span class="len">5s</span></div><p class="small muted" style="margin-top:8px">Good idea, wrong project.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CONSTRAINT -->
+<section>
+  <div class="container narrow">
+    <p class="section-label">Constraint</p>
+    <h2>What the phone can anchor, and what it can only overlay</h2>
+    <p>Placeholder: AR Quick Look places geometry but won’t hold annotations in space, so measurements live on a captured frame. Say what that costs and why it was the right trade at this scope.</p>
+    <div class="media ratio-16-9" style="margin-top:24px">
+      <span>diagram — anchored vs overlaid</span>
+      <span class="len">static SVG</span>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TRADE-OFF -->
+<section>
+  <div class="container narrow">
+    <p class="section-label">The trade-off I’d defend</p>
+    <h2>Fewer measurements, more people who finish</h2>
+    <p>Placeholder: two sentences. Own it, don’t hedge it.</p>
+  </div>
+</section>
+
+<!-- 8. WEAK / LEARNED -->
+<section>
+  <div class="container">
+    <p class="section-label">Still weak</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>What isn’t solved</h3>
+        <p class="muted small" style="margin:0">Placeholder: LiDAR only, one product type, no occlusion, one room tested.</p>
+      </div>
+      <div class="card">
+        <h3>What I’d build next</h3>
+        <p class="muted small" style="margin:0">Placeholder: two sentences, concrete.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container next">
+    <span class="muted small">Next</span>
+    <a href="spec-sheet.html">Spec sheet — a tile page for three kinds of buyer</a>
+  </div>
+</footer>
+
+</body>
+</html>
