@@ -14,9 +14,9 @@ The numbers captured in the studio are the numbers that make the wall preview co
 
 ## Why now
 
-Commerce platforms now read catalogs through AI shopping agents out of the box, so product data quality decides whether a work is surfaced at all.
+Online art listings still ask buyers to trust flat photos for a spatial decision. The missing facts are usually the basic ones: true image size, framed size, boxed size, weight, and how the piece sits against furniture.
 
-On the buyer side, size and space mismatch accounts for roughly 58% of returns in dimensional categories. AR placement itself is a solved, free layer — commerce platforms have shipped native 3D and AR on product pages for years. Nobody has put the trade's rules on top of it.
+AR placement can show scale, but scale alone is not the whole decision. Plumb puts the trade's rules on top of the preview: centre the work at eye height, size it against the furniture below it, and make the captured measurements drive the buyer view.
 
 ---
 
