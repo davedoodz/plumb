@@ -1,0 +1,10 @@
+{
+  "scope": "takeoff-demo/src",
+  "reviewers": ["TimelineReview", "PurchaseReview"],
+  "status": "findings-applied",
+  "coverage": ["deterministic timeline and rolling values", "chat draft and tap feedback", "supplier uncertainty and lead-time arithmetic", "approval and dependency reveal order"],
+  "applied": ["Clear draft on send independently from keyboard dismissal", "Delay Takeoff collapse until the tap pulse completes", "Retain outgoing number width during rolling transitions", "Spring segmented-control reveal after the tap", "Spring Order action height at its reveal time", "Show pendant failure after the bar settles and holds", "Reveal dependency rows after ordered rows"],
+  "relatedFix": "Sample collapse also waits until its tap pulse completes",
+  "verification": "npm run lint; frame-exact master render; npm run finalize checks and full video decode",
+  "limits": "Scripted prototype; no real supplier integration or purchases. Visual acceptance remains with David."
+}
