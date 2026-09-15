@@ -1,0 +1,107 @@
+{
+  "film": "spec-story.mp4",
+  "generator": "Higgsfield CLI",
+  "generated_at": "2026-09-15T21:22:25Z",
+  "shared_look": {
+    "palette": {
+      "cream": "#F4EEE4",
+      "ink": "#1A1714",
+      "sage": "#8A9A82",
+      "clay": "#B8724F",
+      "line": "#DED5C6"
+    },
+    "type": "Beatrice (case-study/assets/fonts) — Semibold headings, Medium eyebrows/captions",
+    "backdrop": "Reuses hero-bg.mp4 (see hero-provenance.json), looped, blurred and dimmed under a cream scrim, so both films share one continuous material motion"
+  },
+  "reference": {
+    "inspiration": "public/videos/inspo/moments.mp4 — kinetic typography paired with floating real-context photo cards, studied for structure and pacing, not reused.",
+    "departure_from_case_study_axonometric_style": "Deliberately non-axonometric: photorealistic documentary-style photography instead of the case study's existing isometric cutaway illustrations (see case-study/assets/provenance.json), to match the Moments reference's real-photo language."
+  },
+  "story_structure": [
+    "01 — The starting point: a room mid-renovation, a material sample and a site note, scattered",
+    "02 — The decision: one product chosen from the scatter",
+    "03 — Quantity, approval, evidence: a counted quantity, a signed-off approval, delivery evidence",
+    "04 — One shared record: the Spec connects homeowner, trade and supplier"
+  ],
+  "generated_assets": [
+    {
+      "file": "spec-room.png",
+      "role": "Beat 01 floating card — 'The room'",
+      "model": "Higgsfield CLI — GPT Image 2 (job_type: gpt_image_2)",
+      "job_id": "ff878b70-a546-4eef-88ea-1dcbc95545e4",
+      "created_at": "2026-09-15T21:22:25.408286Z",
+      "prompt": "Documentary real estate photograph of a bathroom mid-renovation, unfinished tile wall with exposed studs on one side, a stepladder, folded drop cloth, and stacked moving boxes, soft natural window light from the left, warm color grade: cream walls, sage green painter's cloth, warm clay terracotta tile sample leaning against the wall, shallow depth of field, 35mm documentary photography, quiet calm mood, restrained palette cream #F4EEE4 sage #8A9A82 clay #B8724F. No people, no text, no logos, no watermark, no signage.",
+      "params": { "aspect_ratio": "4:3", "resolution": "1k", "quality": "high", "background": "opaque" },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212225_ff878b70-a546-4eef-88ea-1dcbc95545e4.png",
+      "output_dimensions": "1168x880"
+    },
+    {
+      "file": "spec-material.png",
+      "role": "Beat 01 floating card — 'Sample + note'",
+      "model": "Higgsfield CLI — GPT Image 2 (job_type: gpt_image_2)",
+      "job_id": "6244010a-c568-4d7a-b030-28fae3191efd",
+      "created_at": "2026-09-15T21:22:25.361115Z",
+      "prompt": "Overhead flat-lay documentary photograph on a rough plywood surface: one warm clay terracotta ceramic tile sample, a folded blank kraft-paper note card, and a metal tape measure, soft directional daylight from one side, warm cream and sage color grade, shallow depth of field, product documentary photography, restrained palette cream #F4EEE4 sage #8A9A82 clay #B8724F. No legible text on the note card, no logos, no watermark, no hands, no people.",
+      "params": { "aspect_ratio": "4:5", "resolution": "1k", "quality": "high", "background": "opaque" },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212225_6244010a-c568-4d7a-b030-28fae3191efd.png",
+      "output_dimensions": "896x1120"
+    },
+    {
+      "file": "spec-product.png",
+      "role": "Beat 02 centered card — the chosen product",
+      "model": "Higgsfield CLI — GPT Image 2 (job_type: gpt_image_2)",
+      "job_id": "af6ff2ba-5d2e-4781-9923-7e51cebf2e82",
+      "created_at": "2026-09-15T21:22:25.436509Z",
+      "prompt": "Clean studio product photograph of a small stack of matte clay terracotta ceramic tiles on a warm cream seamless background, single soft diffused key light from upper left, gentle soft shadow, minimal elegant composition, restrained palette cream #F4EEE4 clay #B8724F sage #8A9A82 accent. No text, no logos, no watermark, no props, no hands, no people.",
+      "params": { "aspect_ratio": "1:1", "resolution": "1k", "quality": "high", "background": "opaque" },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212225_af6ff2ba-5d2e-4781-9923-7e51cebf2e82.png",
+      "output_dimensions": "1024x1024"
+    },
+    {
+      "file": "spec-delivery.png",
+      "role": "Beat 03 floating card — 'Delivery evidence'",
+      "model": "Higgsfield CLI — GPT Image 2 (job_type: gpt_image_2)",
+      "job_id": "cd092fda-5add-4db8-b96d-2b5f5bd2e24d",
+      "created_at": "2026-09-15T21:22:25.431855Z",
+      "prompt": "Documentary photograph of stacked plain cardboard delivery boxes at a bright home doorway threshold, soft morning daylight, warm cream and sage color grade, shallow depth of field, real estate documentary photography, restrained palette cream #F4EEE4 sage #8A9A82 clay #B8724F. No people, no text, no logos, no watermark, no shipping labels.",
+      "params": { "aspect_ratio": "4:5", "resolution": "1k", "quality": "high", "background": "opaque" },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212225_cd092fda-5add-4db8-b96d-2b5f5bd2e24d.png",
+      "output_dimensions": "896x1120"
+    },
+    {
+      "file": "hero-bg.mp4",
+      "role": "Ambient looped backdrop (reused from hero.mp4, see hero-provenance.json for its generation record)"
+    }
+  ],
+  "local_composition": {
+    "tool": "Remotion 4.0.524, standalone entry motion/concept-spec-story/ (not wired into src/Root.tsx)",
+    "structure": "Intro + 4 beats + outro, 30fps timeline: 0-45f intro, 45-160f beat 1, 160-270f beat 2, 270-390f beat 3, 390-497f beat 4, 510-538f outro, crossfaded with staggered kinetic word reveals",
+    "elements": [
+      "Kinetic Beatrice headings — per-word spring entrance, clay-accented key words",
+      "Photo cards — spring scale/slide entrance, gentle sinusoidal float, rounded shadowed frames around the four generated photographs, all captions rendered live in Beatrice (no AI-generated text on any image)",
+      "Quantity counter — locally computed count-up (0 to 58 sq ft) via interpolate, no AI text",
+      "Approval — locally drawn SVG checkmark (stroke-dashoffset draw-on) plus Beatrice caption",
+      "Shared-record node — 'The Spec' pill connected by locally drawn quadratic SVG paths (draw-on) to three chips (Homeowner / Trade / Supplier), each with a hand-authored lucide-style line icon from motion/concept-shared/icons.tsx",
+      "Outro bookend — same Beatrice wordmark treatment as hero.mp4 for continuity"
+    ]
+  },
+  "render": {
+    "script": "motion/concept-spec-story/render.mjs",
+    "command": "node motion/concept-spec-story/render.mjs",
+    "underlying_command": "remotion render motion/concept-spec-story/index.tsx SpecStory case-study/assets/motion/spec-story.mp4 --public-dir case-study/assets --codec=h264 --pixel-format=yuv420p --crf=16 --image-format=png --x264-preset=slow --muted --overwrite",
+    "postprocess": "ffmpeg -i spec-story.mp4 -c copy -movflags +faststart (remux, verified moov precedes mdat)"
+  },
+  "output": {
+    "file": "spec-story.mp4",
+    "duration_seconds": 18.0,
+    "resolution": "1280x720",
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "fps": 30,
+    "audio": "none"
+  },
+  "poster": {
+    "file": "spec-story.webp",
+    "extracted_from": "spec-story.mp4 at 4.0s (Beat 01) via ffmpeg, converted to webp quality 90"
+  }
+}

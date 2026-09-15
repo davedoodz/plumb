@@ -1,0 +1,67 @@
+{
+  "film": "hero.mp4",
+  "generator": "Higgsfield CLI",
+  "generated_at": "2026-09-15T21:19:49Z",
+  "shared_look": {
+    "palette": {
+      "cream": "#F4EEE4",
+      "ink": "#1A1714",
+      "sage": "#8A9A82",
+      "clay": "#B8724F",
+      "line": "#DED5C6"
+    },
+    "type": "Beatrice (case-study/assets/fonts), white on a scrim overlay"
+  },
+  "reference": {
+    "inspiration": "/tmp/takeoff-openai-reference.mp4 (5s abstract gradient study, not reused, studied for pacing and restraint only)",
+    "adaptation": "Same soft continuous material/light-field motion, recolored to the Takeoff cream/sage/clay palette and paired with a locally composed Beatrice wordmark instead of the reference's persistent label."
+  },
+  "generated_assets": [
+    {
+      "file": "hero-bg.mp4",
+      "role": "Full-bleed background plate for hero.mp4, also reused (blurred, looped) as the ambient backdrop in spec-story.mp4",
+      "model": "Higgsfield CLI — Seedance 2.0 (job_type: seedance_2_0)",
+      "job_id": "b9412b0d-3b76-4cfb-b369-f7817e96a028",
+      "created_at": "2026-09-15T21:19:49.516424Z",
+      "prompt": "Abstract soft flowing material and light field, single continuous unbroken shot, camera completely static, no cuts, no zoom, no pans. Slow deliberate drifting waves of soft matte fabric-like material folding and unfolding like silk or gel under diffused studio light. Warm cream base blending into muted sage green and warm clay terracotta currents, gentle diffusion, soft ambient occlusion, subtle film grain, calm meditative pace, elegant architectural material study for a home renovation brand film, high production value, soft depth of field, restrained minimal palette: cream #F4EEE4, sage #8A9A82, clay #B8724F. No text, no logos, no watermark, no people, no objects, no camera shake, no strobing, no harsh color banding.",
+      "params": {
+        "aspect_ratio": "16:9",
+        "resolution": "720p",
+        "duration": 6,
+        "mode": "std",
+        "generate_audio": false
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_211949_b9412b0d-3b76-4cfb-b369-f7817e96a028.mp4",
+      "output_dimensions": "1280x720",
+      "output_duration_seconds": 6.04
+    }
+  ],
+  "local_composition": {
+    "tool": "Remotion 4.0.524, standalone entry motion/concept-hero/ (not wired into src/Root.tsx)",
+    "elements": [
+      "hero-bg.mp4 as a full-bleed OffthreadVideo layer with a slight scale-in settle",
+      "radial vignette + procedural SVG feTurbulence film grain, both composed locally (no AI asset)",
+      "Kinetic Beatrice Semibold wordmark 'Takeoff' with letter-spacing settle, a drawn-on hairline rule, and Beatrice Medium subhead 'Renovation, with context.' (matches the case study's own h1 copy)",
+      "Text fades in around 0.7-1.9s, holds, fades out in the final 0.7s to leave a clean tail frame"
+    ]
+  },
+  "render": {
+    "script": "motion/concept-hero/render.mjs",
+    "command": "node motion/concept-hero/render.mjs",
+    "underlying_command": "remotion render motion/concept-hero/index.tsx Hero case-study/assets/motion/hero.mp4 --public-dir case-study/assets --codec=h264 --pixel-format=yuv420p --crf=16 --image-format=png --x264-preset=slow --muted --overwrite",
+    "postprocess": "ffmpeg -i hero.mp4 -c copy -movflags +faststart (remux, verified moov precedes mdat)"
+  },
+  "output": {
+    "file": "hero.mp4",
+    "duration_seconds": 6.0,
+    "resolution": "1280x720",
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "fps": 30,
+    "audio": "none"
+  },
+  "poster": {
+    "file": "hero.webp",
+    "extracted_from": "hero.mp4 at 3.0s via ffmpeg, converted to webp quality 90"
+  }
+}
