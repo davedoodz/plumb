@@ -173,5 +173,29 @@
       "one-line card titles at desktop and mobile",
       "prototype-led section cadence"
     ]
+  },
+  "stackingComet": {
+    "source": "case-study/cursor-microinteractions.html variant 09",
+    "desktop": {
+      "sidebarLeft": "25px",
+      "hoverArrowVisible": true,
+      "collapsedSegmentSize": [
+        18,
+        18
+      ],
+      "overflow": false
+    },
+    "reducedMotion": {
+      "firstSegmentSize": [
+        14,
+        14
+      ],
+      "laggingSegmentsHidden": true
+    },
+    "mobile": {
+      "sidebarDisplay": "none",
+      "overflow": false
+    },
+    "interaction": "pointer hover and press state remain interruptible; keyboard focus retains native focus ring"
   }
 }
