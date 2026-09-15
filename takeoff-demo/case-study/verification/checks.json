@@ -89,5 +89,38 @@
     ],
     "scope": "HTML text and controls; embedded images and rendered study videos unchanged",
     "priorEvidence": "Other screenshots document earlier styling."
+  },
+  "refinement": {
+    "desktopViewport": [
+      1440,
+      1000
+    ],
+    "sidebarLeft": "25px (aligned with header padding)",
+    "secondaryText": "#AAAAAA",
+    "inactiveSidebarText": "#AAAAAA",
+    "statusRiskMitigationAligned": true,
+    "videoControls": {
+      "style": "filled charcoal with white Lucide icons",
+      "size": [
+        35,
+        35
+      ],
+      "scaleFromPreviousPercent": 75,
+      "pauseVerified": true,
+      "restartVerified": true
+    },
+    "pointSectionLucideIcons": {
+      "pointHeadings": 48,
+      "pointIcons": 45,
+      "nonLucideSvgCount": 0
+    },
+    "removedElements": [
+      "hero caption",
+      "header interaction studies link",
+      "complete gallery link",
+      "persona caption",
+      "reflection closing handoff block"
+    ],
+    "overflow": false
   }
 }
