@@ -196,6 +196,13 @@
       "sidebarDisplay": "none",
       "overflow": false
     },
-    "interaction": "pointer hover and press state remain interruptible; keyboard focus retains native focus ring"
+    "interaction": "pointer hover and press state remain interruptible; keyboard focus retains native focus ring",
+    "customCursor": {
+      "bodyCursor": "none",
+      "interactiveCursor": "none",
+      "desktopSidebarHover": true,
+      "reducedMotionStaticFallback": true,
+      "mobileOverflow": false
+    }
   }
 }
