@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Takeoff: fourteen interaction studies exploring accountable renovation purchases inside an assistant conversation."><title>Takeoff — Renovation, with context</title><style>
+/* Reference structure: Rachel Chen / OpenAI. Original Takeoff content and assets. */
+@font-face{font-family:Beatrice;src:url('assets/fonts/beatrice-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Beatrice;src:url('assets/fonts/beatrice-medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Beatrice;src:url('assets/fonts/beatrice-semibold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:Beatrice;src:url('assets/fonts/beatrice-bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+.lucide{width:1em;height:1em;display:inline-block;vertical-align:-.15em;flex-shrink:0;fill:none}button,input,select,textarea{font-family:inherit}
+:root{--paper:#fff;--ink:#000;--muted:#000;--line:#dce2e7;--wash:#fff;--accent:#000;--serif:Beatrice,Arial,sans-serif;--sans:Beatrice,Arial,sans-serif;--mono:Beatrice,Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 var(--sans)}a{color:inherit;text-underline-offset:4px}a:hover{color:var(--accent)}a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.skip{position:absolute;left:20px;top:-80px}.skip:focus{top:15px;z-index:10;background:white;padding:8px}header{height:65px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 25px;font:12px var(--mono);letter-spacing:.035em;text-transform:uppercase}header a{text-decoration:none}header span{color:var(--muted);margin-left:14px}header nav{display:flex;gap:28px}aside{position:fixed;top:115px;left:24px;width:196px;font-size:14px}aside a{display:block;text-decoration:none;color:var(--muted);padding:5px 0;line-height:1.5}aside a.active{color:var(--accent)}aside .back{font:12px var(--mono);margin-bottom:26px}main{max-width:768px;margin:46px auto 0}.eyebrow{font:12px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.035em;color:var(--muted);margin-bottom:14px}h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.18;letter-spacing:-.025em}h1{font-size:56px;margin:16px 0 36px}h2{font-size:32px;margin:0 0 24px}h3{font-size:22px;margin:0 0 10px}p{color:var(--muted);margin:0 0 22px}section{padding-top:68px;scroll-margin-top:20px}section>h2:not(:first-of-type){margin-top:48px}.hero{margin:0}.hero img{width:100%;height:auto;display:block;aspect-ratio:3/2;object-fit:cover}.hero figcaption{font:11px/1.6 var(--mono);margin-top:10px;color:var(--muted)}.metadata{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:38px 0 0}.metadata p{font-size:13px}.metadata .eyebrow{margin-bottom:8px}.columns{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:28px 0}.columns p{font-size:14px}.columns h3{font-size:21px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:28px 0 40px}figure{margin:0}img{max-width:100%;height:auto;display:block}video{width:100%;display:block;aspect-ratio:1;background:var(--wash);border:1px solid var(--line)}figcaption{padding-top:14px;color:var(--muted);font-size:13px}figcaption h3{color:var(--ink);font-size:21px}figcaption p{font-size:14px;margin-bottom:10px}figcaption .eyebrow{margin-bottom:7px}.illustration{margin:30px 0}.illustration img{width:100%;aspect-ratio:3/2;object-fit:cover}.caption{font-size:12px;line-height:1.7}.aside{border-left:2px solid var(--accent);padding-left:20px;margin:30px 0}.diagram{background:var(--wash);border:1px solid var(--line);padding:30px;margin:30px 0}.diagram-row{display:flex;gap:12px;text-align:center}.diagram-row>span{flex:1;background:var(--paper);padding:22px 12px;font-size:13px}.diagram-row .selected,.diagram-focus{border:1px solid var(--accent);background:#fff}.diagram-join{text-align:center;padding:20px;font:11px var(--mono);color:var(--muted)}.diagram-focus{text-align:center;padding:20px}.diagram small{display:block;color:var(--muted)}.states{display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-size:12px}.states span{background:white;padding:10px}.states b{color:var(--accent)}.sublabel{margin-top:40px}.evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}.evidence-grid article{border-top:1px solid var(--accent);padding-top:20px}.evidence-grid h3{font-size:21px}.evidence-grid p{font-size:14px}details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;margin:28px 0}summary{cursor:pointer}details p,details li{font-size:14px}details p:first-of-type{margin-top:20px}li{margin:12px 0;color:var(--muted)}.tradeoff{display:flex;align-items:center;justify-content:space-around;gap:20px;border-block:1px solid var(--line);padding:34px 20px;margin:30px 0;font-family:var(--serif);font-size:22px}.tradeoff b{color:var(--accent);font-weight:400}.closing{background:var(--wash);padding:30px;margin:35px 0}.text-link{display:inline-block;margin-bottom:10px}footer{max-width:768px;margin:70px auto 30px;padding-top:24px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:20px}.progress{position:fixed;top:0;left:0;height:2px;background:var(--accent);width:100%;transform:scaleX(0);transform-origin:left;z-index:5}section{animation:appear .55s both}@keyframes appear{from{opacity:.5;transform:translateY(8px)}to{opacity:1;transform:none}}@media(min-width:1500px){aside{left:calc(50% - 616px)}}@media(max-width:1150px){main,footer{margin-left:245px;margin-right:30px}}@media(max-width:850px){aside{display:none}main,footer{margin-left:auto;margin-right:auto;width:calc(100% - 48px)}header span{display:none}h1{font-size:44px}section{padding-top:56px}}@media(max-width:540px){header{padding:0 20px}header nav{gap:15px;font-size:10px}main,footer{width:calc(100% - 40px)}main{margin-top:34px}h1{font-size:39px}h2{font-size:29px}.metadata{grid-template-columns:1fr 1fr;gap:14px}.columns,.evidence-grid,.pair{grid-template-columns:1fr;gap:25px}.columns{margin-bottom:0}.diagram{padding:18px}.diagram-row{flex-direction:column}.tradeoff{font-size:19px;padding-inline:0}.pair{margin-bottom:30px}.hero figcaption{font-size:10px}footer{flex-direction:column}.illustration img{aspect-ratio:1.2;object-fit:contain;background:var(--wash)}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}section{animation:none}*{transition:none!important}}
+.personas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:30px 0}.persona img{width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:20px}.persona h3{font-size:24px}.persona p{font-size:14px}.persona strong{color:var(--ink)}.research-block{margin-top:58px}.research-block h2{font-size:30px}.finding-list{margin:25px 0}.finding-row{border-top:1px solid var(--line);padding:24px 0}.finding-row:last-child{border-bottom:1px solid var(--line)}.finding-row h3{font-size:23px}.finding-row p:last-child{margin-bottom:0}.risk-grid,.readiness-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin:28px 0}.risk-item,.readiness-item{border-top:2px solid var(--accent);padding-top:20px}.readiness-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.risk-item p,.readiness-item p{font-size:14px}.risk-item strong,.readiness-item strong{color:var(--ink)}.video-player{position:relative;background:var(--wash)}.video-player video{border:0}.video-actions{position:absolute;right:14px;top:14px;display:flex;gap:10px;opacity:0;pointer-events:none;transition:opacity 160ms ease}.video-player:hover .video-actions,.video-player:has(:focus-visible) .video-actions,.video-player[data-reveal="true"] .video-actions,.video-player.needs-play .video-actions{opacity:1;pointer-events:auto}.video-actions button{width:46px;height:46px;padding:12px;border:1px solid #000;border-radius:50%;background:#fff;color:#000;cursor:pointer;display:grid;place-items:center;font-family:inherit}.video-actions button:hover{background:#fff}.video-actions svg{width:22px;height:22px;fill:none;pointer-events:none}.video-actions button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}@media(max-width:620px){.personas,.risk-grid,.readiness-grid{grid-template-columns:1fr}.persona{display:block}.persona img{max-height:320px}.research-block{margin-top:44px}.video-actions{right:12px;top:12px}.video-actions button{width:44px;height:44px}}@media(hover:none){.video-player:hover .video-actions{opacity:0;pointer-events:none}.video-player[data-reveal="true"] .video-actions,.video-player:has(:focus-visible) .video-actions,.video-player.needs-play .video-actions{opacity:1;pointer-events:auto}}
+.gap-label{display:flex;align-items:center;gap:8px;font:600 12px/1.5 var(--sans);letter-spacing:.02em;margin-bottom:7px}.gap-label svg{width:19px;height:19px;flex:none}.gap-status{padding:12px 14px;background:var(--wash);border-radius:4px}.gap-status .gap-label{color:#000}.gap-risk .gap-label{color:#000}.gap-mitigation .gap-label{color:#000}.risk-item>p{margin-bottom:20px}.gap-status>span:last-child{font-size:13px;color:var(--ink)}
+.pilot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 28px;margin:30px 0}.pilot-category img{width:100%;aspect-ratio:1;object-fit:contain;background:var(--wash);margin-bottom:22px}.pilot-category h3{font-size:25px}.pilot-category p{font-size:14px}.pilot-test{border-top:1px solid var(--line);padding-top:15px}.pilot-test strong{display:block;font-size:12px;color:var(--ink);margin-bottom:7px}@media(max-width:540px){.pilot-grid{grid-template-columns:1fr;gap:28px}}
+</style></head><body><a class="skip" href="#overview">Skip to case study</a><div class="progress" aria-hidden="true"></div><header><a href="#top">David <span>Architecture <svg class="lucide lucide-arrow-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg> Product Design</span></a><nav aria-label="Project links"><a href="../prototypes/index.html">Interaction studies <svg class="lucide lucide-arrow-up-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></a><a href="#research">Research</a></nav></header><aside aria-label="Case study sections"><a class="back" href="../prototypes/index.html"><svg class="lucide lucide-arrow-left" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m12 19-7-7 7-7" />
+  <path d="M19 12H5" />
+</svg> All studies</a><a href="#overview">Overview</a><a href="#solution">Solution</a><a href="#core-flows">Core Flows</a><a href="#research">Research</a><a href="#form-factors">Exploring Form Factors</a><a href="#prototyping">Prototyping and Testing</a><a href="#design-decisions">Design Decisions</a><a href="#constraints">Designing for Constraints</a><a href="#reflection">Reflection</a></aside><main id="top"><div class="eyebrow">Takeoff × Agentic Commerce · Concept 2026</div><h1>Renovation, with context.</h1><figure class="hero"><img src="assets/hero.webp" alt="An architectural bathroom cutaway with material components and connected decision cards" width="1536" height="1024" fetchpriority="high"><figcaption>One room. Many purchases. A shared understanding of what comes next.</figcaption></figure><div class="metadata"><div><div class="eyebrow">Role</div><p>Product design<br>Architecture-informed systems</p></div><div><div class="eyebrow">Timeline</div><p>September 2026<br>Concept exploration</p></div><div><div class="eyebrow">Team</div><p>Solo designer<br>AI-assisted prototyping</p></div><div><div class="eyebrow">Skills</div><p>Product strategy<br>Interaction design<br>Prototyping</p></div></div>
+<section id="overview"><div class="eyebrow">Overview</div><h2>What does a renovation look like when your agent helps with the buying?</h2><p>Takeoff explores renovation purchasing from a property owner’s point of view. Drawing on my architecture background, I designed a family of embedded interactions connecting a room, a product, a decision, and the people responsible for it.</p><div class="columns"><div><h3>Product Strategy</h3><p>Look beyond a single checkout to the dependencies between materials, trades, budgets, and dates.</p></div><div><h3>Prototyping & Testing</h3><p>Explore fourteen silent interaction studies. These are concept simulations; participant testing remains a next step.</p></div><div><h3>Iterating with Evidence</h3><p>Use desk research to question the proposal, surface missing information, and define what needs to be tested.</p></div></div></section>
+<section id="problem"><div class="eyebrow">Problem</div><h2>A renovation is a connected project.<br>A shopping cart is a list.</h2><p>A vanity changes the mirror width. A tile layout changes the quantity. A delayed fixture changes the installer’s visit. Buying each item separately leaves the owner to keep those relationships together.</p><figure class="illustration"><img src="assets/fragmentation.webp" width="1536" height="1024" loading="lazy" alt="Renovation model surrounded by disconnected samples and procurement records"><figcaption>The problem is not finding another product. It is keeping the purchase connected to the project.</figcaption></figure><p>The research archive points toward scattered decisions, uncertain deliveries, and unclear responsibility when owners supply materials themselves. An assistant can suggest a product; that does not make the suggestion ready to order.</p><div class="diagram"><div class="eyebrow">The missing connection</div><div class="diagram-row"><span>Room measurements</span><span>Supplier quote</span><span>Installer’s message</span></div><div class="diagram-join"><svg class="lucide lucide-arrow-down" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5v14" />
+  <path d="m19 12-7 7-7-7" />
+</svg> separate records <svg class="lucide lucide-arrow-down" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5v14" />
+  <path d="m19 12-7 7-7-7" />
+</svg></div><div class="diagram-focus">Who confirmed the right product, quantity, and date?</div></div><p class="aside">Design hypothesis: the useful interface lives at the moment a recommendation becomes a commitment—not only at discovery or payment.</p></section>
+<section id="opportunity"><div class="eyebrow">Opportunity</div><h2>Project context as the foundation of the purchase.</h2><p>Instead of asking an owner to manage another store app, Takeoff explores structured interfaces inside an assistant conversation. The aim is not less interface. It is the right interface at a consequential moment.</p><div class="columns"><div><h3>A quantity to inspect</h3><p>Show dimensions, layout assumptions, waste, and pack rounding before anyone pays.</p></div><div><h3>An approval with a scope</h3><p>Separate who chose the finish, who checked compatibility, and who authorised the spend.</p></div><div><h3>A date with consequences</h3><p>Compare an arrival window with the task that needs it—and expose uncertainty.</p></div></div></section>
+<section id="solution"><div class="eyebrow">Solution</div><h2>Takeoff: the purchase interactions a renovation needs…</h2><p>A concept for property owners buying materials, fixtures, and furniture from multiple suppliers. Embedded cards help people check, compare, approve, and hand off decisions without losing the surrounding conversation.</p><div class="pair" data-studies="5,11" data-compact="true"></div><h2>…powered by a Spec that keeps the evidence together.</h2><p>A Spec connects a selected product to its room, assumptions, sources, approvals, and order state. The owner, trade, and supplier have different responsibilities around the same decision—not three disconnected versions of it.</p><figure class="illustration"><img src="assets/spec-system.webp" width="1536" height="1024" loading="lazy" alt="A central specification linked to room components and surrounding decision records"><figcaption>One decision record, several roles. A conceptual system—not a working cross-platform integration.</figcaption></figure></section>
+<section id="core-flows"><div class="eyebrow">Core Flows</div><h2>From a room to a decision people can act on.</h2><p>Four core moments carry the story: establish context, inspect the quantity, expose schedule risk, and confirm who can approve.</p><div class="pair" data-studies="1,5,9,11"></div><h3>Onboarding to Takeoff</h3><p>Start with the room and one useful question, not a complete project-management setup. In this study, the next question opens a delivery-access card.</p><div class="pair" data-studies="2,12"></div></section>
+<section id="research"><div class="eyebrow">Research</div><h2>The problems Takeoff needs to solve.</h2><p>The research points to problems with material choices, orders, approvals, and delivery. These findings support the concept. They do not prove that people will adopt it.</p>
+<div class="research-block" id="personas"><h2>Three Personas</h2><p>A renovation purchase connects the homeowner, the contractor, and the supplier. Each person needs different information before they can act.</p><div class="personas">
+<article class="persona"><img src="assets/persona-homeowner.webp" width="1536" height="1152" loading="lazy" alt="Fictional homeowner examining material samples in a home"><h3>The Homeowner</h3><p><strong>Role:</strong> Chooses materials and approves the cost.</p><p><strong>Goal:</strong> Finish the renovation without unexpected costs or delays.</p><p><strong>Pain:</strong> Choices get lost in messages and photos. Late decisions can delay the work.</p><p><strong>Takeoff’s role:</strong> Keep each choice, its reason, and its approval together.</p></article>
+<article class="persona"><img src="assets/persona-contractor.webp" width="1536" height="1152" loading="lazy" alt="Fictional contractor checking plans at a renovation site"><h3>The Contractor</h3><p><strong>Role:</strong> Checks the material requirements and coordinates the work.</p><p><strong>Goal:</strong> Get the correct materials to the site when the crew needs them.</p><p><strong>Pain:</strong> Wrong quantities, duplicate orders, and missed deliveries disrupt the job.</p><p><strong>Takeoff’s role:</strong> Show quantities, confirmed choices, and order status in a shared record.</p></article>
+<article class="persona"><img src="assets/persona-supplier.webp" width="1536" height="1152" loading="lazy" alt="Fictional supplier staff member checking a material order"><h3>The Supplier</h3><p><strong>Role:</strong> Confirms stock, fills orders, and arranges delivery.</p><p><strong>Goal:</strong> Fill the order correctly and avoid preventable returns.</p><p><strong>Pain:</strong> Incomplete requests cause extra calls, wrong selections, and delivery problems.</p><p><strong>Takeoff’s role:</strong> Send the exact product, quantity, approvals, and site requirements with the request.</p></article>
+</div><p class="caption">Illustrative personas with generated portraits. They do not represent research participants.</p></div>
+<div class="research-block" id="validation"><h2>Key Validation Points</h2><div class="finding-list">
+<article class="finding-row"><h3>Homeowners need to decide before work starts.</h3><p>Late material choices can delay a renovation. Takeoff should show which decisions are due and what work depends on them.</p></article>
+<article class="finding-row"><h3>Contractors need quantities and orders they can check.</h3><p>Quantity errors and duplicate orders are different problems. Clear calculations address the first. A shared order history helps people spot the second.</p></article>
+<article class="finding-row"><h3>Delivery dates need project context.</h3><p>A delivery can be too early or too late. Compare its arrival window with the site schedule and the person who will receive it.</p></article>
+<article class="finding-row"><h3>Approvals need a written record.</h3><p>Show who approved the material, who checked its fit, and who approved the cost. Keep the scope of each approval clear.</p></article>
+<article class="finding-row"><h3>Samples and specifications need to stay together.</h3><p>Homeowners need to judge a material in the room. Suppliers need its exact details. Keep the sample, chosen finish, and specification with the order.</p></article>
+</div></div>
+<div class="research-block" id="risks"><h2>Gaps &amp; Strategic Risks</h2><div class="risk-grid">
+<article class="risk-item"><h3>Homeowner trust is still untested.</h3><p class="gap-status"><span class="gap-label"><svg class="lucide lucide-info" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 16v-4" />
+  <path d="M12 8h.01" />
+</svg>Status</span><span>Needs homeowner testing</span></p><p class="gap-risk"><span class="gap-label"><svg class="lucide lucide-triangle-alert" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+  <path d="M12 9v4" />
+  <path d="M12 17h.01" />
+</svg>Risk</span> Owners may want help with choices but not trust an agent to place an order.</p><p class="gap-mitigation"><span class="gap-label"><svg class="lucide lucide-shield-check" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+  <path d="m9 12 2 2 4-4" />
+</svg>Mitigation</span> Start with review and approval. Let owners control when to buy.</p></article>
+<article class="risk-item"><h3>Suppliers may prefer phone calls and portals.</h3><p class="gap-status"><span class="gap-label"><svg class="lucide lucide-info" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 16v-4" />
+  <path d="M12 8h.01" />
+</svg>Status</span><span>Supplier channel fit untested</span></p><p class="gap-risk"><span class="gap-label"><svg class="lucide lucide-triangle-alert" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+  <path d="M12 9v4" />
+  <path d="M12 17h.01" />
+</svg>Risk</span> A new chat channel may add work instead of reducing it.</p><p class="gap-mitigation"><span class="gap-label"><svg class="lucide lucide-shield-check" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+  <path d="m9 12 2 2 4-4" />
+</svg>Mitigation</span> Connect to existing supplier systems. Keep a path to a person when a request needs help.</p></article>
+<article class="risk-item"><h3>A clear card cannot fix an uncertain delivery.</h3><p class="gap-status"><span class="gap-label"><svg class="lucide lucide-info" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 16v-4" />
+  <path d="M12 8h.01" />
+</svg>Status</span><span>Live delivery data required</span></p><p class="gap-risk"><span class="gap-label"><svg class="lucide lucide-triangle-alert" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+  <path d="M12 9v4" />
+  <path d="M12 17h.01" />
+</svg>Risk</span> A polished interface can make an estimate look like a promise.</p><p class="gap-mitigation"><span class="gap-label"><svg class="lucide lucide-shield-check" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+  <path d="m9 12 2 2 4-4" />
+</svg>Mitigation</span> Separate estimated dates from confirmed dates. Show changes and who must respond.</p></article>
+<article class="risk-item"><h3>A quantity tool cannot prevent duplicate orders alone.</h3><p class="gap-status"><span class="gap-label"><svg class="lucide lucide-info" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 16v-4" />
+  <path d="M12 8h.01" />
+</svg>Status</span><span>Shared order history required</span></p><p class="gap-risk"><span class="gap-label"><svg class="lucide lucide-triangle-alert" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+  <path d="M12 9v4" />
+  <path d="M12 17h.01" />
+</svg>Risk</span> Someone may already have placed the order through another channel.</p><p class="gap-mitigation"><span class="gap-label"><svg class="lucide lucide-shield-check" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+  <path d="m9 12 2 2 4-4" />
+</svg>Mitigation</span> Check existing orders before release. Test whether suppliers can share the required status.</p></article>
+</div></div>
+<div class="research-block" id="readiness"><h2>Adoption Readiness</h2><p>The need for better coordination is clear enough to explore. Willingness to use Takeoff still needs direct testing.</p><div class="readiness-grid">
+<article class="readiness-item"><h3>Homeowners</h3><p><strong>Useful starting point:</strong> Clear choices, costs, dates, and approvals.</p><p><strong>What to test:</strong> Would they approve a purchase inside a chat? When would they prefer to ask their contractor?</p></article>
+<article class="readiness-item"><h3>Contractors</h3><p><strong>Useful starting point:</strong> A shared record that reduces repeated checks.</p><p><strong>What to test:</strong> Does it replace work in a spreadsheet, or create another record to maintain?</p></article>
+<article class="readiness-item"><h3>Suppliers</h3><p><strong>Useful starting point:</strong> Complete requests with fewer missing details.</p><p><strong>What to test:</strong> Can staff use the request in their current systems? Does it reduce calls, corrections, or returns?</p></article>
+</div></div>
+<div class="research-block" id="pilot-categories"><h2>Pilot Product Categories</h2><p>Start with a focused material category, not the whole renovation. These categories let us test different decisions within the same purchase process.</p><div class="pilot-grid">
+<article class="pilot-category"><img src="assets/pilot-tiles.webp" width="1536" height="1536" loading="lazy" alt="Ceramic tile samples with a grout strip on a neutral surface"><h3>Tiles</h3><p>Check the layout, waste allowance, box coverage, and batch match.</p><p class="pilot-test"><strong>What to test</strong> Can the owner and installer agree on the quantity and finish before the order?</p></article>
+<article class="pilot-category"><img src="assets/pilot-flooring.webp" width="1536" height="1536" loading="lazy" alt="Natural oak flooring samples with a herringbone arrangement"><h3>Flooring</h3><p>Connect room area, laying direction, pack size, and installation requirements.</p><p class="pilot-test"><strong>What to test</strong> Does a layout change update the order without losing the installer’s checks?</p></article>
+<article class="pilot-category"><img src="assets/pilot-paint.webp" width="1536" height="1536" loading="lazy" alt="Interior paint tin, brush, and neutral painted sample boards"><h3>Interior Paint</h3><p>Keep the approved color, sheen, surface preparation, and coverage together.</p><p class="pilot-test"><strong>What to test</strong> Can a sample approval carry through to the correct paint and quantity?</p></article>
+<article class="pilot-category"><img src="assets/pilot-lighting.webp" width="1536" height="1536" loading="lazy" alt="Opal globe pendant and wall light with mounting components"><h3>Light Fixtures</h3><p>Check dimensions, mounting, light output, dimmer compatibility, and arrival dates.</p><p class="pilot-test"><strong>What to test</strong> Can the electrician confirm a substitute before the owner approves its cost?</p></article>
+</div><p class="caption">Generated category images, not supplier listings. Choose a category and supplier for the first pilot, then apply what we learn to the others.</p></div>
+<div class="research-block" id="recommendations"><h2>Strategic Recommendations</h2><div class="finding-list">
+<article class="finding-row"><h3>Lead with practical savings, not the agent.</h3><p>Focus on fewer repeated checks, clearer approvals, and fewer ordering mistakes. Test these benefits rather than promise them.</p></article>
+<article class="finding-row"><h3>Support the supplier’s existing workflow.</h3><p>Connect the homeowner’s decisions to the supplier’s order process. Do not ask either person to maintain a separate storefront.</p></article>
+<article class="finding-row"><h3>Start with a narrow material category.</h3><p>Prioritize tiles, flooring, interior paint, and light fixtures as pilot options. Start with a category and supplier before expanding.</p></article>
+<article class="finding-row"><h3>Add confirmed delivery status.</h3><p>A schedule check is not live tracking. Connect supplier updates before claiming that Takeoff can track an order.</p></article>
+<article class="finding-row"><h3>Test homeowner trust directly.</h3><p>Ask owners to review a substitute with their contractor. Observe what they need to see before they approve the purchase.</p></article>
+</div></div></section>
+
+<section id="form-factors"><div class="eyebrow">Exploring Form Factors</div><h2>Exploring where the decision should live.</h2><p>The project began with artwork, moved toward the merchant’s view of an agent, then narrowed to renovation purchases. Renovation connects the work to architecture: dimensions, sequences, material choices, and responsibility.</p><div class="eyebrow sublabel">Strategic Directions</div><div class="columns"><div><h3>A standalone app</h3><p>A complete project workspace, but another place to enter and maintain information.</p></div><div><h3>A supplier portal</h3><p>Access to one merchant’s products, but limited context across different suppliers.</p></div><div><h3>Embedded interactions</h3><p>A smaller interface at the point of decision, backed by a durable record beyond the message.</p></div></div><div class="diagram"><div class="diagram-row"><span>Conversation<small>intent & context</small></span><span class="selected">Embedded card<small>inspect & decide</small></span><span>Project record<small>evidence & status</small></span></div></div><div class="eyebrow sublabel">Why Takeoff?</div><div class="columns"><div><h3>Builds on context</h3><p>Refer to a room, a past choice, or an installer’s note without starting again.</p></div><div><h3>Uses architectural thinking</h3><p>Understand a product through fit, sequence, and installation—not just appearance.</p></div><div><h3>A bounded prototype</h3><p>One bathroom makes fourteen interactions comparable without pretending to solve every renovation.</p></div></div></section>
+<section id="prototyping"><div class="eyebrow">Prototyping and Testing</div><h2>Fourteen studies. One connected renovation.</h2><p>Each short study isolates a decision. Together they explore how a conversation can become a useful project record. Clips play in a loop. Hover to pause or restart. On a touch screen, tap the video to show these controls.</p><h3>Context that survives the conversation</h3><div class="pair" data-studies="3,4"></div><h3>From visual preference to explicit information</h3><div class="pair" data-studies="6,7"></div><h3>Checks before commitment</h3><div class="pair" data-studies="8,10"></div><h3>Continuity beyond approval</h3><div class="pair" data-studies="13,14"></div><h3>Testing and iterating with feedback</h3><p>These studies are ready for critique, not reported as tested with users. A realistic task: ask an owner and installer to resolve a late fixture, identify an unknown specification, and decide whether the order may proceed. Then ask a supplier to use the resulting handoff.</p><div class="eyebrow sublabel">Key User Insights to Test</div><div class="columns"><div><h3>Recall, not replay</h3><p>Can the owner recover the current decision and its reason without rereading the entire thread?</p></div><div><h3>Help at the right moment</h3><p>Does the prompt prevent a consequential mistake, or interrupt a choice the person can make unaided?</p></div><div><h3>A usable handoff</h3><p>Can the trade and supplier use the record without joining the owner’s assistant app?</p></div></div><a class="text-link" href="../prototypes/index.html">Open the complete fourteen-study gallery <svg class="lucide lucide-arrow-up-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></a></section>
+<section id="design-decisions"><div class="eyebrow">Design Decisions</div><h2>The card is temporary.<br>The decision needs to last.</h2><p>The proposed system separates conversational suggestions from confirmed project information. A new message should not silently replace an approved specification.</p><div class="diagram states" aria-label="Proposed decision states"><span>Suggested</span><b><svg class="lucide lucide-arrow-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></b><span>Needs confirmation</span><b><svg class="lucide lucide-arrow-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></b><span>Approved</span><b><svg class="lucide lucide-arrow-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></b><span>Ordered</span><b><svg class="lucide lucide-arrow-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></b><span>Received / issue</span></div><p class="caption">Proposed state model. A material, quantity, price, or date change can require renewed approval.</p><div class="eyebrow sublabel">Where we landed</div><h2>Insight 1: Keep the reason attached to the choice.</h2><div class="pair"><figure><img loading="lazy" src="../prototypes/stills/03-recall-the-decision-end.png" width="1080" height="1080" alt="Saved sample with the context of the original decision"><figcaption><h3>Specs as conversation context</h3><p>Recover a relevant choice without replaying every exchange.</p></figcaption></figure><figure><img loading="lazy" src="../prototypes/stills/13-handoff-with-evidence-end.png" width="1080" height="1080" alt="Installer handoff including the selection evidence"><figcaption><h3>Specs as a shared record</h3><p>Carry the source and scope of the decision to the next person.</p></figcaption></figure></div><h2>Insight 2: Surface the next consequential uncertainty.</h2><div class="pair"><figure><img loading="lazy" src="../prototypes/stills/09-see-the-schedule-risk-end.png" width="1080" height="1080" alt="Prototype illustrating schedule risk"><figcaption><h3>A risk, not another reminder</h3><p>Explain which installation depends on the material arriving.</p></figcaption></figure><figure><img loading="lazy" src="../prototypes/stills/10-compare-with-an-unknown-end.png" width="1080" height="1080" alt="Product comparison with an explicitly unknown specification"><figcaption><h3>An unknown, not a guess</h3><p>Route missing information to someone who can answer it.</p></figcaption></figure></div></section>
+<section id="constraints"><div class="eyebrow">Designing for Real-World Constraints</div><h2>A complete catalog and a confirmed delivery date cannot be assumed.</h2><p>The interface depends on information it does not control. Stock listings can be stale. Lead times can be ranges. Room photos can hide obstructions. None should be presented as a guarantee.</p><div class="diagram"><div class="diagram-row"><span>Supplier estimate<small>3–5 weeks</small></span><span>Site requirement<small>By 12 October</small></span><span class="selected">Honest status<small>At risk until confirmed</small></span></div></div><h3>How do we help people decide without claiming certainty we do not have?</h3><div class="eyebrow sublabel">Constraining the experience</div><h2>Context-based assistance</h2><p>Suggest a field or surface a dependency from information already shared. Keep its source, timestamp, and confirmation state visible.</p><div class="eyebrow sublabel">Considerations</div><div class="columns"><div><h3>Why this suggestion?</h3><p>Link it to a missing constraint or changed date, rather than an unexplained recommendation.</p></div><div><h3>Can this be inferred?</h3><p>A transcript can suggest a field. It cannot certify compatibility or installation compliance.</p></div><div><h3>Who can verify it?</h3><p>Send technical questions to the responsible trade and fulfilment questions to the supplier.</p></div></div><h2>Explicit confirmation</h2><p>An owner approving the colour does not approve the installation. An installer confirming fit does not authorise payment.</p><div class="eyebrow sublabel">Considerations</div><div class="columns"><div><h3>When should we stop?</h3><p>Block release when required technical information, spending approval, or supplier confirmation is missing.</p></div><div><h3>What if someone is offline?</h3><p>Provide a shareable record and accept a documented reply. Do not require every participant to use one assistant.</p></div><div><h3>What changes after approval?</h3><p>Record a new version, show the difference, and request approval again where the change matters.</p></div></div><h2>Trading autonomy for accountable decisions.</h2><p>Takeoff should make preparation easier, not make responsibility disappear. The agent can organise evidence and suggest next steps. The owner, trade, and supplier remain responsible for decisions only they can confirm.</p><div class="tradeoff"><span>Less automatic purchasing</span><b><svg class="lucide lucide-arrow-left-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 3 4 7l4 4" />
+  <path d="M4 7h16" />
+  <path d="m16 21 4-4-4-4" />
+  <path d="M20 17H4" />
+</svg></b><span>More explicit authority</span></div><h3>This is a trade-off worth making for trust.</h3></section>
+<section id="reflection"><div class="eyebrow">Reflection</div><h2>What I learned</h2><div class="columns"><div><h3>Architecture connects decisions.</h3><p>A tile or tap is part of a larger project. The room, material, schedule, and people affect each other.</p></div><div><h3>Interfaces are changing.</h3><p>A chat holds context. People still need clear controls to compare, measure, approve, and order.</p></div><div><h3>A concept still needs testing.</h3><p>Research shaped the questions. We still need to test Takeoff with users and suppliers.</p></div></div><div class="closing"><h3>The next test is a real handoff.</h3><p>Can an owner, installer, and supplier resolve a purchase without losing a decision or guessing a specification?</p><a href="../prototypes/index.html">Explore all fourteen studies <svg class="lucide lucide-arrow-up-right" aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></a></div><p class="caption">Independent concept by David. Generated images and simulated interactions. No live orders, messages, measurements, or platform connections. Built for review.</p></section></main><footer><span>Takeoff · Product design case study</span><span>Structure inspired by Rachel Chen</span></footer>
+<script>
+const studies=[['01-room-to-spec','A room becomes a Spec','Attach a room photo to the material record and save its source. This demonstrates attachment, not automated measurement.'],['02-next-useful-question','The next useful question','Swipe contextual prompts and open the delivery-access question. The study explores one useful next step.'],['03-recall-the-decision','Recall the decision','Filter saved references, select a sample, and recover who approved it and why.'],['04-walkthrough-in-context','Keep the walkthrough in context','Collapse the walkthrough into a pinned reference while the conversation continues.'],['05-layout-changes-the-order','Layout changes the order','Switch the layout and inspect the changed allowance, boxes, and price. Room dimensions still require confirmation.'],['06-sample-in-daylight','Judge the sample in daylight','Review a sample beside its daylight context before approval. This is sample review, not a sample-ordering service.'],['07-words-become-a-field','Installer words become a field','Select a date from the installer’s transcript and save it with attribution. The source stays available for checking.'],['08-confirm-the-clearance','Confirm—not guess—the clearance','Reveal a manually confirmed dimension on a photo. The interaction records a measurement; it does not certify compliance.'],['09-see-the-schedule-risk','See the schedule risk','Inspect the relationship between a quoted arrival window and the site schedule. This is not live delivery tracking.'],['10-compare-with-an-unknown','Compare with an honest unknown','Compare a substitute with a missing specification and surface the question for the supplier.'],['11-two-kinds-of-approval','Two kinds of approval','Separate installer confirmation from the co-owner’s spending approval. Rejection and reapproval need further exploration.'],['12-the-last-four-steps','The last four steps','Attach a photo of the four entry steps and landing to delivery instructions. Access conditions travel with the request.'],['13-handoff-with-evidence','Handoff with the evidence','Package the selected materials, approvals, and attachments for the installer. The return-feedback path remains to be designed.'],['14-after-the-order','Keep evidence after the order','Connect post-order evidence to the project record. A useful archive must also support issues, returns, and later retrieval.']];
+const pauseIcon="<svg class=\"lucide lucide-pause\" aria-hidden=\"true\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"currentColor\"\n  stroke-width=\"2\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <rect x=\"14\" y=\"3\" width=\"5\" height=\"18\" rx=\"1\" />\n  <rect x=\"5\" y=\"3\" width=\"5\" height=\"18\" rx=\"1\" />\n</svg>";
+const playIcon="<svg class=\"lucide lucide-play\" aria-hidden=\"true\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"currentColor\"\n  stroke-width=\"2\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <path d=\"M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z\" />\n</svg>";
+const resetIcon="<svg class=\"lucide lucide-rotate-ccw\" aria-hidden=\"true\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"currentColor\"\n  stroke-width=\"2\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\" />\n  <path d=\"M3 3v5h5\" />\n</svg>";
+const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+const players=new Map();
+for(const grid of document.querySelectorAll('[data-studies]')){
+  for(const number of grid.dataset.studies.split(',')){
+    const s=studies[Number(number)-1];
+    const figure=document.createElement('figure');
+    figure.innerHTML=`<div class="video-player"><video autoplay loop playsinline muted preload="none" disablepictureinpicture disableremoteplayback poster="../prototypes/stills/${s[0]}-end.png" aria-label="Study ${number}: ${s[1]}"><source data-src="../prototypes/${s[0]}.mp4" type="video/mp4"></video><div class="video-actions"><button type="button" class="video-toggle" aria-label="Pause ${s[1]}">${pauseIcon}</button><button type="button" class="video-reset" aria-label="Restart ${s[1]}">${resetIcon}</button></div></div><figcaption><div class="eyebrow">Study ${number.padStart(2,'0')} · Silent concept</div><h3>${s[1]}</h3>${grid.dataset.compact?'':`<p>${s[2]}</p>`}</figcaption>`;
+    grid.append(figure);
+    const shell=figure.querySelector('.video-player'),v=figure.querySelector('video'),toggle=figure.querySelector('.video-toggle');
+    v.muted=true;
+    v.autoplay=!reducedMotion.matches;
+    const state={shell,toggle,title:s[1],userPaused:false,visible:false};
+    players.set(v,state);
+    const update=()=>{toggle.innerHTML=v.paused?playIcon:pauseIcon;toggle.setAttribute('aria-label',`${v.paused?'Play':'Pause'} ${s[1]}`)};
+    v.addEventListener('play',()=>{shell.classList.remove('needs-play');update()});
+    v.addEventListener('pause',update);
+    toggle.addEventListener('click',()=>{if(v.paused){state.userPaused=false;startVideo(v)}else{state.userPaused=true;v.pause()}});
+    figure.querySelector('.video-reset').addEventListener('click',()=>{v.currentTime=0;state.userPaused=false;startVideo(v)});
+    v.addEventListener('click',()=>{if(matchMedia('(hover:none)').matches)shell.dataset.reveal=String(shell.dataset.reveal!=='true')});
+    if(reducedMotion.matches){shell.classList.add('needs-play');update()}
+  }
+}
+function startVideo(v){
+  const state=players.get(v),source=v.querySelector('source');
+  if(!source.hasAttribute('src')){source.src=source.dataset.src;v.load()}
+  v.play().catch(()=>{state.shell.classList.add('needs-play');state.toggle.innerHTML=playIcon;state.toggle.setAttribute('aria-label',`Play ${state.title}`)});
+}
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{
+  const v=e.target,state=players.get(v);state.visible=e.isIntersecting;
+  if(e.isIntersecting&&!state.userPaused&&!reducedMotion.matches)startVideo(v);
+  else if(!e.isIntersecting)v.pause();
+}),{threshold:0});
+players.forEach((_,v)=>observer.observe(v));
+document.addEventListener('visibilitychange',()=>players.forEach((state,v)=>{
+  if(document.hidden)v.pause();
+  else if(state.visible&&!state.userPaused&&!reducedMotion.matches)startVideo(v);
+}));
+reducedMotion.addEventListener('change',()=>players.forEach((state,v)=>{
+  v.autoplay=!reducedMotion.matches;
+  if(reducedMotion.matches){v.pause();state.shell.classList.add('needs-play')}
+  else if(state.visible&&!state.userPaused)startVideo(v);
+}));
+const nav=[...document.querySelectorAll('aside a[href^="#"]')];
+const sectionObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)nav.forEach(a=>{const active=a.hash==='#'+e.target.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}),{rootMargin:'-10% 0px -65% 0px'});
+document.querySelectorAll('section').forEach(s=>sectionObserver.observe(s));
+let queued=false;
+addEventListener('scroll',()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-innerHeight;document.querySelector('.progress').style.transform=`scaleX(${max>0?scrollY/max:0})`;queued=false})},{passive:true});
+</script></body></html>

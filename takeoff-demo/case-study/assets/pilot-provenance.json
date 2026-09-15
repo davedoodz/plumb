@@ -1,0 +1,23 @@
+{
+  "generator": "Higgsfield product-photoshoot / GPT Image 2",
+  "mode": "product_shot",
+  "direction": "Neutral editorial still life, left daylight, ivory/slate/natural wood; unbranded category examples, not supplier listings",
+  "images": {
+    "paint": {
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_194107_95d3dc8e-b52e-4075-8481-27ee97d08f00.png",
+      "job": "95d3dc8e-b52e-4075-8481-27ee97d08f00"
+    },
+    "lighting": {
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_194106_27a255e1-3b9a-4569-a471-6e745f1ff670.png",
+      "job": "27a255e1-3b9a-4569-a471-6e745f1ff670"
+    },
+    "flooring": {
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_194105_6eaca698-60e9-4f13-9515-e07218488412.png",
+      "job": "6eaca698-60e9-4f13-9515-e07218488412"
+    },
+    "tiles": {
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_194103_37c230c7-9666-4b92-adfd-52f9050f70ce.png",
+      "job": "37c230c7-9666-4b92-adfd-52f9050f70ce"
+    }
+  }
+}

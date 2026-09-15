@@ -1,0 +1,93 @@
+{
+  "page": "http://127.0.0.1:3219/case-study/index.html",
+  "browser": "headless Chromium via agent-browser",
+  "desktop_viewport": [
+    1280,
+    633
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "external_clickable_links": 0,
+  "native_video_controls": 0,
+  "all_videos_muted_and_looping": true,
+  "autoplay_observed": true,
+  "hover_controls_hidden_opacity": 0,
+  "hover_controls_visible_opacity": 1,
+  "pause_button_verified": true,
+  "restart_button_verified": true,
+  "loop_wrap_verified": true,
+  "multiple_visible_videos_play_together": true,
+  "reduced_motion_pauses_autoplay": true,
+  "keyboard_enter_starts_playback": true,
+  "touch_control_logic_simulated": true,
+  "touch_device_emulation_limitation": "agent-browser device preset did not produce hover:none; tap-toggle logic verified by simulated media query",
+  "research_headings": [
+    "Three Personas",
+    "Key Validation Points",
+    "Gaps & Strategic Risks",
+    "Adoption Readiness",
+    "Strategic Recommendations"
+  ],
+  "research_contains_digits": false,
+  "persona_images_decoded": 3,
+  "gap_cards": 4,
+  "every_gap_has_status_risk_mitigation_icons": true,
+  "horizontal_overflow": false,
+  "visual_review": [
+    "desktop personas",
+    "mobile personas",
+    "desktop gap icons",
+    "mobile gap icons",
+    "video hover controls"
+  ],
+  "ste_check": "Manual STE-flavored review; bundled Python linter blocked by Xcode license",
+  "status": "Built locally; visual acceptance pending",
+  "pilotCategories": {
+    "names": [
+      "Tiles",
+      "Flooring",
+      "Interior Paint",
+      "Light Fixtures"
+    ],
+    "generatedImagesDecoded": 4,
+    "imageDimensions": [
+      1536,
+      1536
+    ],
+    "desktopColumns": 2,
+    "mobileColumns": 1,
+    "horizontalOverflow": false
+  },
+  "beatriceMonochrome": {
+    "desktopViewport": [
+      1440,
+      1000
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "textElementsChecked": 341,
+    "incorrectFontOrColor": 0,
+    "loadedFontWeights": [
+      400,
+      600,
+      700
+    ],
+    "background": "#ffffff",
+    "text": "#000000",
+    "lucideSvgCount": 56,
+    "nonLucideSvgCount": 0,
+    "uniqueStudies": 14,
+    "horizontalOverflow": false,
+    "pauseAndRestartVerified": true,
+    "screenshots": [
+      "beatrice-desktop.png",
+      "beatrice-mobile.png"
+    ],
+    "scope": "HTML text and controls; embedded images and rendered study videos unchanged",
+    "priorEvidence": "Other screenshots document earlier styling."
+  }
+}

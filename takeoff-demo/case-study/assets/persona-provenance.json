@@ -1,0 +1,79 @@
+{
+  "generator": "Higgsfield CLI — GPT Image 2 (job_type: gpt_image_2, backend model: videotape-alpha)",
+  "generated_at": "2026-09-15T19:33:00Z",
+  "shared_art_direction": "Neutral editorial documentary photograph, waist-up shot, calm candid natural body language, no direct eye contact with camera, no exaggerated pose. Soft natural daylight, gentle diffused shadows, no flash, no visible studio lighting rig. Cool restrained editorial color palette: ivory-white surroundings, slate-gray structural and fixture tones, warm honey wood tones in material samples, muted blue-gray fabric tones — consistent with the case study's architectural illustrations. Shot on a full-frame camera with an 85mm lens, shallow depth of field, background softly out of focus. Photorealistic, no text, no logos, no signage, no visible brand names, no microphone, no interview setup, no readable writing.",
+  "generation_params_common": {
+    "aspect_ratio": "4:3",
+    "resolution": "2k",
+    "quality": "high",
+    "width": 2336,
+    "height": 1744
+  },
+  "images": [
+    {
+      "file": "persona-homeowner.png",
+      "description": "Homeowner persona — property owner examining a material sample in an unfinished home interior",
+      "prompt": "Neutral editorial documentary photograph, waist-up shot of a fictional adult homeowner, a woman in her forties with medium-brown skin tone and short natural curly hair, wearing a simple heather-gray sweater, standing in an unfinished home interior with exposed stud framing and stacked material samples (tile squares, wood flooring planks, paint swatches) on a folding table beside her. She is calmly examining a tile sample held in her hand, quiet neutral expression, natural unposed body language, looking down at the sample rather than at camera. Soft natural daylight from an unseen window, gentle diffused shadows, no flash, no studio lighting rig visible. Cool restrained editorial color palette: ivory-white walls, slate-gray exposed framing and shadows, warm honey wood tones in the flooring samples, muted blue-gray fabric tones. Shot on a full-frame camera with an 85mm lens, shallow depth of field, background softly out of focus. Photorealistic, documentary-style candid photography, no text, no logos, no signage, no visible brand names, no microphone, no interview setup, no clipboard with visible writing, no exaggerated pose, calm and ordinary moment.",
+      "reference_image": null,
+      "job_id": "333e2dd3-4ae0-4150-9be3-d05e7fc4398b",
+      "created_at": "2026-09-15T19:30:15.894769Z",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_193015_333e2dd3-4ae0-4150-9be3-d05e7fc4398b.png",
+      "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_193015_333e2dd3-4ae0-4150-9be3-d05e7fc4398b_min.webp",
+      "width": 2336,
+      "height": 1744,
+      "format": "PNG",
+      "downloaded_bytes": 5401202,
+      "local_original": "out/case-study/generated-personas/persona-homeowner.png",
+      "published_asset": "case-study/assets/persona-homeowner.webp",
+      "published_dimensions": {
+        "width": 1600,
+        "height": 1195
+      },
+      "published_bytes": 145576
+    },
+    {
+      "file": "persona-contractor.png",
+      "description": "Contractor persona — trade professional reviewing a construction plan at a clean active renovation site",
+      "prompt": "Neutral editorial documentary photograph, waist-up shot of a fictional adult contractor, a man in his fifties with tan weathered skin, short graying hair, wearing a plain navy quarter-zip work jacket over a collared shirt, standing at a clean active renovation site with fresh drywall and a stepladder softly visible behind him. He is holding a rolled construction plan/blueprint in both hands, looking down at it with a calm focused expression, natural unposed body language, not looking at camera. Soft natural daylight from a large window, gentle diffused shadows, no flash, no studio lighting rig visible. Cool restrained editorial color palette: ivory-white walls, slate-gray tool belt and trim, warm honey wood tones in visible framing, muted blue-gray fabric tones. Shot on a full-frame camera with an 85mm lens, shallow depth of field, background softly out of focus. Photorealistic, documentary-style candid photography, no text, no logos, no signage, no visible brand names, no microphone, no interview setup, no readable writing on the plan, no exaggerated pose, calm and ordinary moment.",
+      "reference_image": "persona-homeowner.png (passed as --image for style consistency)",
+      "reference_job_id": "333e2dd3-4ae0-4150-9be3-d05e7fc4398b",
+      "job_id": "cd78035c-5008-4ab9-bafc-c779291f8a79",
+      "created_at": "2026-09-15T19:32:45.027447Z",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_193245_cd78035c-5008-4ab9-bafc-c779291f8a79.png",
+      "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_193245_cd78035c-5008-4ab9-bafc-c779291f8a79_min.webp",
+      "width": 2336,
+      "height": 1744,
+      "format": "PNG",
+      "downloaded_bytes": 5490076,
+      "local_original": "out/case-study/generated-personas/persona-contractor.png",
+      "published_asset": "case-study/assets/persona-contractor.webp",
+      "published_dimensions": {
+        "width": 1600,
+        "height": 1195
+      },
+      "published_bytes": 88514
+    },
+    {
+      "file": "persona-supplier.png",
+      "description": "Supplier persona — building-material supplier staff examining a material order in a showroom/warehouse",
+      "prompt": "Neutral editorial documentary photograph, waist-up shot of a fictional adult building-material supplier staff member, a woman in her thirties with East Asian features, dark hair pulled back, wearing a simple charcoal work apron over a plain shirt, standing in a material supplier showroom/warehouse with shelved stone and tile slabs softly visible behind her. She is calmly examining a material order sheet/sample board held in her hands, quiet neutral expression, natural unposed body language, looking down at the sample rather than at camera. Soft natural daylight mixed with even warehouse lighting, gentle diffused shadows, no flash, no studio lighting rig visible. Cool restrained editorial color palette: ivory-white walls, slate-gray shelving, warm honey wood tones in wood samples, muted blue-gray fabric tones. Shot on a full-frame camera with an 85mm lens, shallow depth of field, background softly out of focus. Photorealistic, documentary-style candid photography, no text, no logos, no signage, no visible brand names, no microphone, no interview setup, no readable writing, no exaggerated pose, calm and ordinary moment.",
+      "reference_image": "persona-homeowner.png (passed as --image for style consistency)",
+      "reference_job_id": "333e2dd3-4ae0-4150-9be3-d05e7fc4398b",
+      "job_id": "b9e037a9-34dc-4b7e-b2b5-7f9c7b96935e",
+      "created_at": "2026-09-15T19:32:53.042925Z",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_193253_b9e037a9-34dc-4b7e-b2b5-7f9c7b96935e.png",
+      "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_193253_b9e037a9-34dc-4b7e-b2b5-7f9c7b96935e_min.webp",
+      "width": 2336,
+      "height": 1744,
+      "format": "PNG",
+      "downloaded_bytes": 5573639,
+      "local_original": "out/case-study/generated-personas/persona-supplier.png",
+      "published_asset": "case-study/assets/persona-supplier.webp",
+      "published_dimensions": {
+        "width": 1600,
+        "height": 1195
+      },
+      "published_bytes": 114070
+    }
+  ]
+}

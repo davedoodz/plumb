@@ -1,0 +1,60 @@
+{
+  "generator": "Higgsfield CLI — GPT Image 2 (job_type: gpt_image_2, backend model: videotape-alpha)",
+  "generated_at": "2026-09-15T18:59:04Z",
+  "account": "davidkhanhlafond@gmail.com (plus plan)",
+  "shared_art_direction": "Precision architectural axonometric model illustration, editorial technical-diagram style rendered in three dimensions. Clean isometric/axonometric 3D cutaway construction, soft ambient-occlusion shading, refined matte material surfaces (wood, tile, stone, metal, painted drywall), quiet elegant studio lighting with a single soft directional key light and gentle contact shadows. Cool restrained palette: ivory-white background #fafcfd, slate #334155 for structural lines and framing, muted desaturated blue-gray secondary tones for volumes and fills, small precise clay-orange #d9552b accents used sparingly only on focal decision points or highlighted nodes. Absolutely no text, no typography, no numerals, no logos, no UI chrome, no icons with letters, no watermarks. Generous negative space, premium enterprise case-study illustration aesthetic, thin uniform line weight, subtle grain, high production polish, physically plausible architectural proportions.",
+  "generation_params_common": {
+    "aspect_ratio": "3:2",
+    "resolution": "2k",
+    "quality": "high",
+    "background": "opaque",
+    "width": 2048,
+    "height": 1360
+  },
+  "images": [
+    {
+      "file": "hero.png",
+      "description": "Hero renovation cutaway with material components and decision cards",
+      "prompt": "Precision architectural axonometric model illustration, editorial technical-diagram style rendered in three dimensions. Clean isometric/axonometric 3D cutaway construction, soft ambient-occlusion shading, refined matte material surfaces (wood, tile, stone, metal, painted drywall), quiet elegant studio lighting with a single soft directional key light and gentle contact shadows. Cool restrained palette: ivory-white background #fafcfd, slate #334155 for structural lines and framing, muted desaturated blue-gray secondary tones for volumes and fills, small precise clay-orange #d9552b accents used sparingly only on focal decision points or highlighted nodes. Absolutely no text, no typography, no numerals, no logos, no UI chrome, no icons with letters, no watermarks. Generous negative space, premium enterprise case-study illustration aesthetic, thin uniform line weight, subtle grain, high production polish, physically plausible architectural proportions.\n\nScene: A single-family home bathroom renovation shown as an architectural cutaway model, one wall sliced open to reveal framing, pipe runs, and blocking behind the tile, the adjacent completed side showing finished tile, fixtures, and vanity. Floating around the cutaway, at consistent small scale, are blank rectangular material specification cards and material swatch chips (no text on them, just subtle texture and a thin colored edge), each connected to its matching surface by a thin slate guide line, like a technical spec diagram. One central card and its connecting line are picked out in the clay-orange accent color to mark an active decision point. Camera: elevated three-quarter axonometric view, composition centered with generous margin. Aspect 3:2.",
+      "reference_image": null,
+      "job_id": "2d0e8bca-79fe-41ff-87e0-1877cc7a1b97",
+      "created_at": "2026-09-15T18:59:04.041585Z",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_185904_2d0e8bca-79fe-41ff-87e0-1877cc7a1b97.png",
+      "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_185904_2d0e8bca-79fe-41ff-87e0-1877cc7a1b97_min.webp",
+      "width": 2048,
+      "height": 1360,
+      "format": "PNG",
+      "downloaded_bytes": 3928289
+    },
+    {
+      "file": "fragmentation.png",
+      "description": "Fragmented procurement — samples, emails, invoices scattered around the room",
+      "prompt": "Precision architectural axonometric model illustration, editorial technical-diagram style rendered in three dimensions. Clean isometric/axonometric 3D cutaway construction, soft ambient-occlusion shading, refined matte material surfaces (wood, tile, stone, metal, painted drywall), quiet elegant studio lighting with a single soft directional key light and gentle contact shadows. Cool restrained palette: ivory-white background #fafcfd, slate #334155 for structural lines and framing, muted desaturated blue-gray secondary tones for volumes and fills, small precise clay-orange #d9552b accents used sparingly only on focal decision points or highlighted nodes. Absolutely no text, no typography, no numerals, no logos, no UI chrome, no icons with letters, no watermarks. Generous negative space, premium enterprise case-study illustration aesthetic, thin uniform line weight, subtle grain, high production polish, physically plausible architectural proportions.\n\nScene: The same architectural axonometric rendering style, but depicting procurement chaos instead of order. A single small kitchen renovation room model sits off-center, surrounded by a loose scatter of disconnected floating objects at irregular angles and inconsistent scales: stray material sample chips, a small stack of paper invoices, a handful of blank envelope and message-card shapes suggesting scattered emails, isolated tile and stone swatches, a loose measuring tape coil. None of these objects are connected to each other or to the room by any line — the composition should read as fragmented and disorganized, with awkward gaps and overlaps instead of the tidy radial order of a spec system. Palette stays muted blue-gray and slate, with only two or three of the scattered objects picked out in the clay-orange accent to suggest isolated, unresolved decisions. Camera: elevated three-quarter axonometric view matching the same lighting and material rendering as the reference image. Aspect 3:2.",
+      "reference_image": "hero.png (passed as --image for style consistency)",
+      "reference_job_id": "2d0e8bca-79fe-41ff-87e0-1877cc7a1b97",
+      "job_id": "a82f412c-84e5-44b7-a83b-77e115a95603",
+      "created_at": "2026-09-15T19:01:04.857493Z",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_190104_a82f412c-84e5-44b7-a83b-77e115a95603.png",
+      "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_190104_a82f412c-84e5-44b7-a83b-77e115a95603_min.webp",
+      "width": 2048,
+      "height": 1360,
+      "format": "PNG",
+      "downloaded_bytes": 3732294
+    },
+    {
+      "file": "spec-system.png",
+      "description": "Connected Spec/owner-trade-supplier system — central room/spec surrounded by linked material objects",
+      "prompt": "Precision architectural axonometric model illustration, editorial technical-diagram style rendered in three dimensions. Clean isometric/axonometric 3D cutaway construction, soft ambient-occlusion shading, refined matte material surfaces (wood, tile, stone, metal, painted drywall), quiet elegant studio lighting with a single soft directional key light and gentle contact shadows. Cool restrained palette: ivory-white background #fafcfd, slate #334155 for structural lines and framing, muted desaturated blue-gray secondary tones for volumes and fills, small precise clay-orange #d9552b accents used sparingly only on focal decision points or highlighted nodes. Absolutely no text, no typography, no numerals, no logos, no UI chrome, no icons with letters, no watermarks. Generous negative space, premium enterprise case-study illustration aesthetic, thin uniform line weight, subtle grain, high production polish, physically plausible architectural proportions.\n\nScene: The same architectural axonometric rendering style, now depicting an organized connected system instead of chaos. A single bathroom room-and-spec model sits at the exact center of the composition. Arranged in a clean radial ring around it are individual material and trade objects at consistent small scale — a tile sample, a faucet fixture, a pipe fitting, a paint swatch chip, a cabinet hardware pull, a light fixture — each one linked back to the central room by a thin precise slate guide line radiating outward like spokes, forming an orderly hub-and-spoke system. Two of the radiating nodes and their connector lines are picked out in the clay-orange accent color to mark verified, active decisions, while the rest remain in muted blue-gray and slate. Camera: elevated three-quarter axonometric view matching the same lighting and material rendering as the reference image. Aspect 3:2.",
+      "reference_image": "hero.png (passed as --image for style consistency)",
+      "reference_job_id": "2d0e8bca-79fe-41ff-87e0-1877cc7a1b97",
+      "job_id": "7f2f3e25-77e0-426d-91cf-9ab8bd4320c0",
+      "created_at": "2026-09-15T19:02:11.387763Z",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_190211_7f2f3e25-77e0-426d-91cf-9ab8bd4320c0.png",
+      "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_190211_7f2f3e25-77e0-426d-91cf-9ab8bd4320c0_min.webp",
+      "width": 2048,
+      "height": 1360,
+      "format": "PNG",
+      "downloaded_bytes": 3244694
+    }
+  ]
+}
