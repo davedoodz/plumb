@@ -1,0 +1,42 @@
+.v-notebook{--nb-stone:#e9e5dd;--nb-paper:#faf6ee;--nb-paper-2:#f2ecdd;--nb-paper-3:#ece4d2;--nb-clay:#bc542f;--nb-clay-dim:#c9825c;--nb-ink:#2f2a22;--nb-ink-soft:#6b6255;--nb-rule:#ddd0b8;background:var(--nb-stone)}
+.v-notebook-scene{position:absolute;inset:0;perspective:1800px}
+.v-notebook .nb-page-shadow{position:absolute;border-radius:6px;box-shadow:0 10px 20px rgba(40,28,16,.1)}
+.v-notebook .nb-page-shadow--far{background:var(--nb-paper-3)}
+.v-notebook .nb-page-shadow--near{background:var(--nb-paper-2)}
+.v-notebook .nb-page{position:absolute;border-radius:6px;background:var(--nb-paper);border:1px solid #e7ddc9;box-shadow:0 20px 40px rgba(40,28,16,.22)}
+.v-notebook .nb-title{position:absolute;font-family:Georgia,"Times New Roman",serif;color:var(--nb-ink);font-size:25px;line-height:1.22;font-weight:400}
+.v-notebook .nb-meta{position:absolute;font-family:Menlo,Monaco,"SF Mono",monospace;color:var(--nb-ink-soft);font-size:13px;letter-spacing:.05em;text-transform:uppercase}
+.v-notebook .nb-rule{position:absolute;height:1px;background:var(--nb-rule)}
+.v-notebook .nb-tab{position:absolute;display:flex;align-items:center;justify-content:center;background:#efe7d6;border:1px solid #ddd0b5;border-left:none;border-radius:0 7px 7px 0;box-shadow:2px 3px 8px rgba(40,28,16,.12)}
+.v-notebook .nb-tab span{font-family:Menlo,Monaco,monospace;font-size:13px;letter-spacing:.06em;color:var(--nb-ink-soft);writing-mode:vertical-rl;text-orientation:mixed}
+.v-notebook .nb-tab.is-active{background:var(--nb-clay);border-color:var(--nb-clay)}
+.v-notebook .nb-tab.is-active span{color:#fff4ec}
+.v-notebook .nb-tab-glide{position:absolute;width:15px;height:15px;border-radius:50%;background:var(--nb-clay);box-shadow:0 0 0 7px rgba(188,84,47,.16)}
+.v-notebook .nb-sheet{position:absolute;background:var(--nb-paper);border-top:2px solid var(--nb-clay);border-radius:16px 16px 0 0;box-shadow:0 -16px 32px rgba(40,28,16,.22);overflow:hidden}
+.v-notebook .nb-handle{width:52px;height:5px;border-radius:3px;background:var(--nb-clay);opacity:.5;margin:12px auto 0}
+.v-notebook .nb-sheet-label{font-family:Georgia,serif;font-style:italic;font-size:19px;color:var(--nb-ink);padding:12px 26px 0}
+.v-notebook .nb-sheet-body{padding:8px 26px 22px}
+.v-notebook .nb-tag{position:absolute;background:var(--nb-paper);border:1px solid var(--nb-clay);border-radius:4px;padding:9px 13px;font-family:Menlo,Monaco,monospace;font-size:13px;color:var(--nb-ink);box-shadow:0 8px 16px rgba(40,28,16,.2);max-width:300px}
+.v-notebook .nb-tag::before{content:"";position:absolute;left:8px;top:-5px;width:8px;height:8px;border-radius:50%;background:var(--nb-clay)}
+.v-notebook .nb-tag strong{display:block;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:16px;font-weight:600;margin-bottom:3px;letter-spacing:0}
+.v-notebook .nb-hotspot{position:absolute;border-radius:50%;border:2px solid var(--nb-clay);background:rgba(188,84,47,.16)}
+.v-notebook .nb-flag{position:absolute;font-family:Menlo,Monaco,monospace;font-size:13px;color:#8a3418;background:#fbe6da;border:1px solid var(--nb-clay);border-radius:5px;padding:7px 11px;box-shadow:0 6px 14px rgba(40,28,16,.16)}
+.v-notebook .nb-track{position:absolute;border-radius:4px;background:#e1d6bf}
+.v-notebook .nb-track-fill{position:absolute;border-radius:4px;background:var(--nb-clay-dim)}
+.v-notebook .nb-track-dot{position:absolute;border-radius:50%;background:var(--nb-clay);box-shadow:0 4px 10px rgba(40,28,16,.32)}
+.v-notebook .nb-flip-face{border-radius:7px;overflow:hidden}
+.v-notebook .nb-card{background:var(--nb-paper);border:1px solid #e2d6bd;border-radius:9px;box-shadow:0 14px 26px rgba(40,28,16,.2)}
+.v-notebook .nb-highlight{position:absolute;background:rgba(188,84,47,.26);border-radius:2px}
+.v-notebook .nb-body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;font-size:19px;line-height:1.5;color:var(--nb-ink)}
+.v-notebook .nb-caption{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:15px;color:var(--nb-ink-soft)}
+.v-notebook .nb-detail{font-family:Georgia,serif;font-style:italic;font-size:16px;color:var(--nb-ink-soft);line-height:1.42}
+.v-notebook .nb-result{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:18px;font-weight:650;color:var(--nb-clay)}
+.v-notebook .nb-index{font-family:Menlo,Monaco,monospace;font-size:13px;color:var(--nb-ink-soft);letter-spacing:.04em}
+.v-notebook .variant-action{background:var(--nb-clay);border-radius:9px;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+.v-notebook .variant-action.is-active{background:#e7d9c8;color:var(--nb-clay)}
+.v-notebook .variant-fact{border-color:var(--nb-rule)}
+.v-notebook .variant-fact>span{font-family:Menlo,Monaco,monospace;font-size:13px;letter-spacing:.03em;color:var(--nb-ink-soft);text-transform:uppercase}
+.v-notebook .variant-fact strong{font-family:-apple-system,BlinkMacSystemFont,sans-serif;color:var(--nb-ink);font-weight:600}
+.v-notebook .nb-ledger .variant-fact strong{font-family:Menlo,Monaco,monospace;font-variant-numeric:tabular-nums;font-weight:500}
+.v-notebook .nb-ledger .variant-fact.is-picked strong{color:var(--nb-clay);font-weight:700}
+.v-notebook .nb-chip{display:inline-block;font-family:Menlo,Monaco,monospace;font-size:13px;letter-spacing:.03em;color:var(--nb-ink-soft);background:#efe7d6;border-radius:5px;padding:4px 8px}

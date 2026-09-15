@@ -25,6 +25,8 @@
     "lint": "eslint src && tsc",
     "render": "remotion render src/index.ts Takeoff out/takeoff-75s.mp4 --codec=h264 --crf=16 --pixel-format=yuv420p --muted",
     "render:social": "remotion render src/index.ts Substitution out/takeoff-substitution-12s.mp4 --codec=h264 --crf=16 --pixel-format=yuv420p --muted",
+    "render:transparent": "remotion render src/index.ts Takeoff out/takeoff-75s-transparent.webm --props='{\"background\":\"transparent\"}' --codec=vp9 --image-format=png --pixel-format=yuva420p --crf=18 --muted",
+    "render:white": "remotion render src/index.ts Takeoff out/takeoff-75s-white.mp4 --props='{\"background\":\"white\"}' --codec=h264 --crf=16 --pixel-format=yuv420p --muted",
     "finalize": "node finalize.mjs"
   },
   "sideEffects": [

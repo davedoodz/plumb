@@ -1,0 +1,545 @@
+{
+  "directions": [
+    {
+      "id": "conversation",
+      "name": "Conversation",
+      "summary": "Inline decisions with expandable source receipts.",
+      "accent": "#315d8b",
+      "surface": "#edf2f7"
+    },
+    {
+      "id": "canvas",
+      "name": "Evidence canvas",
+      "summary": "Spatial evidence and direct manipulation into a Spec.",
+      "accent": "#465cce",
+      "surface": "#e9ecf5"
+    },
+    {
+      "id": "guide",
+      "name": "Decision guide",
+      "summary": "One consequential choice per step, with explicit confirmation.",
+      "accent": "#087966",
+      "surface": "#e6f2ee"
+    },
+    {
+      "id": "workspace",
+      "name": "Team workspace",
+      "summary": "A shared register with ownership, change previews, and an inspector.",
+      "accent": "#815127",
+      "surface": "#eeeff0"
+    },
+    {
+      "id": "notebook",
+      "name": "Field notebook",
+      "summary": "Media-first project pages with annotations and pull-up details.",
+      "accent": "#bc542f",
+      "surface": "#e9e5dd"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "capture",
+      "slug": "01-room-to-spec",
+      "title": "A room becomes a Spec",
+      "question": "Keep this wall with the vanity decision.",
+      "asset": "room",
+      "source": "Maya · site photo · Sep 12",
+      "rows": [
+        {
+          "label": "Spec",
+          "value": "Vanity"
+        },
+        {
+          "label": "Room",
+          "value": "Bathroom"
+        },
+        {
+          "label": "Reference",
+          "value": "Site photograph"
+        }
+      ],
+      "action": "Attach to Spec",
+      "result": "Room photo attached to Vanity",
+      "detail": "The source stays with the Spec. No dimensions inferred.",
+      "status": "confirmed",
+      "ux": [
+        "Expand the photo receipt inline, then attach it to the conversation’s Spec.",
+        "Drag the room photograph onto a Vanity Spec node; a source link remains.",
+        "Choose the photo, select Vanity as its destination, then confirm the attachment.",
+        "Select the Vanity row and add the photo in its source inspector.",
+        "Lift the site-photo page to reveal a Spec tab, then pin the photo to it."
+      ],
+      "index": 0,
+      "seconds": 12
+    },
+    {
+      "id": "prompt",
+      "slug": "02-next-useful-question",
+      "title": "The next useful question",
+      "question": "What should we resolve before booking delivery?",
+      "asset": "entry",
+      "source": "Delivery access · not yet confirmed",
+      "rows": [
+        {
+          "label": "Entry",
+          "value": "Four visible steps"
+        },
+        {
+          "label": "Packed dimensions",
+          "value": "Not confirmed"
+        },
+        {
+          "label": "Next dependency",
+          "value": "Check crate access"
+        }
+      ],
+      "action": "Check delivery access",
+      "result": "Packed dimensions question prepared",
+      "detail": "A useful next action clears a dependency; no supplier answer is invented.",
+      "status": "draft",
+      "ux": [
+        "Select an inline next-action suggestion and reveal why it is blocking delivery.",
+        "Connect the delivery task to the access photo to expose the missing dimension.",
+        "Eliminate non-blocking choices, then choose the access check.",
+        "Filter the register to blockers and open the delivery-access task.",
+        "Swipe to the entry page and pull up its unresolved delivery question."
+      ],
+      "index": 1,
+      "seconds": 12
+    },
+    {
+      "id": "recall",
+      "slug": "03-recall-the-decision",
+      "title": "Recall the decision",
+      "question": "Why did we choose the blue-green tile?",
+      "asset": "sample",
+      "source": "Sam · approved Sep 12 · window light",
+      "rows": [
+        {
+          "label": "Finish",
+          "value": "Blue-green gloss"
+        },
+        {
+          "label": "Approved by",
+          "value": "Sam"
+        },
+        {
+          "label": "Reason",
+          "value": "Worked with the room in daylight"
+        }
+      ],
+      "action": "Open decision source",
+      "result": "Approval and daylight source recalled",
+      "detail": "Recall preserves who chose it and why, not an entire chat replay.",
+      "status": "confirmed",
+      "ux": [
+        "Open a cited material decision directly from the assistant’s answer.",
+        "Follow the tile-to-approval connection on the evidence board.",
+        "Narrow room, material, then decision to recover the reason.",
+        "Filter approved materials and inspect the tile’s decision history.",
+        "Swipe the material index to the sample page, then turn up the approval note."
+      ],
+      "index": 2,
+      "seconds": 12
+    },
+    {
+      "id": "walkthrough",
+      "slug": "04-walkthrough-in-context",
+      "title": "Keep the walkthrough in context",
+      "question": "What does Dev need to check around the vanity?",
+      "asset": "room",
+      "video": "room",
+      "source": "Maya · site walkthrough · Sep 12",
+      "rows": [
+        {
+          "label": "Reference",
+          "value": "5-second walkthrough"
+        },
+        {
+          "label": "Question for",
+          "value": "Dev · installer"
+        },
+        {
+          "label": "Clearance",
+          "value": "Measurement required"
+        }
+      ],
+      "action": "Keep as context",
+      "result": "Walkthrough pinned beside the question",
+      "detail": "The video locates the question. Dev still needs to measure on site.",
+      "status": "draft",
+      "ux": [
+        "Collapse the playing video into a compact citation inside the reply.",
+        "Drag the video tile beside the installer-question node.",
+        "Review the footage, choose the question, then retain the reference.",
+        "Open the walkthrough from an evidence cell while the inspector stays available.",
+        "Scrub the site video, then pull a question sheet up over the preserved media."
+      ],
+      "index": 3,
+      "seconds": 12
+    },
+    {
+      "id": "quantity",
+      "slug": "05-layout-changes-the-order",
+      "title": "Layout changes the order",
+      "question": "What changes if we choose herringbone?",
+      "asset": "sample",
+      "source": "Maya · user-entered area · verify on site",
+      "rows": [
+        {
+          "label": "Entered area",
+          "value": "61 ft²"
+        },
+        {
+          "label": "Coverage",
+          "value": "10.5 ft² / box"
+        },
+        {
+          "label": "Straight +10%",
+          "value": "7 boxes · $1,397"
+        },
+        {
+          "label": "Herringbone +15%",
+          "value": "8 boxes · $1,596"
+        }
+      ],
+      "action": "Choose herringbone",
+      "result": "8 boxes · $1,596",
+      "detail": "Herringbone includes a separate +1 box layout allowance after waste rounding.",
+      "status": "confirmed",
+      "ux": [
+        "Toggle layout within the answer and reveal the arithmetic receipt.",
+        "Swap the layout card attached to the quantity node; total updates in place.",
+        "Choose a layout, inspect waste and extra-box allowance, then confirm.",
+        "Edit the layout cell and review a seven-to-eight-box change in the inspector.",
+        "Swipe between layout sketches and pull up the order calculation."
+      ],
+      "index": 4,
+      "seconds": 12
+    },
+    {
+      "id": "sample",
+      "slug": "06-sample-in-daylight",
+      "title": "Judge the sample in daylight",
+      "question": "Does this finish work in the bathroom light?",
+      "asset": "sample",
+      "video": "sample",
+      "source": "Maya · sample video · Sep 12",
+      "rows": [
+        {
+          "label": "Material",
+          "value": "Blue-green glazed tile"
+        },
+        {
+          "label": "Light",
+          "value": "Window daylight"
+        },
+        {
+          "label": "Decision",
+          "value": "Finish only"
+        }
+      ],
+      "action": "Approve finish",
+      "result": "Finish approved with daylight evidence",
+      "detail": "A finish approval is not a slip-rating or installation approval.",
+      "status": "confirmed",
+      "ux": [
+        "Play the sample in the conversation, expand room context, then approve finish.",
+        "Place sample and room images beside each other and connect the chosen finish.",
+        "Inspect light, compare room context, then make the finish decision.",
+        "Compare the sample’s evidence in an inspector and update finish status.",
+        "Swipe between sample video and room photo, then mark the daylight note approved."
+      ],
+      "index": 5,
+      "seconds": 12
+    },
+    {
+      "id": "quote",
+      "slug": "07-words-become-a-field",
+      "title": "Installer words become a field",
+      "question": "Save Dev’s start date without losing the condition.",
+      "asset": "room",
+      "source": "Dev · call transcript · Sep 13",
+      "rows": [
+        {
+          "label": "Start window",
+          "value": "Week of Oct 12"
+        },
+        {
+          "label": "Condition",
+          "value": "Vanity must be on site"
+        },
+        {
+          "label": "Attribution",
+          "value": "Dev · call transcript"
+        }
+      ],
+      "action": "Save start condition",
+      "result": "Start window saved with its condition",
+      "detail": "“We can start the week of October 12, once the vanity is on site.”",
+      "status": "confirmed",
+      "ux": [
+        "Select the transcript phrase and accept an inline structured-field suggestion.",
+        "Drag the highlighted quote into a start-window node; keep the source line.",
+        "Review the extracted date, retain the dependency, then save both.",
+        "Select transcript text in the inspector and apply the conditional date to the row.",
+        "Highlight Dev’s words on a notebook page and pin a dated field beneath them."
+      ],
+      "index": 6,
+      "seconds": 12
+    },
+    {
+      "id": "clearance",
+      "slug": "08-confirm-the-clearance",
+      "title": "Confirm—not guess—the clearance",
+      "question": "Which entry dimension has actually been measured?",
+      "asset": "entry",
+      "source": "Dev · measured on site · Sep 13",
+      "rows": [
+        {
+          "label": "Door opening",
+          "value": "760 mm · Dev measured"
+        },
+        {
+          "label": "Landing depth",
+          "value": "Not confirmed"
+        },
+        {
+          "label": "Evidence",
+          "value": "Photo annotation + site note"
+        }
+      ],
+      "action": "Inspect measured note",
+      "result": "760 mm confirmed; landing stays unknown",
+      "detail": "The photograph locates the note. It does not generate a measurement.",
+      "status": "pending",
+      "ux": [
+        "Open a measurement citation and separate confirmed from unknown dimensions.",
+        "Select the door hotspot to reveal its linked measurement note.",
+        "Identify the door, inspect Dev’s source, then leave the landing unresolved.",
+        "Inspect measurement provenance while the unconfirmed cell remains empty.",
+        "Tap the doorway annotation and pull up Dev’s measured note over the photo."
+      ],
+      "index": 7,
+      "seconds": 12
+    },
+    {
+      "id": "leadtime",
+      "slug": "09-see-the-schedule-risk",
+      "title": "See the schedule risk",
+      "question": "Will this pendant arrive before the plumber?",
+      "asset": "pendant",
+      "source": "Demo lead time · confirm with supplier",
+      "rows": [
+        {
+          "label": "If ordered",
+          "value": "Sep 14"
+        },
+        {
+          "label": "Lead time",
+          "value": "8 weeks"
+        },
+        {
+          "label": "Estimated arrival",
+          "value": "Nov 9"
+        },
+        {
+          "label": "Plumber booked",
+          "value": "Oct 12"
+        }
+      ],
+      "action": "Compare the dates",
+      "result": "Estimated arrival is 28 days late",
+      "detail": "A schedule comparison, not a supplier delivery guarantee.",
+      "status": "pending",
+      "ux": [
+        "Expand the lead-time phrase into an inline date comparison.",
+        "Drag the arrival marker against the fixed plumber milestone.",
+        "Set order date, compare the booked visit, then review the 28-day conflict.",
+        "Switch the order row to timeline view and inspect the late-arrival delta.",
+        "Scrub a dated project strip to place the arrival after the plumber visit."
+      ],
+      "index": 8,
+      "seconds": 12
+    },
+    {
+      "id": "substitution",
+      "slug": "10-compare-with-an-unknown",
+      "title": "Compare with an honest unknown",
+      "question": "Does the brass alternative meet the Spec?",
+      "asset": "pendant",
+      "source": "Alternative listing · colour temperature absent",
+      "rows": [
+        {
+          "label": "Drop",
+          "value": "18 in · matches"
+        },
+        {
+          "label": "Finish",
+          "value": "Brass · matches"
+        },
+        {
+          "label": "Target colour temp",
+          "value": "2700 K"
+        },
+        {
+          "label": "Alternative colour temp",
+          "value": ""
+        }
+      ],
+      "action": "Ask about colour temp",
+      "result": "Supplier question prepared · no reply yet",
+      "detail": "Keep the missing value blank. Do not claim the alternative meets 2700 K.",
+      "status": "draft",
+      "ux": [
+        "Reveal a compact comparison under the answer and turn the empty field into a question.",
+        "Link matching attributes but leave the colour-temperature connection visibly open.",
+        "Pass the known matches, pause at the unknown, and prepare the supplier question.",
+        "Compare specified and alternative columns; open the empty cell’s question action.",
+        "Flip the pendant reference to its comparison note and flag the empty temperature field."
+      ],
+      "index": 9,
+      "seconds": 12
+    },
+    {
+      "id": "signoff",
+      "slug": "11-two-kinds-of-approval",
+      "title": "Two kinds of approval",
+      "question": "Who still needs to approve this change?",
+      "asset": "pendant",
+      "source": "Dev · installation / Sam · budget",
+      "rows": [
+        {
+          "label": "Installation fit",
+          "value": "Dev"
+        },
+        {
+          "label": "Budget change",
+          "value": "+$412"
+        },
+        {
+          "label": "Budget approval",
+          "value": "Sam"
+        }
+      ],
+      "action": "Approve budget change",
+      "result": "Dev confirmed fit · Sam approved +$412",
+      "detail": "Two separate responsibilities. This is not checkout or a charge.",
+      "status": "confirmed",
+      "ux": [
+        "Open Dev’s fit receipt, then request and confirm Sam’s separate budget approval.",
+        "Connect two role-specific approval nodes to the same change.",
+        "Review installation first, then confirm the budget responsibility in a second step.",
+        "Resolve Dev and Sam in separate owner columns with a visible audit trail.",
+        "Turn between Dev’s site check and Sam’s budget note; keep both signatures."
+      ],
+      "index": 10,
+      "seconds": 12
+    },
+    {
+      "id": "delivery",
+      "slug": "12-the-last-four-steps",
+      "title": "The last four steps",
+      "question": "What should the delivery team know about this entry?",
+      "asset": "entry",
+      "source": "Maya · manual access note · Sep 12",
+      "rows": [
+        {
+          "label": "Steps",
+          "value": "4 · counted manually"
+        },
+        {
+          "label": "Landing",
+          "value": "Narrow"
+        },
+        {
+          "label": "Packed dimensions",
+          "value": "Supplier confirmation needed"
+        }
+      ],
+      "action": "Attach access note",
+      "result": "Four-step access note attached",
+      "detail": "The photo and manual note stay with delivery instructions.",
+      "status": "confirmed",
+      "ux": [
+        "Attach the entry photo and write the access note within the order conversation.",
+        "Drag the access photo and four-step note onto the delivery task.",
+        "Inspect the entry, enter the manual note, then attach it to delivery.",
+        "Edit the delivery-access cell and pin its supporting photo in the inspector.",
+        "Annotate the visible steps on the entry page and fold the note into delivery."
+      ],
+      "index": 11,
+      "seconds": 12
+    },
+    {
+      "id": "installerpack",
+      "slug": "13-handoff-with-evidence",
+      "title": "Handoff with the evidence",
+      "question": "Prepare Dev’s pack without hiding unresolved details.",
+      "asset": "room",
+      "source": "Confirmed Specs · draft installer pack",
+      "rows": [
+        {
+          "label": "Tile",
+          "value": "8 boxes"
+        },
+        {
+          "label": "Vanity",
+          "value": "1"
+        },
+        {
+          "label": "Mirror width",
+          "value": "Unresolved"
+        }
+      ],
+      "action": "Prepare installer pack",
+      "result": "Installer pack drafted · not sent",
+      "detail": "Only confirmed Specs are included; unresolved mirror width is called out.",
+      "status": "draft",
+      "ux": [
+        "Choose the confirmed Specs in chat and expand a cited pack preview.",
+        "Gather confirmed Spec nodes into a pack, leaving an unresolved note visible.",
+        "Select confirmed items, review the unresolved note, then prepare the draft.",
+        "Bulk-select confirmed rows and inspect the generated handoff document.",
+        "Bookmark confirmed pages into a pack and turn to the draft cover."
+      ],
+      "index": 12,
+      "seconds": 12
+    },
+    {
+      "id": "receipt",
+      "slug": "14-after-the-order",
+      "title": "Keep evidence after the order",
+      "question": "What evidence do we need before asking for a return?",
+      "asset": "pendant",
+      "source": "Order receipt · supplier terms not confirmed",
+      "rows": [
+        {
+          "label": "Receipt",
+          "value": "Pendant order"
+        },
+        {
+          "label": "Evidence",
+          "value": "Receipt attached"
+        },
+        {
+          "label": "Return eligibility",
+          "value": "Supplier confirmation needed"
+        }
+      ],
+      "action": "Check return requirements",
+      "result": "Return question prepared · refund not issued",
+      "detail": "Receipt capture does not establish eligibility or trigger a refund.",
+      "status": "pending",
+      "ux": [
+        "Open the receipt citation and prepare the return question in the order thread.",
+        "Connect the receipt to the order while the return-condition node stays unresolved.",
+        "Attach proof, check the missing policy, then prepare—not submit—a return request.",
+        "Attach the receipt to the order row and inspect unresolved return requirements.",
+        "File the receipt behind the pendant page and flag the return-policy question."
+      ],
+      "index": 13,
+      "seconds": 12
+    }
+  ]
+}

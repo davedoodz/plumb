@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "scope": ["src/chat", "src/Root.tsx", "finalize-chat.mjs", "render-chat.mjs"],
+  "prompt": "prompts/astra-chat-ui-variants.md",
+  "reviewers": ["TimingReview", "LayoutReview"],
+  "applied": [
+    "Room plan now preserves the 2.7:2.1 aspect ratio.",
+    "Plumber reference line remains visible above crossing delivery bars.",
+    "Mirror lane draws from left to right with the other bars.",
+    "Verification extracts each scene-label window; browser checks show labels disappear at exactly 36 frames.",
+    "Verification measures the final hold while tolerating negligible H.264 compression drift.",
+    "Browser playback exposed washed-out full-range JPEG-derived video. The reproducible render command now uses PNG frames and limited-range BT.709; format verification enforces these settings."
+  ],
+  "declined": [
+    {"suggestion": "Round herringbone area to 70 square feet", "reason": "Keep the exact derived 70.15 square feet and the explicitly separate box allowance; cosmetic rounding is not required by the prompt."},
+    {"suggestion": "Move sample tap earlier", "reason": "Preserve reading time for the material image and delivery information rather than replacing it with a longer empty chip hold."},
+    {"suggestion": "Move order rows later", "reason": "The final 55–58 second hold is intact; the preceding settled reading time does not violate the prompt."},
+    {"suggestion": "Bottom-anchor all messages", "reason": "An unverified stylistic preference, not a demonstrated defect. It would move the whole thread during card growth and collapse, changing the reference's stable top-anchored composition."}
+  ],
+  "verification": ["npm run lint", "node render-chat.mjs", "Headless scene and label boundary checks", "Headless playback and decoded background-color checks"],
+  "evidence": ["out/chat-verification.json", "out/chat-browser-verification.json", "out/chat-review"],
+  "visualAcceptance": "Needs David's eye; not marked shipped",
+  "unchanged": ["Existing 75-second and 12-second compositions and exports", "Pre-existing README, package.json and Composition.tsx edits", "Canonical Astra prompt"]
+}

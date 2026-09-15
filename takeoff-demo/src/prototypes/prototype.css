@@ -1,0 +1,317 @@
+.proto-stage {
+  background: #eeefec;
+  color: #242827;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+.proto-stage * {
+  box-sizing: border-box;
+}
+.proto-app {
+  position: absolute;
+  width: 420px;
+  height: 780px;
+  left: 277.5px;
+  top: 52.5px;
+  transform: scale(1.25);
+  transform-origin: top left;
+  background: #fff;
+  border: 1px solid #dedfdb;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 12px 38px #20282014;
+}
+.proto-header {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #efefec;
+  gap: 16px;
+}
+.proto-header > span {
+  font-size: 23px;
+  color: #7d8481;
+}
+.proto-header > div {
+  text-align: center;
+}
+.proto-header strong {
+  font-size: 17px;
+  font-weight: 600;
+}
+.proto-header strong span {
+  font-weight: 400;
+}
+.proto-header small {
+  display: block;
+  color: #89908c;
+  font-size: 10px;
+  margin-top: 3px;
+}
+.proto-content {
+  position: absolute;
+  inset: 91px 22px 88px;
+  overflow: hidden;
+}
+.proto-composer {
+  position: absolute;
+  bottom: 22px;
+  left: 20px;
+  right: 20px;
+  min-height: 46px;
+  border: 1px solid #e1e3df;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 11px;
+  color: #969c98;
+  font-size: 14px;
+  background: #fff;
+}
+.proto-composer > span:nth-child(2) {
+  flex: 1;
+}
+.proto-composer > span:first-child {
+  font-size: 23px;
+}
+.proto-composer .has-draft {
+  color: #272b29;
+}
+.proto-composer b {
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  background: #242827;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.proto-cursor {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  border: 1.5px solid #555d59;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px #0002;
+  z-index: 99;
+  pointer-events: none;
+}
+.proto-message {
+  font-size: 17px;
+  line-height: 1.45;
+  margin: 0 0 17px;
+  max-width: 100%;
+}
+.proto-message.user {
+  margin-left: auto;
+  max-width: 91%;
+  width: fit-content;
+  padding: 11px 15px;
+  background: #f1f2ef;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.proto-card {
+  background: white;
+  border: 1px solid #e0e3de;
+  border-radius: 17px;
+  padding: 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 2px #00000008;
+  overflow: hidden;
+}
+.proto-card h2 {
+  font-size: 17px;
+  line-height: 1.3;
+  margin: 0 0 15px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+.proto-eyebrow {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  color: #929892;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.proto-photo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.proto-button {
+  min-height: 42px;
+  border-radius: 23px;
+  background: #252b28;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  text-align: center;
+}
+.proto-button.secondary {
+  background: #eff1ed;
+  color: #37403b;
+}
+.proto-button.approved {
+  background: #e6efe7;
+  color: #2e7047;
+}
+.proto-chip {
+  padding: 11px 13px;
+  border-radius: 12px;
+  background: #f3f5f1;
+  color: #687269;
+  font-size: 12px;
+  border: 1px solid #e5e9e2;
+  margin-bottom: 12px;
+}
+.proto-chip.approved {
+  color: #2e7047;
+  background: #edf5ed;
+}
+.proto-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid #eff0ec;
+  font-size: 13px;
+}
+.proto-row > span {
+  color: #838b83;
+}
+.proto-row strong {
+  font-weight: 550;
+  text-align: right;
+}
+.proto-caption {
+  font-size: 11px;
+  line-height: 1.45;
+  color: #899188;
+  margin: 10px 0 14px;
+}
+.proto-caption.warning {
+  color: #c46840;
+}
+.proto-stage .row-actions {
+  display: flex;
+  gap: 9px;
+  margin-top: 14px;
+}
+.proto-stage .row-actions > * {
+  flex: 1;
+}
+.proto-stage .big-number {
+  font-size: 30px;
+  font-weight: 650;
+  letter-spacing: -0.05em;
+  font-variant-numeric: tabular-nums;
+}
+.proto-stage .small-label {
+  font-size: 11px;
+  color: #879086;
+}
+.proto-stage .source-note {
+  padding: 10px 12px;
+  background: #f6f6f2;
+  border-radius: 9px;
+  font-size: 11px;
+  line-height: 1.45;
+  color: #798277;
+  margin: 12px 0;
+}
+.proto-stage .section-label {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #899187;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.proto-stage .divider {
+  height: 1px;
+  background: #e7eae3;
+  margin: 14px 0;
+}
+.proto-stage .mini-photo {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.proto-stage .horizontal-list {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+}
+.proto-stage .choice {
+  border: 1px solid #e3e7df;
+  background: #f5f6f2;
+  border-radius: 12px;
+  padding: 13px;
+  font-size: 12px;
+}
+.proto-stage .selected {
+  border-color: #698172;
+  background: #edf2eb;
+}
+.proto-stage .blank {
+  border: 1px dashed #c46840;
+  border-radius: 5px;
+  min-width: 75px;
+  height: 23px;
+  display: inline-block;
+  background: #fffdf9;
+}
+.proto-stage .status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #818d81;
+  margin-right: 6px;
+}
+.proto-stage .approved-text {
+  color: #2e7047;
+}
+.proto-stage .document {
+  padding: 20px;
+  background: #fcfcf9;
+  border: 1px solid #e4e6de;
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 0 4px 10px #293a2610;
+}
+.proto-stage .document h3 {
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+.proto-stage .tab-strip {
+  display: flex;
+  gap: 6px;
+  margin: 12px 0;
+}
+.proto-stage .tab-strip > span {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  background: #f4f5f1;
+}
+.proto-stage .tab-strip > span.active {
+  background: #26312a;
+  color: #fff;
+}

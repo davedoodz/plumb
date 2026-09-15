@@ -1,4 +1,4 @@
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Sequence, useCurrentFrame } from "remotion";
 import { Ask, Composer, Keyboard } from "./scenes/Ask";
 import { Takeoff } from "./scenes/Takeoff";
 import { Sample, LeadTime } from "./scenes/Supply";
@@ -14,10 +14,26 @@ export const SCENES = [
   { at: 50, name: "Sign-off" },
   { at: 62, name: "Order thread" },
 ];
-export function TakeoffFilm({ social = false }: { social?: boolean }) {
+type FilmBackground = "dark" | "white" | "transparent";
+
+export function TakeoffFilm({
+  social = false,
+  background = "dark",
+}: {
+  social?: boolean;
+  background?: FilmBackground;
+}) {
   const frame = useCurrentFrame();
   const time = frame / 30 + (social ? 38 : 0);
-  if (time < 4) return <AbsoluteFill style={{ background: "#000" }} />;
+  const surface = background === "dark" ? "#000" : background;
+  if (!social && frame >= 1140 && frame < 1500) {
+    return (
+      <Sequence from={1140} durationInFrames={360}>
+        <SubstitutionFilm background={background} />
+      </Sequence>
+    );
+  }
+  if (time < 4) return <AbsoluteFill style={{ background: surface }} />;
   let index = SCENES.length - 1;
   while (index > 0 && time < SCENES[index].at) index--;
   const s = SCENES[index];
@@ -42,11 +58,17 @@ export function TakeoffFilm({ social = false }: { social?: boolean }) {
   return (
     <AbsoluteFill
       style={{
-        background: "#000",
+        background: surface,
         fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
       }}
     >
-      <div className="stage" style={{ opacity: 1 - fade }}>
+      <div
+        className="stage"
+        style={{
+          opacity: 1 - fade,
+          background: background === "dark" ? undefined : "transparent",
+        }}
+      >
         <div
           className="phone"
           style={{
@@ -116,4 +138,8 @@ export function TakeoffFilm({ social = false }: { social?: boolean }) {
     </AbsoluteFill>
   );
 }
-export const SubstitutionFilm = () => <TakeoffFilm social />;
+export const SubstitutionFilm = ({
+  background = "dark",
+}: {
+  background?: FilmBackground;
+}) => <TakeoffFilm social background={background} />;

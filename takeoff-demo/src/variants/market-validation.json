@@ -1,0 +1,1881 @@
+{
+  "requestedDocument": "plumb-market-validation.md",
+  "requestedDocumentLocated": true,
+  "basis": [
+    "/Users/david/Documents/Obsidian Vault/projects/plumb-market-validation.md",
+    "/Users/david/Projects/plumb/research_market_validation/synthesis_and_recommendations.md",
+    "/Users/david/Projects/plumb/research_market_validation/findings_contractor_workflow.md",
+    "/Users/david/Projects/plumb/research_market_validation/findings_supplier_perspective.md"
+  ],
+  "evidenceCaveats": [
+    "Exact Obsidian note reviewed in full; its market-validation verdict is a research claim, not observed adoption of these prototypes.",
+    "The note calls homeowner readiness validated but still asks whether homeowners trust agent commerce (lines 48–52, 125–132, 187–201). Test channel preference rather than assuming it.",
+    "AI adoption and click-to-call conversion do not establish willingness to order in chat (lines 23, 54–58).",
+    "Conversion figures are not return-rate measurements; design-build timeline statistics and the no-competitor claim do not establish Takeoff ROI (lines 21–25, 174)."
+  ],
+  "painDefinitions": [
+    {
+      "id": "duplicate-orders",
+      "name": "Duplicate-order prevention",
+      "source": "plumb-market-validation.md:66–70, 101–105",
+      "criterion": "Existing PO lookup and duplicate check before release; visible order history alone is insufficient."
+    },
+    {
+      "id": "approval-routing",
+      "name": "Attributed approval routing",
+      "source": "plumb-market-validation.md:35–38, 48–52",
+      "criterion": "Capture responsibility and cost before approval; preserve each role and decision."
+    },
+    {
+      "id": "delivery-visibility",
+      "name": "Delivery and receiving visibility",
+      "source": "plumb-market-validation.md:35, 39, 60–64, 119–123",
+      "criterion": "Fresh supplier ETA, status provenance, receiving ownership; planning dates and access notes are not live tracking."
+    },
+    {
+      "id": "cost-allocation",
+      "name": "Job and PO cost allocation",
+      "source": "findings_contractor_workflow.md:101-105",
+      "criterion": "Link receipts to job, PO, cost code and receiving record; a photo alone is insufficient."
+    },
+    {
+      "id": "return-drivers",
+      "name": "Quantity and specification return drivers",
+      "source": "plumb-market-validation.md:19–21, 33, 36",
+      "criterion": "Transparent quantities and waste, mismatch checks, return terms; no claim of reduced returns without a pilot."
+    },
+    {
+      "id": "spec-standardization",
+      "name": "Complete, source-aware specifications",
+      "source": "plumb-market-validation.md:36, 40–41",
+      "criterion": "Structured requirements, sources, preserved unknowns, supplier confirmation."
+    },
+    {
+      "id": "multi-party",
+      "name": "Multi-party agreement",
+      "source": "plumb-market-validation.md:17, 37–38",
+      "criterion": "Separate installation and budget decisions with attributed audit trail."
+    },
+    {
+      "id": "sample-integration",
+      "name": "Sample-to-order continuity",
+      "source": "plumb-market-validation.md:34, 121",
+      "criterion": "Link sample request, identity, evidence and approval to the order; daylight inspection alone does not request a sample."
+    }
+  ],
+  "entries": [
+    {
+      "id": "conversation-capture",
+      "direction": "conversation",
+      "concept": "capture",
+      "seconds": 12,
+      "filename": "01-room-to-spec-conversation.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Photo capture supports a Spec but does not establish dimensions, SKU, job code, or supplier confirmation.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-prompt",
+      "direction": "conversation",
+      "concept": "prompt",
+      "seconds": 12,
+      "filename": "02-next-useful-question-conversation.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Prioritizes an access question; no live order-status query, duplicate check, or supplier response.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-recall",
+      "direction": "conversation",
+      "concept": "recall",
+      "seconds": 12,
+      "filename": "03-recall-the-decision-conversation.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Recovers attributed approval; no revision conflict resolution or authoritative current order status.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        6,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-walkthrough",
+      "direction": "conversation",
+      "concept": "walkthrough",
+      "seconds": 12,
+      "filename": "04-walkthrough-in-context-conversation.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Retains visual context only; installer measurements and structured requirements still need confirmation.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-quantity",
+      "direction": "conversation",
+      "concept": "quantity",
+      "seconds": 12,
+      "filename": "05-layout-changes-the-order-conversation.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "demonstrated interaction",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Makes quantity assumptions inspectable; does not check existing POs, stock, or guarantee a waste factor.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        1
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-sample",
+      "direction": "conversation",
+      "concept": "sample",
+      "seconds": 12,
+      "filename": "06-sample-in-daylight-conversation.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Approves a finish using daylight evidence; sample requesting, SKU linkage, and conversion impact remain unproven.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        2
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-quote",
+      "direction": "conversation",
+      "concept": "quote",
+      "seconds": 12,
+      "filename": "07-words-become-a-field-conversation.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves the installer condition; does not resolve the delivery dependency or create an approved PO.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-clearance",
+      "direction": "conversation",
+      "concept": "clearance",
+      "seconds": 12,
+      "filename": "08-confirm-the-clearance-conversation.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Separates an attributed measurement from an unknown; no automatic code or installation certification.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-leadtime",
+      "direction": "conversation",
+      "concept": "leadtime",
+      "seconds": 12,
+      "filename": "09-see-the-schedule-risk-conversation.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Exposes a planning conflict, not live supplier ETA, tracking, freshness, or receiving confirmation.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        3
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-substitution",
+      "direction": "conversation",
+      "concept": "substitution",
+      "seconds": 12,
+      "filename": "10-compare-with-an-unknown-conversation.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves a missing supplier field; no supplier integration, stock verification, or completed approval.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        4,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-signoff",
+      "direction": "conversation",
+      "concept": "signoff",
+      "seconds": 12,
+      "filename": "11-two-kinds-of-approval-conversation.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "demonstrated interaction",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "demonstrated interaction",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Demonstrates distinct fit and budget decisions; permission enforcement, notifications, revision locking and duplicate checks remain unbuilt.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        6
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-delivery",
+      "direction": "conversation",
+      "concept": "delivery",
+      "seconds": 12,
+      "filename": "12-the-last-four-steps-conversation.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Documents access, not shipment status, receiving ownership, partial receipts, or damage checks.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-installerpack",
+      "direction": "conversation",
+      "concept": "installerpack",
+      "seconds": 12,
+      "filename": "13-handoff-with-evidence-conversation.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Draft handoff retains unresolved information; document delivery, version acknowledgement, job/PO linkage remain unbuilt.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        8,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "conversation-receipt",
+      "direction": "conversation",
+      "concept": "receipt",
+      "seconds": 12,
+      "filename": "14-after-the-order-conversation.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "supporting only",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Keeps receipt evidence; no job/cost-code assignment, three-way match, policy confirmation, or automatic refund.",
+      "directionRisk": "Channel hypothesis: keep phone/email or portal handoff possible. Research does not establish willingness to place orders through chat.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-capture",
+      "direction": "canvas",
+      "concept": "capture",
+      "seconds": 12,
+      "filename": "01-room-to-spec-canvas.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Photo capture supports a Spec but does not establish dimensions, SKU, job code, or supplier confirmation.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-prompt",
+      "direction": "canvas",
+      "concept": "prompt",
+      "seconds": 12,
+      "filename": "02-next-useful-question-canvas.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Prioritizes an access question; no live order-status query, duplicate check, or supplier response.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-recall",
+      "direction": "canvas",
+      "concept": "recall",
+      "seconds": 12,
+      "filename": "03-recall-the-decision-canvas.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Recovers attributed approval; no revision conflict resolution or authoritative current order status.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        6,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-walkthrough",
+      "direction": "canvas",
+      "concept": "walkthrough",
+      "seconds": 12,
+      "filename": "04-walkthrough-in-context-canvas.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Retains visual context only; installer measurements and structured requirements still need confirmation.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-quantity",
+      "direction": "canvas",
+      "concept": "quantity",
+      "seconds": 12,
+      "filename": "05-layout-changes-the-order-canvas.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "demonstrated interaction",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Makes quantity assumptions inspectable; does not check existing POs, stock, or guarantee a waste factor.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        1
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-sample",
+      "direction": "canvas",
+      "concept": "sample",
+      "seconds": 12,
+      "filename": "06-sample-in-daylight-canvas.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Approves a finish using daylight evidence; sample requesting, SKU linkage, and conversion impact remain unproven.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        2
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-quote",
+      "direction": "canvas",
+      "concept": "quote",
+      "seconds": 12,
+      "filename": "07-words-become-a-field-canvas.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves the installer condition; does not resolve the delivery dependency or create an approved PO.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-clearance",
+      "direction": "canvas",
+      "concept": "clearance",
+      "seconds": 12,
+      "filename": "08-confirm-the-clearance-canvas.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Separates an attributed measurement from an unknown; no automatic code or installation certification.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-leadtime",
+      "direction": "canvas",
+      "concept": "leadtime",
+      "seconds": 12,
+      "filename": "09-see-the-schedule-risk-canvas.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Exposes a planning conflict, not live supplier ETA, tracking, freshness, or receiving confirmation.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        3
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-substitution",
+      "direction": "canvas",
+      "concept": "substitution",
+      "seconds": 12,
+      "filename": "10-compare-with-an-unknown-canvas.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves a missing supplier field; no supplier integration, stock verification, or completed approval.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        4,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-signoff",
+      "direction": "canvas",
+      "concept": "signoff",
+      "seconds": 12,
+      "filename": "11-two-kinds-of-approval-canvas.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "demonstrated interaction",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "demonstrated interaction",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Demonstrates distinct fit and budget decisions; permission enforcement, notifications, revision locking and duplicate checks remain unbuilt.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        6
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-delivery",
+      "direction": "canvas",
+      "concept": "delivery",
+      "seconds": 12,
+      "filename": "12-the-last-four-steps-canvas.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Documents access, not shipment status, receiving ownership, partial receipts, or damage checks.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-installerpack",
+      "direction": "canvas",
+      "concept": "installerpack",
+      "seconds": 12,
+      "filename": "13-handoff-with-evidence-canvas.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Draft handoff retains unresolved information; document delivery, version acknowledgement, job/PO linkage remain unbuilt.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        8,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "canvas-receipt",
+      "direction": "canvas",
+      "concept": "receipt",
+      "seconds": 12,
+      "filename": "14-after-the-order-canvas.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "supporting only",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Keeps receipt evidence; no job/cost-code assignment, three-way match, policy confirmation, or automatic refund.",
+      "directionRisk": "Adoption risk: spatial arrangement adds work. Treat as an optional embedded evidence view, not a required new app or a substitute for order-status integration.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-capture",
+      "direction": "guide",
+      "concept": "capture",
+      "seconds": 12,
+      "filename": "01-room-to-spec-guide.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Photo capture supports a Spec but does not establish dimensions, SKU, job code, or supplier confirmation.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-prompt",
+      "direction": "guide",
+      "concept": "prompt",
+      "seconds": 12,
+      "filename": "02-next-useful-question-guide.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Prioritizes an access question; no live order-status query, duplicate check, or supplier response.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-recall",
+      "direction": "guide",
+      "concept": "recall",
+      "seconds": 12,
+      "filename": "03-recall-the-decision-guide.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Recovers attributed approval; no revision conflict resolution or authoritative current order status.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        6,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-walkthrough",
+      "direction": "guide",
+      "concept": "walkthrough",
+      "seconds": 12,
+      "filename": "04-walkthrough-in-context-guide.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Retains visual context only; installer measurements and structured requirements still need confirmation.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-quantity",
+      "direction": "guide",
+      "concept": "quantity",
+      "seconds": 12,
+      "filename": "05-layout-changes-the-order-guide.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "demonstrated interaction",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Makes quantity assumptions inspectable; does not check existing POs, stock, or guarantee a waste factor.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        1
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-sample",
+      "direction": "guide",
+      "concept": "sample",
+      "seconds": 12,
+      "filename": "06-sample-in-daylight-guide.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Approves a finish using daylight evidence; sample requesting, SKU linkage, and conversion impact remain unproven.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        2
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-quote",
+      "direction": "guide",
+      "concept": "quote",
+      "seconds": 12,
+      "filename": "07-words-become-a-field-guide.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves the installer condition; does not resolve the delivery dependency or create an approved PO.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-clearance",
+      "direction": "guide",
+      "concept": "clearance",
+      "seconds": 12,
+      "filename": "08-confirm-the-clearance-guide.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Separates an attributed measurement from an unknown; no automatic code or installation certification.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-leadtime",
+      "direction": "guide",
+      "concept": "leadtime",
+      "seconds": 12,
+      "filename": "09-see-the-schedule-risk-guide.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Exposes a planning conflict, not live supplier ETA, tracking, freshness, or receiving confirmation.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        3
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-substitution",
+      "direction": "guide",
+      "concept": "substitution",
+      "seconds": 12,
+      "filename": "10-compare-with-an-unknown-guide.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves a missing supplier field; no supplier integration, stock verification, or completed approval.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        4,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-signoff",
+      "direction": "guide",
+      "concept": "signoff",
+      "seconds": 12,
+      "filename": "11-two-kinds-of-approval-guide.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "demonstrated interaction",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "demonstrated interaction",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Demonstrates distinct fit and budget decisions; permission enforcement, notifications, revision locking and duplicate checks remain unbuilt.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        6
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-delivery",
+      "direction": "guide",
+      "concept": "delivery",
+      "seconds": 12,
+      "filename": "12-the-last-four-steps-guide.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Documents access, not shipment status, receiving ownership, partial receipts, or damage checks.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-installerpack",
+      "direction": "guide",
+      "concept": "installerpack",
+      "seconds": 12,
+      "filename": "13-handoff-with-evidence-guide.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Draft handoff retains unresolved information; document delivery, version acknowledgement, job/PO linkage remain unbuilt.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        8,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "guide-receipt",
+      "direction": "guide",
+      "concept": "receipt",
+      "seconds": 12,
+      "filename": "14-after-the-order-guide.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "supporting only",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Keeps receipt evidence; no job/cost-code assignment, three-way match, policy confirmation, or automatic refund.",
+      "directionRisk": "Efficiency risk: extra steps suit unfamiliar or consequential decisions, not repeated routine procurement. No new account should be required.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-capture",
+      "direction": "workspace",
+      "concept": "capture",
+      "seconds": 12,
+      "filename": "01-room-to-spec-workspace.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Photo capture supports a Spec but does not establish dimensions, SKU, job code, or supplier confirmation.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-prompt",
+      "direction": "workspace",
+      "concept": "prompt",
+      "seconds": 12,
+      "filename": "02-next-useful-question-workspace.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Prioritizes an access question; no live order-status query, duplicate check, or supplier response.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-recall",
+      "direction": "workspace",
+      "concept": "recall",
+      "seconds": 12,
+      "filename": "03-recall-the-decision-workspace.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Recovers attributed approval; no revision conflict resolution or authoritative current order status.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        6,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-walkthrough",
+      "direction": "workspace",
+      "concept": "walkthrough",
+      "seconds": 12,
+      "filename": "04-walkthrough-in-context-workspace.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Retains visual context only; installer measurements and structured requirements still need confirmation.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-quantity",
+      "direction": "workspace",
+      "concept": "quantity",
+      "seconds": 12,
+      "filename": "05-layout-changes-the-order-workspace.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "demonstrated interaction",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Makes quantity assumptions inspectable; does not check existing POs, stock, or guarantee a waste factor.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        1
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-sample",
+      "direction": "workspace",
+      "concept": "sample",
+      "seconds": 12,
+      "filename": "06-sample-in-daylight-workspace.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Approves a finish using daylight evidence; sample requesting, SKU linkage, and conversion impact remain unproven.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        2
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-quote",
+      "direction": "workspace",
+      "concept": "quote",
+      "seconds": 12,
+      "filename": "07-words-become-a-field-workspace.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves the installer condition; does not resolve the delivery dependency or create an approved PO.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-clearance",
+      "direction": "workspace",
+      "concept": "clearance",
+      "seconds": 12,
+      "filename": "08-confirm-the-clearance-workspace.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Separates an attributed measurement from an unknown; no automatic code or installation certification.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-leadtime",
+      "direction": "workspace",
+      "concept": "leadtime",
+      "seconds": 12,
+      "filename": "09-see-the-schedule-risk-workspace.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Exposes a planning conflict, not live supplier ETA, tracking, freshness, or receiving confirmation.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        3
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-substitution",
+      "direction": "workspace",
+      "concept": "substitution",
+      "seconds": 12,
+      "filename": "10-compare-with-an-unknown-workspace.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves a missing supplier field; no supplier integration, stock verification, or completed approval.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        4,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-signoff",
+      "direction": "workspace",
+      "concept": "signoff",
+      "seconds": 12,
+      "filename": "11-two-kinds-of-approval-workspace.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "demonstrated interaction",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "demonstrated interaction",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Demonstrates distinct fit and budget decisions; permission enforcement, notifications, revision locking and duplicate checks remain unbuilt.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        6
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-delivery",
+      "direction": "workspace",
+      "concept": "delivery",
+      "seconds": 12,
+      "filename": "12-the-last-four-steps-workspace.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Documents access, not shipment status, receiving ownership, partial receipts, or damage checks.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-installerpack",
+      "direction": "workspace",
+      "concept": "installerpack",
+      "seconds": 12,
+      "filename": "13-handoff-with-evidence-workspace.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Draft handoff retains unresolved information; document delivery, version acknowledgement, job/PO linkage remain unbuilt.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        8,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "workspace-receipt",
+      "direction": "workspace",
+      "concept": "receipt",
+      "seconds": 12,
+      "filename": "14-after-the-order-workspace.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "supporting only",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Keeps receipt evidence; no job/cost-code assignment, three-way match, policy confirmation, or automatic refund.",
+      "directionRisk": "Closest to the documented procurement-register workaround, but a register mockup is not an ERP/supplier connection or live source of truth.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-capture",
+      "direction": "notebook",
+      "concept": "capture",
+      "seconds": 12,
+      "filename": "01-room-to-spec-notebook.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Photo capture supports a Spec but does not establish dimensions, SKU, job code, or supplier confirmation.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-prompt",
+      "direction": "notebook",
+      "concept": "prompt",
+      "seconds": 12,
+      "filename": "02-next-useful-question-notebook.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Prioritizes an access question; no live order-status query, duplicate check, or supplier response.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-recall",
+      "direction": "notebook",
+      "concept": "recall",
+      "seconds": 12,
+      "filename": "03-recall-the-decision-notebook.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Recovers attributed approval; no revision conflict resolution or authoritative current order status.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        6,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-walkthrough",
+      "direction": "notebook",
+      "concept": "walkthrough",
+      "seconds": 12,
+      "filename": "04-walkthrough-in-context-notebook.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "supporting only",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Retains visual context only; installer measurements and structured requirements still need confirmation.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-quantity",
+      "direction": "notebook",
+      "concept": "quantity",
+      "seconds": 12,
+      "filename": "05-layout-changes-the-order-notebook.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "demonstrated interaction",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Makes quantity assumptions inspectable; does not check existing POs, stock, or guarantee a waste factor.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        1
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-sample",
+      "direction": "notebook",
+      "concept": "sample",
+      "seconds": 12,
+      "filename": "06-sample-in-daylight-notebook.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "supporting only",
+        "sample-integration": "supporting only"
+      },
+      "gap": "Approves a finish using daylight evidence; sample requesting, SKU linkage, and conversion impact remain unproven.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        2
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-quote",
+      "direction": "notebook",
+      "concept": "quote",
+      "seconds": 12,
+      "filename": "07-words-become-a-field-notebook.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves the installer condition; does not resolve the delivery dependency or create an approved PO.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-clearance",
+      "direction": "notebook",
+      "concept": "clearance",
+      "seconds": 12,
+      "filename": "08-confirm-the-clearance-notebook.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Separates an attributed measurement from an unknown; no automatic code or installation certification.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-leadtime",
+      "direction": "notebook",
+      "concept": "leadtime",
+      "seconds": 12,
+      "filename": "09-see-the-schedule-risk-notebook.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Exposes a planning conflict, not live supplier ETA, tracking, freshness, or receiving confirmation.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        3
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-substitution",
+      "direction": "notebook",
+      "concept": "substitution",
+      "seconds": 12,
+      "filename": "10-compare-with-an-unknown-notebook.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Preserves a missing supplier field; no supplier integration, stock verification, or completed approval.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        4,
+        8,
+        9
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-signoff",
+      "direction": "notebook",
+      "concept": "signoff",
+      "seconds": 12,
+      "filename": "11-two-kinds-of-approval-notebook.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "demonstrated interaction",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "demonstrated interaction",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Demonstrates distinct fit and budget decisions; permission enforcement, notifications, revision locking and duplicate checks remain unbuilt.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        6
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-delivery",
+      "direction": "notebook",
+      "concept": "delivery",
+      "seconds": 12,
+      "filename": "12-the-last-four-steps-notebook.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "supporting only",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Documents access, not shipment status, receiving ownership, partial receipts, or damage checks.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        7
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-installerpack",
+      "direction": "notebook",
+      "concept": "installerpack",
+      "seconds": 12,
+      "filename": "13-handoff-with-evidence-notebook.mp4",
+      "alignment": "Direct workflow fit",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "supporting only",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "not addressed",
+        "return-drivers": "not addressed",
+        "spec-standardization": "demonstrated interaction",
+        "multi-party": "supporting only",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Draft handoff retains unresolved information; document delivery, version acknowledgement, job/PO linkage remain unbuilt.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        5,
+        8,
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    },
+    {
+      "id": "notebook-receipt",
+      "direction": "notebook",
+      "concept": "receipt",
+      "seconds": 12,
+      "filename": "14-after-the-order-notebook.mp4",
+      "alignment": "Supporting only",
+      "coverage": {
+        "duplicate-orders": "not addressed",
+        "approval-routing": "not addressed",
+        "delivery-visibility": "not addressed",
+        "cost-allocation": "supporting only",
+        "return-drivers": "supporting only",
+        "spec-standardization": "not addressed",
+        "multi-party": "not addressed",
+        "sample-integration": "not addressed"
+      },
+      "gap": "Keeps receipt evidence; no job/cost-code assignment, three-way match, policy confirmation, or automatic refund.",
+      "directionRisk": "Field-capture hypothesis: useful for photos and notes, but desktop/phone procurement remains. Do not require notebook navigation to approve an order.",
+      "status": "Rendered 12-second study; full decode, browser playback/seek, and settled-frame visual inspection passed. Not adoption or ROI proof.",
+      "requestedNoteArtifacts": [
+        10
+      ],
+      "requestedNoteBasis": "Artifact table, lines 29–42; priorities and risks, lines 46–132"
+    }
+  ],
+  "crossCollectionGaps": [
+    "No variant implements duplicate-order prevention before PO release.",
+    "No variant supplies live delivery status, ETA freshness, or receiving reconciliation.",
+    "Receipt evidence is not yet job/PO/cost-code allocation.",
+    "Sample review is not an integrated sample-request-to-order workflow."
+  ],
+  "reviewDecision": "Preserve all 70 requested alternatives. Do not call a direction market-validated or a gap solved. Compare interaction utility and test the channel assumptions separately.",
+  "recommendation": "Use conversation as the embedded-channel comparison baseline and guide as the approval-flow challenger. Workspace explores the contractor register and shared project coordination; supplier integration is unproven. Canvas and notebook support evidence review but are weaker fits if they require a separate app. None currently demonstrates the urgent duplicate-order prevention workflow."
+}

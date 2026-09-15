@@ -1,0 +1,36 @@
+{
+  "generator": "Higgsfield",
+  "disclosure": "Original synthetic imagery and footage for a concept prototype. Not project documentation, verified measurements, supplier evidence, or user research.",
+  "images": {
+    "room": {
+      "job": "b55ac465-853b-4cd2-8776-e9f772c50257",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260914_211724_b55ac465-853b-4cd2-8776-e9f772c50257.png"
+    },
+    "entry": {
+      "job": "d62ccfbb-5b5e-432f-9b6f-a97e28328c4a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260914_211724_d62ccfbb-5b5e-432f-9b6f-a97e28328c4a.png"
+    },
+    "sample": {
+      "job": "433dd4a1-9ad8-431e-86db-67890e05d970",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260914_211759_433dd4a1-9ad8-431e-86db-67890e05d970.png"
+    },
+    "pendant": {
+      "job": "8ff6de78-5577-409f-943a-295ce125e7fa",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260914_211748_8ff6de78-5577-409f-943a-295ce125e7fa.png"
+    }
+  },
+  "videos": {
+    "room": {
+      "job": "dffb39a4-cdc6-49fd-90e5-4ffa462ca06a",
+      "model": "seedance_2_0",
+      "file": "room.mp4"
+    },
+    "sample": {
+      "job": "44d1c3a2-9fb4-4bc3-b167-05214c0f0732",
+      "model": "seedance_2_0",
+      "file": "sample.mp4"
+    }
+  },
+  "precedent": "https://www.rachelchen.tech/projects/openai",
+  "note": "Reference interaction patterns only. No TOMO media reused in rendered clips. Entry image depicts four steps; delivery notes must match."
+}

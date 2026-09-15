@@ -47,6 +47,18 @@ Not an app. A set of cards an agent can render when a renovation conversation tu
 
 **Powering Specs**, a data unit any agent can read, price, sequence, and order. A Spec is one product record with three readers: the owner, the trade, and the agent. It carries what a chat reply can't hold — dimensions, coverage, waste factor, lead time, installation rules, dependencies on other Specs, and approval state. If a field is empty, the agent says so instead of guessing. The same Spec renders as a takeoff card in one agent, a comparison in another, and a sign-off sheet the trade and the partner both see.
 
+### Context that can be checked
+
+A Spec needs to carry the evidence behind a decision, not only the decision itself. A room photo, a sample seen in daylight, an installer’s message, and a supplier’s quoted lead time answer different questions. Each should remain attached to the relevant field with its source, date, and confirmation state.
+
+- **Capture deliberately.** The owner chooses which photo, short site clip, document, or message to attach. Takeoff does not inherit TOMO’s always-recording hardware premise.
+- **Recall the reason.** “Which finish did we choose?” should return the selected sample and the approval that settled it, not a generic recommendation or a replay of the whole conversation.
+- **Suggest the next decision, not more products.** Surface the action that clears a dependency: confirm the vanity width, ask for the missing colour temperature, or check delivery access. Show why the suggestion is relevant.
+- **Keep observation separate from verification.** A photograph can identify where a measurement belongs; it cannot certify that measurement. Show “entered by Maya,” “measured by Dev,” or “supplier not confirmed” rather than silently converting an inference into a fact.
+- **Carry the record past checkout.** Delivery instructions, an installer handoff, and receipt or return evidence stay attached to the order and its Spec. These are extensions to explore, not a claim that the prototype implements purchasing or returns.
+
+The interaction question for the next prototypes: can someone move from real project evidence to a confident purchase decision without leaving their familiar assistant thread?
+
 ## 5. The card family (ten screens/checkpoints)
 
 1. **Takeoff** — room dimensions and layout in, quantity with waste factor out.
@@ -73,6 +85,15 @@ Not an app. A set of cards an agent can render when a renovation conversation tu
 - **Meta Muse** (launched 8 September 2026) — personal agent with deterministic approval cards for hard-to-undo actions, transparency (activity log, editable memory), and a stated design goal of avoiding banner blindness. Takeoff's sign-off card is this pattern applied specifically to commerce with more than one approver.
 - No named AEC-specific commerce platform or Autodesk/Procore-style integration exists in this space as of this research pass (checked 13 September 2026) — checked several commerce-platform sites and blogs directly. That's the gap this project argues into.
 - Full precedent-search keyword list and the two prior reframes (Clerk — merchant's view of the buying agent; the building-products-only version of Takeoff) live in the Obsidian vault (`projects/plumb-precedent-research.md`, `projects/plumb-clerk-reframe.md`, `projects/plumb-takeoff-reframe.md`) for continuity, not duplicated here.
+- **Rachel Chen’s TOMO / Moments concept** — [OpenAI case study](https://www.rachelchen.tech/projects/openai), reviewed with the supplied `precedent-inspo-context.rtfd` and 14 local prototype clips. Useful patterns: one idea per short video, context carried into chat, selective recall, visible gestures, and photo-to-detail transitions. Her research conclusion “memory for recall, not reliving” suggests retaining the reason for a renovation decision rather than building a decorative project diary. This is precedent analysis, not Takeoff user-research evidence.
+
+### Short prototype collection
+
+Fourteen standalone clips will explore: room-photo capture; the next useful prompt; recall of a selected finish; a pinned site walkthrough; quantity changes; sample approval in daylight; a quoted installer message becoming structured data; confirmed clearance on a site photo; delivery risk against the plumber’s visit; an incomplete substitution; two distinct approvals; site-access instructions; an installer pack; and receipt/return evidence.
+
+The collection demonstrates proposed interactions, not live agent integrations. Photographs and short site footage are generated through Higgsfield for a fictional Maya-and-Sam renovation. UI text, quantities, consent boundaries, and cursor paths are rendered deterministically. Existing long demos remain comparison references.
+
+Each clip should establish a believable starting state, show a deliberate cursor gesture, and finish on one understandable consequence. Realistic media must explain the decision; it is not a background treatment to apply everywhere. The descriptions and review questions belong in the Obsidian project notes.
 
 ## 8. Status and what still needs to change in this repo
 

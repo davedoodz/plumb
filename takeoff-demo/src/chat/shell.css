@@ -1,0 +1,276 @@
+/* Scoped to .chat-film — never touches the iMessage-style exports in index.css. */
+
+.chat-film {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--chat-bg);
+  color: var(--chat-ink);
+}
+
+.chat-film--chatgpt {
+  --chat-bg: #ffffff;
+  --chat-ink: #0d0d0d;
+  --chat-muted: #8b8f93;
+  --chat-hairline: rgba(13, 13, 13, 0.08);
+  --chat-user-bg: #f4f4f4;
+  --chat-user-radius: 20px;
+  --chat-composer-bg: #ffffff;
+  --chat-composer-border: #e5e5e5;
+  --chat-composer-radius: 24px;
+  --chat-send-bg: #0d0d0d;
+  --chat-send-fg: #ffffff;
+  --chat-send-radius: 50%;
+  --chat-sans:
+    -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  --chat-serif: var(--chat-sans);
+}
+
+.chat-film--claude {
+  --chat-bg: #f5f4ee;
+  --chat-ink: #1f1e1b;
+  --chat-muted: #948d7c;
+  --chat-hairline: rgba(31, 30, 27, 0.09);
+  --chat-user-bg: #e8e6df;
+  --chat-user-radius: 18px;
+  --chat-composer-bg: #fbfaf5;
+  --chat-composer-border: rgba(31, 30, 27, 0.16);
+  --chat-composer-radius: 20px;
+  --chat-send-bg: #c15f3c;
+  --chat-send-fg: #ffffff;
+  --chat-send-radius: 8px;
+  --chat-sans:
+    -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  --chat-serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+
+.chat-film .chat-canvas {
+  position: relative;
+  width: 432px;
+  height: 768px;
+  transform: scale(2.5);
+  transform-origin: top left;
+  overflow: hidden;
+  font-family: var(--chat-sans);
+}
+
+/* Top bar */
+
+.chat-film .chat-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--chat-hairline);
+}
+
+.chat-film .chat-icon-btn {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--chat-muted);
+}
+
+.chat-film .chat-topbar-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--chat-ink);
+}
+
+.chat-film .chat-topbar-title--serif {
+  font-family: var(--chat-serif);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+/* Scene label — 1.2s monospace flag, sits in the gap below the top bar. */
+
+.chat-film .chat-scene-label {
+  position: absolute;
+  top: 74px;
+  left: 24px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--chat-muted);
+}
+
+/* Content slot — logical 384 x 546 column, top 104 / bottom 118. */
+
+.chat-film .chat-content {
+  position: absolute;
+  top: 104px;
+  left: 24px;
+  right: 24px;
+  height: 546px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chat-film .chat-content > * {
+  flex-shrink: 0;
+}
+
+/* Messages */
+
+.chat-film .chat-msg--user {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat-film .chat-user-pill {
+  max-width: 78%;
+  padding: 10px 16px;
+  border-radius: var(--chat-user-radius);
+  background: var(--chat-user-bg);
+  font-family: var(--chat-sans);
+  font-size: 17px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.chat-film .chat-msg--assistant {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.chat-film .chat-avatar {
+  flex-shrink: 0;
+  margin-top: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 13, 13, 0.06);
+  color: var(--chat-muted);
+}
+
+.chat-film .chat-assistant-text {
+  position: relative;
+  flex: 1;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.chat-film .chat-assistant-text--sans {
+  font-family: var(--chat-sans);
+}
+
+.chat-film .chat-assistant-text--serif {
+  font-family: var(--chat-serif);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.chat-film .chat-text-sizer {
+  visibility: hidden;
+}
+
+.chat-film .chat-text-stream {
+  position: absolute;
+  inset: 0;
+}
+
+.chat-film .chat-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  margin-left: 2px;
+  vertical-align: -0.15em;
+  background: currentColor;
+}
+
+/* Composer */
+
+.chat-film .chat-composer-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 118px;
+  box-sizing: border-box;
+  padding: 14px 24px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.chat-film .chat-composer-field {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 8px 8px 16px;
+  background: var(--chat-composer-bg);
+  border: 1px solid var(--chat-composer-border);
+  border-radius: var(--chat-composer-radius);
+}
+
+.chat-film .chat-composer-field--tall {
+  min-height: 58px;
+  padding: 12px 10px 12px 16px;
+}
+
+.chat-film .chat-composer-plus {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--chat-muted);
+}
+
+.chat-film .chat-composer-placeholder {
+  flex: 1;
+  font-family: var(--chat-sans);
+  font-size: 15px;
+  color: var(--chat-muted);
+}
+
+.chat-film .chat-composer-send {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--chat-send-radius);
+  background: var(--chat-send-bg);
+  color: var(--chat-send-fg);
+}
+
+.chat-film .chat-composer-send--square {
+  width: 30px;
+  height: 30px;
+}
+
+.chat-film .chat-model-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 6px;
+  font-family: var(--chat-sans);
+  font-size: 12px;
+  color: var(--chat-muted);
+}

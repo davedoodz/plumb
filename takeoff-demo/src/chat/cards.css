@@ -1,0 +1,478 @@
+/* Purchase cards — shared across both chat shells. Every rule is scoped
+   under .chat-film so it can never bleed onto the legacy iMessage-style
+   scenes (which style the same .card/.roll/.tap class names via
+   src/index.css) and vice versa. */
+
+.chat-film {
+  --pc-orange: #d9552b;
+  --pc-green: #2e7d4f;
+  --pc-ink: #1f2124;
+  --pc-muted: #767d81;
+  --pc-line: rgba(0, 0, 0, 0.12);
+  --pc-hairline: #ebebe9;
+}
+
+/* Card shell (reused from ../ui: <Card title>) ---------------------------- */
+
+.chat-film .card {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid var(--pc-line);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+  color: var(--pc-ink);
+}
+.chat-film .card-heading {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 650;
+  letter-spacing: -0.3px;
+  margin-bottom: 14px;
+}
+
+/* Entrance / collapse wrapper ---------------------------------------------- */
+
+.chat-film .pc-wrap {
+  position: relative;
+}
+.chat-film .pc-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  height: 46px;
+  padding: 0 16px;
+  border: 1px solid var(--pc-hairline);
+  border-radius: 13px;
+  background: #fafafa;
+  color: var(--pc-ink);
+  font-size: 13px;
+  line-height: 18px;
+}
+.chat-film .pc-chip-check {
+  font-size: 13px;
+  color: #8a9297;
+}
+.chat-film .pc-chip-check.approve {
+  color: var(--pc-green);
+}
+
+/* Tap (reused from ../ui: <Tap>) — 24pt grey dot, pulses + fades in 200ms
+   (timing lives in the component; only the look is set here). ------------- */
+
+.chat-film .tap {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #9aa1a5;
+  box-shadow: 0 0 0 6px rgba(154, 161, 165, 0.28);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Actions ------------------------------------------------------------------ */
+
+.chat-film .pc-actions {
+  display: flex;
+  gap: 9px;
+  margin-top: 14px;
+}
+.chat-film .pc-action {
+  position: relative;
+  flex: 1;
+  background: #202224;
+  color: #fff;
+  border-radius: 24px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.chat-film .pc-action-secondary {
+  background: #eef0f1;
+  color: #33383b;
+}
+
+/* Takeoff -------------------------------------------------------------------*/
+
+.chat-film .pc-diagram {
+  display: block;
+  margin-bottom: 6px;
+}
+.chat-film .pc-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  padding: 8px 0 12px;
+  border-bottom: 1px solid var(--pc-hairline);
+}
+.chat-film .pc-facts > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  line-height: 19px;
+}
+.chat-film .pc-facts span {
+  color: var(--pc-muted);
+}
+.chat-film .pc-facts b {
+  font-weight: 600;
+}
+.chat-film .pc-result {
+  font-size: 22px;
+  font-weight: 650;
+  min-height: 27px;
+  line-height: 27px;
+  margin-top: 10px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+.chat-film .pc-result-area {
+  font-size: 17px;
+  font-weight: 450;
+  letter-spacing: -0.3px;
+}
+.chat-film .pc-price {
+  font-size: 22px;
+  font-weight: 650;
+  min-height: 27px;
+  line-height: 27px;
+  letter-spacing: -0.4px;
+}
+.chat-film .pc-note {
+  font-size: 12px;
+  line-height: 17px;
+  margin-top: 6px;
+}
+.chat-film .pc-note-orange {
+  color: var(--pc-orange);
+}
+.chat-film .pc-note-grey {
+  color: var(--pc-muted);
+}
+.chat-film .pc-segments {
+  background: #eef0f1;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  margin-top: 12px;
+}
+.chat-film .pc-segments > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 30px;
+  font-size: 11px;
+  color: #697176;
+}
+.chat-film .pc-seg-selected {
+  background: #fff;
+  border-radius: 7px;
+  color: #252a2d;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* Sample ---------------------------------------------------------------- */
+
+.chat-film .pc-sample-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 4px;
+  font-size: 16px;
+}
+.chat-film .pc-sample-meta span {
+  color: var(--pc-muted);
+  font-size: 13px;
+}
+.chat-film .pc-sample-meta span::before {
+  content: "·";
+  margin-right: 8px;
+}
+
+/* Lead time --------------------------------------------------------------- */
+
+.chat-film .pc-timeline-title {
+  display: flex;
+  justify-content: space-between;
+  color: var(--pc-muted);
+  font-size: 11px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--pc-hairline);
+}
+.chat-film .pc-chart {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+  margin-top: 2px;
+}
+.chat-film .pc-today-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #9aa2a6;
+}
+.chat-film .pc-plumber-line {
+  position: absolute;
+  left: 77.8%;
+  top: 0;
+  bottom: 0;
+  border-left: 1px dashed #8a9397;
+  z-index: 3;
+}
+.chat-film .pc-plumber-line > span {
+  position: absolute;
+  left: -50px;
+  top: 4px;
+  width: 84px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 14px;
+  color: #5b6469;
+  background: #fff;
+}
+.chat-film .pc-lane {
+  position: relative;
+  margin-bottom: 10px;
+}
+.chat-film .pc-bar {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  background: #f0f1f1;
+  border: 1px solid #dde0e1;
+  border-radius: 7px;
+  padding: 10px 8px;
+  font-size: 12px;
+  font-weight: 550;
+  color: #4a5155;
+  min-height: 36px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.chat-film .pc-bar-late {
+  background: #fbede8;
+  border-color: #f0c9bb;
+  color: var(--pc-orange);
+  display: flex;
+  justify-content: space-between;
+}
+.chat-film .pc-caption {
+  display: block;
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: 3px;
+}
+.chat-film .pc-caption-orange {
+  color: var(--pc-orange);
+}
+.chat-film .pc-arrow {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  z-index: 3;
+  color: var(--pc-orange);
+  font-weight: 700;
+}
+
+/* Substitution ------------------------------------------------------------ */
+
+.chat-film .pc-compare-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  border-bottom: 1px solid var(--pc-hairline);
+  padding: 4px 0 10px;
+  color: var(--pc-muted);
+  font-size: 12px;
+}
+.chat-film .pc-compare-head b {
+  color: #2c3235;
+}
+.chat-film .pc-compare-row {
+  padding: 9px 0;
+  border-bottom: 1px solid var(--pc-hairline);
+}
+.chat-film .pc-field-label {
+  font-size: 11px;
+  color: #7b8387;
+  margin-bottom: 4px;
+}
+.chat-film .pc-compare-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.chat-film .pc-compare-values > span {
+  color: #777f83;
+}
+.chat-film .pc-compare-values > b {
+  font-weight: 600;
+}
+.chat-film .pc-field-note {
+  font-size: 11px;
+  line-height: 15px;
+  color: #8a9194;
+  margin-top: 3px;
+}
+.chat-film .pc-unknown {
+  display: block;
+  height: 22px;
+  border: 1.5px dashed var(--pc-orange);
+  border-radius: 5px;
+  background: #fffaf7;
+}
+
+/* Sign-off ------------------------------------------------------------------*/
+
+.chat-film .pc-approval-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--pc-hairline);
+}
+.chat-film .pc-avatar {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #eceeef;
+  color: #6c767b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.chat-film .pc-approval-copy {
+  flex: 1;
+}
+.chat-film .pc-approval-copy > b {
+  font-size: 14px;
+  font-weight: 600;
+}
+.chat-film .pc-approval-copy > b span {
+  font-size: 12px;
+  color: #80898e;
+  font-weight: 400;
+}
+.chat-film .pc-approval-copy small {
+  display: block;
+  font-size: 11px;
+  line-height: 16px;
+  color: #7d8589;
+  margin-top: 2px;
+}
+.chat-film .pc-approval-check {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  border: 1.5px solid #cbd1d4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+}
+.chat-film .pc-approval-check.approve {
+  background: var(--pc-green);
+  border-color: var(--pc-green);
+}
+.chat-film .pc-approval-footer {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 12px;
+  color: var(--pc-muted);
+}
+.chat-film .pc-approval-footer.approve {
+  color: var(--pc-green);
+}
+
+.chat-film .pc-device-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #f0f1f1;
+  border-radius: 12px;
+  font-family: var(--chat-sans);
+  font-size: 14px;
+  line-height: 22px;
+}
+.chat-film .pc-device-note > span {
+  display: block;
+  color: var(--pc-muted);
+  font-size: 11px;
+}
+
+/* Order thread ---------------------------------------------------------- */
+
+.chat-film .pc-progress-track {
+  height: 4px;
+  border-radius: 4px;
+  background: #e9edef;
+  margin: 4px 0 10px;
+  overflow: hidden;
+}
+.chat-film .pc-progress-track > div {
+  height: 100%;
+  background: #5f6d73;
+  border-radius: 4px;
+}
+.chat-film .pc-order-list {
+  position: relative;
+}
+.chat-film .pc-order-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 11px 0;
+}
+.chat-film .pc-order-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #78868c;
+  margin: 6px 0 0 3px;
+}
+.chat-film .pc-order-dot-open {
+  background: #fff;
+  border: 1px solid #b5bfc3;
+}
+.chat-film .pc-order-row b {
+  font-weight: 600;
+  font-size: 14px;
+  color: #3a4247;
+}
+.chat-film .pc-order-row small {
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  color: #8a959a;
+  margin-top: 2px;
+}
+.chat-film .pc-dependencies {
+  border-top: 1px solid var(--pc-hairline);
+  margin-top: 3px;
+  padding-top: 5px;
+}
+.chat-film .pc-dependencies .pc-order-row b {
+  color: #909b9f;
+}

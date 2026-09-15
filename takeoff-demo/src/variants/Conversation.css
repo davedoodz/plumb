@@ -1,0 +1,159 @@
+/* Conversation direction — editorial thread with a citation rail signature.
+   Pale blue-gray outer, white thread, ink-blue actions, Georgia headings + system body. */
+
+.v-conversation{
+  --ink:#17263a;
+  --ink-2:#25313f;
+  --muted:#7c8794;
+  --muted-2:#8b95a2;
+  --rule:#e4e9ef;
+  --accent:#315d8b;
+  --accent-2:#3b6ea5;
+  --paper:#f5f8fb;
+  --panel-border:#dbe4ec;
+  --success:#206247;
+  --success-bg:#e5f1ea;
+  --warning:#9a522b;
+  --warning-bg:#fbf1e8;
+  background:#e2e9f1;
+}
+
+/* ---------- card shell ---------- */
+.v-conversation .v-thread{
+  background:#fff;
+  border-radius:26px;
+  box-shadow:0 40px 70px -30px rgba(18,32,52,.32),0 1px 0 rgba(18,32,52,.05);
+}
+.v-conversation .v-inner{
+  position:relative;
+  width:100%;
+  height:100%;
+  padding:32px 32px 0 32px;
+}
+
+/* ---------- header: question + lede ---------- */
+.v-conversation .v-question{margin-bottom:20px}
+.v-conversation .v-role{display:block;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;font-weight:600}
+.v-conversation .v-role-assist{color:var(--accent)}
+.v-conversation .v-question p{font-size:19px;font-weight:500;color:var(--ink-2);line-height:1.32;max-width:96%}
+.v-conversation .v-lede h2{font-family:Georgia,'Times New Roman',serif;font-size:25px;font-weight:600;color:var(--ink);line-height:1.18;margin:6px 0 10px;letter-spacing:-.005em}
+.v-conversation .v-lede-body{font-size:17px;line-height:1.5;color:#3a4552;max-width:98%}
+.v-conversation .v-main{margin-top:24px}
+
+/* ---------- action bar (fixed resolve zone) ---------- */
+.v-conversation .v-actionbar{position:absolute;left:32px;right:32px;bottom:32px}
+.v-conversation .v-actionbar .variant-action{min-height:56px;border-radius:14px;font-size:17px}
+.v-conversation .v-resolved{display:flex;align-items:center;gap:8px;justify-content:center}
+
+/* ---------- citation rail + evidence receipt (signature) ---------- */
+.v-conversation .v-evidence{display:flex;gap:14px;margin-top:18px}
+.v-conversation .v-evidence-rail{display:flex;flex-direction:column;align-items:center;width:10px;flex:0 0 auto;padding-top:6px}
+.v-conversation .v-evidence-dot{width:9px;height:9px;border-radius:50%;background:var(--accent-2);flex:0 0 auto;box-shadow:0 0 0 3px rgba(59,110,165,.16)}
+.v-conversation .v-evidence-line{width:2px;flex:1;background:var(--accent-2);transform-origin:top center;margin-top:3px;border-radius:2px}
+.v-conversation .v-evidence-panel{flex:1;background:var(--paper);border:1px solid var(--panel-border);border-radius:16px;padding:18px 20px}
+.v-conversation .v-evidence-title{font-family:Georgia,'Times New Roman',serif;font-size:16px;color:var(--ink);margin-bottom:3px}
+.v-conversation .v-evidence-source{font-size:13px;color:var(--muted);margin-bottom:10px;letter-spacing:.01em}
+.v-conversation .v-evidence-note{font-size:15px;line-height:1.45;color:#42505f;margin-top:10px}
+
+/* ---------- citation strip (collapsed source -> expand) ---------- */
+.v-conversation .v-strip{width:100%}
+.v-conversation .v-strip-bar{display:flex;align-items:center;gap:12px;height:80px;padding:0 14px;background:var(--paper);border:1px solid var(--panel-border);border-radius:16px}
+.v-conversation .v-strip-thumb{width:60px;height:52px;border-radius:10px;overflow:hidden;flex:0 0 auto;background:#dfe6ec}
+.v-conversation .v-strip-text{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.v-conversation .v-strip-label{font-size:16px;font-weight:600;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v-conversation .v-strip-meta{font-size:13px;color:var(--muted)}
+.v-conversation .v-strip-chevron{width:44px;height:44px;flex:0 0 auto;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--accent);background:#fff;border:1px solid var(--panel-border)}
+.v-conversation .v-strip-expand{overflow:hidden;margin-top:14px}
+
+/* ---------- generic chip / row list ---------- */
+.v-conversation .v-chip-list{display:flex;flex-direction:column;gap:10px}
+.v-conversation .v-chip-row{display:flex;align-items:center;gap:12px;height:52px;padding:0 18px;border-radius:14px;border:1.5px solid var(--panel-border);background:#fff;font-size:16px;font-weight:500;color:var(--ink-2)}
+.v-conversation .v-chip-row.is-primary{border-color:var(--accent-2)}
+.v-conversation .v-chip-row.is-selected{background:var(--success-bg);border-color:var(--success);color:var(--success)}
+.v-conversation .v-chip-row .v-chip-dot{width:9px;height:9px;border-radius:50%;background:var(--panel-border);flex:0 0 auto}
+.v-conversation .v-chip-row.is-selected .v-chip-dot{background:var(--success)}
+.v-conversation .v-chip-tag{margin-left:auto;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- photo / video block with caption ---------- */
+.v-conversation .v-photo{position:relative;border-radius:16px;overflow:hidden;background:#dfe6ec}
+.v-conversation .v-caption{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted);margin-top:10px}
+.v-conversation .v-icon-btn{position:absolute;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(20,32,50,.55);color:#fff;font-size:16px;backdrop-filter:blur(2px)}
+.v-conversation .v-hotspot{position:absolute;width:44px;height:44px;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center}
+.v-conversation .v-hotspot-ring{position:absolute;inset:0;border-radius:50%;border:2px solid #fff}
+.v-conversation .v-hotspot-dot{width:12px;height:12px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 4px rgba(255,255,255,.85)}
+
+/* ---------- layout toggle (quantity) ---------- */
+.v-conversation .v-toggle-row{display:flex;gap:16px}
+.v-conversation .v-toggle{flex:1;height:52px;border-radius:14px;border:1.5px solid var(--panel-border);background:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;color:var(--ink-2)}
+.v-conversation .v-toggle.is-chosen{background:var(--accent);border-color:var(--accent);color:#fff}
+.v-conversation .v-delta{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--success);background:var(--success-bg);border-radius:999px;padding:5px 12px;margin-top:12px}
+.v-conversation .v-sum{display:flex;align-items:baseline;gap:10px;margin-top:16px}
+.v-conversation .v-sum-value{font-family:Georgia,'Times New Roman',serif;font-size:27px;color:var(--ink);font-weight:600}
+.v-conversation .v-sum-value del{font-size:17px;color:var(--muted-2);font-weight:400;margin-right:8px;text-decoration:line-through}
+
+/* ---------- transcript / quote (words-become-a-field) ---------- */
+.v-conversation .v-quote{background:var(--paper);border:1px solid var(--panel-border);border-radius:16px;padding:20px 22px}
+.v-conversation .v-quote p{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:17px;line-height:28px;color:#2e3a47}
+.v-conversation .v-fields{display:flex;gap:12px;margin-top:16px}
+.v-conversation .v-field{flex:1;border-radius:14px;border:1.5px solid var(--panel-border);background:#fff;padding:12px 14px}
+.v-conversation .v-field.is-set{border-color:var(--success);background:var(--success-bg)}
+.v-conversation .v-field-label{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;display:block}
+.v-conversation .v-field-value{font-size:15px;font-weight:600;color:var(--ink-2)}
+
+/* ---------- date scrub track (leadtime) ---------- */
+.v-conversation .v-track{position:relative;height:200px}
+.v-conversation .v-track-line{position:absolute;left:0;right:0;top:100px;height:3px;background:var(--rule);border-radius:2px}
+.v-conversation .v-track-range{position:absolute;top:100px;height:3px;background:var(--accent-2);border-radius:2px}
+.v-conversation .v-track-pin{position:absolute;top:100px;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:6px}
+.v-conversation .v-track-pin .v-dot{width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--accent);box-shadow:0 2px 6px rgba(20,32,50,.25)}
+.v-conversation .v-track-pin.is-fixed .v-dot{border-color:var(--ink-2)}
+.v-conversation .v-track-pin.is-late .v-dot{border-color:var(--warning)}
+.v-conversation .v-track-tag{font-size:13px;font-weight:600;color:var(--ink-2);white-space:nowrap;position:absolute;top:-30px;left:50%;transform:translateX(-50%)}
+.v-conversation .v-track-tag.below{top:28px}
+
+.v-conversation .v-ask-chip{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:14px;font-weight:600;color:var(--warning);background:var(--warning-bg);border-radius:999px;padding:8px 16px}
+
+/* ---------- approval blocks (signoff) ---------- */
+.v-conversation .v-approval{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;border:1.5px solid var(--panel-border);background:#fff}
+.v-conversation .v-approval.is-open{background:var(--paper)}
+.v-conversation .v-approval.is-locked{opacity:.5}
+.v-conversation .v-approval.is-done{background:var(--success-bg);border-color:var(--success)}
+.v-conversation .v-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Georgia,'Times New Roman',serif;font-size:17px;font-weight:600;color:#fff;flex:0 0 auto}
+.v-conversation .v-approval-text{flex:1}
+.v-conversation .v-approval-name{font-size:16px;font-weight:600;color:var(--ink-2)}
+.v-conversation .v-approval-role{font-size:13px;color:var(--muted)}
+.v-conversation .v-approval-value{font-size:15px;font-weight:600;color:var(--ink-2)}
+
+/* ---------- note field (delivery) ---------- */
+.v-conversation .v-note-field{border-radius:14px;border:1.5px dashed var(--panel-border);background:#fff;padding:16px 18px;min-height:60px;display:flex;align-items:center}
+.v-conversation .v-note-field.is-focused{border-style:solid;border-color:var(--accent-2);box-shadow:0 0 0 4px rgba(59,110,165,.12)}
+.v-conversation .v-note-placeholder{font-size:15px;color:var(--muted-2)}
+.v-conversation .v-note-text{font-size:16px;color:var(--ink-2);font-weight:500}
+
+/* ---------- pack rows (installerpack) ---------- */
+.v-conversation .v-pack-row{display:flex;align-items:center;gap:12px;height:52px}
+.v-conversation .v-pack-check{width:26px;height:26px;border-radius:8px;border:1.5px solid var(--panel-border);flex:0 0 auto;display:flex;align-items:center;justify-content:center;background:#fff}
+.v-conversation .v-pack-check.is-checked{background:var(--success);border-color:var(--success)}
+.v-conversation .v-pack-check.is-disabled{border-style:dashed;background:var(--warning-bg);border-color:var(--warning)}
+.v-conversation .v-pack-label{font-size:16px;font-weight:500;color:var(--ink-2)}
+.v-conversation .v-pack-value{margin-left:auto;font-size:14px;color:var(--muted)}
+.v-conversation .v-pack-value.is-warning{color:var(--warning);font-weight:600}
+
+/* ---------- side by side compare (sample) ---------- */
+.v-conversation .v-compare{display:flex;gap:12px}
+.v-conversation .v-compare-col{flex:1;position:relative;border-radius:14px;overflow:hidden;background:#dfe6ec}
+.v-conversation .v-compare-tag{position:absolute;left:10px;bottom:10px;font-size:12px;color:#fff;background:rgba(20,32,50,.55);border-radius:999px;padding:4px 10px}
+
+/* ---------- confirmation banner ---------- */
+.v-conversation .v-banner{display:flex;align-items:center;gap:10px;margin-top:16px;padding:12px 16px;border-radius:12px;font-size:15px;font-weight:600}
+.v-conversation .v-banner.is-success{background:var(--success-bg);color:var(--success)}
+.v-conversation .v-banner.is-warning{background:var(--warning-bg);color:var(--warning)}
+.v-conversation .v-banner.is-pending{background:var(--rule);color:var(--muted)}
+
+/* ---------- spec chip (capture) ---------- */
+.v-conversation .v-spec-row{display:flex;align-items:center;gap:12px;margin-top:16px;padding:14px 16px;border-radius:14px;border:1.5px dashed var(--panel-border)}
+.v-conversation .v-spec-row.is-linked{border-style:solid;border-color:var(--success);background:var(--success-bg)}
+.v-conversation .v-spec-clip{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--panel-border);display:flex;align-items:center;justify-content:center;flex:0 0 auto;color:var(--muted);font-size:15px}
+.v-conversation .v-spec-row.is-linked .v-spec-clip{border-color:var(--success);color:var(--success);background:#fff}
+.v-conversation .v-spec-name{font-size:16px;font-weight:600;color:var(--ink-2)}
+.v-conversation .v-spec-kind{font-size:13px;color:var(--muted)}
