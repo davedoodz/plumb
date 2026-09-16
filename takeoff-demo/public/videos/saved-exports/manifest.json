@@ -1,0 +1,1087 @@
+{
+  "scope": "All generated mp4 and webm exports present in out; third-party inspiration excluded.",
+  "count": 180,
+  "byteIdentical": true,
+  "rows": [
+    {
+      "source": "out/chatgpt-studies/assets/framing-room.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/assets/framing-room.mp4",
+      "bytes": 4964975,
+      "sha256": "a63a15ffc1687b1801871e490530862bdf3ab5f014d0a87ddbd2f75ba48e843a"
+    },
+    {
+      "source": "out/chatgpt-studies/assets/tiles-room.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/assets/tiles-room.mp4",
+      "bytes": 2954879,
+      "sha256": "fed02a4822b94d27d521878baaeab77d5323e2d439a8f680456a97804de44718"
+    },
+    {
+      "source": "out/chatgpt-studies/assets/paint-room.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/assets/paint-room.mp4",
+      "bytes": 4013398,
+      "sha256": "70c434ef0bd172b62afb16a68c43e61fa99ba3670cf39f8af02d27f497251463"
+    },
+    {
+      "source": "out/chatgpt-studies/assets/lighting-room.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/assets/lighting-room.mp4",
+      "bytes": 2572828,
+      "sha256": "5e6a08443ed3e148b2c4cd7b8bb761f2eb8ee0800ed2cabaf1f4fb3194727a47"
+    },
+    {
+      "source": "out/chatgpt-studies/assets/tiles-sample.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/assets/tiles-sample.mp4",
+      "bytes": 3079423,
+      "sha256": "d1067adbfdc6c0ec7c5448f538382a638e596c9b08de83a3c4e4902c4f4396f8"
+    },
+    {
+      "source": "out/chatgpt-studies/assets/framing-delivery.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/assets/framing-delivery.mp4",
+      "bytes": 12389196,
+      "sha256": "86ccc58e50ccd91d904e0904a64955ecd05180c27e4e49cf3fb83b7ddbefce22"
+    },
+    {
+      "source": "out/chatgpt-studies/assets/paint-swatches.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/assets/paint-swatches.mp4",
+      "bytes": 3054392,
+      "sha256": "67e9f4b3ed53936a636617dd35068ea245a0eae703efbe6d41f898595599b4d9"
+    },
+    {
+      "source": "out/chatgpt-studies/assets/lighting-pendant.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/assets/lighting-pendant.mp4",
+      "bytes": 4832515,
+      "sha256": "1dba1d39c8f189dc7056baf68f0b34b0ac97cf52311e76ceb40f5efd40d6fc8d"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-receipt-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-receipt-followup.mp4",
+      "bytes": 564147,
+      "sha256": "2ef05a7985dfd1fe71fd547a0b00579d3ee560a1fedd165c50271108e55df228"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-receipt-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-receipt-source.mp4",
+      "bytes": 1204788,
+      "sha256": "ba01358464703e2bfb1dbdd80d397fe6dc477c8d07bce1fc08347e5e6e841dba"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-receipt-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-receipt-direct.mp4",
+      "bytes": 579099,
+      "sha256": "e78d84bd5b552fabb1d28f281527765457bfe41afedd0f3533890be8c4ad0950"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-delivery-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-delivery-source.mp4",
+      "bytes": 1259799,
+      "sha256": "24531354644407f186e2510054a1b2855a0a0e01638f0f8d51165185e7a3e3b7"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-substitution-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-substitution-followup.mp4",
+      "bytes": 580589,
+      "sha256": "6c0b61db39b83481f2677d777f712ef46a0842cd8cacc8bf2786beaf9d555830"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-substitution-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-substitution-direct.mp4",
+      "bytes": 631012,
+      "sha256": "6b6a2d3479db8343b300ee2cbb8a4fe666bc19d352aa56eddef258faf92dcc1f"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-leadtime-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-leadtime-compare.mp4",
+      "bytes": 780225,
+      "sha256": "5c30cb38a8826ff4c61f38f9230df8dc8cd08d0ce5ce5cab45ac22d7a90d475e"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-clearance-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-clearance-direct.mp4",
+      "bytes": 548827,
+      "sha256": "886760654a01031307ef6109173c4dea2b50df01e74d3e0d14ff7a7bc360e278"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quote-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quote-photo.mp4",
+      "bytes": 756318,
+      "sha256": "375931b0eb9ee62e1ca16c38302c1707e6e15049ecf3a53e73a7d544080a6f0f"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-sample-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-sample-followup.mp4",
+      "bytes": 557392,
+      "sha256": "776e1f7e2cc347eccb3204f379675989901d159d516b86593071b697795ea6e7"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-sample-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-sample-compare.mp4",
+      "bytes": 785436,
+      "sha256": "9aa246497c5ada5ff51b52cfedbd0d9f01d578feec12c453353a40eff5d8fbe2"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-sample-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-sample-source.mp4",
+      "bytes": 961696,
+      "sha256": "4e0d817ce99a649929ab369788d2fd459fb72b67d3518609f112e92ef420aa2c"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-sample-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-sample-photo.mp4",
+      "bytes": 931948,
+      "sha256": "69f80ab42daee751f3c747e9d37813d454dd10d76524c3393b487e62c709fab3"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-sample-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-sample-direct.mp4",
+      "bytes": 560581,
+      "sha256": "93bea6b1ca8db9e9d91c07b1c705428d141905d03ed6f1b9234b85f62482dc24"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-walkthrough-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-walkthrough-followup.mp4",
+      "bytes": 512279,
+      "sha256": "be9d2b122eaf8d0ad12b7cc7d7ea7daeb2fe6be94bcf2bb61d67abb956149bd2"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-walkthrough-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-walkthrough-compare.mp4",
+      "bytes": 710289,
+      "sha256": "ddbda3ecaca7c31e45b0fdf283708a1876fc3b80b5c4b4cf9de664e17d80ced3"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-walkthrough-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-walkthrough-source.mp4",
+      "bytes": 915824,
+      "sha256": "60ef4cb3eed3ce3633426df2f2e87ebe66023622ca91db3fa56803db731099d8"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-walkthrough-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-walkthrough-photo.mp4",
+      "bytes": 885291,
+      "sha256": "3bdbd9743f65a416cab4884a40002f2070c65c7c562eab80437ea09524be94db"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-walkthrough-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-walkthrough-direct.mp4",
+      "bytes": 566018,
+      "sha256": "6a543688f9a0d5791f6649e29007ef69646547e3cb9da8cc18f4b77db1ccdb45"
+    },
+    {
+      "source": "out/chatgpt-studies/generated-sources/paint-room.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/generated-sources/paint-room.mp4",
+      "bytes": 2821868,
+      "sha256": "6afdf14058ae3b020e553014efd2b091d495071a408522fa5ca5168b936181f2"
+    },
+    {
+      "source": "out/chatgpt-studies/generated-sources/tiles-room.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/generated-sources/tiles-room.mp4",
+      "bytes": 1856060,
+      "sha256": "d8593c005c0026e6301823718a69dc172a35dc0ed3497038e9f4ccbd1f520ddf"
+    },
+    {
+      "source": "out/chatgpt-studies/generated-sources/lighting-pendant.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/generated-sources/lighting-pendant.mp4",
+      "bytes": 3432236,
+      "sha256": "8ced1c747dcc4d8cc47d1c06261fae40d68c9aa8eab6e2d861a554f6762b1830"
+    },
+    {
+      "source": "out/chatgpt-studies/generated-sources/lighting-room.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/generated-sources/lighting-room.mp4",
+      "bytes": 1549027,
+      "sha256": "4b4574d908f65cf4e2c62e6b107a1fc7d34f18eff3fc129e22f36bf98fd159e1"
+    },
+    {
+      "source": "out/chatgpt-studies/generated-sources/framing-delivery.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/generated-sources/framing-delivery.mp4",
+      "bytes": 9708658,
+      "sha256": "0558b07150ff88179187e420b58165d4043078bc56001c2d9d1e60d882b0286b"
+    },
+    {
+      "source": "out/chatgpt-studies/generated-sources/paint-swatches.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/generated-sources/paint-swatches.mp4",
+      "bytes": 2255678,
+      "sha256": "c780ad08e78bab906eb2720a185916757f17015b3355c540f1fc4a62fd27c8ca"
+    },
+    {
+      "source": "out/chatgpt-studies/generated-sources/framing-room.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/generated-sources/framing-room.mp4",
+      "bytes": 4300886,
+      "sha256": "5367b15ff42680c74a3b5c8544804fe55ddfbb7f722a2f45672ded7cba0eaa83"
+    },
+    {
+      "source": "out/chatgpt-studies/generated-sources/tiles-sample.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/generated-sources/tiles-sample.mp4",
+      "bytes": 2131745,
+      "sha256": "fa87b4c8315d38a4a4f01b868bf56a61aaf89fa8071b3ba5ace35f137b77fe1c"
+    },
+    {
+      "source": "out/case-study/assets/motion/hero-bg.mp4",
+      "file": "public/videos/saved-exports/case-study/assets/motion/hero-bg.mp4",
+      "bytes": 1252437,
+      "sha256": "b45db3e0ff917d1a86fff98798248a08e51ded4be6adb4c55c8d5dc296ca8054"
+    },
+    {
+      "source": "out/case-study/assets/motion/hero.mp4",
+      "file": "public/videos/saved-exports/case-study/assets/motion/hero.mp4",
+      "bytes": 1695152,
+      "sha256": "86c20b242733545c998b70043c917f8a784ede064dcac2873366cc4bca89ff1d"
+    },
+    {
+      "source": "out/case-study/assets/motion/research-summary.mp4",
+      "file": "public/videos/saved-exports/case-study/assets/motion/research-summary.mp4",
+      "bytes": 3213416,
+      "sha256": "6042329236c44528f912bcef896ed1526fbc41cff193bf72148872e1eaf4ea91"
+    },
+    {
+      "source": "out/case-study/assets/motion/spec-story.mp4",
+      "file": "public/videos/saved-exports/case-study/assets/motion/spec-story.mp4",
+      "bytes": 2292703,
+      "sha256": "0c3160978e41fac5308ec09a82be49b60c1603d17e92203d77f923f824318cae"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-receipt-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-receipt-compare.mp4",
+      "bytes": 779003,
+      "sha256": "8765c2fd56ba015e0fbaf86e0038c7e727fefcb8f808c78ba1bfcb26dcbe3d2b"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-receipt-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-receipt-photo.mp4",
+      "bytes": 772905,
+      "sha256": "239550bb820f23bf8bfc270c539cb8172fe57c6d226b85660e22bc9db9c7ac56"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-installerpack-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-installerpack-followup.mp4",
+      "bytes": 535844,
+      "sha256": "584d8b71ac35f4dd90d67e541cc39a115e6064180fb210b077fe7f5c18b2f038"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-installerpack-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-installerpack-compare.mp4",
+      "bytes": 713823,
+      "sha256": "f000c2647e808d7d90f8ea609e9b18c209038b6c6328355f5e81967a36473f91"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-installerpack-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-installerpack-source.mp4",
+      "bytes": 964980,
+      "sha256": "810a4bcabb810b8a2821a2abb603506e49c4e32084a7df1ff0e6302b22f092a7"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-installerpack-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-installerpack-photo.mp4",
+      "bytes": 759454,
+      "sha256": "e643139a8c100a01ba03778d13d101186fbd412681ba95dcd8cc4829272fb734"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-installerpack-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-installerpack-direct.mp4",
+      "bytes": 526307,
+      "sha256": "80d9f4ce01d94b17451526688d868845dddfd0a2a3d1d9ef4f1147bd8c125238"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-delivery-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-delivery-followup.mp4",
+      "bytes": 521544,
+      "sha256": "0e97db500f3cea2c00fd1a4e4e4887fe32be96974e844c89927655491f228de4"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-delivery-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-delivery-compare.mp4",
+      "bytes": 892046,
+      "sha256": "f536c85d283bab459b11a49b6ae5eceebe0ee4da74ebd85d1ce15d2090ed59d8"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-delivery-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-delivery-photo.mp4",
+      "bytes": 741747,
+      "sha256": "bc318c9f7f04ff4a4fa887a8d566e8035b4d0b9c13b1f0a35553db62cf474619"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-delivery-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-delivery-direct.mp4",
+      "bytes": 496198,
+      "sha256": "a0b5b681df436ab0290315761fb762434e5693e9578454090b98db9e5727f29a"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-signoff-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-signoff-followup.mp4",
+      "bytes": 565655,
+      "sha256": "44a893df92d0c504a98527c38021897a1338e42abdd70240c704792a59eb8c0d"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-signoff-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-signoff-compare.mp4",
+      "bytes": 921918,
+      "sha256": "13308d664e56c2332e3785b7cf88a0e6b3ca11816a3e0bdab744dab1a1b5bd5f"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-signoff-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-signoff-source.mp4",
+      "bytes": 1359709,
+      "sha256": "517cc55aac58e3405288c55f2d1271da0dbe173028ca35daf3c155826db56b4c"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-signoff-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-signoff-photo.mp4",
+      "bytes": 686546,
+      "sha256": "fd66b6838891f1fb761ba954e37c14b4bdf61b2833fd44330c3c71e5ccce9708"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-signoff-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-signoff-direct.mp4",
+      "bytes": 501999,
+      "sha256": "58f8a9afb34c8bf09d3ff8a65b095dce7aa90822949050fa5af6ed418c9f60e6"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-substitution-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-substitution-compare.mp4",
+      "bytes": 659574,
+      "sha256": "fe439418ffbe8515c18f6482e6a58b184f6fb80fd24d94bb9ab4a04953ddf3a4"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-substitution-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-substitution-source.mp4",
+      "bytes": 1002570,
+      "sha256": "d908e3ea17a3bb8b2b8b70ff5bd58ecee371a4e29e5f60d5ef8f24d3cf3c6c04"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-substitution-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-substitution-photo.mp4",
+      "bytes": 711392,
+      "sha256": "f9a0b0bf8fb8265371d7b86ebe3ab9aded17f7f3e59d1cee80d9693bb8c18afe"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-leadtime-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-leadtime-followup.mp4",
+      "bytes": 494818,
+      "sha256": "25d704f7a6cf88ac9e7970b5ce6da4dbbc0f5256d6a3558d398cb2f6e3fd4494"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-leadtime-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-leadtime-source.mp4",
+      "bytes": 1340278,
+      "sha256": "cc156968964bfedf4be130fff2c0e7eeacf6f3be63da1017c4889436af76b154"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-leadtime-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-leadtime-photo.mp4",
+      "bytes": 692179,
+      "sha256": "b36a1568d622c2bbb8e3ca6ca82fe6cdf43692bddd59a08dd7171680cea1e60f"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-leadtime-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-leadtime-direct.mp4",
+      "bytes": 484314,
+      "sha256": "6f5199020412d46262d5dd5e00805d6df5aa3558c6cabb19eaed96df6b9f4c59"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-clearance-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-clearance-followup.mp4",
+      "bytes": 611468,
+      "sha256": "6e36701999cc9921f431a7150a4a29730e98ba66a44c0bf2138e119077d15cf6"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-clearance-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-clearance-compare.mp4",
+      "bytes": 655609,
+      "sha256": "2084684e44a9cc343c721ddbf452ef85e26128d3d2fc3e491dbc5a4ebc885b8f"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-clearance-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-clearance-source.mp4",
+      "bytes": 1265112,
+      "sha256": "be25bf4dd8b2874b8d3c9e61774f83f46bc797e463f5e84688676687af13b42d"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-clearance-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-clearance-photo.mp4",
+      "bytes": 755315,
+      "sha256": "9dc49f34429e02bb087e0c8072738542e5d9cd775b8683451495d4f2219b09f6"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quote-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quote-followup.mp4",
+      "bytes": 543337,
+      "sha256": "5e71b87ba0ffe97acfd1c9b541b2e85211cfac6f5aefc7d2418f863c6c6cb6d6"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quote-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quote-compare.mp4",
+      "bytes": 858576,
+      "sha256": "2fae28ea4d75344c02dfa3fa751980ab2d3467297f3eb4fbdb5889c2a0072bc9"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quote-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quote-source.mp4",
+      "bytes": 1061523,
+      "sha256": "1863914523d59d26ac290514bece27342caaa5a4d5f44e44ebfe072b6b0cae41"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quote-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quote-direct.mp4",
+      "bytes": 502034,
+      "sha256": "47c7109bb49dd388ea27309b9980565077461deacbe796a8e5537340ed1b78ad"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quantity-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quantity-followup.mp4",
+      "bytes": 549109,
+      "sha256": "68d79ad364740cde21c34a583a6632d48ad6e7f28df50d82ef247940947e2950"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quantity-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quantity-compare.mp4",
+      "bytes": 695562,
+      "sha256": "13653215bb22f4fe8b1c2f54682a3a47910b39f7c811b3db102b5a6e45f71728"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quantity-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quantity-source.mp4",
+      "bytes": 989585,
+      "sha256": "0bf2f2ac3342e8478f59f8076720ff4cd4a8c1f2f6b637ce1f0f51cfd6dc5dd4"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quantity-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quantity-photo.mp4",
+      "bytes": 650753,
+      "sha256": "eb97a20addba38f6180c303768c257ee23c6fd2e5b0d7d900775913ed545ef98"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-quantity-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-quantity-direct.mp4",
+      "bytes": 436443,
+      "sha256": "61f359a670bfe38d27bdad715d283a4c29fce7cc82c87d3dc9cea77e356e96b8"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-recall-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-recall-followup.mp4",
+      "bytes": 451669,
+      "sha256": "545da17ab913fa5ea9ffd077601d1e224874b9ea26d7baa7b46d7a60aff3d7cb"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-recall-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-recall-compare.mp4",
+      "bytes": 932263,
+      "sha256": "17846d93deb4c4883c375d546d9059c1f1eba28a3d9e03ef124e73d3fab4d8f7"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-recall-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-recall-source.mp4",
+      "bytes": 1037467,
+      "sha256": "f583ece96a7e1148b5320272e75b7c14ff0abb7542d7b9c2173cbaf2b2ce1020"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-recall-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-recall-photo.mp4",
+      "bytes": 662092,
+      "sha256": "06a339a9cb7f5ad637e2ad66b66b55450df8dd2babc22ee6f23c62e10094f1b2"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-recall-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-recall-direct.mp4",
+      "bytes": 429328,
+      "sha256": "024843a432dc9ee76615a17954b5470b59b43fa049da677852cf79600a0ad9f8"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-prompt-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-prompt-followup.mp4",
+      "bytes": 513124,
+      "sha256": "3e8ef4648ffa17ec4be473cc7c6b4446f9d0f9ed3e3b347932977bf7be7af241"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-prompt-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-prompt-compare.mp4",
+      "bytes": 960127,
+      "sha256": "0bb6fed3b8474f5e5d5c99b089f10e4ec79755eeb9d86eaf15d635a0abb1f338"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-prompt-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-prompt-source.mp4",
+      "bytes": 1034124,
+      "sha256": "8e7c2499ac425c0fd42789af7f9717d92c768e379283c060d3aad5a05b262ea1"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-prompt-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-prompt-photo.mp4",
+      "bytes": 704932,
+      "sha256": "60a49ac3eeb84c08c63e46065c5db372ec6733f5b29b83d3246e213910e8f0c0"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-prompt-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-prompt-direct.mp4",
+      "bytes": 501548,
+      "sha256": "31726b3875c26650860a3a46a5cdb7efd6a932c4f999cc791abbe877b9bf3bf5"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-capture-followup.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-capture-followup.mp4",
+      "bytes": 562759,
+      "sha256": "45085b3232af3144254d9289f97dd81006d527b6d2458060bebcca54bc5c484f"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-capture-compare.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-capture-compare.mp4",
+      "bytes": 664950,
+      "sha256": "21ecb77fa5fa521a10acc7849fe8c3a27fe225e07fde5cb12fee8407ba83cd21"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-capture-source.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-capture-source.mp4",
+      "bytes": 1086823,
+      "sha256": "eb4aa895428d95f92438845f16848f1150bfc3b7d70a71b710b45c6ed13cc30e"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-capture-photo.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-capture-photo.mp4",
+      "bytes": 648255,
+      "sha256": "59bacc39cdc0fa7c125c39760a6fb5970ad07a8457726dba1b5757ecdc5424cc"
+    },
+    {
+      "source": "out/chatgpt-studies/gpt-capture-direct.mp4",
+      "file": "public/videos/saved-exports/chatgpt-studies/gpt-capture-direct.mp4",
+      "bytes": 470461,
+      "sha256": "6f397865c785a5612b0547dd60219a89fa119e9fa6fe8bac532ff1992cbe4ab0"
+    },
+    {
+      "source": "out/variants/06-sample-in-daylight-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/06-sample-in-daylight-notebook.mp4",
+      "bytes": 1544718,
+      "sha256": "34cbdf15340988a24f78749a31ee4efa79eb9ed9e27f68732d51c48e63b30af6"
+    },
+    {
+      "source": "out/variants/06-sample-in-daylight-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/06-sample-in-daylight-conversation.mp4",
+      "bytes": 618061,
+      "sha256": "32bfe8b9700446580fb52b526a588b5d0268c5a9eeca873f6824101e2aa59a48"
+    },
+    {
+      "source": "out/variants/05-layout-changes-the-order-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/05-layout-changes-the-order-conversation.mp4",
+      "bytes": 226492,
+      "sha256": "6b5922c86c745143534da6ef55538f7fb374b6b97ea56b442eeb2f6e684521d2"
+    },
+    {
+      "source": "out/variants/14-after-the-order-guide.mp4",
+      "file": "public/videos/saved-exports/variants/14-after-the-order-guide.mp4",
+      "bytes": 290875,
+      "sha256": "f7de94a7fcd41f7939f7250e5259827026bdb94508dda0fd375af8a06f9fa065"
+    },
+    {
+      "source": "out/variants/13-handoff-with-evidence-guide.mp4",
+      "file": "public/videos/saved-exports/variants/13-handoff-with-evidence-guide.mp4",
+      "bytes": 261750,
+      "sha256": "4072b70e2c7f4811d35805fb889a23b030cdb6a8e8d4a11cb3912d5bfb9921ac"
+    },
+    {
+      "source": "out/variants/12-the-last-four-steps-guide.mp4",
+      "file": "public/videos/saved-exports/variants/12-the-last-four-steps-guide.mp4",
+      "bytes": 280454,
+      "sha256": "e0cbd55a7b04a0779c5d55e543e6cdfe861f60c0a7e654432fd5da497afc57ec"
+    },
+    {
+      "source": "out/variants/11-two-kinds-of-approval-guide.mp4",
+      "file": "public/videos/saved-exports/variants/11-two-kinds-of-approval-guide.mp4",
+      "bytes": 282041,
+      "sha256": "c98a9d246e0f6a7c5986d958d838dc3e3e56a05e8b7232b5a8137108d2d53560"
+    },
+    {
+      "source": "out/variants/10-compare-with-an-unknown-guide.mp4",
+      "file": "public/videos/saved-exports/variants/10-compare-with-an-unknown-guide.mp4",
+      "bytes": 291066,
+      "sha256": "fc405e4736645615f33581b1a85b4b1456475fc867abb9555a473c250b88351e"
+    },
+    {
+      "source": "out/variants/09-see-the-schedule-risk-guide.mp4",
+      "file": "public/videos/saved-exports/variants/09-see-the-schedule-risk-guide.mp4",
+      "bytes": 281527,
+      "sha256": "3eff61a71c4b3fc52b71a5bd364b489e24dc11e0f07e172a99fe71d10b578c36"
+    },
+    {
+      "source": "out/variants/08-confirm-the-clearance-guide.mp4",
+      "file": "public/videos/saved-exports/variants/08-confirm-the-clearance-guide.mp4",
+      "bytes": 302624,
+      "sha256": "1953b17cfd8d95ab555e6bc79c2791e266a103f39be8a01b0bdf2b2f62b343e7"
+    },
+    {
+      "source": "out/variants/07-words-become-a-field-guide.mp4",
+      "file": "public/videos/saved-exports/variants/07-words-become-a-field-guide.mp4",
+      "bytes": 290472,
+      "sha256": "e20a2ac2694cdbbc5afc0f528ce949e080073d77d468d99481b1ec20a719bceb"
+    },
+    {
+      "source": "out/variants/06-sample-in-daylight-guide.mp4",
+      "file": "public/videos/saved-exports/variants/06-sample-in-daylight-guide.mp4",
+      "bytes": 532338,
+      "sha256": "38ab347008959a5098a05a94dac9d190371170299513b62e66a79d1095300ecf"
+    },
+    {
+      "source": "out/variants/05-layout-changes-the-order-guide.mp4",
+      "file": "public/videos/saved-exports/variants/05-layout-changes-the-order-guide.mp4",
+      "bytes": 299176,
+      "sha256": "262168fa857c5abde51d0e9b310a9bc70c061f5a4aa5c748d8453de978f65ea3"
+    },
+    {
+      "source": "out/variants/04-walkthrough-in-context-guide.mp4",
+      "file": "public/videos/saved-exports/variants/04-walkthrough-in-context-guide.mp4",
+      "bytes": 650600,
+      "sha256": "90a73115e08258283949110064c0a28a9ae01dbb709adfb7f3d4c1cb72bb7d7a"
+    },
+    {
+      "source": "out/variants/03-recall-the-decision-guide.mp4",
+      "file": "public/videos/saved-exports/variants/03-recall-the-decision-guide.mp4",
+      "bytes": 303211,
+      "sha256": "8b63f40d8c2c8fdf515f0da4902ebfa9199ac5da57e19d4ebc5ce765fcaad90b"
+    },
+    {
+      "source": "out/variants/02-next-useful-question-guide.mp4",
+      "file": "public/videos/saved-exports/variants/02-next-useful-question-guide.mp4",
+      "bytes": 332575,
+      "sha256": "fb0df5b8565602f2056c26178fc44699bd3e68c6ae7a5233f93f671d29885b22"
+    },
+    {
+      "source": "out/variants/01-room-to-spec-guide.mp4",
+      "file": "public/videos/saved-exports/variants/01-room-to-spec-guide.mp4",
+      "bytes": 276942,
+      "sha256": "aa7d725962ec0a1a5af850e2ba9f06b48c723727ff4684f809fd48e0cb3b95a9"
+    },
+    {
+      "source": "out/variants/14-after-the-order-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/14-after-the-order-workspace.mp4",
+      "bytes": 161156,
+      "sha256": "70556493daa41db2d6a77839ce3eb8201a820cd5104c17e01d63a73b12c498a7"
+    },
+    {
+      "source": "out/variants/13-handoff-with-evidence-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/13-handoff-with-evidence-workspace.mp4",
+      "bytes": 161127,
+      "sha256": "5d0aed21d36b884e92eedf25463f25e450b3ba7349134b7a8fd59f8a85d7899d"
+    },
+    {
+      "source": "out/variants/12-the-last-four-steps-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/12-the-last-four-steps-workspace.mp4",
+      "bytes": 171099,
+      "sha256": "03b87248072e2ce0d993b4e0de21d57a1cab8b25e1455d8bb327c712f5ea3c10"
+    },
+    {
+      "source": "out/variants/11-two-kinds-of-approval-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/11-two-kinds-of-approval-workspace.mp4",
+      "bytes": 145459,
+      "sha256": "8f39e9a305acbdb0dc0499f87b6772eac3931f61141be68ecb4f542b4e5d13d1"
+    },
+    {
+      "source": "out/variants/10-compare-with-an-unknown-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/10-compare-with-an-unknown-workspace.mp4",
+      "bytes": 141690,
+      "sha256": "a74fe14040cf1db4fb3688eeccd099eb2610aeca41ccb2b841ef82750234f756"
+    },
+    {
+      "source": "out/variants/09-see-the-schedule-risk-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/09-see-the-schedule-risk-workspace.mp4",
+      "bytes": 133918,
+      "sha256": "2295407dc5e3a81b7f8aae9291318b6481dac1c8e8356225fef1294a649778cd"
+    },
+    {
+      "source": "out/variants/08-confirm-the-clearance-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/08-confirm-the-clearance-workspace.mp4",
+      "bytes": 176669,
+      "sha256": "d792943aa4432be3ad5371a11ec6097d9fef537afc8ec5e8a297db36b8b10c23"
+    },
+    {
+      "source": "out/variants/07-words-become-a-field-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/07-words-become-a-field-workspace.mp4",
+      "bytes": 122489,
+      "sha256": "588b859a91bdfd07d7e9d9dba4a53dbcee199fa35157e817ac4e92a35a843436"
+    },
+    {
+      "source": "out/variants/06-sample-in-daylight-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/06-sample-in-daylight-workspace.mp4",
+      "bytes": 218042,
+      "sha256": "ebac5cdaf1e33fa1394a966c237c9e429d234193066ac42260c6b20d5bd2b56f"
+    },
+    {
+      "source": "out/variants/05-layout-changes-the-order-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/05-layout-changes-the-order-workspace.mp4",
+      "bytes": 133311,
+      "sha256": "2019afc126e0d361eb24804cfb29d6a6d5b59d622e432d864b626c11466040ff"
+    },
+    {
+      "source": "out/variants/04-walkthrough-in-context-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/04-walkthrough-in-context-workspace.mp4",
+      "bytes": 284587,
+      "sha256": "4c4319e30d456c980089692deec89edd509c58f73677c52b4c074aae8c7de4c1"
+    },
+    {
+      "source": "out/variants/03-recall-the-decision-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/03-recall-the-decision-workspace.mp4",
+      "bytes": 192787,
+      "sha256": "39cbe29eeea92ddcf16f2c89737d3dda0df9e49d83d64d40637a75e5fb80c8c2"
+    },
+    {
+      "source": "out/variants/02-next-useful-question-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/02-next-useful-question-workspace.mp4",
+      "bytes": 161355,
+      "sha256": "69556058ac996b803343f14ea6d8bdc124938c0226888e990dc577eeb326c8fc"
+    },
+    {
+      "source": "out/variants/01-room-to-spec-workspace.mp4",
+      "file": "public/videos/saved-exports/variants/01-room-to-spec-workspace.mp4",
+      "bytes": 173335,
+      "sha256": "d24ba85899a608e933fa566e173709361227a45b8221642ba2546bed0dd16b2a"
+    },
+    {
+      "source": "out/variants/12-the-last-four-steps-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/12-the-last-four-steps-canvas.mp4",
+      "bytes": 400489,
+      "sha256": "00867070d86bef178d3473564df70dbb2bd94eeb89e7b6c58960b6b933f9a5e8"
+    },
+    {
+      "source": "out/variants/14-after-the-order-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/14-after-the-order-notebook.mp4",
+      "bytes": 449612,
+      "sha256": "a41d29ea6a2bc06cb5ae7d76785b0f0548a2395259598a265cacec614d29b35e"
+    },
+    {
+      "source": "out/variants/13-handoff-with-evidence-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/13-handoff-with-evidence-notebook.mp4",
+      "bytes": 551140,
+      "sha256": "e00a73e11ddad3dda5f615a1a563b30d0edd4d16325750b43007dadc2acd0a37"
+    },
+    {
+      "source": "out/variants/12-the-last-four-steps-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/12-the-last-four-steps-notebook.mp4",
+      "bytes": 432868,
+      "sha256": "f1ef62c5248c2126f5eb2ab1d611774619a7e13c67c9485242362faa0f6c6f24"
+    },
+    {
+      "source": "out/variants/11-two-kinds-of-approval-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/11-two-kinds-of-approval-notebook.mp4",
+      "bytes": 314705,
+      "sha256": "87d5bd0a8c102b8a159bb14cbb8cf451d8d39316affacfbbb5fb5d695beb8fd9"
+    },
+    {
+      "source": "out/variants/10-compare-with-an-unknown-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/10-compare-with-an-unknown-notebook.mp4",
+      "bytes": 535255,
+      "sha256": "be1f5cf9d15f83188c1424abb50a7750b8d96622f081d4c05da107f94a897d2d"
+    },
+    {
+      "source": "out/variants/09-see-the-schedule-risk-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/09-see-the-schedule-risk-notebook.mp4",
+      "bytes": 211763,
+      "sha256": "ab0e9e2e7f3a7251686fbbfdb695dcc96c2dad37982aa8ef43f6279e7ac16951"
+    },
+    {
+      "source": "out/variants/08-confirm-the-clearance-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/08-confirm-the-clearance-notebook.mp4",
+      "bytes": 439248,
+      "sha256": "ca8718197d95e6243d341d90e3a4c1d7a82632387d004c54cc6d962d58b5084e"
+    },
+    {
+      "source": "out/variants/07-words-become-a-field-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/07-words-become-a-field-notebook.mp4",
+      "bytes": 206732,
+      "sha256": "9d2b36fc80d93f91c16c52089eaa814cf0692d15f215f408fc9a6ce56c068fcb"
+    },
+    {
+      "source": "out/variants/05-layout-changes-the-order-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/05-layout-changes-the-order-notebook.mp4",
+      "bytes": 608580,
+      "sha256": "fcc3b5243a9f9be0cd4376ca43c3a619243e95b7be65e16798469fcef432f68e"
+    },
+    {
+      "source": "out/variants/04-walkthrough-in-context-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/04-walkthrough-in-context-notebook.mp4",
+      "bytes": 1357793,
+      "sha256": "e06af6978fa97bfa1da620920766fb2251ff0bae2d289b1904e4088ad52822be"
+    },
+    {
+      "source": "out/variants/03-recall-the-decision-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/03-recall-the-decision-notebook.mp4",
+      "bytes": 634099,
+      "sha256": "668eeaaa683b1bdb1e36087f89d2ad55b702e43eeafddb10e193597778ac290c"
+    },
+    {
+      "source": "out/variants/02-next-useful-question-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/02-next-useful-question-notebook.mp4",
+      "bytes": 766903,
+      "sha256": "2899e264d25b422b92839413eac87a0f9b48bd6121707e416a312513e3e0f140"
+    },
+    {
+      "source": "out/variants/01-room-to-spec-notebook.mp4",
+      "file": "public/videos/saved-exports/variants/01-room-to-spec-notebook.mp4",
+      "bytes": 906100,
+      "sha256": "9b154db5048ef4add84cafbaf3a3857f570258daaddb264c9b902e8c53fb5740"
+    },
+    {
+      "source": "out/variants/14-after-the-order-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/14-after-the-order-canvas.mp4",
+      "bytes": 222714,
+      "sha256": "5e1d8cb9d95905c87c45c53767090284d2a79cfc296f1b1ec9636c5877a2ad55"
+    },
+    {
+      "source": "out/variants/13-handoff-with-evidence-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/13-handoff-with-evidence-canvas.mp4",
+      "bytes": 291674,
+      "sha256": "61780e8474ac4da66a6371c7ac57adbf9c6e57bea631ae4417d36234745b08db"
+    },
+    {
+      "source": "out/variants/11-two-kinds-of-approval-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/11-two-kinds-of-approval-canvas.mp4",
+      "bytes": 193811,
+      "sha256": "6c7bc289b607bd5b545ebf0646ba78056b35bf692ae83572186ff48df7da5741"
+    },
+    {
+      "source": "out/variants/10-compare-with-an-unknown-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/10-compare-with-an-unknown-canvas.mp4",
+      "bytes": 208145,
+      "sha256": "2028655a8013ca97db815150d390c1ae5b92c4d61d159481152803c32117bb5b"
+    },
+    {
+      "source": "out/variants/09-see-the-schedule-risk-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/09-see-the-schedule-risk-canvas.mp4",
+      "bytes": 184554,
+      "sha256": "496821a9e05d5460d005c4e691054bcb4006816a090733539e46ec4c782daff3"
+    },
+    {
+      "source": "out/variants/08-confirm-the-clearance-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/08-confirm-the-clearance-canvas.mp4",
+      "bytes": 311346,
+      "sha256": "44d6592caf7b42f4a029d1f314121e8096d09a84eea96f2d3694fecb61f185f6"
+    },
+    {
+      "source": "out/variants/07-words-become-a-field-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/07-words-become-a-field-canvas.mp4",
+      "bytes": 255568,
+      "sha256": "cec2d5325cd76852a857e60122238b272cb6794d91f885dc4371339b641f951a"
+    },
+    {
+      "source": "out/variants/06-sample-in-daylight-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/06-sample-in-daylight-canvas.mp4",
+      "bytes": 529206,
+      "sha256": "eebc5a4b1e3ba1f331638d98744396026de5c728035afea0c4d211f140488815"
+    },
+    {
+      "source": "out/variants/05-layout-changes-the-order-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/05-layout-changes-the-order-canvas.mp4",
+      "bytes": 205260,
+      "sha256": "989db90f1f3e827c4ecfaac87d6de808e2e19a2d493c28b662dd0a9b0f5d73cb"
+    },
+    {
+      "source": "out/variants/04-walkthrough-in-context-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/04-walkthrough-in-context-canvas.mp4",
+      "bytes": 432910,
+      "sha256": "fa49fec4035b0c926b581e499b458601eec6414702378ebb0bea7c7e9b661717"
+    },
+    {
+      "source": "out/variants/03-recall-the-decision-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/03-recall-the-decision-canvas.mp4",
+      "bytes": 229204,
+      "sha256": "44b7870482c2b7d4488067e421273277a296b076c7e836d1ec1ff6581349db37"
+    },
+    {
+      "source": "out/variants/02-next-useful-question-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/02-next-useful-question-canvas.mp4",
+      "bytes": 238871,
+      "sha256": "98dd6234bcafb6445e251cc7bb1cdeda6aef5bd068a291c89752bfea7310a736"
+    },
+    {
+      "source": "out/variants/01-room-to-spec-canvas.mp4",
+      "file": "public/videos/saved-exports/variants/01-room-to-spec-canvas.mp4",
+      "bytes": 256437,
+      "sha256": "34abab53298b34a256b16697952b88a57ed03bea160172b3a60b37b5996bf911"
+    },
+    {
+      "source": "out/variants/14-after-the-order-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/14-after-the-order-conversation.mp4",
+      "bytes": 200818,
+      "sha256": "97e7adaea37c1acb75cfae917273ce5da34aaf1e1a91f5c2f706973139a6a2df"
+    },
+    {
+      "source": "out/variants/13-handoff-with-evidence-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/13-handoff-with-evidence-conversation.mp4",
+      "bytes": 218707,
+      "sha256": "e761b0fc3ca2c13f7feb95daa6a9cf49a21057529789120bcd9d5c9116c8f170"
+    },
+    {
+      "source": "out/variants/12-the-last-four-steps-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/12-the-last-four-steps-conversation.mp4",
+      "bytes": 374031,
+      "sha256": "ae2e3d2cb8f4c4aa1358ff1c7b94679165596f46a3bf6df193a9e4d7af117c20"
+    },
+    {
+      "source": "out/variants/11-two-kinds-of-approval-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/11-two-kinds-of-approval-conversation.mp4",
+      "bytes": 167127,
+      "sha256": "5c01e7404dccfc1a7906a1e99bea1bad393708ab9fbf551da7d880631f51f3a7"
+    },
+    {
+      "source": "out/variants/10-compare-with-an-unknown-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/10-compare-with-an-unknown-conversation.mp4",
+      "bytes": 217175,
+      "sha256": "07e843b62643644cb528033f027728c683f3165b8c9a6440a658130b82748445"
+    },
+    {
+      "source": "out/variants/09-see-the-schedule-risk-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/09-see-the-schedule-risk-conversation.mp4",
+      "bytes": 210098,
+      "sha256": "0f18a6060e626093afea74e5fe07cc284624cbb0244d2e5e24d4ed6b96f3ca09"
+    },
+    {
+      "source": "out/variants/08-confirm-the-clearance-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/08-confirm-the-clearance-conversation.mp4",
+      "bytes": 442259,
+      "sha256": "2432d0a28999a6d3e01827c1c1fa9525762e095cb099896fbf414ec238ef8a8b"
+    },
+    {
+      "source": "out/variants/07-words-become-a-field-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/07-words-become-a-field-conversation.mp4",
+      "bytes": 209853,
+      "sha256": "afdc6e0afcf36e8a58f78565904aee2134eb57d167387d4b8979f556b14059ea"
+    },
+    {
+      "source": "out/variants/04-walkthrough-in-context-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/04-walkthrough-in-context-conversation.mp4",
+      "bytes": 621415,
+      "sha256": "31e5cbeefcde259d5c286b412069a2b9f6c3842f6791c4500d4514e8bc696d5f"
+    },
+    {
+      "source": "out/variants/03-recall-the-decision-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/03-recall-the-decision-conversation.mp4",
+      "bytes": 289877,
+      "sha256": "b2b00f2bfa5a3f8e6ddd371c12fe2eed99a03e17e7e35b94421db5a53c55a963"
+    },
+    {
+      "source": "out/variants/02-next-useful-question-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/02-next-useful-question-conversation.mp4",
+      "bytes": 303645,
+      "sha256": "fd99ef892cc0f085631eb9480172adc39ae68d0f10b85bdf80d3af090f56d077"
+    },
+    {
+      "source": "out/variants/01-room-to-spec-conversation.mp4",
+      "file": "public/videos/saved-exports/variants/01-room-to-spec-conversation.mp4",
+      "bytes": 247698,
+      "sha256": "4704394838647352306f42926de015ac7ab141e80b74d355a7cf78c7a5c5f156"
+    },
+    {
+      "source": "out/prototypes/12-the-last-four-steps.mp4",
+      "file": "public/videos/saved-exports/prototypes/12-the-last-four-steps.mp4",
+      "bytes": 271841,
+      "sha256": "cda0fe169237f7a4a4ad0f8cdb182b3061cb348236d3f7fcdcec590db59e3ce4"
+    },
+    {
+      "source": "out/prototypes/08-confirm-the-clearance.mp4",
+      "file": "public/videos/saved-exports/prototypes/08-confirm-the-clearance.mp4",
+      "bytes": 370469,
+      "sha256": "a3f73d3383141c1cbf7421130147975d8ffab1e9a36ae0bd41f304395eb7e093"
+    },
+    {
+      "source": "out/prototypes/14-after-the-order.mp4",
+      "file": "public/videos/saved-exports/prototypes/14-after-the-order.mp4",
+      "bytes": 160257,
+      "sha256": "f8f757248fe46a4c6a156813d1a1b8e16934d328eabf61f55417be225ceeae8a"
+    },
+    {
+      "source": "out/prototypes/13-handoff-with-evidence.mp4",
+      "file": "public/videos/saved-exports/prototypes/13-handoff-with-evidence.mp4",
+      "bytes": 130899,
+      "sha256": "84743c46ea1f6a38c2ba759e550d15038fee89c9086a834198d99068ac5b3d6e"
+    },
+    {
+      "source": "out/prototypes/11-two-kinds-of-approval.mp4",
+      "file": "public/videos/saved-exports/prototypes/11-two-kinds-of-approval.mp4",
+      "bytes": 153772,
+      "sha256": "fb741bf841192d4f3ae229cfa5e6cfb45b80459a9ba764ebf41d668cd38381e3"
+    },
+    {
+      "source": "out/prototypes/10-compare-with-an-unknown.mp4",
+      "file": "public/videos/saved-exports/prototypes/10-compare-with-an-unknown.mp4",
+      "bytes": 145740,
+      "sha256": "55dd9e7c6695ff6051a8b3005e20e297f34c12e5297b62731a6c4ef66e065f2c"
+    },
+    {
+      "source": "out/prototypes/09-see-the-schedule-risk.mp4",
+      "file": "public/videos/saved-exports/prototypes/09-see-the-schedule-risk.mp4",
+      "bytes": 182056,
+      "sha256": "8ea57ca6372015d71a38406da6106f37ef68732f2e63908ff97a598b2caa3f85"
+    },
+    {
+      "source": "out/prototypes/07-words-become-a-field.mp4",
+      "file": "public/videos/saved-exports/prototypes/07-words-become-a-field.mp4",
+      "bytes": 156443,
+      "sha256": "9179b94eb8e97ffa509d500b067cfc1e4d90b2b1a9a9a30dc6947e8f64b46c37"
+    },
+    {
+      "source": "out/prototypes/06-sample-in-daylight.mp4",
+      "file": "public/videos/saved-exports/prototypes/06-sample-in-daylight.mp4",
+      "bytes": 628932,
+      "sha256": "a84947a4300528c5c06c64b1dadb73cfa00a4a775a87797fce2866e0a4140f8f"
+    },
+    {
+      "source": "out/prototypes/05-layout-changes-the-order.mp4",
+      "file": "public/videos/saved-exports/prototypes/05-layout-changes-the-order.mp4",
+      "bytes": 179871,
+      "sha256": "f2a5f1597b7c8f1f2541a6e3e7a8316b4b6d77b663fb448de324f31d8bf80e4c"
+    },
+    {
+      "source": "out/prototypes/04-walkthrough-in-context.mp4",
+      "file": "public/videos/saved-exports/prototypes/04-walkthrough-in-context.mp4",
+      "bytes": 869161,
+      "sha256": "c3fd58bbf81e58ad90558734ad4122186ffb9f77b8159aa5bb778a62aab2a605"
+    },
+    {
+      "source": "out/prototypes/03-recall-the-decision.mp4",
+      "file": "public/videos/saved-exports/prototypes/03-recall-the-decision.mp4",
+      "bytes": 229306,
+      "sha256": "ec2f5ee104388a351c0c514c23c16e73e29a03e38bccd137bb02a8896eb951da"
+    },
+    {
+      "source": "out/prototypes/02-next-useful-question.mp4",
+      "file": "public/videos/saved-exports/prototypes/02-next-useful-question.mp4",
+      "bytes": 160521,
+      "sha256": "593a4ade349b309124ccc09fda14c34c31b45cea66f1128732a3410a77277caa"
+    },
+    {
+      "source": "out/prototypes/01-room-to-spec.mp4",
+      "file": "public/videos/saved-exports/prototypes/01-room-to-spec.mp4",
+      "bytes": 168369,
+      "sha256": "4cfc4afe259b1c429723fc47dd16aa4962df9d8efb4ff13b82ffa24f1615de2a"
+    },
+    {
+      "source": "out/takeoff-claude.mp4",
+      "file": "public/videos/saved-exports/takeoff-claude.mp4",
+      "bytes": 1605042,
+      "sha256": "24eda91c55a7d890f07aa9a99bcdd99f1ccc404b263440ba3c17b11bcf78dd9e"
+    },
+    {
+      "source": "out/takeoff-chatgpt.mp4",
+      "file": "public/videos/saved-exports/takeoff-chatgpt.mp4",
+      "bytes": 1597989,
+      "sha256": "085edaefce3e37038d5328900cb410ca23f844de873f8db89d728f892bada380"
+    },
+    {
+      "source": "out/takeoff-75s-transparent.webm",
+      "file": "public/videos/saved-exports/takeoff-75s-transparent.webm",
+      "bytes": 4063724,
+      "sha256": "c7f883e97c972848ae64b6bf639fde7536eca8e721cb79758b11af67e8460c5a"
+    },
+    {
+      "source": "out/takeoff-75s-white.mp4",
+      "file": "public/videos/saved-exports/takeoff-75s-white.mp4",
+      "bytes": 3583910,
+      "sha256": "88363879f774cdd27a3dca070f5153d8df68fd08a99c575c7511f7b417e26187"
+    },
+    {
+      "source": "out/takeoff-75s.mp4",
+      "file": "public/videos/saved-exports/takeoff-75s.mp4",
+      "bytes": 3421929,
+      "sha256": "3cfbc6081a1f746d6d5bb0ce962fd0c7afaca2485df0c61119cbf46b31dc9b69"
+    },
+    {
+      "source": "out/takeoff-substitution-12s.mp4",
+      "file": "public/videos/saved-exports/takeoff-substitution-12s.mp4",
+      "bytes": 514459,
+      "sha256": "a9e4496c0f3de26ef02fa0597aae0ed05ac1dac77b2c149391bae6d2319711cb"
+    }
+  ]
+}
