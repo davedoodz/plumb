@@ -1,0 +1,350 @@
+/* decision-tools.css — recall, quote, leadtime, signoff */
+/* Extends shared tool-* primitives from styles.css. All colors match the
+   ChatGPT-study token set: near-black text, mid-gray secondary, white cards,
+   hairline borders, generous corner radii. No new fonts, no icon fonts. */
+
+.dec-recall,
+.dec-quote,
+.dec-leadtime,
+.dec-signoff {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Status chip color modifiers, layered on top of the shared .tool-chip */
+.dec-chip--ok {
+  color: #1a7f37;
+  background: #e8f5ea;
+}
+.dec-chip--warn {
+  color: #9a6b00;
+  background: #fbf1dc;
+}
+.dec-chip--bad {
+  color: #b42318;
+  background: #fbe9e7;
+}
+.dec-chip--muted {
+  color: #7a7a7a;
+  background: #f1f1f1;
+}
+
+.dec-empty {
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.dec-status-error {
+  color: #b42318;
+}
+
+/* -------------------------------------------------------------------- */
+/* Recall: timeline + before/after diff                                  */
+/* -------------------------------------------------------------------- */
+
+.dec-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dec-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 10px 12px;
+  font: inherit;
+  color: #111;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.dec-timeline-item:hover {
+  border-color: #c9c9c9;
+}
+
+.dec-timeline-item.is-selected {
+  border-color: #111;
+  background: #fafafa;
+}
+
+.dec-timeline-dot {
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: #d8d8d8;
+}
+
+.dec-timeline-dot[data-kind="approval"] {
+  background: #1a7f37;
+}
+.dec-timeline-dot[data-kind="request"] {
+  background: #c98a00;
+}
+.dec-timeline-dot[data-kind="draft"] {
+  background: #b7b7b7;
+}
+
+.dec-timeline-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.dec-timeline-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dec-timeline-meta {
+  color: #7a7a7a;
+  font-size: 13px;
+}
+
+.dec-diff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.dec-diff-col {
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.dec-diff-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.dec-diff-row span {
+  color: #7a7a7a;
+}
+
+.dec-pin-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Quote: upload, parsed evidence, exclusions, delivered total           */
+/* -------------------------------------------------------------------- */
+
+.dec-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dec-upload p {
+  margin: 0;
+}
+
+.dec-upload-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dec-file-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dec-file-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dec-paste {
+  width: 100%;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.dec-parsed-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.dec-parsed-row span {
+  color: #7a7a7a;
+}
+
+.dec-parsed-source {
+  margin: 2px 0 8px;
+  padding-left: 10px;
+  border-left: 2px solid #e8e8e8;
+  color: #7a7a7a;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.dec-exclusion-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dec-exclusion-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dec-exclusion-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.dec-exclusion-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dec-exclusion-option input {
+  margin-top: 3px;
+  flex: 0 0 auto;
+}
+
+.dec-exclusion-option.is-checked {
+  border-color: #111;
+  background: #fafafa;
+}
+
+.dec-total-card {
+  border: 1px solid #111;
+}
+
+.dec-total-line {
+  font-size: 22px;
+  margin: 4px 0 8px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Leadtime: dates, buffer stepper, risk banner                          */
+/* -------------------------------------------------------------------- */
+
+.dec-buffer-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.dec-stepper {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  flex: 0 0 auto;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.dec-buffer-input {
+  width: 64px;
+  text-align: center;
+}
+
+.dec-risk-banner {
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+
+.dec-risk-banner--ok {
+  background: #e8f5ea;
+  color: #1a7f37;
+  border-color: #bfe4c6;
+}
+
+.dec-risk-banner--warn {
+  background: #fbf1dc;
+  color: #9a6b00;
+  border-color: #f0dba8;
+}
+
+.dec-risk-banner--bad {
+  background: #fbe9e7;
+  color: #b42318;
+  border-color: #f3c6c0;
+}
+
+/* -------------------------------------------------------------------- */
+/* Signoff: dual lanes, checklist, decline/revoke                        */
+/* -------------------------------------------------------------------- */
+
+.dec-lane-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dec-lane {
+  border-width: 1.5px;
+}
+
+.dec-lane-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.dec-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.dec-decline-reason,
+.dec-revoke-reason {
+  width: 100%;
+  resize: vertical;
+  font-family: inherit;
+  margin-top: 6px;
+}
+
+@media (max-width: 360px) {
+  .dec-diff-grid {
+    grid-template-columns: 1fr;
+  }
+}

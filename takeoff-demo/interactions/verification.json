@@ -1,0 +1,89 @@
+{
+  "surface": "http://127.0.0.1:3219/interactions/index.html",
+  "scope": "Fourteen local interaction prototypes; no supplier backend or AI inference",
+  "browser": "Windowless Chromium headless-shell, actual published HTML, desktop 1440x1100 and mobile 390x844",
+  "visualChecks": {
+    "toolSurfaces": 28,
+    "horizontalOverflow": 0,
+    "pageErrors": 0,
+    "screenshots": "out/interactions-proof/<concept>-<width>.png",
+    "note": "The inactive camera frame img has no src until capture; it is hidden, not a failed asset."
+  },
+  "scenarios": [
+    {
+      "concept": "capture",
+      "proof": "Reference image selected, pin at 50%/50% and typed note attached with loaded image. Real getUserMedia using Chromium synthetic camera captured a 640px JPEG; tracks ended on close. Injected NotAllowedError in application realm showed denial and allowed reference fallback."
+    },
+    {
+      "concept": "prompt",
+      "proof": "Four coverage categories selected; review/remove/reselect completed; four images attached. Actual .txt upload rejected; actual tiles-room.png upload retained as data:image/png in chat."
+    },
+    {
+      "concept": "recall",
+      "proof": "Draft entry cannot be pinned. Approval entry produced owner Sam, Paint Spec v3, September 10 and decision context."
+    },
+    {
+      "concept": "walkthrough",
+      "proof": "Real MediaRecorder with Chromium synthetic microphone started/stopped; room/material/action tags attached alongside playable audio/webm data URL. No transcription claimed."
+    },
+    {
+      "concept": "quantity",
+      "proof": "Zero length blocked. 5m × 3.6m minus 1.2m² plus 10%, divided by 1.44m²/box rounded up to 13 boxes."
+    },
+    {
+      "concept": "sample",
+      "proof": "Wipe moved to 75%; viewing context toggled; explicit visual acknowledgement and three identity checks gated confirmation. Evidence images retained."
+    },
+    {
+      "concept": "quote",
+      "proof": "Real TXT file upload: $1000 subtotal + $45 freight + $80 tax = $1125 total; $200 deposit gives $925 due. This scenario exposed and then confirmed the fix for four-digit currency truncation."
+    },
+    {
+      "concept": "clearance",
+      "proof": "Object moved to 65% across photo; 2800mm ceiling minus 1000mm drop produced 1800mm floor clearance. WebGL overlay produced actual pixels; result explicitly remains a preview."
+    },
+    {
+      "concept": "leadtime",
+      "proof": "Stale ETA acknowledgement gates save. Decimal buffer rejected. September 23 plus 14 days rolls to October 7 and flags September 20 booking risk."
+    },
+    {
+      "concept": "substitution",
+      "proof": "WebGL canvas pixels changed under keyboard orbit, cone geometry selection and ink material. Selected alternative attached with unverified-spec boundary."
+    },
+    {
+      "concept": "signoff",
+      "proof": "Trade role cannot request budget lane. Independent trade and budget approvals exercised; budget revoked while trade approval remained."
+    },
+    {
+      "concept": "delivery",
+      "proof": "Matched demo PO, entered 24/39/16 counts; negative count blocked both saves, changed PO code invalidated match; result correctly reported one short line."
+    },
+    {
+      "concept": "installerpack",
+      "proof": "Four approved revision selections gated download. Lighting annotation toggled off. Downloaded JSON inspected for four trade records, revision/source fields, annotation positions and synthetic-record warning."
+    },
+    {
+      "concept": "receipt",
+      "proof": "Fractional count and future date blocked draft. Completed policy checklist produced real downloaded HTML with embedded PNG evidence (7,789,053 characters), explicitly not submitted."
+    }
+  ],
+  "additionalChecks": [
+    "Late return-draft completion previously attached to a different concept. Reproduction now leaves the next tool open and its conversation unchanged.",
+    "Camera request button disables while permission is pending; shutter waits for actual frame data; captured JPEG survives cleanup and video tracks end.",
+    "Percentage and negative subtotals cannot be saved as verified quotes.",
+    "Native dialog keeps keyboard focus inside the tool; Escape closes it."
+  ],
+  "finalReviewReceipt": "review.json",
+  "codeChecks": {
+    "scopedEslint": "Passed for all seven interaction modules and publisher.",
+    "projectLint": "eslint src passed; tsc reports pre-existing unused React imports in motion/concept-hero/Hero.tsx, motion/concept-shared/Grain.tsx, motion/concept-spec-story/SpecStory.tsx. Those files were not changed.",
+    "testStrategy": "Actual published browser scenarios and portable downloads are the proof for these isolated design prototypes; no existing test suite covers this new HTML surface."
+  },
+  "limits": [
+    "Camera and microphone exercised with Chromium synthetic test devices, not physical phone hardware.",
+    "Permission denial exercised by injected DOMException; headless synthetic-device flags auto-grant actual device permissions.",
+    "AR means room-photo placement preview, not depth tracking or live WebXR.",
+    "Conversation results remain local in memory until reset/reload; explicit downloads save durable copies.",
+    "Human visual acceptance remains David's decision."
+  ]
+}

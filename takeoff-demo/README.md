@@ -75,6 +75,27 @@ Veo 3.1 Fast produced native 720p, eight-second sources. The pipeline crops them
 `media-verification.json` records all 32 asset hashes and source-video decode checks.
 `generation-incident.json` records duplicate paid submissions from an interrupted worker. Do not retry ambiguous jobs without reconciling provider history.
 
+## Live interaction studies
+
+`interactions/index.html` contains fourteen working browser tools in a shared ChatGPT-style conversation.
+Run `node interactions.mjs` to copy the source and existing media into `out/interactions/`.
+Serve `out` with the existing preview server. The gallery route is `/interactions/index.html?concept=capture`.
+
+- Capture and photo tools keep images, annotations, and notes in the local conversation.
+- Voice uses the browser microphone and MediaRecorder. The editable example note is not speech recognition.
+- Quotes accept TXT or CSV files and preserve source lines beside the calculation.
+- Takeoff, scheduling, approval, and receiving tools expose their assumptions and separate incomplete states.
+- The pendant viewer uses procedural WebGL geometry. Room placement is a photo preview, not tracked augmented reality.
+- Handoff and return tools download actual files. Return drafts embed their evidence photo.
+
+Camera and microphone access require an explicit action. Media stays local, including after attachment.
+Conversation results last until reset or reload. Use the download controls for durable copies.
+`interactions/verification.json` records exercised paths, desktop/mobile coverage, and device-testing limits.
+All records are synthetic. Framing remains exploratory, not engineering or installation approval.
+
+The complete generated-video archive is in `public/videos/saved-exports/`.
+Its manifest records 180 unchanged exports and their SHA-256 hashes. Third-party inspiration is separate.
+
 ## Decisions
 
 - The brief specifies 75 seconds but its scene timings total 78. All card scene boundaries stay intact; the closing hold is three seconds instead of six.

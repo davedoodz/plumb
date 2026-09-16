@@ -1,0 +1,385 @@
+/* Capture tools: capture, prompt, walkthrough.
+   Prefix: cap-. Only additive rules; shared tool-* classes live in styles.css. */
+
+/* ---------- shared across all three tools ---------- */
+
+.cap-tool {
+  font-size: 14px;
+}
+
+.cap-hint {
+  color: #7a7a7a;
+  font-size: 12px;
+}
+
+.cap-icon {
+  display: flex;
+  color: #7a7a7a;
+}
+
+/* ---------- capture: camera / reference photo ---------- */
+
+.cap-mode-row {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.cap-mode-btn {
+  flex: 0 0 auto;
+}
+
+.cap-mode-btn[aria-pressed="true"] {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+.cap-stage {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.cap-ref-grid {
+  padding: 4px;
+}
+
+.cap-ref-item {
+  border: 1px solid #e4e4e4;
+  background: #ffffff;
+  border-radius: 13px;
+  padding: 6px;
+  display: grid;
+  gap: 6px;
+  text-align: left;
+}
+
+.cap-ref-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 9px;
+  display: block;
+}
+
+.cap-ref-item-caption {
+  font-size: 11px;
+  color: #7a7a7a;
+  padding: 0 2px 2px;
+}
+
+.cap-camera-placeholder {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 34px 20px;
+  text-align: center;
+}
+
+.cap-camera-placeholder .tool-copy {
+  color: #7a7a7a;
+  max-width: 240px;
+}
+
+.cap-video {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: #111111;
+}
+
+.cap-shutter {
+  width: calc(100% - 24px);
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cap-frame-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  cursor: crosshair;
+}
+
+.cap-frame-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.cap-pin-dot {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #ff4d34;
+  border: 3px solid #ffffff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 4px rgba(17, 17, 17, 0.4);
+  padding: 0;
+}
+
+.cap-source-chip {
+  position: absolute;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
+}
+
+.cap-stage .cap-view[data-view="frame"] {
+  position: relative;
+}
+
+.cap-chip-live {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+.cap-pin-panel {
+  display: grid;
+  gap: 8px;
+}
+
+/* ---------- prompt: coverage checklist ---------- */
+
+.cap-progress-track {
+  height: 6px;
+  border-radius: 999px;
+  background: #ececec;
+  overflow: hidden;
+  padding: 0;
+}
+
+.cap-progress-fill {
+  height: 100%;
+  background: #111111;
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+
+.cap-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.cap-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.cap-item-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cap-thumb {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f0f0f0;
+}
+
+.cap-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cap-thumb-empty {
+  border: 1px dashed #d5d5d5;
+}
+
+.cap-item-copy {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.cap-item-hint {
+  color: #7a7a7a;
+}
+
+.cap-chip-done {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cap-picker {
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+  background: #fafafa;
+}
+
+.cap-picker-head {
+  justify-content: space-between;
+}
+
+.cap-icon-btn {
+  flex: 0 0 auto;
+  width: 37px;
+  min-height: 37px;
+  padding: 0;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+}
+
+.cap-picker-grid {
+  padding: 0;
+}
+
+.cap-lib-item {
+  border: 1px solid #e4e4e4;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 6px;
+  display: grid;
+  gap: 6px;
+  text-align: left;
+}
+
+.cap-lib-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.cap-lib-item span {
+  font-size: 11px;
+  color: #7a7a7a;
+}
+
+.cap-upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cap-review-grid {
+  padding: 0;
+}
+
+.cap-review-item {
+  position: relative;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.cap-review-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.cap-review-remove {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(17, 17, 17, 0.72);
+  color: #ffffff;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+}
+
+.cap-review-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px 8px;
+  font-size: 10px;
+  color: #ffffff;
+  background: linear-gradient(
+    0deg,
+    rgba(17, 17, 17, 0.65),
+    rgba(17, 17, 17, 0)
+  );
+}
+
+/* ---------- walkthrough: recording + tags ---------- */
+
+.cap-record-card {
+  display: grid;
+  gap: 10px;
+}
+
+.cap-record-row {
+  justify-content: flex-start;
+}
+
+.cap-record-btn {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cap-record-active {
+  background: #b3261e;
+  border-color: #b3261e;
+}
+
+.cap-timer {
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+.cap-playback {
+  display: grid;
+  gap: 8px;
+}
+
+.cap-audio {
+  width: 100%;
+}
+
+.cap-transcript-caveat {
+  color: #7a7a7a;
+  font-size: 11px;
+  margin: 0 0 8px;
+}
+
+.cap-tag-group {
+  display: grid;
+  gap: 8px;
+}
+
+.cap-chip-row {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

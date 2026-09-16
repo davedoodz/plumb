@@ -1,0 +1,386 @@
+/* Handoff tools: sample, delivery, installerpack, receipt.
+   Prefix: hand-. Only additive rules; shared tool-* classes live in styles.css. */
+
+/* ---------- sample: wipe comparison ---------- */
+
+.hand-wipe {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #f3f3f3;
+  touch-action: pan-y;
+}
+
+.hand-wipe-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hand-wipe-overlay {
+  clip-path: inset(0 calc(100% - var(--hand-pos, 50%)) 0 0);
+}
+
+.hand-wipe-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--hand-pos, 50%);
+  width: 2px;
+  background: #ffffff;
+  transform: translateX(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hand-wipe-handle::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(17, 17, 17, 0.25);
+}
+
+.hand-wipe-handle svg {
+  position: relative;
+  color: #111111;
+}
+
+.hand-wipe-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.hand-wipe-tag {
+  position: absolute;
+  bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.68);
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+}
+
+.hand-wipe-tag-left {
+  left: 10px;
+}
+
+.hand-wipe-tag-right {
+  right: 10px;
+}
+
+.hand-context-toggle {
+  display: flex;
+  gap: 6px;
+}
+
+.hand-context-btn {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  color: #7a7a7a;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.hand-context-active {
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
+}
+
+/* ---------- shared consent / checklist rows ---------- */
+
+.hand-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 1.4;
+}
+
+.hand-consent input {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.hand-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hand-checklist label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #111111;
+  line-height: 1.4;
+}
+
+.hand-checklist input {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.hand-textarea {
+  resize: vertical;
+  min-height: 56px;
+}
+
+/* ---------- delivery ---------- */
+
+.hand-scan {
+  display: flex;
+  gap: 8px;
+}
+
+.hand-scan-input {
+  flex: 1;
+}
+
+.hand-scan-demo {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.hand-recon-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hand-recon-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 8px 10px;
+  padding: 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+}
+
+.hand-recon-name {
+  grid-column: 1 / -1;
+}
+
+.hand-recon-name p {
+  margin: 0;
+}
+
+.hand-recon-name p:first-child {
+  color: #111111;
+  font-size: 14px;
+}
+
+.hand-recon-count {
+  width: 100%;
+}
+
+.hand-recon-condition {
+  width: 100%;
+}
+
+.hand-recon-delta {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.hand-recon-delta-invalid {
+  border: 1px dashed #111111;
+  font-style: italic;
+}
+
+/* ---------- installer pack ---------- */
+
+.hand-pack-synthetic {
+  border-left: 2px solid #111111;
+  padding-left: 10px;
+}
+
+.hand-plan-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hand-plan-img {
+  width: 100%;
+  display: block;
+}
+
+.hand-plan-chip {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #111111;
+  color: #111111;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+
+.hand-plan-chip-active {
+  background: #111111;
+  color: #ffffff;
+}
+
+.hand-plan-chip-hidden {
+  opacity: 0;
+}
+
+.hand-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.hand-tab {
+  flex-shrink: 0;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  color: #7a7a7a;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.hand-tab-active {
+  border-color: #111111;
+  background: #111111;
+  color: #ffffff;
+}
+
+.hand-trade-panel {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hand-trade-panel-active {
+  display: flex;
+}
+
+.hand-gate-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hand-gate-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.hand-gate-item.hand-gate-ready {
+  color: #111111;
+}
+
+.hand-gate-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: #7a7a7a;
+}
+
+.hand-gate-item.hand-gate-ready .hand-gate-icon {
+  color: #111111;
+}
+
+.hand-gate-state {
+  font-style: normal;
+  font-weight: 600;
+  color: inherit;
+}
+
+/* ---------- receipt ---------- */
+
+.hand-evidence {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hand-evidence-main {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.hand-evidence-thumbs {
+  display: flex;
+  gap: 8px;
+}
+
+.hand-evidence-thumb {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 11px;
+  color: #7a7a7a;
+}
+
+.hand-evidence-thumb img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.hand-evidence-thumb-active {
+  border-color: #111111;
+  color: #111111;
+}
+
+.hand-receipt-fields {
+  gap: 10px;
+}

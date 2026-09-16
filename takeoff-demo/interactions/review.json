@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "workflow": "ce-code-review quick/default path with two harness reviewer specialists",
+  "scope": "interactions/*, interactions.mjs, eslint.config.mjs",
+  "reviewers": ["FinalInteractionReview", "FinalDecisionReview"],
+  "Actionable Findings": [
+    {"finding":"Late upload omitted from the visible photo review","resolution":"Upload completion now renders both checklist and review. A delayed decode smoke scenario showed one reviewed photo before completion, then two visible and attached photos."},
+    {"finding":"Keyboard activation could relocate the pin marker","resolution":"Marker is a non-focusable, aria-hidden span. Browser check confirmed SPAN, tabIndex -1, visible after placement."},
+    {"finding":"Attaching a result discarded focus and left it offscreen","resolution":"New result card receives programmatic focus and scrollIntoView. Browser check after an actual upload confirmed focus remains on result-card."},
+    {"finding":"Unparsed deposit was described as a missing line","resolution":"Present-but-unreadable deposits use an unresolved option and unknown balance; the located source line is preserved. Browser scenario confirmed explicit unresolved-deposit text."},
+    {"finding":"Return date ceiling used UTC rather than local calendar","resolution":"Date ceiling uses local year/month/day. Pacific/Auckland browser check reproduced September 16/17 mismatch, then confirmed both max and local date are September 17."},
+    {"finding":"Percentage anywhere in a quote line hid explicit dollar amounts","resolution":"Only a percent-suffixed amount is rejected. Sales tax (8.25%): $44.39 is included correctly; $538 subtotal produces $582.39 total."},
+    {"finding":"Unparsed subtotal was described as a missing line","resolution":"Separate missing-line and unreadable-amount messages; unreadable subtotal cannot be saved."},
+    {"finding":"Initial trade tab and plan highlight were inconsistent","resolution":"Installer pack initializes the active tab and corresponding plan chip together."}
+  ],
+  "Coverage": "Read-only review of tool lifecycle, async ownership, safe rendering, camera/audio cleanup, WebGL behavior, quote arithmetic, scheduling, approvals, receiving and downloadable evidence. Main exercised actual published browser paths and applied all retained findings. No physical-phone or tracked-AR validation claimed.",
+  "Verdict": "All eight retained findings resolved. Scoped ESLint passes. Project-wide typecheck remains blocked by three unchanged unused React imports outside this work.",
+  "simplification": {
+    "reviewers": ["SimplifyReuse", "SimplifyQuality", "SimplifyEfficiency"],
+    "applied": ["One quote readiness predicate shared by UI and commit guard", "Removed dead signoff timestamps and declared decline state", "Avoided redundant WebGL framebuffer resizing", "Cached WebGL uniform locations", "Removed unused catch bindings"],
+    "notApplied": "Low-value label/table, bounded DOM-query and CSS micro-extractions were left intact to avoid expanding the design prototype refactor. No safety checks were removed."
+  }
+}

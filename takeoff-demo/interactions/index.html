@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Takeoff — Beyond the conversation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="capture-tools.css" />
+    <link rel="stylesheet" href="decision-tools.css" />
+    <link rel="stylesheet" href="handoff-tools.css" />
+    <link rel="stylesheet" href="spatial-tools.css" />
+  </head>
+  <body>
+    <header class="masthead">
+      <a href="../chatgpt-studies/index.html"
+        >TAKEOFF <span>/ Interaction lab</span></a
+      ><span>14 tools · One conversation</span>
+    </header>
+    <main class="gallery">
+      <aside class="catalog">
+        <p class="eyebrow">BEYOND THE CONVERSATION</p>
+        <h1>A chat can<br />do more.</h1>
+        <p class="intro">
+          Original tool interactions, built around the familiar conversation.
+          Choose a study. Try the details.
+        </p>
+        <nav id="concepts" aria-label="Interaction studies"></nav>
+        <p class="footnote">
+          Independent design study. Not affiliated with OpenAI. All project
+          records are sample data.
+        </p>
+      </aside>
+      <section class="stage" aria-label="Interactive phone preview">
+        <div class="phone">
+          <div class="statusbar">
+            <span>9:41</span
+            ><span aria-label="Full signal and battery">▮▮▮ &nbsp; ▰</span>
+          </div>
+          <header class="chat-header">
+            <button id="menu" class="icon-button" aria-label="Choose study">
+              ☰</button
+            ><strong>ChatGPT <span>⌄</span></strong
+            ><button
+              id="reset"
+              class="icon-button"
+              aria-label="Reset current study"
+            >
+              ↻
+            </button>
+          </header>
+          <div id="thread" class="thread" aria-live="polite"></div>
+          <footer class="composer">
+            <button id="plus" class="icon-button" aria-label="Open study tool">
+              +</button
+            ><span>Ask anything</span
+            ><button
+              id="launch"
+              class="send-button"
+              aria-label="Open study tool"
+            >
+              ↑
+            </button>
+          </footer>
+          <div class="home-indicator"></div>
+        </div>
+      </section>
+      <aside class="details">
+        <p class="eyebrow" id="study-number"></p>
+        <span id="modality" class="modality"></span>
+        <h2 id="detail-title"></h2>
+        <p id="description"></p>
+        <ol id="steps"></ol>
+        <div class="boundary">
+          <span>THE HONEST BOUNDARY</span>
+          <p id="boundary"></p>
+        </div>
+        <div class="study-nav">
+          <button id="previous" aria-label="Previous study">←</button
+          ><span id="completion">Ready to try</span
+          ><button id="next" aria-label="Next study">→</button>
+        </div>
+        <p class="footnote">
+          Working browser prototypes. Nothing is sent to a supplier, AI service,
+          or project database.
+        </p>
+      </aside>
+    </main>
+    <dialog id="tool-dialog" aria-labelledby="tool-title">
+      <div class="sheet-handle"></div>
+      <header class="sheet-header">
+        <div>
+          <h2 id="tool-title"></h2>
+          <p id="tool-subtitle"></p>
+        </div>
+        <button id="close-tool" class="icon-button" aria-label="Close tool">
+          ×
+        </button>
+      </header>
+      <div id="tool-content"></div>
+      <p id="tool-status" role="status"></p>
+    </dialog>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
