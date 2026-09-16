@@ -1,0 +1,1361 @@
+[
+  {
+    "id": "gpt-clearance-direct",
+    "concept": "clearance",
+    "mode": "direct",
+    "category": "lighting",
+    "title": "Pendant drop clearance still needs an electrician check",
+    "user": "Island pendant needs 34in drop — does that clear the beam above the ceiling line?",
+    "assistant": "Fixture drop of 34in is confirmed from spec. Beam clearance above the ceiling isn't measured — flag for your electrician before rough-in.",
+    "sourceLabel": "Vendor spec sheet — SKU LP-2240",
+    "sourceNote": "Drop dimension listed on cut sheet, rev. 3, pulled Sep 10. No structural clearance data included.",
+    "evidence": [
+      {
+        "label": "Fixture drop",
+        "value": "34 in, confirmed",
+        "state": "confirmed"
+      },
+      {
+        "label": "Beam clearance",
+        "value": "Not measured",
+        "state": "unknown"
+      },
+      {
+        "label": "Electrical review",
+        "value": "Needed before rough-in",
+        "state": "warning"
+      }
+    ],
+    "media": "lighting-pendant.png",
+    "video": "lighting-pendant.mp4",
+    "action": "Flag for electrician",
+    "reply": "Sparky's on site Thursday — can you hold this for him to check?",
+    "result": "Flagged. Electrician review holds the rough-in date until beam clearance is confirmed on site.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "approvals"
+    ],
+    "boundary": "Structural beam clearance is not measured or certified here — a licensed electrician must confirm on site."
+  },
+  {
+    "id": "gpt-clearance-photo",
+    "concept": "clearance",
+    "mode": "photo",
+    "category": "tiles",
+    "title": "Keep measured doorway width separate from the photo",
+    "user": "Here is the dry layout. Dev measured a 30in doorway — will the packed tile order fit?",
+    "assistant": "Dev entered 30in for the doorway. Packed dimensions are missing, so delivery fit is not confirmed. The layout photo is context only.",
+    "sourceLabel": "Dev · entered site measurement · Sep 14",
+    "sourceNote": "Demo site note: 30in doorway entered by Dev. No dimensions extracted from this photograph.",
+    "evidence": [
+      {
+        "label": "Doorway",
+        "value": "30 in · Dev measured",
+        "state": "confirmed"
+      },
+      {
+        "label": "Packed width",
+        "value": "Supplier confirmation needed",
+        "state": "unknown"
+      },
+      {
+        "label": "Delivery fit",
+        "value": "Not confirmed",
+        "state": "warning"
+      }
+    ],
+    "media": "tiles-layout.png",
+    "action": "Prepare supplier question",
+    "reply": "Prepare the packed-width question before I approve delivery.",
+    "result": "Packed-width question drafted. The 30in site note is retained; delivery fit stays unconfirmed.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "quantity"
+    ],
+    "boundary": "Photo is context only. The supplier must provide packed dimensions; no clearance is inferred from pixels."
+  },
+  {
+    "id": "gpt-clearance-source",
+    "concept": "clearance",
+    "mode": "source",
+    "category": "framing",
+    "title": "Stud spacing pulled from the framing plan, not stamped",
+    "user": "Can you confirm the header bay is on 16in centers before I order blocking?",
+    "assistant": "Plan sheet shows 16in on center for that bay. This is the drafted plan, not an engineer-stamped revision — confirm no field changes before ordering.",
+    "sourceLabel": "Framing plan sheet A-204, rev. B",
+    "sourceNote": "Drafted layout dated Sep 2, uploaded by GC. No engineer stamp on this revision; verify against as-built.",
+    "evidence": [
+      {
+        "label": "Stud spacing",
+        "value": "16 in o.c., per plan",
+        "state": "confirmed"
+      },
+      {
+        "label": "Plan revision",
+        "value": "Rev. B, Sep 2",
+        "state": "confirmed"
+      },
+      {
+        "label": "Engineer stamp",
+        "value": "Not on this sheet",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-plan.png",
+    "action": "Open plan sheet",
+    "reply": "I measured 16in too. Hold ordering until the approved revision is checked.",
+    "result": "Site measurement added alongside Rev. B. Ordering stays on hold for the approved structural revision.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "source-of-truth"
+    ],
+    "boundary": "This exploratory framing review reads a plan sheet — it is not an engineer's structural approval."
+  },
+  {
+    "id": "gpt-clearance-compare",
+    "concept": "clearance",
+    "mode": "compare",
+    "category": "paint",
+    "title": "Compare hardware clearance against the topcoat build-up",
+    "user": "Will the new pulls clear the door edge once we add the second coat?",
+    "assistant": "Dev entered a 3/16in reveal. The demo hardware requirement is 1/8in; coating build-up is unknown. These photos do not measure either value.",
+    "sourceLabel": "Dev site note + demo hardware requirement",
+    "sourceNote": "Reveal manually entered Sep 13. Photos show coating and room context, not a gauge reading.",
+    "evidence": [
+      {
+        "label": "Entered reveal",
+        "value": "3/16 in · Dev site note",
+        "state": "confirmed"
+      },
+      {
+        "label": "Demo minimum",
+        "value": "1/8 in · spec record",
+        "state": "confirmed"
+      },
+      {
+        "label": "Coating build-up",
+        "value": "Not gauged",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-sheen.png",
+    "compareMedia": "paint-room.png",
+    "compareLabels": [
+      "Coating reference",
+      "Room context"
+    ],
+    "action": "Compare clearance",
+    "reply": "I'll gauge the mil thickness before we hang the pulls back on.",
+    "result": "Site note retained. Final fit remains unconfirmed until coating build-up and the installed hardware are checked.",
+    "status": "pending",
+    "marketPains": [
+      "specifications"
+    ],
+    "boundary": "No photo-derived dimensions or film thickness. Final hardware clearance needs an on-site check."
+  },
+  {
+    "id": "gpt-clearance-followup",
+    "concept": "clearance",
+    "mode": "followup",
+    "category": "lighting",
+    "title": "Electrician confirms beam clearance, record updated",
+    "user": "Electrician measured 9in above the canopy and confirmed it meets the listed clearance.",
+    "assistant": "Ready to record the electrician’s reported clearance and fit sign-off. This updates the site record; it does not independently certify the installation.",
+    "sourceLabel": "Decision record — Pendant clearance, Elm St.",
+    "sourceNote": "Original record flagged unknown beam clearance Sep 10. Updated Sep 15 with the electrician's field measurement.",
+    "evidence": [
+      {
+        "label": "Reported clearance",
+        "value": "9 in · electrician note",
+        "state": "confirmed"
+      },
+      {
+        "label": "Trade sign-off",
+        "value": "Reported by electrician",
+        "state": "confirmed"
+      },
+      {
+        "label": "Schedule release",
+        "value": "Awaiting your reply",
+        "state": "warning"
+      }
+    ],
+    "media": "lighting-room.png",
+    "action": "Update decision record",
+    "reply": "Great — go ahead and release the rough-in to the electrician's schedule.",
+    "result": "Reported clearance and your schedule release recorded in the demo. Electrical compliance remains with the qualified installer.",
+    "status": "confirmed",
+    "marketPains": [
+      "approvals",
+      "source-of-truth"
+    ],
+    "boundary": "Update reflects one field measurement reported by the electrician — the thread does not independently re-verify it."
+  },
+  {
+    "id": "gpt-leadtime-direct",
+    "concept": "leadtime",
+    "mode": "direct",
+    "category": "tiles",
+    "title": "Tile ETA is behind the tile setter's booked date",
+    "user": "When will the herringbone tile land — tile guy is booked for the 29th.",
+    "assistant": "Supplier's demo status shows ETA Sep 26, last refreshed Sep 12 — that's ahead of your setter, but the status isn't a live guarantee.",
+    "sourceLabel": "Supplier demo status — order #TK-5521",
+    "sourceNote": "Snapshot pulled Sep 12 from demo supplier portal. Not a live feed; treat as last-known status only.",
+    "evidence": [
+      {
+        "label": "Demo ETA",
+        "value": "Sep 26",
+        "state": "warning"
+      },
+      {
+        "label": "Last refreshed",
+        "value": "Sep 12",
+        "state": "warning"
+      },
+      {
+        "label": "Setter booked",
+        "value": "Sep 29",
+        "state": "confirmed"
+      }
+    ],
+    "media": "tiles-delivery.png",
+    "action": "Flag schedule risk",
+    "reply": "Can you ask the supplier to confirm before I lock the setter in?",
+    "result": "Flagged for supplier confirmation. Setter date not changed — status stays a 3-day-old estimate until refreshed.",
+    "status": "pending",
+    "marketPains": [
+      "delivery",
+      "source-of-truth"
+    ],
+    "boundary": "ETA reflects the last demo status pull, not a live carrier feed — confirm directly with the supplier before relying on it."
+  },
+  {
+    "id": "gpt-leadtime-photo",
+    "concept": "leadtime",
+    "mode": "photo",
+    "category": "framing",
+    "title": "LVL beam order status vs. the framer's start date",
+    "user": "Framer starts Monday — are the LVL beams still on track for Friday?",
+    "assistant": "Demo status still shows Friday, but that snapshot is from Sep 11 — four days old. Confirm with the supplier before Monday's start.",
+    "sourceLabel": "Supplier demo status — order #FR-3390",
+    "sourceNote": "Status pulled Sep 11 from demo portal, unconfirmed since. Photo shows current stack, not the pending beam delivery.",
+    "evidence": [
+      {
+        "label": "Beam ETA",
+        "value": "Fri Sep 18",
+        "state": "warning"
+      },
+      {
+        "label": "Status age",
+        "value": "4 days old",
+        "state": "warning"
+      },
+      {
+        "label": "Framer start",
+        "value": "Mon Sep 21",
+        "state": "confirmed"
+      }
+    ],
+    "media": "framing-stack.png",
+    "action": "Request refreshed ETA",
+    "reply": "I'll call the yard tomorrow morning and get a live answer.",
+    "result": "Refresh requested. Framer start date unchanged; beam ETA still shown as the Sep 11 snapshot until confirmed.",
+    "status": "pending",
+    "marketPains": [
+      "delivery",
+      "source-of-truth"
+    ],
+    "boundary": "This exploratory framing check reads a stacked-lumber photo for count context — it does not verify structural readiness."
+  },
+  {
+    "id": "gpt-leadtime-source",
+    "concept": "leadtime",
+    "mode": "source",
+    "category": "paint",
+    "title": "Open the supplier status sheet behind the paint ETA",
+    "user": "Where's that Sep 24 paint delivery date coming from?",
+    "assistant": "It's from the supplier's demo status page, last pulled Sep 13. The sheet shows order #PT-6120 with no live carrier tracking attached.",
+    "sourceLabel": "Supplier demo status sheet — order #PT-6120",
+    "sourceNote": "Status pulled Sep 13, 8:04am. No live tracking number provided by this demo supplier.",
+    "evidence": [
+      {
+        "label": "Order ETA",
+        "value": "Sep 24",
+        "state": "warning"
+      },
+      {
+        "label": "Status pulled",
+        "value": "Sep 13, 8:04am",
+        "state": "confirmed"
+      },
+      {
+        "label": "Live tracking",
+        "value": "Not provided",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-delivery.png",
+    "action": "Open status sheet",
+    "reply": "Two days old is fine — I'll check back before I schedule painters.",
+    "result": "Status sheet opened, no changes made to the order. ETA stays a two-day-old snapshot pending your next check.",
+    "status": "pending",
+    "marketPains": [
+      "delivery",
+      "source-of-truth"
+    ],
+    "boundary": "Opening the status sheet only displays the last supplier snapshot — it does not refresh or guarantee the ETA."
+  },
+  {
+    "id": "gpt-leadtime-compare",
+    "concept": "leadtime",
+    "mode": "compare",
+    "category": "lighting",
+    "title": "Compare pendant vs. sconce lead times before scheduling",
+    "user": "Which fixture is the bigger risk — pendants or the sconces?",
+    "assistant": "Pendants show Sep 22, refreshed Sep 14. Sconces show Sep 30, refreshed Sep 5. Their older status and later ETA put the Sep 25 visit at risk.",
+    "sourceLabel": "Two supplier demo status snapshots",
+    "sourceNote": "Pendant status pulled Sep 14; sconce status pulled Sep 5. Neither is a live carrier feed.",
+    "evidence": [
+      {
+        "label": "Pendant ETA",
+        "value": "Sep 22 · updated Sep 14",
+        "state": "confirmed"
+      },
+      {
+        "label": "Sconce ETA",
+        "value": "Sep 30 · updated Sep 5",
+        "state": "warning"
+      },
+      {
+        "label": "Electrician start",
+        "value": "Sep 25",
+        "state": "confirmed"
+      }
+    ],
+    "media": "lighting-delivery.png",
+    "compareMedia": "lighting-label.png",
+    "compareLabels": [
+      "Pendant status",
+      "Sconce status"
+    ],
+    "action": "Flag sconce ETA",
+    "reply": "Have the supplier refresh the sconce status before I confirm the electrician's date.",
+    "result": "Sconce ETA flagged as stale. Pendant order unaffected; electrician's Sep 25 start not changed yet.",
+    "status": "pending",
+    "marketPains": [
+      "delivery",
+      "source-of-truth"
+    ],
+    "boundary": "Comparison uses two independent status snapshots of different ages — it does not reconcile them into one live feed."
+  },
+  {
+    "id": "gpt-leadtime-followup",
+    "concept": "leadtime",
+    "mode": "followup",
+    "category": "tiles",
+    "title": "Supplier refreshes tile ETA, record updated to match",
+    "user": "Supplier just told me tile ships today, lands the 24th instead of the 26th.",
+    "assistant": "Updating the ETA to Sep 24 and marking the status refreshed today. Setter's Sep 29 date now has more buffer, not less.",
+    "sourceLabel": "Decision record — Tile order #TK-5521",
+    "sourceNote": "Prior record showed Sep 26 pulled Sep 12. Updated Sep 15 from your reported supplier call, not re-verified independently.",
+    "evidence": [
+      {
+        "label": "Updated ETA",
+        "value": "Sep 24",
+        "state": "confirmed"
+      },
+      {
+        "label": "Status refreshed",
+        "value": "Sep 15, by report",
+        "state": "warning"
+      },
+      {
+        "label": "Setter buffer",
+        "value": "5 days",
+        "state": "confirmed"
+      }
+    ],
+    "media": "tiles-delivery.png",
+    "action": "Update ETA record",
+    "reply": "Good — I'll let the setter know the earlier landing doesn't change his start.",
+    "result": "ETA updated in the record. Setter's booked date and tile spec remain unchanged by this update.",
+    "status": "confirmed",
+    "marketPains": [
+      "delivery",
+      "source-of-truth"
+    ],
+    "boundary": "Update is based on your reported call with the supplier, not an independently confirmed tracking source."
+  },
+  {
+    "id": "gpt-substitution-direct",
+    "concept": "substitution",
+    "mode": "direct",
+    "category": "framing",
+    "title": "Connector substitute matches load rating, one spec unknown",
+    "user": "The yard is out of connector A. Can their connector B replace it?",
+    "assistant": "The demo quote lists the same finish and pack quantity. Structural suitability is not established. Ask for the data sheet and qualified approval.",
+    "sourceLabel": "Demo yard quote · connector A / B",
+    "sourceNote": "Generic connector references only. No load rating, fastening schedule, or structural equivalence is claimed.",
+    "evidence": [
+      {
+        "label": "Listed finish",
+        "value": "Galvanized · both quotes",
+        "state": "confirmed"
+      },
+      {
+        "label": "Pack quantity",
+        "value": "40 pieces · both quotes",
+        "state": "confirmed"
+      },
+      {
+        "label": "Structural suitability",
+        "value": "Qualified review required",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-connector.png",
+    "action": "Draft supplier question",
+    "reply": "Draft the question. Keep connector A until the designer approves any change.",
+    "result": "Data-sheet question drafted. Connector A stays specified; no substitute is approved or ordered.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "approvals"
+    ],
+    "boundary": "Exploratory framing scenario. Structural substitutions require project-specific professional approval."
+  },
+  {
+    "id": "gpt-substitution-photo",
+    "concept": "substitution",
+    "mode": "photo",
+    "category": "paint",
+    "title": "Alternate primer photographed on-site, one spec missing",
+    "user": "Store subbed this primer for what we specced — is it close enough?",
+    "assistant": "The demo supplier record lists matching VOC content and dry time. The photo identifies the tin only; substrate compatibility still needs the data sheet.",
+    "sourceLabel": "Demo supplier comparison · primer",
+    "sourceNote": "Demo supplier record, Sep 15. No label text or technical properties were extracted from the generated photo.",
+    "evidence": [
+      {
+        "label": "VOC content",
+        "value": "Matches, 50 g/L",
+        "state": "confirmed"
+      },
+      {
+        "label": "Dry time",
+        "value": "Matches, 4 hrs",
+        "state": "confirmed"
+      },
+      {
+        "label": "Adhesion data",
+        "value": "Not printed",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-batch.png",
+    "action": "Draft supplier question",
+    "reply": "Ask if they have a data sheet with the adhesion numbers before I approve it.",
+    "result": "Question drafted for the supplier. Original primer spec remains the approved product until adhesion data arrives.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "approvals"
+    ],
+    "boundary": "VOC and dry time come from the demo supplier record, not the photo. Treat them as unconfirmed until a manufacturer data sheet arrives."
+  },
+  {
+    "id": "gpt-substitution-source",
+    "concept": "substitution",
+    "mode": "source",
+    "category": "lighting",
+    "title": "Open the substitute fixture's spec sheet before approving",
+    "user": "Where's the wattage info for that sconce swap coming from?",
+    "assistant": "It's from the substitute's manufacturer spec sheet, pulled Sep 13. Dimmer compatibility isn't listed on this sheet — still unknown.",
+    "sourceLabel": "Substitute fixture spec sheet — SKU LS-810",
+    "sourceNote": "Manufacturer PDF pulled Sep 13. Dimmer compatibility section left blank on this revision.",
+    "evidence": [
+      {
+        "label": "Wattage",
+        "value": "Matches, 9W",
+        "state": "confirmed"
+      },
+      {
+        "label": "Color temp",
+        "value": "Matches, 2700K",
+        "state": "confirmed"
+      },
+      {
+        "label": "Dimmer compatibility",
+        "value": "Not listed",
+        "state": "unknown"
+      }
+    ],
+    "media": "lighting-comparison.png",
+    "action": "Open spec sheet",
+    "reply": "I'll ask the electrician if our dimmer needs that confirmed.",
+    "result": "Spec sheet opened for reference only. Substitute isn't approved — a licensed electrician must confirm dimmer compatibility first.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "approvals"
+    ],
+    "boundary": "Opening this spec sheet does not approve the substitution — dimmer compatibility needs a qualified electrician, not a sheet read."
+  },
+  {
+    "id": "gpt-substitution-compare",
+    "concept": "substitution",
+    "mode": "compare",
+    "category": "tiles",
+    "title": "Compare substitute tile against the original spec",
+    "user": "Can I use the matte version instead of the glossy we specced?",
+    "assistant": "Size and grade match the original spec. Matte's lot-to-lot shade variance isn't documented — flagging before you approve the swap.",
+    "sourceLabel": "Two tile spec listings compared",
+    "sourceNote": "Compared Sep 14 from supplier catalog entries. Shade variance data not published for the matte finish line.",
+    "evidence": [
+      {
+        "label": "Size",
+        "value": "Matches, 12x24 in",
+        "state": "confirmed"
+      },
+      {
+        "label": "Grade",
+        "value": "Matches, grade 1",
+        "state": "confirmed"
+      },
+      {
+        "label": "Shade variance",
+        "value": "Not documented",
+        "state": "unknown"
+      }
+    ],
+    "media": "tiles-sample.png",
+    "compareMedia": "tiles-batch.png",
+    "compareLabels": [
+      "Original glossy spec",
+      "Substitute matte"
+    ],
+    "action": "Draft supplier question",
+    "reply": "Ask them for a variance sample before I decide.",
+    "result": "Question drafted to request a variance sample. Original glossy tile stays the approved spec until you decide.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "samples"
+    ],
+    "boundary": "Comparison reads published catalog attributes only — it does not evaluate an in-hand physical sample."
+  },
+  {
+    "id": "gpt-substitution-followup",
+    "concept": "substitution",
+    "mode": "followup",
+    "category": "framing",
+    "title": "Supplier answers coating question, homeowner approves",
+    "user": "Yard says connector B has the same coating. Can we swap now?",
+    "assistant": "Coating confirmation alone does not establish structural equivalence. The designer’s substitution approval is still missing; keep the original specification.",
+    "sourceLabel": "Demo connector change request · Sep 15",
+    "sourceNote": "Reported coating match is one attribute, not project-specific structural approval.",
+    "evidence": [
+      {
+        "label": "Coating",
+        "value": "Reported match",
+        "state": "confirmed"
+      },
+      {
+        "label": "Designer approval",
+        "value": "Not received",
+        "state": "unknown"
+      },
+      {
+        "label": "Existing specification",
+        "value": "Connector A · 40 pieces",
+        "state": "confirmed"
+      }
+    ],
+    "media": "framing-connector.png",
+    "action": "Keep original Spec",
+    "reply": "Keep A and draft a request for the designer to review B.",
+    "result": "Connector A retained. Designer review request drafted; quantity remains 40 and no order change is made.",
+    "status": "blocked",
+    "marketPains": [
+      "approvals",
+      "specifications"
+    ],
+    "boundary": "Exploratory framing. A coating match cannot authorize a structural connector substitution."
+  },
+  {
+    "id": "gpt-signoff-direct",
+    "concept": "signoff",
+    "mode": "direct",
+    "category": "paint",
+    "title": "Painter confirms sheen spec, budget approval separate",
+    "user": "Painter said the eggshell works for the hallway — are we good to order?",
+    "assistant": "Trade sign-off recorded: eggshell fits per the painter. That confirms spec fit only — budget approval for the order is still yours to give.",
+    "sourceLabel": "Trade sign-off — hallway repaint",
+    "sourceNote": "Painter confirmed via site note Sep 14. Sign-off covers spec suitability, not purchase authorization or cost.",
+    "evidence": [
+      {
+        "label": "Trade sign-off",
+        "value": "Confirmed, painter",
+        "state": "confirmed"
+      },
+      {
+        "label": "Budget approval",
+        "value": "Not yet given",
+        "state": "warning"
+      },
+      {
+        "label": "Quote total",
+        "value": "$412, demo estimate",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-swatches.png",
+    "action": "Request budget approval",
+    "reply": "I approve the $412 quote. Record that; do not place the order yet.",
+    "result": "Your $412 budget approval is recorded separately. Both approvals are visible; no order or charge is made.",
+    "status": "pending",
+    "marketPains": [
+      "approvals"
+    ],
+    "boundary": "Trade sign-off confirms spec fit only — it does not authorize spending, which stays a distinct homeowner decision."
+  },
+  {
+    "id": "gpt-signoff-photo",
+    "concept": "signoff",
+    "mode": "photo",
+    "category": "lighting",
+    "title": "Electrician's photo confirms fit, budget sign-off pending",
+    "user": "Electrician confirmed this backplate fits. Can we record that separately from the upgrade cost?",
+    "assistant": "The electrician’s written fit confirmation can be recorded separately. No clearance is measured from the photo; the upgrade budget still needs approval.",
+    "sourceLabel": "Electrician fit note · demo upgrade record",
+    "sourceNote": "Written trade confirmation dated Sep 14; photo is supporting context, not dimensional evidence.",
+    "evidence": [
+      {
+        "label": "Trade sign-off",
+        "value": "Electrician’s written note",
+        "state": "confirmed"
+      },
+      {
+        "label": "Upgrade quote",
+        "value": "$180 · demo quote",
+        "state": "confirmed"
+      },
+      {
+        "label": "Budget approval",
+        "value": "Not yet given",
+        "state": "warning"
+      }
+    ],
+    "media": "lighting-comparison.png",
+    "action": "Request budget approval",
+    "reply": "I approve the $180 upgrade. Record that approval; do not place the order yet.",
+    "result": "Your $180 budget approval is recorded separately. Trade sign-off is unchanged; no order or charge is made.",
+    "status": "pending",
+    "marketPains": [
+      "approvals"
+    ],
+    "boundary": "Fit is the electrician's written confirmation; the photo is context only. Wiring capacity and code compliance require separate sign-off."
+  },
+  {
+    "id": "gpt-signoff-source",
+    "concept": "signoff",
+    "mode": "source",
+    "category": "tiles",
+    "title": "Open the tile setter's sign-off sheet",
+    "user": "Who actually signed off that the layout fits the wet room?",
+    "assistant": "Setter Marcus signed off fit on Sep 12. That sheet is trade approval only — homeowner budget approval for the pattern was logged separately Sep 13.",
+    "sourceLabel": "Trade sign-off sheet — wet room layout",
+    "sourceNote": "Signed by setter Marcus Reyes, Sep 12, 2:10pm. Sheet covers layout fit only, not cost approval.",
+    "evidence": [
+      {
+        "label": "Trade sign-off",
+        "value": "Marcus R., Sep 12",
+        "state": "confirmed"
+      },
+      {
+        "label": "Budget approval",
+        "value": "Logged Sep 13",
+        "state": "confirmed"
+      },
+      {
+        "label": "Layout revision",
+        "value": "v2, unchanged since",
+        "state": "confirmed"
+      }
+    ],
+    "media": "tiles-layout.png",
+    "action": "Open sign-off sheet",
+    "reply": "Good, both are in — I won't need to touch this again.",
+    "result": "Sign-off sheet opened for reference. No new approval created; both existing records stay exactly as signed.",
+    "status": "confirmed",
+    "marketPains": [
+      "approvals",
+      "source-of-truth"
+    ],
+    "boundary": "Opening this sheet retrieves an existing signature — it does not create or modify any approval."
+  },
+  {
+    "id": "gpt-signoff-compare",
+    "concept": "signoff",
+    "mode": "compare",
+    "category": "framing",
+    "title": "Compare framer sign-off against budget approval status",
+    "user": "Are we cleared to order the beam upgrade or still waiting on someone?",
+    "assistant": "Framer signed off fit against the approved schedule Sep 11. Budget approval for the upgrade cost is still open on your side.",
+    "sourceLabel": "Two sign-off records compared",
+    "sourceNote": "Trade sign-off recorded Sep 11; budget approval field still blank as of Sep 15.",
+    "evidence": [
+      {
+        "label": "Trade sign-off",
+        "value": "Confirmed, Sep 11",
+        "state": "confirmed"
+      },
+      {
+        "label": "Budget approval",
+        "value": "Still open",
+        "state": "warning"
+      },
+      {
+        "label": "Upgrade cost",
+        "value": "$1,180, demo estimate",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-plan.png",
+    "compareMedia": "framing-stack.png",
+    "compareLabels": [
+      "Trade sign-off record",
+      "Budget approval record"
+    ],
+    "action": "Request budget approval",
+    "reply": "I approve the $1,180 quote. Record it and keep the order for final review.",
+    "result": "Budget approval recorded alongside the approved-schedule trade sign-off. No beam order is placed by this demo.",
+    "status": "confirmed",
+    "marketPains": [
+      "approvals"
+    ],
+    "boundary": "This exploratory framing sign-off confirms schedule fit only — it is not a structural engineering approval."
+  },
+  {
+    "id": "gpt-signoff-followup",
+    "concept": "signoff",
+    "mode": "followup",
+    "category": "paint",
+    "title": "Budget approval logged, trade sign-off still outstanding",
+    "user": "My husband says go ahead and order the accent wall paint.",
+    "assistant": "I can record that you reported his approval. His own written budget confirmation and the painter’s sheen sign-off are still needed before release.",
+    "sourceLabel": "Decision record — accent wall paint",
+    "sourceNote": "Budget approval added Sep 15 per your message. Trade sign-off field remains unset until the painter confirms.",
+    "evidence": [
+      {
+        "label": "Budget approval",
+        "value": "Reported second-hand",
+        "state": "warning"
+      },
+      {
+        "label": "Written confirmation",
+        "value": "Requested from budget owner",
+        "state": "unknown"
+      },
+      {
+        "label": "Trade sign-off",
+        "value": "Painter confirmation pending",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-sheen.png",
+    "action": "Update budget approval",
+    "reply": "Okay, I'll get the painter to confirm the sheen tomorrow.",
+    "result": "Reported approval noted, not treated as the budget owner’s signature. Order stays held for both written confirmations.",
+    "status": "pending",
+    "marketPains": [
+      "approvals"
+    ],
+    "boundary": "One person's budget approval does not substitute for the trade's spec sign-off — both remain independently required."
+  },
+  {
+    "id": "gpt-delivery-direct",
+    "concept": "delivery",
+    "mode": "direct",
+    "category": "lighting",
+    "title": "Assign a receiver for Thursday's fixture delivery",
+    "user": "Who's signing for the pendant delivery Thursday — I'm off-site all day.",
+    "assistant": "Demo status shows Thursday delivery, last checked today. I've assigned your site super, Dana, as receiver with your access note attached.",
+    "sourceLabel": "Delivery record — order #LT-9042",
+    "sourceNote": "Status pulled Sep 15, 9am from demo supplier portal. Not a live carrier feed; recheck morning-of.",
+    "evidence": [
+      {
+        "label": "Delivery date",
+        "value": "Thu Sep 17",
+        "state": "warning"
+      },
+      {
+        "label": "Assigned receiver",
+        "value": "Dana, site super",
+        "state": "confirmed"
+      },
+      {
+        "label": "Access note",
+        "value": "Gate code left with Dana",
+        "state": "confirmed"
+      }
+    ],
+    "media": "lighting-delivery.png",
+    "action": "Assign receiver",
+    "reply": "Perfect, tell Dana to check box count against the packing slip.",
+    "result": "Dana assigned as receiver with your access note. Delivery date stays the last-checked demo status until confirmed morning-of.",
+    "status": "pending",
+    "marketPains": [
+      "delivery"
+    ],
+    "boundary": "Delivery date reflects the last demo status check, not a live tracking integration — confirm again the morning of arrival."
+  },
+  {
+    "id": "gpt-delivery-photo",
+    "concept": "delivery",
+    "mode": "photo",
+    "category": "tiles",
+    "title": "Partial tile delivery photographed, shortage logged",
+    "user": "Only 38 of the 52 boxes showed up — here's the pallet photo.",
+    "assistant": "Logging a partial receipt: 38 of 52 boxes received, 14 short. Exception flagged for the supplier — order isn't marked complete.",
+    "sourceLabel": "Site photo — partial delivery, order #TK-5521",
+    "sourceNote": "Photo taken Sep 15 by receiver at drop-off. Box count reported by the receiver, not counted from the photograph.",
+    "evidence": [
+      {
+        "label": "Boxes received",
+        "value": "38 of 52",
+        "state": "warning"
+      },
+      {
+        "label": "Shortage",
+        "value": "14 boxes",
+        "state": "warning"
+      },
+      {
+        "label": "Receiving owner",
+        "value": "You, on-site",
+        "state": "confirmed"
+      }
+    ],
+    "media": "tiles-delivery.png",
+    "action": "Log partial receipt",
+    "reply": "Flag it and ask the supplier when the rest is coming.",
+    "result": "Partial receipt logged with a 14-box exception. Order status stays open until the remaining boxes arrive and are confirmed.",
+    "status": "blocked",
+    "marketPains": [
+      "delivery",
+      "returns"
+    ],
+    "boundary": "Box count is your receiver's report, not read from the photo or an independent carrier scan."
+  },
+  {
+    "id": "gpt-delivery-source",
+    "concept": "delivery",
+    "mode": "source",
+    "category": "framing",
+    "title": "Open the dock log behind the framing delivery note",
+    "user": "Did the driver actually get the gate code for the lumber drop?",
+    "assistant": "The demo dock log says access was arranged at 7:42am. The video is site context only. No receiving owner has been assigned yet.",
+    "sourceLabel": "Demo dock log entry — Sep 15, 7:42am",
+    "sourceNote": "Manual demo dock entry dated Sep 15, 7:42am. No gate code, timestamp or receipt status is inferred from the clip.",
+    "evidence": [
+      {
+        "label": "Gate access",
+        "value": "Confirmed, 7:42am",
+        "state": "confirmed"
+      },
+      {
+        "label": "Delivery logged",
+        "value": "Order #FR-3390",
+        "state": "confirmed"
+      },
+      {
+        "label": "Receiving owner",
+        "value": "Not assigned",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-delivery.png",
+    "video": "framing-delivery.mp4",
+    "action": "Open dock log",
+    "reply": "I'll assign myself as receiver so it's not left open.",
+    "result": "You're now the assigned receiver. Gate access and delivery log entries are unchanged by this update.",
+    "status": "pending",
+    "marketPains": [
+      "delivery"
+    ],
+    "boundary": "This exploratory framing note confirms access logging only — it does not verify lumber grade or count on arrival."
+  },
+  {
+    "id": "gpt-delivery-compare",
+    "concept": "delivery",
+    "mode": "compare",
+    "category": "paint",
+    "title": "Compare two paint deliveries to plan the receiving day",
+    "user": "Primer and topcoat are both arriving this week — which lands first?",
+    "assistant": "Demo ETAs are Wednesday Sep 16 and Friday Sep 18, refreshed Sep 15. Are you available to receive both, or should one remain unassigned?",
+    "sourceLabel": "Two delivery status snapshots compared",
+    "sourceNote": "Demo status refreshed Sep 15. Wednesday and Friday dates are Sep 16 and Sep 18, 2026.",
+    "evidence": [
+      {
+        "label": "Primer delivery",
+        "value": "Wed Sep 16 · demo ETA",
+        "state": "warning"
+      },
+      {
+        "label": "Topcoat delivery",
+        "value": "Fri Sep 18 · demo ETA",
+        "state": "warning"
+      },
+      {
+        "label": "Receiving owner",
+        "value": "Proposed: you for both",
+        "state": "warning"
+      }
+    ],
+    "media": "paint-delivery.png",
+    "compareMedia": "paint-batch.png",
+    "compareLabels": [
+      "Primer delivery status",
+      "Topcoat delivery status"
+    ],
+    "action": "Confirm receiving plan",
+    "reply": "I'll be there Wednesday but need someone else Friday.",
+    "result": "Wednesday receiving confirmed as you. Friday's receiver still needs to be assigned before that delivery arrives.",
+    "status": "pending",
+    "marketPains": [
+      "delivery"
+    ],
+    "boundary": "Both statuses are morning snapshots from a demo portal, not a live tracking integration — recheck before each drop-off."
+  },
+  {
+    "id": "gpt-delivery-followup",
+    "concept": "delivery",
+    "mode": "followup",
+    "category": "lighting",
+    "title": "Receiver reports fixture damage, exception added to record",
+    "user": "Dana just texted — one sconce box arrived crushed on one corner.",
+    "assistant": "Adding a damage exception to the delivery record for that box. Order stays received but flagged — the other items are unaffected.",
+    "sourceLabel": "Delivery record — order #LT-9042, updated",
+    "sourceNote": "Original delivery logged Sep 17 by Dana. Damage exception added Sep 17 per her report; not yet independently inspected.",
+    "evidence": [
+      {
+        "label": "Delivery status",
+        "value": "Received, flagged",
+        "state": "warning"
+      },
+      {
+        "label": "Damaged item",
+        "value": "1 sconce box",
+        "state": "warning"
+      },
+      {
+        "label": "Unaffected items",
+        "value": "5 boxes, confirmed",
+        "state": "confirmed"
+      }
+    ],
+    "media": "lighting-damage.png",
+    "action": "Log damage exception",
+    "reply": "Have Dana hold the box aside and get photos before it moves.",
+    "result": "Damage exception recorded on this one box. Rest of the delivery stays marked received with no other changes.",
+    "status": "blocked",
+    "marketPains": [
+      "delivery",
+      "returns"
+    ],
+    "boundary": "Damage note is based on the receiver's text report — it is not yet backed by a photo or inspection in this record."
+  },
+  {
+    "id": "gpt-installerpack-direct",
+    "concept": "installerpack",
+    "mode": "direct",
+    "category": "tiles",
+    "title": "Draft the tile installer pack, one dimension still open",
+    "user": "Can you put together what the setter needs before Monday?",
+    "assistant": "Draft pack linked to job #4417 / PO-5521 is ready: layout, quantities, grout spec. Niche depth is flagged open — held for your review, not sent yet.",
+    "sourceLabel": "Draft installer pack — job #4417",
+    "sourceNote": "Compiled Sep 15 from confirmed order lines. Niche depth excluded pending confirmation; pack held for your review.",
+    "evidence": [
+      {
+        "label": "Job / PO link",
+        "value": "#4417 / PO-5521",
+        "state": "confirmed"
+      },
+      {
+        "label": "Confirmed items",
+        "value": "5 of 6 line items",
+        "state": "confirmed"
+      },
+      {
+        "label": "Niche depth",
+        "value": "Flagged, unconfirmed",
+        "state": "unknown"
+      }
+    ],
+    "media": "tiles-batch.png",
+    "action": "Review draft pack",
+    "reply": "Keep the five confirmed lines in the draft. Leave niche depth flagged for review.",
+    "result": "Five confirmed lines retained in the draft; niche depth stays open. Nothing is sent to the setter.",
+    "status": "pending",
+    "marketPains": [
+      "source-of-truth",
+      "specifications"
+    ],
+    "boundary": "Pack lists only what's confirmed in this thread — it does not verify setter licensing or availability."
+  },
+  {
+    "id": "gpt-installerpack-photo",
+    "concept": "installerpack",
+    "mode": "photo",
+    "category": "framing",
+    "title": "Record the counted stack; hold the connector specification",
+    "user": "I counted 24 studs and 8 beams. Attach this stack photo to the draft pack.",
+    "assistant": "Your entered count is 24 studs and 8 beams. The photo stays attached as context. Connector specification is unconfirmed and excluded from the draft.",
+    "sourceLabel": "Draft installer pack — job #4417, framing",
+    "sourceNote": "Counts manually supplied by the user on Sep 15; not counted from the photograph. Connector review remains open.",
+    "evidence": [
+      {
+        "label": "Job / PO link",
+        "value": "#4417 / PO-5518",
+        "state": "confirmed"
+      },
+      {
+        "label": "Stack count",
+        "value": "24 studs, 8 beams",
+        "state": "confirmed"
+      },
+      {
+        "label": "Connector spec",
+        "value": "Flagged, unconfirmed",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-stack.png",
+    "action": "Review draft pack",
+    "reply": "I'll confirm the connector spec tonight, then send it.",
+    "result": "Your count and photo are linked to the draft. Connector specification stays open; nothing is sent to the framer.",
+    "status": "pending",
+    "marketPains": [
+      "source-of-truth",
+      "specifications"
+    ],
+    "boundary": "Records your reported count with the photo as context. Does not count pieces from the image, certify grade or establish structural adequacy."
+  },
+  {
+    "id": "gpt-installerpack-source",
+    "concept": "installerpack",
+    "mode": "source",
+    "category": "paint",
+    "title": "Open the sheen spec sheet feeding the painter's pack",
+    "user": "Where'd the eggshell spec in the painter's pack come from?",
+    "assistant": "It's pulled from the approved order line, PO-5530, confirmed Sep 10. Coverage rate for the accent wall is still flagged open in the pack.",
+    "sourceLabel": "Order line — PO-5530, sheen spec",
+    "sourceNote": "Approved order line dated Sep 10. Accent wall coverage rate not yet confirmed; pack holds that line open.",
+    "evidence": [
+      {
+        "label": "Job / PO link",
+        "value": "#4417 / PO-5530",
+        "state": "confirmed"
+      },
+      {
+        "label": "Sheen spec",
+        "value": "Eggshell, confirmed",
+        "state": "confirmed"
+      },
+      {
+        "label": "Coverage rate",
+        "value": "Flagged, open",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-sheen.png",
+    "action": "Open order line",
+    "reply": "I'll measure the accent wall and send you the square footage.",
+    "result": "Order line opened for reference only. Pack remains unsent until the accent wall coverage line is confirmed.",
+    "status": "pending",
+    "marketPains": [
+      "source-of-truth",
+      "specifications"
+    ],
+    "boundary": "Opening this order line displays an existing approval — it does not add coverage data or send the pack."
+  },
+  {
+    "id": "gpt-installerpack-compare",
+    "concept": "installerpack",
+    "mode": "compare",
+    "category": "lighting",
+    "title": "Compare rough-in and trim-out packs before sending either",
+    "user": "Which installer pack is actually ready to send — rough-in or trim-out?",
+    "assistant": "Rough-in pack is complete, all items confirmed. Trim-out pack still has the dimmer compatibility line flagged open — hold that one.",
+    "sourceLabel": "Two draft installer packs compared",
+    "sourceNote": "Rough-in pack finalized Sep 12. Trim-out pack drafted Sep 15 with one open line from the substitution review.",
+    "evidence": [
+      {
+        "label": "Rough-in pack",
+        "value": "Complete, ready",
+        "state": "confirmed"
+      },
+      {
+        "label": "Trim-out pack",
+        "value": "1 line flagged open",
+        "state": "warning"
+      },
+      {
+        "label": "Job / PO link",
+        "value": "#4417 / PO-5540",
+        "state": "confirmed"
+      }
+    ],
+    "media": "lighting-pendant.png",
+    "compareMedia": "lighting-comparison.png",
+    "compareLabels": [
+      "Rough-in reference",
+      "Trim-out reference"
+    ],
+    "action": "Send rough-in pack",
+    "reply": "Send rough-in now, hold trim-out until the dimmer line's confirmed.",
+    "result": "Demo send confirmation recorded for rough-in only. Trim-out remains held for dimmer compatibility; no actual message is sent.",
+    "status": "confirmed",
+    "marketPains": [
+      "source-of-truth",
+      "approvals"
+    ],
+    "boundary": "Comparison shows draft completeness only — dimmer compatibility still needs a licensed electrician's confirmation before trim-out ships."
+  },
+  {
+    "id": "gpt-installerpack-followup",
+    "concept": "installerpack",
+    "mode": "followup",
+    "category": "tiles",
+    "title": "Confirm the last field before preparing the tile pack",
+    "user": "Pulled the insulation back — niche is 4.25in, matches what we thought.",
+    "assistant": "Your entered niche depth is recorded at 4.25in. All six draft lines are now filled. Review the pack before choosing whether to send it.",
+    "sourceLabel": "Demo installer pack · job 4417",
+    "sourceNote": "User-entered niche measurement dated Sep 15. The draft has not been sent.",
+    "evidence": [
+      {
+        "label": "Entered niche depth",
+        "value": "4.25 in · user site note",
+        "state": "confirmed"
+      },
+      {
+        "label": "Draft lines",
+        "value": "6 of 6 filled",
+        "state": "confirmed"
+      },
+      {
+        "label": "Pack status",
+        "value": "Ready for final review",
+        "state": "warning"
+      }
+    ],
+    "media": "tiles-layout.png",
+    "action": "Review completed draft",
+    "reply": "Keep the completed pack ready for my review before sending.",
+    "result": "Completed draft retained for your review. Nothing sent; the setter’s start date is unchanged.",
+    "status": "pending",
+    "marketPains": [
+      "source-of-truth",
+      "specifications"
+    ],
+    "boundary": "Niche confirmation relies on your reported field measurement — it is not re-verified independently before sending."
+  },
+  {
+    "id": "gpt-receipt-direct",
+    "concept": "receipt",
+    "mode": "direct",
+    "category": "framing",
+    "title": "Close connector order, duplicate check comes back clear",
+    "user": "Can we close out the connector order — everything showed up.",
+    "assistant": "Duplicate check against job #4417 shows no other open connector orders. Closing PO-5518 as received; return eligibility isn't listed by the yard.",
+    "sourceLabel": "Receiving record — PO-5518, job #4417",
+    "sourceNote": "Duplicate check run against the job's PO history Sep 15. Yard's listing didn't include a return policy line.",
+    "evidence": [
+      {
+        "label": "Duplicate check",
+        "value": "Clear, none found",
+        "state": "confirmed"
+      },
+      {
+        "label": "Order status",
+        "value": "Closing as received",
+        "state": "confirmed"
+      },
+      {
+        "label": "Return eligibility",
+        "value": "Not listed",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-connector.png",
+    "action": "Close order",
+    "reply": "Good, close it — I'll keep the receipt in case we need a return later.",
+    "result": "PO-5518 closed as received. Return eligibility stays unknown; no refund or return has been claimed in this record.",
+    "status": "confirmed",
+    "marketPains": [
+      "duplicate-orders",
+      "returns"
+    ],
+    "boundary": "This exploratory framing closeout confirms receipt and duplicate status only — it does not confirm connector installation quality."
+  },
+  {
+    "id": "gpt-receipt-photo",
+    "concept": "receipt",
+    "mode": "photo",
+    "category": "paint",
+    "title": "Photograph damaged cans before closing the paint order",
+    "user": "One of ten paint tins is dented and leaking. Here is the photo before I close the receipt.",
+    "assistant": "Your report identifies one damaged tin and nine received intact. Keep the damaged line open while the supplier decides on replacement.",
+    "sourceLabel": "Site photo — damaged receipt, PO-5530",
+    "sourceNote": "User-reported count with one damage photograph, Sep 15. Return eligibility is not yet confirmed.",
+    "evidence": [
+      {
+        "label": "Received intact",
+        "value": "9 of 10 tins · your count",
+        "state": "confirmed"
+      },
+      {
+        "label": "Damaged",
+        "value": "1 tin · reported leak",
+        "state": "warning"
+      },
+      {
+        "label": "Replacement eligibility",
+        "value": "Supplier confirmation needed",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-damage.png",
+    "action": "Log damaged receipt",
+    "reply": "Draft a replacement request for that tin; keep its line open.",
+    "result": "One damage exception recorded and a replacement request drafted. The affected line remains open; no refund or return is claimed.",
+    "status": "blocked",
+    "marketPains": [
+      "returns",
+      "delivery"
+    ],
+    "boundary": "Count is user-reported, not inferred from the image. Supplier eligibility and replacement remain unconfirmed."
+  },
+  {
+    "id": "gpt-receipt-source",
+    "concept": "receipt",
+    "mode": "source",
+    "category": "lighting",
+    "title": "A closed prior order can still reveal a duplicate",
+    "user": "Are we sure we didn't already order these sconces once before?",
+    "assistant": "There is a prior received sconce order on this job. Closed status does not rule out a duplicate; compare SKU, room and quantity before clearing this one.",
+    "sourceLabel": "Duplicate-check sheet — job #4417 order history",
+    "sourceNote": "Demo job PO history through Sep 15. Current and prior destinations have not yet been reconciled.",
+    "evidence": [
+      {
+        "label": "Prior order",
+        "value": "Received Jul 22",
+        "state": "confirmed"
+      },
+      {
+        "label": "Current PO",
+        "value": "PO-9042",
+        "state": "confirmed"
+      },
+      {
+        "label": "Same room / SKU?",
+        "value": "Not reconciled",
+        "state": "unknown"
+      }
+    ],
+    "media": "lighting-label.png",
+    "action": "Open duplicate check",
+    "reply": "Hold this record and draft a question to reconcile the two orders.",
+    "result": "Potential duplicate flagged. PO-9042 stays on hold until the SKU, destination and quantity are reconciled.",
+    "status": "blocked",
+    "marketPains": [
+      "duplicate-orders",
+      "source-of-truth"
+    ],
+    "boundary": "Duplicate check only covers orders logged in this job's history — it does not search outside this record."
+  },
+  {
+    "id": "gpt-receipt-compare",
+    "concept": "receipt",
+    "mode": "compare",
+    "category": "tiles",
+    "title": "Compare two tile batches before closing receiving",
+    "user": "I entered lots 2209 and 2214 from the delivery slip. Should the setter mix them?",
+    "assistant": "Those entered lot codes differ. The photo suggests a shade question, not a measured match. Hold installation for the setter’s dry-layout review.",
+    "sourceLabel": "User-entered delivery slip lots · demo",
+    "sourceNote": "Lot codes supplied by the user, not read from images. Shade acceptance remains unconfirmed.",
+    "evidence": [
+      {
+        "label": "Pallet A batch",
+        "value": "2209",
+        "state": "confirmed"
+      },
+      {
+        "label": "Pallet B batch",
+        "value": "2214",
+        "state": "warning"
+      },
+      {
+        "label": "Shade match",
+        "value": "Unconfirmed",
+        "state": "unknown"
+      }
+    ],
+    "media": "tiles-batch.png",
+    "compareMedia": "tiles-layout.png",
+    "compareLabels": [
+      "Shade reference",
+      "Dry-layout reference"
+    ],
+    "action": "Flag batch review",
+    "reply": "Mark the stock received, but hold installation until the setter approves the shade.",
+    "result": "Receipt recorded with the mismatch flag. Installation stays held for shade review; no return or refund is claimed.",
+    "status": "pending",
+    "marketPains": [
+      "returns",
+      "specifications"
+    ],
+    "boundary": "Lot codes are user-entered. Photographs do not establish shade tolerance or supplier return eligibility."
+  },
+  {
+    "id": "gpt-receipt-followup",
+    "concept": "receipt",
+    "mode": "followup",
+    "category": "framing",
+    "title": "Yard confirms return window, receipt record updated",
+    "user": "Yard just told me unused connectors are returnable within 30 days.",
+    "assistant": "Your reported 30-day return window is noted from the Sep 15 receipt. Written conditions are still needed before eligibility is confirmed.",
+    "sourceLabel": "Receiving record — PO-5518, updated",
+    "sourceNote": "Original record left return eligibility unknown Sep 15. Updated same day per your reported call with the yard.",
+    "evidence": [
+      {
+        "label": "Reported window",
+        "value": "30 days · your call note",
+        "state": "warning"
+      },
+      {
+        "label": "Indicative last day",
+        "value": "Oct 15 · confirm policy",
+        "state": "warning"
+      },
+      {
+        "label": "Written conditions",
+        "value": "Not received",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-connector.png",
+    "action": "Update receipt record",
+    "reply": "Good to know — I'll hold onto the extras in case we need to send them back.",
+    "result": "Call note retained on the receipt. Eligibility remains provisional until written terms arrive; no return is filed.",
+    "status": "pending",
+    "marketPains": [
+      "returns",
+      "duplicate-orders"
+    ],
+    "boundary": "This exploratory framing update reflects your reported call with the yard — not a written policy document or engineering review."
+  }
+]

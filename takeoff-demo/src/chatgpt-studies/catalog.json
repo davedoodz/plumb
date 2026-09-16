@@ -1,0 +1,113 @@
+{
+  "seconds": 16,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "concepts": [
+    {
+      "id": "capture",
+      "title": "Keep evidence with the Spec",
+      "brief": "Attach deliberately. Photo not measurement; preserve source and destination."
+    },
+    {
+      "id": "prompt",
+      "title": "Ask the next useful question",
+      "brief": "Resolve a procurement blocker, not generic shopping. Include duplicate PO lookup where relevant."
+    },
+    {
+      "id": "recall",
+      "title": "Recall the decision and its owner",
+      "brief": "Attributed past approval, version and source. Retrieval not new approval."
+    },
+    {
+      "id": "walkthrough",
+      "title": "Keep site context in the conversation",
+      "brief": "Short walkthrough location context. No structural/fit certification from imagery."
+    },
+    {
+      "id": "quantity",
+      "title": "Check quantity before ordering twice",
+      "brief": "Entered dimensions, transparent pack rounding/waste AND check existing PO. Framing based on approved schedule not structural design. Paint coat/coverage assumptions explicit."
+    },
+    {
+      "id": "sample",
+      "title": "Connect sample review to the order",
+      "brief": "Request and identify sample, record finish approval, retain sample/batch link; framing use connector/spec reference not decorative sample approval."
+    },
+    {
+      "id": "quote",
+      "title": "Turn a message into a conditional field",
+      "brief": "Preserve installer date and prerequisites, source author. No date stripped of condition."
+    },
+    {
+      "id": "clearance",
+      "title": "Confirm rather than infer",
+      "brief": "Measured site dimension or manufacturer requirement has source; missing counterpart remains unknown. Framing no engineering approval, lighting qualified electrical review."
+    },
+    {
+      "id": "leadtime",
+      "title": "Expose the schedule risk",
+      "brief": "Dated supplier demo ETA and last refresh, compare booked trade. Stale/unconfirmed status stays explicit, not guaranteed live integration."
+    },
+    {
+      "id": "substitution",
+      "title": "Compare without hiding the unknown",
+      "brief": "Matched attributes plus one unknown. Separate draft supplier question from approving replacement."
+    },
+    {
+      "id": "signoff",
+      "title": "Keep trade and budget approvals separate",
+      "brief": "Qualified trade confirms fit/spec separately from homeowner budget authority. No implied charge."
+    },
+    {
+      "id": "delivery",
+      "title": "Track delivery and receiving ownership",
+      "brief": "Demo status timestamp, access notes, assigned receiver and exception. No fabricated service integration. Include partial receipt where relevant."
+    },
+    {
+      "id": "installerpack",
+      "title": "Share confirmed items and open questions",
+      "brief": "Draft pack linked to job/PO and owner, exclude unconfirmed dimensions and flag them. Not sent until explicit review."
+    },
+    {
+      "id": "receipt",
+      "title": "Close the order without losing evidence",
+      "brief": "Link evidence to job/PO; duplicate check, damaged/partial receipt, return eligibility unknown, no refund claim."
+    }
+  ],
+  "modes": [
+    {
+      "id": "direct",
+      "name": "Ask and act",
+      "interaction": "Short question, structured response, explicit reply"
+    },
+    {
+      "id": "photo",
+      "name": "Photo-led conversation",
+      "interaction": "Attach site evidence, inspect it, confirm the next action"
+    },
+    {
+      "id": "source",
+      "name": "Check the source",
+      "interaction": "Open the cited evidence sheet, return to the thread"
+    },
+    {
+      "id": "compare",
+      "name": "Compare in conversation",
+      "interaction": "Compare two references without leaving the thread"
+    },
+    {
+      "id": "followup",
+      "name": "Follow through",
+      "interaction": "A new message updates an existing order or decision record"
+    }
+  ],
+  "categories": [
+    "tiles",
+    "framing",
+    "paint",
+    "lighting"
+  ],
+  "marketSource": "/Users/david/Documents/Obsidian Vault/projects/plumb-market-validation.md",
+  "framingBoundary": "User-requested exploratory extension. The market note recommends flooring, not framing."
+}

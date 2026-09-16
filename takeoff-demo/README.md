@@ -57,6 +57,24 @@ Rachel Chen’s [TOMO project](https://www.rachelchen.tech/projects/openai) info
 
 The market note prioritizes duplicate-order prevention, written approvals, delivery visibility, and supplier infrastructure over a new consumer app. These studies demonstrate approvals and evidence handling but **do not implement duplicate prevention or live tracking**. Daylight sample review is not a sample-request workflow; an archived receipt is not job/PO cost allocation. Research claims about readiness, conversion, or design-build savings are not measured Takeoff outcomes.
 
+## ChatGPT-style conversation studies
+
+`src/chatgpt-studies/` defines 70 conversation studies: fourteen concepts with five interaction patterns inside one shared interface.
+The interface follows ChatGPT iOS references from authenticated Mobbin access. Procurement records and generated media are synthetic.
+
+- Categories: tiles, framing, interior paint, and light fixtures. Framing is exploratory; the market note names flooring instead.
+- Export contract: 16 seconds, 1080 × 1920, 30 fps, silent H.264 with BT.709 color.
+- Render one concept with `node chatgpt-studies.mjs render capture`. The filter also accepts a study ID, pattern, or category.
+- Render the complete collection with `node chatgpt-studies.mjs render`.
+- Run `node chatgpt-studies.mjs verify` after all renders. This command checks all 70 films before it publishes the gallery.
+- `interface-verification.json` records the exact scope of headless interface checks. It does not certify unrendered films.
+
+Media production is complete: 24 images and eight five-second videos, with provenance for every asset.
+Veo 3.1 Fast produced native 720p, eight-second sources. The pipeline crops them to 4:3, upscales to 1440 × 1080, trims to five seconds, and removes audio.
+`remaining-media-plan.json` preserves the completed generation ledger, including uncharged failures and the reconciled 160-credit Flow cost.
+`media-verification.json` records all 32 asset hashes and source-video decode checks.
+`generation-incident.json` records duplicate paid submissions from an interrupted worker. Do not retry ambiguous jobs without reconciling provider history.
+
 ## Decisions
 
 - The brief specifies 75 seconds but its scene timings total 78. All card scene boundaries stay intact; the closing hold is three seconds instead of six.

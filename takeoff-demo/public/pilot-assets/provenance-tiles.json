@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tiles-room",
+    "kind": "image",
+    "localFile": "public/pilot-assets/tiles-room.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo of a modest bathroom mid-renovation: shower alcove partly covered in warm off-white ceramic wall tiles from waist height up, exposed cement backer board above, bare subfloor with plywood and exposed nail heads, a plastic drop cloth folded in the corner, natural daylight from a small window, slightly cluttered but plausible residential site, no people, no text or logos, realistic phone-camera grain and slight lens softness.",
+    "jobId": "f594a508-aaf6-4b2c-9020-b1e6b20124c4",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212046_f594a508-aaf6-4b2c-9020-b1e6b20124c4.png",
+    "synthetic": true
+  },
+  {
+    "id": "tiles-sample",
+    "kind": "image",
+    "localFile": "public/pilot-assets/tiles-sample.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo, a person's hand (no face visible) holding a single warm off-white ribbed ceramic tile up near a bathroom window, sunlight raking across the tile to show its fine vertical ribbed texture clearly, blurred bathroom fixtures in the background, natural indirect daylight, candid snapshot feel, no text, no logos.",
+    "jobId": "c330fd2a-43bf-4831-8bd8-2b58c5366828",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212046_c330fd2a-43bf-4831-8bd8-2b58c5366828.png",
+    "synthetic": true
+  },
+  {
+    "id": "tiles-layout",
+    "kind": "image",
+    "localFile": "public/pilot-assets/tiles-layout.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo taken from directly overhead, cream-colored rectangular ceramic tiles dry-laid in a herringbone pattern on a plywood subfloor, blue painter's tape marking boundary lines on the floor around the layout, natural window light casting soft shadows, no rulers, no numbers, no readable measurements, no people, realistic phone snapshot.",
+    "jobId": "2a9c9db0-b891-4d32-a666-47bdd1a806ed",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212443_2a9c9db0-b891-4d32-a666-47bdd1a806ed.png",
+    "synthetic": true
+  },
+  {
+    "id": "tiles-delivery",
+    "kind": "image",
+    "localFile": "public/pilot-assets/tiles-delivery.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo of wrapped tile cartons stacked on a wooden pallet at a residential home's front entry, plain brown cardboard boxes with unreadable generic printing, shrink wrap partially visible, driveway and porch steps in frame, overcast daylight, no logos, no people, candid delivery photo.",
+    "jobId": "6401c4e6-6e57-47ff-b5ff-cca15f2ab9af",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212635_6401c4e6-6e57-47ff-b5ff-cca15f2ab9af.png",
+    "synthetic": true
+  },
+  {
+    "id": "tiles-damage",
+    "kind": "image",
+    "localFile": "public/pilot-assets/tiles-damage.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone close-up evidence photo of a cream ceramic tile with a visibly chipped corner resting beside an opened cardboard carton with packing foam, natural window light, slightly harsh flash-lit closeup style typical of damage claim photos, no text, no logos, no people.",
+    "jobId": "90a4f964-5f61-460f-828e-4214d1eb5e14",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212639_90a4f964-5f61-460f-828e-4214d1eb5e14.png",
+    "synthetic": true
+  },
+  {
+    "id": "tiles-batch",
+    "kind": "image",
+    "localFile": "public/pilot-assets/tiles-batch.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo comparing two small stacks of the same cream ceramic tile side by side on a plywood surface, consistent daylight from a window showing a subtle visible shade difference between the two stacks, no text, no logos, no people, realistic phone snapshot with natural color rendition.",
+    "jobId": "fb181d7f-b16e-4a78-9278-95cbd356a951",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212847_fb181d7f-b16e-4a78-9278-95cbd356a951.png",
+    "synthetic": true
+  },
+  {
+    "id": "tiles-room-video",
+    "kind": "video",
+    "localFile": "public/pilot-assets/tiles-room.mp4",
+    "model": "Veo 3.1 Fast",
+    "provider": "Google Flow",
+    "prompt": "Slow documentary camera drift around the unfinished tiled bathroom. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+    "jobId": "8f1c3eff-8bae-4d4e-8905-18cb4a61acff",
+    "url": "https://flow-content.google/video/8f1c3eff-8bae-4d4e-8905-18cb4a61acff?Expires=1789561144&KeyName=labs-flow-prod-cdn-key&Signature=dpyxPaDosWqGYzZNKvLSoGVYKL8",
+    "synthetic": true,
+    "nativeWidth": 1280,
+    "nativeHeight": 720,
+    "nativeDuration": 8,
+    "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+  },
+  {
+    "id": "tiles-sample-video",
+    "kind": "video",
+    "localFile": "public/pilot-assets/tiles-sample.mp4",
+    "model": "Veo 3.1 Fast",
+    "provider": "Google Flow",
+    "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+    "jobId": "093d22bd-b514-4eba-a613-16ae7b5eecb0",
+    "url": "https://flow-content.google/video/093d22bd-b514-4eba-a613-16ae7b5eecb0?Expires=1789556432&KeyName=labs-flow-prod-cdn-key&Signature=tKdVe5HcoFaAwXYrKC_3tlQqY6o",
+    "synthetic": true,
+    "nativeWidth": 1280,
+    "nativeHeight": 720,
+    "nativeDuration": 8,
+    "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+  }
+]

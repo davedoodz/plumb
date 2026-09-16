@@ -1,0 +1,221 @@
+{
+  "status": "Complete: three remaining images and all eight videos generated and downloaded",
+  "provider": "Google Flow",
+  "noFurtherHiggsfieldSubmissions": true,
+  "images": [
+    {
+      "id": "framing-damage",
+      "prompt": "Documentary renovation receiving photograph, 4:3. A visibly bowed timber board lies beside two straight boards on a flat workbench, with a straightedge showing the gap. Natural workshop light, realistic unfinished wood, clear visual comparison, no person, no readable labels, no logos, no certification marks. Not an installed structural assembly.",
+      "output": "public/pilot-assets/framing-damage.png",
+      "status": "downloaded",
+      "jobId": "59e2604d-f580-4b2f-8885-98f7b598794f",
+      "model": "Nano Banana 2",
+      "url": "https://flow-content.google/image/59e2604d-f580-4b2f-8885-98f7b598794f?Expires=1789552712&KeyName=labs-flow-prod-cdn-key&Signature=KWRMYoWFDy9ovxwfdE9dhHNIEOU"
+    },
+    {
+      "id": "framing-connector",
+      "prompt": "Documentary renovation material photograph, 4:3. Generic galvanized framing connectors and loose matching fasteners neatly arranged beside an unfinished timber offcut on a workbench. Natural workshop light, realistic metal and wood. Uninstalled components, no claimed load rating, no stamped text, no logos or certification marks.",
+      "output": "public/pilot-assets/framing-connector.png",
+      "status": "downloaded",
+      "url": "https://flow-content.google/image/b9c6795c-b07b-4724-a253-56e64960e5c4?Expires=1789552816&KeyName=labs-flow-prod-cdn-key&Signature=598x53zSCB91rAR24ae8iHnfnFU",
+      "jobId": "b9c6795c-b07b-4724-a253-56e64960e5c4",
+      "model": "Nano Banana 2"
+    },
+    {
+      "id": "lighting-label",
+      "prompt": "Documentary lighting receiving photograph, 4:3. Underside of an unpowered pendant ceiling canopy on a neutral workbench. Show a plain blank rectangular manufacturer label panel and separate mounting hardware. Realistic materials and soft daylight, no readable text, no logos, no certification marks, no live wiring.",
+      "output": "public/pilot-assets/lighting-label.png",
+      "status": "downloaded",
+      "url": "https://flow-content.google/image/6d387117-6f0e-4d09-996f-839667fcc8d6?Expires=1789552844&KeyName=labs-flow-prod-cdn-key&Signature=0Pyuavungb6vJODJwb1dTuJYZRg",
+      "jobId": "6d387117-6f0e-4d09-996f-839667fcc8d6",
+      "model": "Nano Banana 2"
+    }
+  ],
+  "videos": [
+    {
+      "id": "tiles-room",
+      "reference": "public/pilot-assets/tiles-room.png",
+      "output": "public/pilot-assets/tiles-room.mp4",
+      "durationSeconds": 5,
+      "aspectRatio": "4:3",
+      "resolution": "1080p",
+      "status": "normalized and downloaded",
+      "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+      "model": "Veo 3.1 Fast",
+      "generationPrompt": "Slow documentary camera drift around the unfinished tiled bathroom. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+      "attempts": [
+        {
+          "outcome": "No persisted result after detached browser session; no active job on project reload.",
+          "charged": false,
+          "reconciliation": "After four other completed jobs, balance was 970 from initial1050, exactly4x20 credits. No tiles-room result or pending job existed."
+        },
+        {
+          "outcome": "Audio generation failed; Flow explicitly says not charged",
+          "charged": false
+        }
+      ],
+      "url": "https://flow-content.google/video/8f1c3eff-8bae-4d4e-8905-18cb4a61acff?Expires=1789561144&KeyName=labs-flow-prod-cdn-key&Signature=dpyxPaDosWqGYzZNKvLSoGVYKL8",
+      "jobId": "8f1c3eff-8bae-4d4e-8905-18cb4a61acff",
+      "nativeWidth": 1280,
+      "nativeHeight": 720,
+      "nativeDuration": 8,
+      "sourceFile": "out/chatgpt-studies/generated-sources/tiles-room.mp4",
+      "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+    },
+    {
+      "id": "tiles-sample",
+      "reference": "public/pilot-assets/tiles-sample.png",
+      "output": "public/pilot-assets/tiles-sample.mp4",
+      "durationSeconds": 5,
+      "aspectRatio": "4:3",
+      "resolution": "1080p",
+      "status": "normalized and downloaded",
+      "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+      "model": "Veo 3.1 Fast",
+      "jobId": "093d22bd-b514-4eba-a613-16ae7b5eecb0",
+      "url": "https://flow-content.google/video/093d22bd-b514-4eba-a613-16ae7b5eecb0?Expires=1789556432&KeyName=labs-flow-prod-cdn-key&Signature=tKdVe5HcoFaAwXYrKC_3tlQqY6o",
+      "nativeWidth": 1280,
+      "nativeHeight": 720,
+      "nativeDuration": 8,
+      "sourceFile": "out/chatgpt-studies/generated-sources/tiles-sample.mp4",
+      "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+    },
+    {
+      "id": "framing-room",
+      "reference": "public/pilot-assets/framing-room.png",
+      "output": "public/pilot-assets/framing-room.mp4",
+      "durationSeconds": 5,
+      "aspectRatio": "4:3",
+      "resolution": "1080p",
+      "status": "normalized and downloaded",
+      "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+      "model": "Veo 3.1 Fast",
+      "generationPrompt": "Slow documentary camera drift through this unfinished framing room. Preserve every stud, opening, floor and tool in the starting frame. Keep the main wall centered. Subtle natural parallax for eight seconds, with quiet ambient room tone. No people, construction changes, music, speech or text.",
+      "failure": "Audio generation failed. You can update your settings to return silent videos. You have not been charged for this generation.",
+      "attempts": [
+        {
+          "outcome": "failed audio generation",
+          "charged": false
+        }
+      ],
+      "jobId": "36e6f9c1-8092-4b05-ac81-4f58af3d5359",
+      "url": "https://flow-content.google/video/36e6f9c1-8092-4b05-ac81-4f58af3d5359?Expires=1789559105&KeyName=labs-flow-prod-cdn-key&Signature=WAD9V9XA3-eTON5lvPyiogw59hk",
+      "nativeWidth": 1280,
+      "nativeHeight": 720,
+      "nativeDuration": 8,
+      "sourceFile": "out/chatgpt-studies/generated-sources/framing-room.mp4",
+      "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+    },
+    {
+      "id": "framing-delivery",
+      "reference": "public/pilot-assets/framing-delivery.png",
+      "output": "public/pilot-assets/framing-delivery.mp4",
+      "durationSeconds": 5,
+      "aspectRatio": "4:3",
+      "resolution": "1080p",
+      "status": "normalized and downloaded",
+      "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+      "model": "Veo 3.1 Fast",
+      "generationPrompt": "Slow documentary camera drift around the driveway lumber delivery. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+      "jobId": "c9b21b7c-af25-4156-b556-c76d2ac79a0c",
+      "url": "https://flow-content.google/video/c9b21b7c-af25-4156-b556-c76d2ac79a0c?Expires=1789559109&KeyName=labs-flow-prod-cdn-key&Signature=6FoFWKFwqgA-uAFnR6dwP7WObZ4",
+      "nativeWidth": 1280,
+      "nativeHeight": 720,
+      "nativeDuration": 8,
+      "sourceFile": "out/chatgpt-studies/generated-sources/framing-delivery.mp4",
+      "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+    },
+    {
+      "id": "paint-swatches",
+      "reference": "public/pilot-assets/paint-swatches.png",
+      "output": "public/pilot-assets/paint-swatches.mp4",
+      "durationSeconds": 5,
+      "aspectRatio": "4:3",
+      "resolution": "1080p",
+      "status": "normalized and downloaded",
+      "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+      "model": "Veo 3.1 Fast",
+      "generationPrompt": "Slow documentary camera drift around the interior paint swatch comparison. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+      "url": "https://flow-content.google/video/85aed660-bc0e-4abe-a84c-dffb6f3b502e?Expires=1789559480&KeyName=labs-flow-prod-cdn-key&Signature=hMqCTmohb1DIQNk6rL9KVlZD7yg",
+      "jobId": "85aed660-bc0e-4abe-a84c-dffb6f3b502e",
+      "nativeWidth": 1280,
+      "nativeHeight": 720,
+      "nativeDuration": 8,
+      "sourceFile": "out/chatgpt-studies/generated-sources/paint-swatches.mp4",
+      "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+    },
+    {
+      "id": "paint-room",
+      "reference": "public/pilot-assets/paint-room.png",
+      "output": "public/pilot-assets/paint-room.mp4",
+      "durationSeconds": 5,
+      "aspectRatio": "4:3",
+      "resolution": "1080p",
+      "status": "normalized and downloaded",
+      "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+      "model": "Veo 3.1 Fast",
+      "generationPrompt": "Slow documentary camera drift around the room prepared for interior painting. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+      "attempts": [
+        {
+          "outcome": "Audio generation failed; Flow explicitly says not charged",
+          "charged": false
+        }
+      ],
+      "url": "https://flow-content.google/video/6b840b6b-8b2b-4bfc-a911-8bf27fb8912d?Expires=1789561144&KeyName=labs-flow-prod-cdn-key&Signature=2IxY6_NOQ7800Ca6WnQX7S-6hCM",
+      "jobId": "6b840b6b-8b2b-4bfc-a911-8bf27fb8912d",
+      "nativeWidth": 1280,
+      "nativeHeight": 720,
+      "nativeDuration": 8,
+      "sourceFile": "out/chatgpt-studies/generated-sources/paint-room.mp4",
+      "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+    },
+    {
+      "id": "lighting-pendant",
+      "reference": "public/pilot-assets/lighting-pendant.png",
+      "output": "public/pilot-assets/lighting-pendant.mp4",
+      "durationSeconds": 5,
+      "aspectRatio": "4:3",
+      "resolution": "1080p",
+      "status": "normalized and downloaded",
+      "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+      "model": "Veo 3.1 Fast",
+      "generationPrompt": "Slow documentary camera drift around the pendant light fixture. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+      "url": "https://flow-content.google/video/b95706d0-6d57-4fa7-841f-3304570777f0?Expires=1789559762&KeyName=labs-flow-prod-cdn-key&Signature=mCC3j5tupxtm7XnJec6jipCbTH8",
+      "jobId": "b95706d0-6d57-4fa7-841f-3304570777f0",
+      "nativeWidth": 1280,
+      "nativeHeight": 720,
+      "nativeDuration": 8,
+      "sourceFile": "out/chatgpt-studies/generated-sources/lighting-pendant.mp4",
+      "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+    },
+    {
+      "id": "lighting-room",
+      "reference": "public/pilot-assets/lighting-room.png",
+      "output": "public/pilot-assets/lighting-room.mp4",
+      "durationSeconds": 5,
+      "aspectRatio": "4:3",
+      "resolution": "1080p",
+      "status": "normalized and downloaded",
+      "prompt": "Animate the supplied documentary reference with a slow, restrained handheld camera drift for five seconds. Preserve the exact room or material arrangement, object count, shapes, surface finish and lighting. Natural subtle parallax only. No added people or objects, no text, no logos, no captions, no audio, no transformations. Keep the reference subject clearly visible throughout.",
+      "model": "Veo 3.1 Fast",
+      "generationPrompt": "Slow documentary camera drift around the kitchen ceiling and island lighting context. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+      "url": "https://flow-content.google/video/18c36f76-62b9-4a13-95df-75003530e667?Expires=1789559762&KeyName=labs-flow-prod-cdn-key&Signature=LqzgT6lyBU0SwmlHUCRbOSDFCfY",
+      "jobId": "18c36f76-62b9-4a13-95df-75003530e667",
+      "nativeWidth": 1280,
+      "nativeHeight": 720,
+      "nativeDuration": 8,
+      "sourceFile": "out/chatgpt-studies/generated-sources/lighting-room.mp4",
+      "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+    }
+  ],
+  "recoveryRule": "Record each provider job ID before waiting. Reconcile job history and surviving workers before any retry. Never resubmit an ambiguous paid job.",
+  "projectUrl": "https://flow.google.com/project/bad918fd-6b61-4c96-8b02-1295a9789f6f",
+  "videoModel": "Veo 3.1 Fast",
+  "authorizedVideoCredits": 160,
+  "nativeVideoFormat": "Flow frames mode: 16:9, 720p, 8 seconds. Normalize clips to 4:3, 5 seconds; retain source metadata.",
+  "returnSilentVideos": true,
+  "silentSettingNote": "Enabled Flow Return silent videos in desktop Tile grid settings. The error link did not open its menu at the compact viewport.",
+  "actualVideoCredits": 160,
+  "creditsBefore": 1050,
+  "creditsAfter": 890
+}

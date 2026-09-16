@@ -1,0 +1,1420 @@
+{
+  "exactSourceReviewed": true,
+  "source": "/Users/david/Documents/Obsidian Vault/projects/plumb-market-validation.md",
+  "scope": "70 original-concept × conversation-pattern simulations. No live supplier integration.",
+  "categoryBoundary": "User-requested exploratory extension. The market note recommends flooring, not framing.",
+  "evidenceCaveats": [
+    "The note’s click-to-call conversion figures do not validate chat-based ordering. Conversation is user-directed for this exercise.",
+    "The note’s conversion figures are not return-rate measurements; claimed design-build ROI is not Takeoff product evidence.",
+    "Homeowner trust and supplier willingness to integrate remain research questions, including lines125–132 and187–191.",
+    "Framing is an exploratory category extension; the note lists flooring. No structural/electrical suitability is inferred from photographs."
+  ],
+  "entries": [
+    {
+      "id": "gpt-capture-direct",
+      "concept": "capture",
+      "mode": "direct",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Photo attached with source citation; area field left open for entry.",
+      "limits": "The photo documents the room. It does not measure area, verify subfloor, or approve a material.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-capture-photo",
+      "concept": "capture",
+      "mode": "photo",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Basement photo logged as context; wall dimensions still pending entry.",
+      "limits": "Framing is an exploratory category here — the photo gives location only, never a structural read.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-capture-source",
+      "concept": "capture",
+      "mode": "source",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Source sheet reviewed; returned to thread with citation unchanged.",
+      "limits": "Confirms who and when a photo was captured. It does not confirm wall area or paint coverage.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-capture-compare",
+      "concept": "capture",
+      "mode": "compare",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Both references attached. Missing junction-box photo noted for Dev; no electrical condition inferred.",
+      "limits": "Records room context and visible shade damage. Does not establish wiring condition, return eligibility or installation suitability.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-capture-followup",
+      "concept": "capture",
+      "mode": "followup",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "New reference and provenance recorded. Prior evidence preserved in history; entered area and approval state unchanged.",
+      "limits": "Swapping the reference image does not re-verify or re-approve the area already on file.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-prompt-direct",
+      "concept": "prompt",
+      "mode": "direct",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "duplicate-orders",
+          "sourceLines": "19, 66–70, 101–105"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "No duplicate PO found; header size flagged as the next open item.",
+      "limits": "Confirms no existing PO covers this wall. It does not size the header or approve the framing plan.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-prompt-photo",
+      "concept": "prompt",
+      "mode": "photo",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Painter question drafted. No drying deadline invented; primer order remains a draft.",
+      "limits": "No drying time inferred from imagery. Product instructions and a qualified on-site check determine readiness.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-prompt-source",
+      "concept": "prompt",
+      "mode": "source",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        }
+      ],
+      "observableScenario": "Box rating spec reviewed; order held on Dev's confirmation.",
+      "limits": "Reading the existing spec sheet does not confirm code compliance for a new fixture load.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-prompt-compare",
+      "concept": "prompt",
+      "mode": "compare",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "returns",
+          "sourceLines": "21, 145"
+        }
+      ],
+      "observableScenario": "Packing-slip question drafted. Delivered SKU remains unconfirmed; no supplier message is actually sent.",
+      "limits": "Compares two photos side by side. It does not confirm the box count or trigger a supplier return.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-prompt-followup",
+      "concept": "prompt",
+      "mode": "followup",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "duplicate-orders",
+          "sourceLines": "19, 66–70, 101–105"
+        }
+      ],
+      "observableScenario": "Header proposal retained in the draft. No framing order released before the approved-schedule check.",
+      "limits": "Adds a dimension Dev reported by text. It does not verify the header against a structural calculation.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-recall-direct",
+      "concept": "recall",
+      "mode": "direct",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Sep 10 eggshell approval recalled; no change made to the Spec.",
+      "limits": "Retrieves the recorded decision only. It does not re-confirm the choice or check current stock.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-recall-photo",
+      "concept": "recall",
+      "mode": "photo",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Photo matched to the Sep 11 approval; no new decision made.",
+      "limits": "Confirms which option was approved. It does not certify ceiling clearance or wiring for the layout.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-recall-source",
+      "concept": "recall",
+      "mode": "source",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Approval source reviewed and confirmed unchanged; returned to the order thread.",
+      "limits": "Displays the existing approval record. Opening it is not a new sign-off.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-recall-compare",
+      "concept": "recall",
+      "mode": "compare",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Approved schedule recalled. Delivered grade remains unverified; no installation or structural approval inferred from the stack.",
+      "limits": "Compares a plan callout with a stack photo. It does not read a grade stamp or check structural adequacy.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-recall-followup",
+      "concept": "recall",
+      "mode": "followup",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Same approved color name confirmed for the reorder call.",
+      "limits": "Repeats the recorded name and swatch code. It does not check current supplier stock or price.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-walkthrough-direct",
+      "concept": "walkthrough",
+      "mode": "direct",
+      "category": "lighting",
+      "alignment": "Supporting evidence workflow",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Walkthrough clip pinned beside the clearance question for Dev.",
+      "limits": "The clip locates the ceiling in question. It does not certify height or fixture clearance.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-walkthrough-photo",
+      "concept": "walkthrough",
+      "mode": "photo",
+      "category": "tiles",
+      "alignment": "Supporting evidence workflow",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Room clip retained beside the question. No frame is claimed to measure or confirm the drain height.",
+      "limits": "A single frame locates the drain. It does not measure flange height or certify fit.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-walkthrough-source",
+      "concept": "walkthrough",
+      "mode": "source",
+      "category": "framing",
+      "alignment": "Supporting evidence workflow",
+      "painPoints": [
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Clip provenance confirmed; returned to thread with no changes made.",
+      "limits": "Confirms who recorded the clip and when. It is not a framing inspection or fit certification.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-walkthrough-compare",
+      "concept": "walkthrough",
+      "mode": "compare",
+      "category": "paint",
+      "alignment": "Supporting evidence workflow",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Room and sample references kept together. Coverage and final sheen remain separate checks.",
+      "limits": "Compares a walkthrough clip with a separate sheen photograph. It does not measure area or confirm sheen for either surface.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-walkthrough-followup",
+      "concept": "walkthrough",
+      "mode": "followup",
+      "category": "lighting",
+      "alignment": "Supporting evidence workflow",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Ladder note logged against the walkthrough clip for the install date.",
+      "limits": "Records Dev's field note. It does not measure ceiling height or resolve the ladder need.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quantity-direct",
+      "concept": "quantity",
+      "mode": "direct",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "duplicate-orders",
+          "sourceLines": "19, 66–70, 101–105"
+        },
+        {
+          "id": "quantity",
+          "sourceLines": "19, 33"
+        }
+      ],
+      "observableScenario": "PO-5521 drafted for 7 boxes at $1,253; no duplicate order created.",
+      "limits": "Waste factor is a standard allowance, not a site-verified takeoff. Area still needs on-site confirmation.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quantity-photo",
+      "concept": "quantity",
+      "mode": "photo",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "quantity",
+          "sourceLines": "19, 33"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "12 studs and 3 plates confirmed against the approved Wall B schedule.",
+      "limits": "Counts materials against an already-approved schedule. It is not a structural design calculation.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quantity-source",
+      "concept": "quantity",
+      "mode": "source",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "quantity",
+          "sourceLines": "19, 33"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Two gallons recorded in the draft using 340 ft², two coats and 375 ft²/gal. No order or charge is made.",
+      "limits": "Coverage rate comes from the manufacturer sheet. It does not account for texture or a third coat if needed.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quantity-compare",
+      "concept": "quantity",
+      "mode": "compare",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "quantity",
+          "sourceLines": "19, 33"
+        }
+      ],
+      "observableScenario": "3-pendant, 24-inch spacing confirmed as the lower-cost, already-approved option.",
+      "limits": "Compares fixture count and price for two spacings. It does not confirm electrical load for either option.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quantity-followup",
+      "concept": "quantity",
+      "mode": "followup",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "duplicate-orders",
+          "sourceLines": "19, 66–70, 101–105"
+        },
+        {
+          "id": "quantity",
+          "sourceLines": "19, 33"
+        }
+      ],
+      "observableScenario": "PO-5521 amended to 8 boxes; no duplicate order placed for the alcove.",
+      "limits": "Recalculates boxes for the added area. It does not re-verify the original 58 ft² measurement.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-sample-direct",
+      "concept": "sample",
+      "mode": "direct",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "samples",
+          "sourceLines": "34, 121"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Sample ticket linked to the held draft line. No structural equivalence or order release is approved.",
+      "limits": "Exploratory framing. A physical sample cannot establish structural suitability or replace the approved schedule.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-sample-photo",
+      "concept": "sample",
+      "mode": "photo",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "samples",
+          "sourceLines": "34, 121"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Batch request retained on the draft; matching production stock is not yet confirmed.",
+      "limits": "Links a requested chip's batch code to a draft order. It does not confirm Harbor Supply has that batch in stock.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-sample-source",
+      "concept": "sample",
+      "mode": "source",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "samples",
+          "sourceLines": "34, 121"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Sample record confirmed against the draft order line; no new approval made.",
+      "limits": "Confirms the sample's identity and its link to a draft line. It does not confirm current pendant stock.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-sample-compare",
+      "concept": "sample",
+      "mode": "compare",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "samples",
+          "sourceLines": "34, 121"
+        },
+        {
+          "id": "returns",
+          "sourceLines": "21, 145"
+        }
+      ],
+      "observableScenario": "Finish acceptance held. Supplier question drafted; no photo-only lot mismatch asserted and no actual message sent.",
+      "limits": "Photographs prompt a product and shade review; they do not prove a lot mismatch, return eligibility or replacement date.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-sample-followup",
+      "concept": "sample",
+      "mode": "followup",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "samples",
+          "sourceLines": "34, 121"
+        },
+        {
+          "id": "duplicate-orders",
+          "sourceLines": "19, 66–70, 101–105"
+        }
+      ],
+      "observableScenario": "Identity note added; the 40-piece line stays held for qualified schedule review. No order or installation release is made.",
+      "limits": "Records Dev's field identity confirmation. It does not release the order or establish structural suitability.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quote-direct",
+      "concept": "quote",
+      "mode": "direct",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Start window saved with its drying condition and source attribution intact.",
+      "limits": "Preserves what Dev texted. It does not verify actual dry time or confirm the schedule with him again.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quote-photo",
+      "concept": "quote",
+      "mode": "photo",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Install date saved with the panel-space condition still attached.",
+      "limits": "Preserves a supplied text condition. The photo does not confirm panel capacity or electrical suitability.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quote-source",
+      "concept": "quote",
+      "mode": "source",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Transcript reviewed; date and condition confirmed unchanged, returned to thread.",
+      "limits": "Confirms the original wording of the condition. It does not confirm the patch is actually dry yet.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quote-compare",
+      "concept": "quote",
+      "mode": "compare",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Both conditional windows retained. No start authorized without both permit and lumber readiness.",
+      "limits": "Preserves two dates as Dev stated them. It does not track live permit or delivery status.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-quote-followup",
+      "concept": "quote",
+      "mode": "followup",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Site report retained and schedule-confirmation message drafted. No payment, order or independent drying certification changes.",
+      "limits": "Activates a pre-agreed condition once met. It does not reconfirm the date with Dev directly.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-clearance-direct",
+      "concept": "clearance",
+      "mode": "direct",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Flagged. Electrician review holds the rough-in date until beam clearance is confirmed on site.",
+      "limits": "Structural beam clearance is not measured or certified here — a licensed electrician must confirm on site.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-clearance-photo",
+      "concept": "clearance",
+      "mode": "photo",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "quantity",
+          "sourceLines": "19, 33"
+        }
+      ],
+      "observableScenario": "Packed-width question drafted. The 30in site note is retained; delivery fit stays unconfirmed.",
+      "limits": "Photo is context only. The supplier must provide packed dimensions; no clearance is inferred from pixels.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-clearance-source",
+      "concept": "clearance",
+      "mode": "source",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Site measurement added alongside Rev. B. Ordering stays on hold for the approved structural revision.",
+      "limits": "This exploratory framing review reads a plan sheet — it is not an engineer's structural approval.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-clearance-compare",
+      "concept": "clearance",
+      "mode": "compare",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Site note retained. Final fit remains unconfirmed until coating build-up and the installed hardware are checked.",
+      "limits": "No photo-derived dimensions or film thickness. Final hardware clearance needs an on-site check.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-clearance-followup",
+      "concept": "clearance",
+      "mode": "followup",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Reported clearance and your schedule release recorded in the demo. Electrical compliance remains with the qualified installer.",
+      "limits": "Update reflects one field measurement reported by the electrician — the thread does not independently re-verify it.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-leadtime-direct",
+      "concept": "leadtime",
+      "mode": "direct",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Flagged for supplier confirmation. Setter date not changed — status stays a 3-day-old estimate until refreshed.",
+      "limits": "ETA reflects the last demo status pull, not a live carrier feed — confirm directly with the supplier before relying on it.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-leadtime-photo",
+      "concept": "leadtime",
+      "mode": "photo",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Refresh requested. Framer start date unchanged; beam ETA still shown as the Sep 11 snapshot until confirmed.",
+      "limits": "This exploratory framing check reads a stacked-lumber photo for count context — it does not verify structural readiness.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-leadtime-source",
+      "concept": "leadtime",
+      "mode": "source",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Status sheet opened, no changes made to the order. ETA stays a two-day-old snapshot pending your next check.",
+      "limits": "Opening the status sheet only displays the last supplier snapshot — it does not refresh or guarantee the ETA.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-leadtime-compare",
+      "concept": "leadtime",
+      "mode": "compare",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Sconce ETA flagged as stale. Pendant order unaffected; electrician's Sep 25 start not changed yet.",
+      "limits": "Comparison uses two independent status snapshots of different ages — it does not reconcile them into one live feed.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-leadtime-followup",
+      "concept": "leadtime",
+      "mode": "followup",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "ETA updated in the record. Setter's booked date and tile spec remain unchanged by this update.",
+      "limits": "Update is based on your reported call with the supplier, not an independently confirmed tracking source.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-substitution-direct",
+      "concept": "substitution",
+      "mode": "direct",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Data-sheet question drafted. Connector A stays specified; no substitute is approved or ordered.",
+      "limits": "Exploratory framing scenario. Structural substitutions require project-specific professional approval.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-substitution-photo",
+      "concept": "substitution",
+      "mode": "photo",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Question drafted for the supplier. Original primer spec remains the approved product until adhesion data arrives.",
+      "limits": "VOC and dry time come from the demo supplier record, not the photo. Treat them as unconfirmed until a manufacturer data sheet arrives.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-substitution-source",
+      "concept": "substitution",
+      "mode": "source",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Spec sheet opened for reference only. Substitute isn't approved — a licensed electrician must confirm dimmer compatibility first.",
+      "limits": "Opening this spec sheet does not approve the substitution — dimmer compatibility needs a qualified electrician, not a sheet read.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-substitution-compare",
+      "concept": "substitution",
+      "mode": "compare",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        },
+        {
+          "id": "samples",
+          "sourceLines": "34, 121"
+        }
+      ],
+      "observableScenario": "Question drafted to request a variance sample. Original glossy tile stays the approved spec until you decide.",
+      "limits": "Comparison reads published catalog attributes only — it does not evaluate an in-hand physical sample.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-substitution-followup",
+      "concept": "substitution",
+      "mode": "followup",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Connector A retained. Designer review request drafted; quantity remains 40 and no order change is made.",
+      "limits": "Exploratory framing. A coating match cannot authorize a structural connector substitution.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-signoff-direct",
+      "concept": "signoff",
+      "mode": "direct",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Your $412 budget approval is recorded separately. Both approvals are visible; no order or charge is made.",
+      "limits": "Trade sign-off confirms spec fit only — it does not authorize spending, which stays a distinct homeowner decision.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-signoff-photo",
+      "concept": "signoff",
+      "mode": "photo",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Your $180 budget approval is recorded separately. Trade sign-off is unchanged; no order or charge is made.",
+      "limits": "Fit is the electrician's written confirmation; the photo is context only. Wiring capacity and code compliance require separate sign-off.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-signoff-source",
+      "concept": "signoff",
+      "mode": "source",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Sign-off sheet opened for reference. No new approval created; both existing records stay exactly as signed.",
+      "limits": "Opening this sheet retrieves an existing signature — it does not create or modify any approval.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-signoff-compare",
+      "concept": "signoff",
+      "mode": "compare",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Budget approval recorded alongside the approved-schedule trade sign-off. No beam order is placed by this demo.",
+      "limits": "This exploratory framing sign-off confirms schedule fit only — it is not a structural engineering approval.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-signoff-followup",
+      "concept": "signoff",
+      "mode": "followup",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Reported approval noted, not treated as the budget owner’s signature. Order stays held for both written confirmations.",
+      "limits": "One person's budget approval does not substitute for the trade's spec sign-off — both remain independently required.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-delivery-direct",
+      "concept": "delivery",
+      "mode": "direct",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        }
+      ],
+      "observableScenario": "Dana assigned as receiver with your access note. Delivery date stays the last-checked demo status until confirmed morning-of.",
+      "limits": "Delivery date reflects the last demo status check, not a live tracking integration — confirm again the morning of arrival.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-delivery-photo",
+      "concept": "delivery",
+      "mode": "photo",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        },
+        {
+          "id": "returns",
+          "sourceLines": "21, 145"
+        }
+      ],
+      "observableScenario": "Partial receipt logged with a 14-box exception. Order status stays open until the remaining boxes arrive and are confirmed.",
+      "limits": "Box count is your receiver's report, not read from the photo or an independent carrier scan.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-delivery-source",
+      "concept": "delivery",
+      "mode": "source",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        }
+      ],
+      "observableScenario": "You're now the assigned receiver. Gate access and delivery log entries are unchanged by this update.",
+      "limits": "This exploratory framing note confirms access logging only — it does not verify lumber grade or count on arrival.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-delivery-compare",
+      "concept": "delivery",
+      "mode": "compare",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        }
+      ],
+      "observableScenario": "Wednesday receiving confirmed as you. Friday's receiver still needs to be assigned before that delivery arrives.",
+      "limits": "Both statuses are morning snapshots from a demo portal, not a live tracking integration — recheck before each drop-off.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-delivery-followup",
+      "concept": "delivery",
+      "mode": "followup",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        },
+        {
+          "id": "returns",
+          "sourceLines": "21, 145"
+        }
+      ],
+      "observableScenario": "Damage exception recorded on this one box. Rest of the delivery stays marked received with no other changes.",
+      "limits": "Damage note is based on the receiver's text report — it is not yet backed by a photo or inspection in this record.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-installerpack-direct",
+      "concept": "installerpack",
+      "mode": "direct",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Five confirmed lines retained in the draft; niche depth stays open. Nothing is sent to the setter.",
+      "limits": "Pack lists only what's confirmed in this thread — it does not verify setter licensing or availability.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-installerpack-photo",
+      "concept": "installerpack",
+      "mode": "photo",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Your count and photo are linked to the draft. Connector specification stays open; nothing is sent to the framer.",
+      "limits": "Records your reported count with the photo as context. Does not count pieces from the image, certify grade or establish structural adequacy.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-installerpack-source",
+      "concept": "installerpack",
+      "mode": "source",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Order line opened for reference only. Pack remains unsent until the accent wall coverage line is confirmed.",
+      "limits": "Opening this order line displays an existing approval — it does not add coverage data or send the pack.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-installerpack-compare",
+      "concept": "installerpack",
+      "mode": "compare",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        },
+        {
+          "id": "approvals",
+          "sourceLines": "37–38, 48–52"
+        }
+      ],
+      "observableScenario": "Demo send confirmation recorded for rough-in only. Trim-out remains held for dimmer compatibility; no actual message is sent.",
+      "limits": "Comparison shows draft completeness only — dimmer compatibility still needs a licensed electrician's confirmation before trim-out ships.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-installerpack-followup",
+      "concept": "installerpack",
+      "mode": "followup",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Completed draft retained for your review. Nothing sent; the setter’s start date is unchanged.",
+      "limits": "Niche confirmation relies on your reported field measurement — it is not re-verified independently before sending.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-receipt-direct",
+      "concept": "receipt",
+      "mode": "direct",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "duplicate-orders",
+          "sourceLines": "19, 66–70, 101–105"
+        },
+        {
+          "id": "returns",
+          "sourceLines": "21, 145"
+        }
+      ],
+      "observableScenario": "PO-5518 closed as received. Return eligibility stays unknown; no refund or return has been claimed in this record.",
+      "limits": "This exploratory framing closeout confirms receipt and duplicate status only — it does not confirm connector installation quality.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-receipt-photo",
+      "concept": "receipt",
+      "mode": "photo",
+      "category": "paint",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "returns",
+          "sourceLines": "21, 145"
+        },
+        {
+          "id": "delivery",
+          "sourceLines": "35, 39, 60–64, 119–123"
+        }
+      ],
+      "observableScenario": "One damage exception recorded and a replacement request drafted. The affected line remains open; no refund or return is claimed.",
+      "limits": "Count is user-reported, not inferred from the image. Supplier eligibility and replacement remain unconfirmed.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-receipt-source",
+      "concept": "receipt",
+      "mode": "source",
+      "category": "lighting",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "duplicate-orders",
+          "sourceLines": "19, 66–70, 101–105"
+        },
+        {
+          "id": "source-of-truth",
+          "sourceLines": "41, 154"
+        }
+      ],
+      "observableScenario": "Potential duplicate flagged. PO-9042 stays on hold until the SKU, destination and quantity are reconciled.",
+      "limits": "Duplicate check only covers orders logged in this job's history — it does not search outside this record.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-receipt-compare",
+      "concept": "receipt",
+      "mode": "compare",
+      "category": "tiles",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "returns",
+          "sourceLines": "21, 145"
+        },
+        {
+          "id": "specifications",
+          "sourceLines": "36, 40"
+        }
+      ],
+      "observableScenario": "Receipt recorded with the mismatch flag. Installation stays held for shade review; no return or refund is claimed.",
+      "limits": "Lot codes are user-entered. Photographs do not establish shade tolerance or supplier return eligibility.",
+      "categoryStatus": "Listed pilot category",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    },
+    {
+      "id": "gpt-receipt-followup",
+      "concept": "receipt",
+      "mode": "followup",
+      "category": "framing",
+      "alignment": "Direct workflow simulation",
+      "painPoints": [
+        {
+          "id": "returns",
+          "sourceLines": "21, 145"
+        },
+        {
+          "id": "duplicate-orders",
+          "sourceLines": "19, 66–70, 101–105"
+        }
+      ],
+      "observableScenario": "Call note retained on the receipt. Eligibility remains provisional until written terms arrive; no return is filed.",
+      "limits": "This exploratory framing update reflects your reported call with the yard — not a written policy document or engineering review.",
+      "categoryStatus": "Exploratory extension",
+      "proofStatus": "Headless layout and interaction-target checks passed. Complete 16-second export decoded successfully."
+    }
+  ]
+}

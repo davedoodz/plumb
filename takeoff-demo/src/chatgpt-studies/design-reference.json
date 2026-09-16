@@ -1,0 +1,133 @@
+{
+  "referenceCollection": "https://mobbin.com/apps/chat-gpt-ios-a96b7f4c-6bfa-4c9d-a6b7-562160feb391/a0b14f48-3d1c-4286-828b-e95ad04fef10/screens",
+  "access": "Authenticated Mobbin MCP OAuth",
+  "screens": [
+    {
+      "id": "8cf567ec-633b-4d0b-81b8-4e05de5fdb9c",
+      "url": "https://mobbin.com/screens/8cf567ec-633b-4d0b-81b8-4e05de5fdb9c"
+    },
+    {
+      "id": "8cebeed2-fe06-43a2-b4c4-66b6d13a71fd",
+      "url": "https://mobbin.com/screens/8cebeed2-fe06-43a2-b4c4-66b6d13a71fd"
+    },
+    {
+      "id": "3a2f5625-6161-4748-a6b7-a3a8781563ff",
+      "url": "https://mobbin.com/screens/3a2f5625-6161-4748-a6b7-a3a8781563ff"
+    },
+    {
+      "id": "1e0d754c-569d-4767-89b7-36bf956dc8b7",
+      "url": "https://mobbin.com/screens/1e0d754c-569d-4767-89b7-36bf956dc8b7"
+    },
+    {
+      "id": "f4508a50-d79a-41c2-a130-50254fba9d01",
+      "url": "https://mobbin.com/screens/f4508a50-d79a-41c2-a130-50254fba9d01"
+    },
+    {
+      "id": "683b8465-33f0-4935-a678-586517913ec5",
+      "url": "https://mobbin.com/screens/683b8465-33f0-4935-a678-586517913ec5"
+    },
+    {
+      "id": "3ca0f3ff-2355-4f2b-9212-b09a3a076ca9",
+      "url": "https://mobbin.com/screens/3ca0f3ff-2355-4f2b-9212-b09a3a076ca9"
+    },
+    {
+      "id": "c5788d46-2106-481c-b034-b5e0a8d29c94",
+      "url": "https://mobbin.com/screens/c5788d46-2106-481c-b034-b5e0a8d29c94"
+    },
+    {
+      "id": "95bda61d-00e2-4893-8169-0a6ef484210a",
+      "url": "https://mobbin.com/screens/95bda61d-00e2-4893-8169-0a6ef484210a"
+    },
+    {
+      "id": "2d88b441-58af-4c51-8ff3-66b6178b7384",
+      "url": "https://mobbin.com/screens/2d88b441-58af-4c51-8ff3-66b6178b7384"
+    },
+    {
+      "id": "11cb8002-c2a7-4438-b32b-2e2aa5b79222",
+      "url": "https://mobbin.com/screens/11cb8002-c2a7-4438-b32b-2e2aa5b79222"
+    },
+    {
+      "id": "594e1411-90e5-481f-8e5c-804534dcfba6",
+      "url": "https://mobbin.com/screens/594e1411-90e5-481f-8e5c-804534dcfba6"
+    },
+    {
+      "id": "161451c9-1525-49cf-acbd-54ca75b43187",
+      "url": "https://mobbin.com/screens/161451c9-1525-49cf-acbd-54ca75b43187"
+    },
+    {
+      "id": "c15aeab0-f75e-4951-8d06-b004bdf2aa95",
+      "url": "https://mobbin.com/screens/c15aeab0-f75e-4951-8d06-b004bdf2aa95"
+    },
+    {
+      "id": "35ff1993-2453-40e6-b467-4362587f90de",
+      "url": "https://mobbin.com/screens/35ff1993-2453-40e6-b467-4362587f90de"
+    },
+    {
+      "id": "90c4f21a-8e70-466e-bc9f-473492eae957",
+      "url": "https://mobbin.com/screens/90c4f21a-8e70-466e-bc9f-473492eae957"
+    },
+    {
+      "id": "cf94f6ed-ad32-48c1-ad40-e8ee75e9615a",
+      "url": "https://mobbin.com/screens/cf94f6ed-ad32-48c1-ad40-e8ee75e9615a"
+    },
+    {
+      "id": "b8d286c8-390d-4fe6-a81d-3684e5df1da9",
+      "url": "https://mobbin.com/screens/b8d286c8-390d-4fe6-a81d-3684e5df1da9"
+    },
+    {
+      "id": "e4db4d80-04d0-4144-a46e-bb64ae3f6d4b",
+      "url": "https://mobbin.com/screens/e4db4d80-04d0-4144-a46e-bb64ae3f6d4b"
+    },
+    {
+      "id": "5955a701-4909-4f9d-9910-5dbcad3ca64a",
+      "url": "https://mobbin.com/screens/5955a701-4909-4f9d-9910-5dbcad3ca64a"
+    },
+    {
+      "id": "65bdb7fa-40b3-4bbd-a9ed-fa9684fb52e5",
+      "url": "https://mobbin.com/screens/65bdb7fa-40b3-4bbd-a9ed-fa9684fb52e5"
+    },
+    {
+      "id": "6da4f283-38ce-48a3-90ee-e142f09fe8dc",
+      "url": "https://mobbin.com/screens/6da4f283-38ce-48a3-90ee-e142f09fe8dc"
+    },
+    {
+      "id": "2929ea97-16a2-4e01-af8b-5f3ffc60d553",
+      "url": "https://mobbin.com/screens/2929ea97-16a2-4e01-af8b-5f3ffc60d553"
+    }
+  ],
+  "excludedAsDifferentSurface": [
+    11,
+    16,
+    18,
+    19
+  ],
+  "observations": [
+    "White screen and near-black system sans text; assistant responses are not enclosed in bubbles.",
+    "User messages are right-aligned light-grey rounded rectangles.",
+    "Top navigation uses a circular two-line menu on left and edit/ellipsis pill on right.",
+    "Floating rounded composer at bottom: plus, Ask ChatGPT placeholder, microphone and black circular send/voice action.",
+    "Attached photos appear as rounded media above the user question; source references use secondary text and response action row.",
+    "Photo/tools sheet uses a grabber, rounded top corners and background dimming."
+  ],
+  "tokens": {
+    "logicalWidth": 393,
+    "logicalHeight": 852,
+    "screen": "#ffffff",
+    "text": "#111111",
+    "secondary": "#7a7a7a",
+    "userBubble": "#f3f3f3",
+    "line": "#e8e8e8",
+    "body": 17,
+    "lineHeight": 23,
+    "bubbleRadius": 22,
+    "mediaRadius": 16,
+    "cardRadius": 18,
+    "composerRadius": 28
+  },
+  "adaptations": [
+    "Takeoff procurement cards are original extensions within the observed conversation structure.",
+    "No Mobbin screen images, watermarks, generated reference content, or copyrighted example conversations are embedded in exported studies.",
+    "Persistent touch indicator and study caption are demonstration overlays, not ChatGPT UI.",
+    "No implied OpenAI affiliation or implemented ChatGPT integration."
+  ]
+}

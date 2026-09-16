@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "mobbin": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://api.mobbin.com/mcp"],
+      "enabled": true
+    }
+  }
+}

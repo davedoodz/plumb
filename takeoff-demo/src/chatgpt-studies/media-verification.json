@@ -1,0 +1,297 @@
+{
+  "images": 24,
+  "videos": 8,
+  "uniqueFiles": 32,
+  "videoSource": "Veo 3.1 Fast, native1280x720/8s. Center cropped, upscaled, trimmed and muted to1440x1080/5s.",
+  "visualReview": "All stills reviewed directly or in review-agent contact sheets. All eight video preview grids inspected after normalization.",
+  "rows": [
+    {
+      "id": "tiles-room",
+      "kind": "image",
+      "file": "public/pilot-assets/tiles-room.png",
+      "sha256": "4c35e7ba03106b5e758d80bcffe60bcbf6da5c0f1e1e8bc465d56f194c0566bc",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "tiles-sample",
+      "kind": "image",
+      "file": "public/pilot-assets/tiles-sample.png",
+      "sha256": "50a3a4486576e3fd2b379a7c0dfcab16901645ca10c4d7dfd1b5a1453a42e31c",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "tiles-layout",
+      "kind": "image",
+      "file": "public/pilot-assets/tiles-layout.png",
+      "sha256": "9b75544e633b8f934e1750c222b37c39944424b2902845362ba124b67edaf973",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "tiles-delivery",
+      "kind": "image",
+      "file": "public/pilot-assets/tiles-delivery.png",
+      "sha256": "808100140f2752a487b14759095ae811647ec9d48b187249ef962f8436d95786",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "tiles-damage",
+      "kind": "image",
+      "file": "public/pilot-assets/tiles-damage.png",
+      "sha256": "4ffdeba42417a35e62f5879963d88474387a525ecc0e2591eb30b07ed4f5307d",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "tiles-batch",
+      "kind": "image",
+      "file": "public/pilot-assets/tiles-batch.png",
+      "sha256": "df325da6f7c9da75e3b8db5224611303c74d83ac9e980f2dd89069ca256e9c9d",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "tiles-room-video",
+      "kind": "video",
+      "file": "public/pilot-assets/tiles-room.mp4",
+      "sha256": "fed02a4822b94d27d521878baaeab77d5323e2d439a8f680456a97804de44718",
+      "width": 1440,
+      "height": 1080,
+      "frames": 150,
+      "seconds": 5,
+      "silent": true,
+      "fullDecode": true
+    },
+    {
+      "id": "tiles-sample-video",
+      "kind": "video",
+      "file": "public/pilot-assets/tiles-sample.mp4",
+      "sha256": "d1067adbfdc6c0ec7c5448f538382a638e596c9b08de83a3c4e4902c4f4396f8",
+      "width": 1440,
+      "height": 1080,
+      "frames": 150,
+      "seconds": 5,
+      "silent": true,
+      "fullDecode": true
+    },
+    {
+      "id": "framing-room",
+      "kind": "image",
+      "file": "public/pilot-assets/framing-room.png",
+      "sha256": "eac31ac90af17168bbf2b2301a0749a65f76470e80a34ca3c4fea5f63c1b1452",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "framing-stack",
+      "kind": "image",
+      "file": "public/pilot-assets/framing-stack.png",
+      "sha256": "c529b426f9a23fb75abc8341351b87a9ca27bbc039211b6fb7780c0b28aa0278",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "framing-plan",
+      "kind": "image",
+      "file": "public/pilot-assets/framing-plan.png",
+      "sha256": "4ee5e851a8737a72dbec44b5a84d32c012a36081cbc2e7c632527e647dd2dee4",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "framing-delivery",
+      "kind": "image",
+      "file": "public/pilot-assets/framing-delivery.png",
+      "sha256": "ee3e104aa52ba3726e0ffdd045901fb88ecdfb836e0d29bde68ef2dc54610e93",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "framing-damage",
+      "kind": "image",
+      "file": "public/pilot-assets/framing-damage.png",
+      "sha256": "6e88033f5dd8e708543e97194c9e951a7858599a9ffaaf18a013b81d1dedea0b",
+      "width": 1200,
+      "height": 896
+    },
+    {
+      "id": "framing-connector",
+      "kind": "image",
+      "file": "public/pilot-assets/framing-connector.png",
+      "sha256": "401c96932a57c0261ac2eea2a5fcaddd0eac33c43240ef19dc760b4ce33484cd",
+      "width": 1200,
+      "height": 896
+    },
+    {
+      "id": "framing-room-video",
+      "kind": "video",
+      "file": "public/pilot-assets/framing-room.mp4",
+      "sha256": "a63a15ffc1687b1801871e490530862bdf3ab5f014d0a87ddbd2f75ba48e843a",
+      "width": 1440,
+      "height": 1080,
+      "frames": 150,
+      "seconds": 5,
+      "silent": true,
+      "fullDecode": true
+    },
+    {
+      "id": "framing-delivery-video",
+      "kind": "video",
+      "file": "public/pilot-assets/framing-delivery.mp4",
+      "sha256": "86ccc58e50ccd91d904e0904a64955ecd05180c27e4e49cf3fb83b7ddbefce22",
+      "width": 1440,
+      "height": 1080,
+      "frames": 150,
+      "seconds": 5,
+      "silent": true,
+      "fullDecode": true
+    },
+    {
+      "id": "paint-room",
+      "kind": "image",
+      "file": "public/pilot-assets/paint-room.png",
+      "sha256": "34aa279e21106ec072495759bb73c489ce83f83ec856ada52ff6632721276c98",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "paint-swatches",
+      "kind": "image",
+      "file": "public/pilot-assets/paint-swatches.png",
+      "sha256": "568c04be3b91dde0682c84c62ff25ab14ff079b78c7def92dba53299f46cd15d",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "paint-sheen",
+      "kind": "image",
+      "file": "public/pilot-assets/paint-sheen.png",
+      "sha256": "ef104532e63eb01834f32ae47927978ebaea13b189298be3f934581db4b22dfc",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "paint-delivery",
+      "kind": "image",
+      "file": "public/pilot-assets/paint-delivery.png",
+      "sha256": "768643452a64a702f4ce7b6642e44db6f9090a8954426b75060c07050f09c704",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "paint-damage",
+      "kind": "image",
+      "file": "public/pilot-assets/paint-damage.png",
+      "sha256": "a6da3b613608100f483cb46f459d20cb4d4471dc4d27128ad5601a5184c6c054",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "paint-batch",
+      "kind": "image",
+      "file": "public/pilot-assets/paint-batch.png",
+      "sha256": "6f2fe7ffc01fe2682e7908c335c3652703f87ade0a7012cea112d412df40f903",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "paint-swatches-video",
+      "kind": "video",
+      "file": "public/pilot-assets/paint-swatches.mp4",
+      "sha256": "67e9f4b3ed53936a636617dd35068ea245a0eae703efbe6d41f898595599b4d9",
+      "width": 1440,
+      "height": 1080,
+      "frames": 150,
+      "seconds": 5,
+      "silent": true,
+      "fullDecode": true
+    },
+    {
+      "id": "paint-room-video",
+      "kind": "video",
+      "file": "public/pilot-assets/paint-room.mp4",
+      "sha256": "70c434ef0bd172b62afb16a68c43e61fa99ba3670cf39f8af02d27f497251463",
+      "width": 1440,
+      "height": 1080,
+      "frames": 150,
+      "seconds": 5,
+      "silent": true,
+      "fullDecode": true
+    },
+    {
+      "id": "lighting-room",
+      "kind": "image",
+      "file": "public/pilot-assets/lighting-room.png",
+      "sha256": "47ae09e87baf217bfbc199b87bdaae5b059d00279b88725dad8479b05904d951",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "lighting-pendant",
+      "kind": "image",
+      "file": "public/pilot-assets/lighting-pendant.png",
+      "sha256": "badad6c77d3176f280caabb185f0da5910cd8a2bfdc5aedf0007728d495c61f5",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "lighting-comparison",
+      "kind": "image",
+      "file": "public/pilot-assets/lighting-comparison.png",
+      "sha256": "27efaa60b99e7491265b4607abd73030cc368ff7396cc7e2d1040755b8cdc619",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "lighting-delivery",
+      "kind": "image",
+      "file": "public/pilot-assets/lighting-delivery.png",
+      "sha256": "901590004201b1202dc17b1823ac19481d9812bf528e5047f7a3648ebf8a59c4",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "lighting-damage",
+      "kind": "image",
+      "file": "public/pilot-assets/lighting-damage.png",
+      "sha256": "e089dd68ecf276d29dc111c571ba3bdf7192673b11135b06685c226ba01c66a1",
+      "width": 2336,
+      "height": 1744
+    },
+    {
+      "id": "lighting-label",
+      "kind": "image",
+      "file": "public/pilot-assets/lighting-label.png",
+      "sha256": "f636f9ef2dac73418d6d2633b7c65aa1493f5d2caa091a441a3bd0979443db13",
+      "width": 1200,
+      "height": 896
+    },
+    {
+      "id": "lighting-pendant-video",
+      "kind": "video",
+      "file": "public/pilot-assets/lighting-pendant.mp4",
+      "sha256": "1dba1d39c8f189dc7056baf68f0b34b0ac97cf52311e76ceb40f5efd40d6fc8d",
+      "width": 1440,
+      "height": 1080,
+      "frames": 150,
+      "seconds": 5,
+      "silent": true,
+      "fullDecode": true
+    },
+    {
+      "id": "lighting-room-video",
+      "kind": "video",
+      "file": "public/pilot-assets/lighting-room.mp4",
+      "sha256": "5e6a08443ed3e148b2c4cd7b8bb761f2eb8ee0800ed2cabaf1f4fb3194727a47",
+      "width": 1440,
+      "height": 1080,
+      "frames": 150,
+      "seconds": 5,
+      "silent": true,
+      "fullDecode": true
+    }
+  ]
+}

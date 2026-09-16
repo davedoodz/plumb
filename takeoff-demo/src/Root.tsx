@@ -4,9 +4,11 @@ import { TakeoffFilm, SubstitutionFilm } from "./Composition";
 import { ChatVariantFilm } from "./chat/ChatVariants";
 import { PrototypeFilm, prototypes } from "./prototypes/Collection";
 import {VariantFilm,variantCompositions} from "./variants/Variants";
+import {ConversationStudy, conversationStudies} from './chatgpt-studies/ConversationStudy';
 
 export const RemotionRoot: React.FC = () => (
   <>
+    {conversationStudies.map(study=><Composition key={study.id} id={study.id} component={ConversationStudy} durationInFrames={480} fps={30} width={1080} height={1920} defaultProps={{study}}/>)}
     {variantCompositions.map(v=><Composition key={v.id} id={v.id} component={VariantFilm} defaultProps={{directionIndex:v.directionIndex,conceptIndex:v.conceptIndex}} durationInFrames={v.seconds*30} fps={30} width={1080} height={1080}/>)}
     {prototypes.map((p, index) => (
       <Composition

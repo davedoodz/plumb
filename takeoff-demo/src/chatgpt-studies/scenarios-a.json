@@ -1,0 +1,1296 @@
+[
+  {
+    "id": "gpt-capture-direct",
+    "concept": "capture",
+    "mode": "direct",
+    "category": "tiles",
+    "title": "Attach the bathroom floor photo to the Spec",
+    "user": "Attach this bathroom floor photo to the tile Spec before we go further.",
+    "assistant": "Attached to the Tile Spec on Job 2281. Source stays Maya, site photo — no measurement was read from it.",
+    "sourceLabel": "Maya · site photo · Sep 10",
+    "sourceNote": "Photo taken at hall bath before demo. Attached as reference only; area still needs to be entered manually.",
+    "evidence": [
+      {
+        "label": "Spec",
+        "value": "Hall bath tile"
+      },
+      {
+        "label": "Source",
+        "value": "Maya · site photo"
+      },
+      {
+        "label": "Measurement",
+        "value": "Not read from photo",
+        "state": "unknown"
+      }
+    ],
+    "media": "tiles-room.png",
+    "action": "Attach to Spec",
+    "reply": "Good — don't pull a size from it, I'll enter the area myself.",
+    "result": "Photo attached with source citation; area field left open for entry.",
+    "status": "confirmed",
+    "marketPains": [
+      "specifications",
+      "source-of-truth"
+    ],
+    "boundary": "The photo documents the room. It does not measure area, verify subfloor, or approve a material."
+  },
+  {
+    "id": "gpt-capture-photo",
+    "concept": "capture",
+    "mode": "photo",
+    "category": "framing",
+    "title": "Log the basement wall photo before framing starts",
+    "user": "Log this basement photo before we start framing the laundry nook wall.",
+    "assistant": "Logged to the Wall B framing Spec, Job 2281. Noted as site context only — no stud count comes from this photo.",
+    "sourceLabel": "Maya · site photo · Sep 9",
+    "sourceNote": "Basement corner before Wall B framing. Kept as location evidence; dimensions must still be entered separately.",
+    "evidence": [
+      {
+        "label": "Spec",
+        "value": "Wall B framing"
+      },
+      {
+        "label": "Location",
+        "value": "Basement, laundry nook"
+      },
+      {
+        "label": "Measurement",
+        "value": "Not inferred",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-room.png",
+    "action": "Log to Spec",
+    "reply": "Right, I'll bring the tape measure Thursday and enter the run length then.",
+    "result": "Basement photo logged as context; wall dimensions still pending entry.",
+    "status": "confirmed",
+    "marketPains": [
+      "specifications",
+      "source-of-truth"
+    ],
+    "boundary": "Framing is an exploratory category here — the photo gives location only, never a structural read."
+  },
+  {
+    "id": "gpt-capture-source",
+    "concept": "capture",
+    "mode": "source",
+    "category": "paint",
+    "title": "Open the hallway photo's evidence citation",
+    "user": "What's actually behind that hallway photo you attached yesterday?",
+    "assistant": "Opening its source sheet: Maya, site photo, Sep 10, attached to the Paint Spec. No coverage or gallon count was calculated from it.",
+    "sourceLabel": "Maya · site photo · Sep 10",
+    "sourceNote": "Upper hallway wall before priming. Citation shows capture time and destination Spec; no square footage attached.",
+    "evidence": [
+      {
+        "label": "Attached by",
+        "value": "Maya"
+      },
+      {
+        "label": "Destination",
+        "value": "Paint Spec, hallway"
+      },
+      {
+        "label": "Coverage calc",
+        "value": "Not attempted",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-room.png",
+    "action": "Open source sheet",
+    "reply": "Good, that matches what I remember — back to the thread.",
+    "result": "Source sheet reviewed; returned to thread with citation unchanged.",
+    "status": "confirmed",
+    "marketPains": [
+      "source-of-truth",
+      "specifications"
+    ],
+    "boundary": "Confirms who and when a photo was captured. It does not confirm wall area or paint coverage."
+  },
+  {
+    "id": "gpt-capture-compare",
+    "concept": "capture",
+    "mode": "compare",
+    "category": "lighting",
+    "title": "Keep room context beside the damaged shade",
+    "user": "Attach the kitchen ceiling photo and the damaged shade photo to the Lighting Spec.",
+    "assistant": "Both attached for Dev's review. The shade photo records visible damage; neither photo establishes wiring condition.",
+    "sourceLabel": "Maya · room and receiving photos · Sep 9",
+    "sourceNote": "Room context and receiving damage are separate references. No junction-box or wiring photograph has been supplied.",
+    "evidence": [
+      {
+        "label": "Spec",
+        "value": "Kitchen island lighting"
+      },
+      {
+        "label": "Photos attached",
+        "value": "2 separate references"
+      },
+      {
+        "label": "Electrical read",
+        "value": "None performed",
+        "state": "unknown"
+      }
+    ],
+    "media": "lighting-room.png",
+    "compareMedia": "lighting-damage.png",
+    "compareLabels": [
+      "Ceiling context",
+      "Damaged shade"
+    ],
+    "action": "Attach both as evidence",
+    "reply": "Keep both. Dev still needs a junction-box photo before quoting installation.",
+    "result": "Both references attached. Missing junction-box photo noted for Dev; no electrical condition inferred.",
+    "status": "confirmed",
+    "marketPains": [
+      "specifications",
+      "source-of-truth"
+    ],
+    "boundary": "Records room context and visible shade damage. Does not establish wiring condition, return eligibility or installation suitability."
+  },
+  {
+    "id": "gpt-capture-followup",
+    "concept": "capture",
+    "mode": "followup",
+    "category": "tiles",
+    "title": "Swap in a sharper layout photo, same Spec",
+    "user": "That first bathroom photo is blurry — swap in this layout shot instead.",
+    "assistant": "Replaced the reference image on the Tile Spec. The new photo has its own source entry; the prior photo stays in history and entered area is unchanged.",
+    "sourceLabel": "Maya · layout photo · Sep 11",
+    "sourceNote": "New layout image from Maya, Sep 11. Previous photo retained in history; 58 ft² remains a user-entered value.",
+    "evidence": [
+      {
+        "label": "Spec",
+        "value": "Hall bath tile"
+      },
+      {
+        "label": "Replaced",
+        "value": "Sep 10 reference photo"
+      },
+      {
+        "label": "Area on file",
+        "value": "58 ft², unchanged",
+        "state": "confirmed"
+      }
+    ],
+    "media": "tiles-layout.png",
+    "action": "Replace evidence photo",
+    "reply": "Perfect, that's the one — don't touch the area, it's still right.",
+    "result": "New reference and provenance recorded. Prior evidence preserved in history; entered area and approval state unchanged.",
+    "status": "confirmed",
+    "marketPains": [
+      "specifications",
+      "source-of-truth"
+    ],
+    "boundary": "Swapping the reference image does not re-verify or re-approve the area already on file."
+  },
+  {
+    "id": "gpt-prompt-direct",
+    "concept": "prompt",
+    "mode": "direct",
+    "category": "framing",
+    "title": "Check for a duplicate PO before ordering Wall B studs",
+    "user": "Before I order studs for the laundry wall, are we already carrying a lumber PO for this?",
+    "assistant": "Checked Job 2281 POs: PO-5498 covers Wall A lumber only. No PO exists for Wall B — safe to draft a new one.",
+    "sourceLabel": "Job 2281 PO register",
+    "sourceNote": "Searched open and closed framing POs on Job 2281. One match found, scoped to a different wall run.",
+    "evidence": [
+      {
+        "label": "Existing framing PO",
+        "value": "PO-5498, Wall A"
+      },
+      {
+        "label": "Wall B PO",
+        "value": "None found",
+        "state": "confirmed"
+      },
+      {
+        "label": "Next blocker",
+        "value": "Confirm header size"
+      }
+    ],
+    "media": "framing-plan.png",
+    "action": "Check duplicate PO",
+    "reply": "Good, no duplicate then — I still need the header size from Dev.",
+    "result": "No duplicate PO found; header size flagged as the next open item.",
+    "status": "pending",
+    "marketPains": [
+      "duplicate-orders",
+      "specifications"
+    ],
+    "boundary": "Confirms no existing PO covers this wall. It does not size the header or approve the framing plan."
+  },
+  {
+    "id": "gpt-prompt-photo",
+    "concept": "prompt",
+    "mode": "photo",
+    "category": "paint",
+    "title": "Find the blocker behind the patched hallway wall",
+    "user": "What's holding up the primer order — is it this patch in the photo?",
+    "assistant": "Drying readiness cannot be inferred from this photo. We need the patch product’s drying guidance and the painter’s site check before priming.",
+    "sourceLabel": "Site context + pending painter check",
+    "sourceNote": "The photograph does not establish dry time. Product guidance and site conditions remain unconfirmed.",
+    "evidence": [
+      {
+        "label": "Patch product",
+        "value": "Data sheet needed",
+        "state": "unknown"
+      },
+      {
+        "label": "Drying readiness",
+        "value": "Painter check pending",
+        "state": "unknown"
+      },
+      {
+        "label": "Order status",
+        "value": "Draft · not placed",
+        "state": "warning"
+      }
+    ],
+    "media": "paint-room.png",
+    "action": "Hold primer order",
+    "reply": "Draft that question for the painter and leave the primer order unreleased.",
+    "result": "Painter question drafted. No drying deadline invented; primer order remains a draft.",
+    "status": "pending",
+    "marketPains": [
+      "specifications"
+    ],
+    "boundary": "No drying time inferred from imagery. Product instructions and a qualified on-site check determine readiness."
+  },
+  {
+    "id": "gpt-prompt-source",
+    "concept": "prompt",
+    "mode": "source",
+    "category": "lighting",
+    "title": "Open the junction box spec blocking the pendant order",
+    "user": "Why can't we just order the pendants — what's the actual blocker?",
+    "assistant": "Opening the cited box spec: existing junction box rating is unconfirmed for a 3-pendant load. That's the open blocker.",
+    "sourceLabel": "Existing fixture spec sheet · undated",
+    "sourceNote": "Attached spec covers box type only, no amperage rating listed. Confirmation needed before ordering three fixtures.",
+    "evidence": [
+      {
+        "label": "Blocker",
+        "value": "Box rating unconfirmed"
+      },
+      {
+        "label": "Fixtures pending",
+        "value": "3 pendants"
+      },
+      {
+        "label": "Source",
+        "value": "Existing spec sheet",
+        "state": "unknown"
+      }
+    ],
+    "media": "lighting-room.png",
+    "action": "Open box spec sheet",
+    "reply": "Got it — I'll have Dev check the box rating before we order.",
+    "result": "Box rating spec reviewed; order held on Dev's confirmation.",
+    "status": "blocked",
+    "marketPains": [
+      "specifications",
+      "delivery"
+    ],
+    "boundary": "Reading the existing spec sheet does not confirm code compliance for a new fixture load."
+  },
+  {
+    "id": "gpt-prompt-compare",
+    "concept": "prompt",
+    "mode": "compare",
+    "category": "tiles",
+    "title": "Compare the plan against what actually arrived",
+    "user": "Does this herringbone layout match what the delivery cartons contain?",
+    "assistant": "The layout reference shows herringbone. The wrapped cartons do not establish product size or SKU. Reconcile the packing slip before installation.",
+    "sourceLabel": "Maya · layout plan + delivery photo",
+    "sourceNote": "Layout photograph plus wrapped-carton context. No SKU or size was read from unseen package labels.",
+    "evidence": [
+      {
+        "label": "Layout reference",
+        "value": "Herringbone"
+      },
+      {
+        "label": "Delivered SKU",
+        "value": "Packing-slip check pending",
+        "state": "unknown"
+      },
+      {
+        "label": "Installation",
+        "value": "Hold for reconciliation",
+        "state": "warning"
+      }
+    ],
+    "media": "tiles-layout.png",
+    "compareMedia": "tiles-delivery.png",
+    "compareLabels": [
+      "Planned layout",
+      "Delivered boxes"
+    ],
+    "action": "Flag delivery mismatch",
+    "reply": "Keep installation on hold and draft the packing-slip question for the supplier.",
+    "result": "Packing-slip question drafted. Delivered SKU remains unconfirmed; no supplier message is actually sent.",
+    "status": "blocked",
+    "marketPains": [
+      "specifications",
+      "returns"
+    ],
+    "boundary": "Compares two photos side by side. It does not confirm the box count or trigger a supplier return."
+  },
+  {
+    "id": "gpt-prompt-followup",
+    "concept": "prompt",
+    "mode": "followup",
+    "category": "framing",
+    "title": "Header size confirmed, unblock the framing order",
+    "user": "Dev confirmed it — double 2x6 header for the laundry doorway.",
+    "assistant": "Dev’s proposed double 2x6 header is noted. Before release, it must match the approved structural schedule; a text alone does not establish suitability.",
+    "sourceLabel": "Dev · text · Sep 11",
+    "sourceNote": "Header size relayed by Dev after site check. Added to draft order; release still requires Maya's confirmation.",
+    "evidence": [
+      {
+        "label": "Proposed header",
+        "value": "Double 2x6 · Dev text"
+      },
+      {
+        "label": "Approved schedule",
+        "value": "Revision check pending",
+        "state": "unknown"
+      },
+      {
+        "label": "Order status",
+        "value": "Draft · held",
+        "state": "warning"
+      }
+    ],
+    "media": "framing-plan.png",
+    "action": "Add header to order",
+    "reply": "Keep it held until the approved structural schedule is attached.",
+    "result": "Header proposal retained in the draft. No framing order released before the approved-schedule check.",
+    "status": "blocked",
+    "marketPains": [
+      "specifications",
+      "duplicate-orders"
+    ],
+    "boundary": "Adds a dimension Dev reported by text. It does not verify the header against a structural calculation."
+  },
+  {
+    "id": "gpt-recall-direct",
+    "concept": "recall",
+    "mode": "direct",
+    "category": "paint",
+    "title": "Recall which sheen Sam approved for the hallway",
+    "user": "Remind me — did Sam approve eggshell or satin for the hallway?",
+    "assistant": "Sam approved eggshell, Coastal Fog, on Sep 10. That's the decision on file — I'm not asking for a new approval.",
+    "sourceLabel": "Sam · approval · Sep 10",
+    "sourceNote": "Decision recorded against the Paint Spec, hallway. Retrieved as-is; no new confirmation requested from Sam.",
+    "evidence": [
+      {
+        "label": "Sheen",
+        "value": "Eggshell"
+      },
+      {
+        "label": "Approved by",
+        "value": "Sam · Sep 10",
+        "state": "confirmed"
+      },
+      {
+        "label": "Color",
+        "value": "Coastal Fog"
+      }
+    ],
+    "media": "paint-swatches.png",
+    "action": "Recall approval",
+    "reply": "Eggshell it is, thanks — that's what I remembered.",
+    "result": "Sep 10 eggshell approval recalled; no change made to the Spec.",
+    "status": "confirmed",
+    "marketPains": [
+      "approvals",
+      "source-of-truth"
+    ],
+    "boundary": "Retrieves the recorded decision only. It does not re-confirm the choice or check current stock."
+  },
+  {
+    "id": "gpt-recall-photo",
+    "concept": "recall",
+    "mode": "photo",
+    "category": "lighting",
+    "title": "Which pendant layout did we actually pick",
+    "user": "Looking at this comparison photo — which pendant option did we go with?",
+    "assistant": "The decision record says Sam chose three brass pendants at 24in spacing on Sep 11. This photo is a finish reference, not a layout measurement.",
+    "sourceLabel": "Sam · approval · Sep 11",
+    "sourceNote": "Approval recorded before this comparison photo existed. Photo is being read against that record, not replacing it.",
+    "evidence": [
+      {
+        "label": "Approved layout",
+        "value": "3-pendant, 24 in spacing"
+      },
+      {
+        "label": "Approved by",
+        "value": "Sam · Sep 11",
+        "state": "confirmed"
+      },
+      {
+        "label": "Finish",
+        "value": "Brass"
+      }
+    ],
+    "media": "lighting-pendant.png",
+    "action": "Match photo to approval",
+    "reply": "Right, three pendants — glad I checked before ordering four.",
+    "result": "Photo matched to the Sep 11 approval; no new decision made.",
+    "status": "confirmed",
+    "marketPains": [
+      "approvals",
+      "source-of-truth"
+    ],
+    "boundary": "Confirms which option was approved. It does not certify ceiling clearance or wiring for the layout."
+  },
+  {
+    "id": "gpt-recall-source",
+    "concept": "recall",
+    "mode": "source",
+    "category": "tiles",
+    "title": "Open the source record behind the tile approval",
+    "user": "Where did the warm ivory ribbed tile decision come from?",
+    "assistant": "Sam’s Sep 10 finish record selected warm ivory ribbed tile. Opening that decision source; this does not create a new approval.",
+    "sourceLabel": "Sam · approval · Sep 10",
+    "sourceNote": "Demo finish decision by Sam; sample image is linked context. Product performance still needs supplier confirmation.",
+    "evidence": [
+      {
+        "label": "Finish",
+        "value": "Warm ivory · ribbed"
+      },
+      {
+        "label": "Approved by",
+        "value": "Sam · Sep 10",
+        "state": "confirmed"
+      },
+      {
+        "label": "Reference",
+        "value": "Sample photo · Sep 10"
+      }
+    ],
+    "media": "tiles-sample.png",
+    "action": "Open approval source",
+    "reply": "That checks out — back to ordering, thanks.",
+    "result": "Approval source reviewed and confirmed unchanged; returned to the order thread.",
+    "status": "confirmed",
+    "marketPains": [
+      "approvals",
+      "source-of-truth"
+    ],
+    "boundary": "Displays the existing approval record. Opening it is not a new sign-off."
+  },
+  {
+    "id": "gpt-recall-compare",
+    "concept": "recall",
+    "mode": "compare",
+    "category": "framing",
+    "title": "Confirm the staged lumber matches the approved plan",
+    "user": "Does the stud grade in this photo match what the plan called for?",
+    "assistant": "The demo schedule records No.2 SPF, approved by the designer. The photo does not reveal a readable grade stamp; receiving verification is still open.",
+    "sourceLabel": "Sam · approval · Sep 9",
+    "sourceNote": "Grade called out on the framing plan. The stack photo has no readable stamp; delivered grade remains unverified.",
+    "evidence": [
+      {
+        "label": "Recorded grade",
+        "value": "No.2 SPF · demo schedule"
+      },
+      {
+        "label": "Delivered grade stamp",
+        "value": "Not verified",
+        "state": "unknown"
+      },
+      {
+        "label": "Schedule owner",
+        "value": "Designer · Sep 9"
+      }
+    ],
+    "media": "framing-plan.png",
+    "compareMedia": "framing-stack.png",
+    "compareLabels": [
+      "Approved plan spec",
+      "Staged lumber"
+    ],
+    "action": "Request grade check",
+    "reply": "Keep that schedule source and ask Dev to record the delivered grade stamp.",
+    "result": "Approved schedule recalled. Delivered grade remains unverified; no installation or structural approval inferred from the stack.",
+    "status": "pending",
+    "marketPains": [
+      "approvals",
+      "specifications"
+    ],
+    "boundary": "Compares a plan callout with a stack photo. It does not read a grade stamp or check structural adequacy."
+  },
+  {
+    "id": "gpt-recall-followup",
+    "concept": "recall",
+    "mode": "followup",
+    "category": "paint",
+    "title": "Double-check the exact color before reordering",
+    "user": "One more time — what's the exact paint name before I call it in?",
+    "assistant": "Still Coastal Fog, eggshell, swatch SW-4410, approved by Sam Sep 10. Same decision, nothing changed since you last asked.",
+    "sourceLabel": "Sam · approval · Sep 10",
+    "sourceNote": "Second retrieval of the same approval record. No revision has been made to color, sheen, or swatch code.",
+    "evidence": [
+      {
+        "label": "Color",
+        "value": "Coastal Fog"
+      },
+      {
+        "label": "Swatch",
+        "value": "SW-4410"
+      },
+      {
+        "label": "Approved by",
+        "value": "Sam · Sep 10",
+        "state": "confirmed"
+      }
+    ],
+    "media": "paint-swatches.png",
+    "action": "Re-confirm color name",
+    "reply": "Perfect, calling Harbor Supply now with that exact name.",
+    "result": "Same approved color name confirmed for the reorder call.",
+    "status": "confirmed",
+    "marketPains": [
+      "approvals",
+      "source-of-truth"
+    ],
+    "boundary": "Repeats the recorded name and swatch code. It does not check current supplier stock or price."
+  },
+  {
+    "id": "gpt-walkthrough-direct",
+    "concept": "walkthrough",
+    "mode": "direct",
+    "category": "lighting",
+    "title": "Pin the island walkthrough beside the clearance question",
+    "user": "Keep that quick island walkthrough next to my question for Dev about ceiling height.",
+    "assistant": "Pinned the walkthrough clip beside your question. It shows location only — Dev still needs to measure clearance on site.",
+    "sourceLabel": "Maya · site walkthrough · Sep 9",
+    "sourceNote": "5-second clip over the kitchen island. Provides context for Dev's question, not a clearance measurement.",
+    "evidence": [
+      {
+        "label": "Reference",
+        "value": "5-second walkthrough"
+      },
+      {
+        "label": "Question for",
+        "value": "Dev · installer"
+      },
+      {
+        "label": "Clearance",
+        "value": "Not measured",
+        "state": "unknown"
+      }
+    ],
+    "media": "lighting-room.png",
+    "video": "lighting-room.mp4",
+    "action": "Pin as context",
+    "reply": "Good, that'll save him a trip to figure out which ceiling I mean.",
+    "result": "Walkthrough clip pinned beside the clearance question for Dev.",
+    "status": "pending",
+    "marketPains": [
+      "specifications"
+    ],
+    "boundary": "The clip locates the ceiling in question. It does not certify height or fixture clearance."
+  },
+  {
+    "id": "gpt-walkthrough-photo",
+    "concept": "walkthrough",
+    "mode": "photo",
+    "category": "tiles",
+    "title": "Locate the drain question in the bathroom walkthrough",
+    "user": "Keep this bathroom walkthrough next to Dev’s drain-height question.",
+    "assistant": "Clip linked to the drain-height question as site context. Dev still needs to locate the drain and measure flange height on site.",
+    "sourceLabel": "Maya · site walkthrough · Sep 9",
+    "sourceNote": "Frame taken from the hall bath walkthrough clip. Locates the drain; flange height is not read from it.",
+    "evidence": [
+      {
+        "label": "Reference",
+        "value": "Site walkthrough clip"
+      },
+      {
+        "label": "Question for",
+        "value": "Dev · installer"
+      },
+      {
+        "label": "Flange height",
+        "value": "Not measured",
+        "state": "unknown"
+      }
+    ],
+    "media": "tiles-room.png",
+    "video": "tiles-room.mp4",
+    "action": "Attach walkthrough frame",
+    "reply": "That is the right room. Dev can locate and measure the drain Thursday.",
+    "result": "Room clip retained beside the question. No frame is claimed to measure or confirm the drain height.",
+    "status": "pending",
+    "marketPains": [
+      "specifications"
+    ],
+    "boundary": "A single frame locates the drain. It does not measure flange height or certify fit."
+  },
+  {
+    "id": "gpt-walkthrough-source",
+    "concept": "walkthrough",
+    "mode": "source",
+    "category": "framing",
+    "title": "Check who recorded the basement walkthrough",
+    "user": "Who actually shot that basement walkthrough clip, and when?",
+    "assistant": "Opening its source: Maya, Sep 9, recorded during the Wall B site visit. Location context only — no measurement attached.",
+    "sourceLabel": "Maya · site walkthrough · Sep 9",
+    "sourceNote": "Source sheet lists capturer, date, and the Wall B visit. Confirms provenance; does not add a new reading.",
+    "evidence": [
+      {
+        "label": "Recorded by",
+        "value": "Maya"
+      },
+      {
+        "label": "Date",
+        "value": "Sep 9"
+      },
+      {
+        "label": "Visit",
+        "value": "Wall B site check"
+      }
+    ],
+    "media": "framing-room.png",
+    "video": "framing-room.mp4",
+    "action": "Open clip source",
+    "reply": "Good, that lines up with when I remember being down there.",
+    "result": "Clip provenance confirmed; returned to thread with no changes made.",
+    "status": "confirmed",
+    "marketPains": [
+      "source-of-truth"
+    ],
+    "boundary": "Confirms who recorded the clip and when. It is not a framing inspection or fit certification."
+  },
+  {
+    "id": "gpt-walkthrough-compare",
+    "concept": "walkthrough",
+    "mode": "compare",
+    "category": "paint",
+    "title": "Compare two stops from the hallway walkthrough",
+    "user": "Compare the room walkthrough with this sheen sample before the painter visits.",
+    "assistant": "The room clip and separate sheen photograph are shown together. They have different sources; neither establishes coverage or final finish acceptance.",
+    "sourceLabel": "Maya · site walkthrough · Sep 10",
+    "sourceNote": "Two separate source assets, not two frames extracted from one video.",
+    "evidence": [
+      {
+        "label": "Room reference",
+        "value": "Site walkthrough"
+      },
+      {
+        "label": "Finish reference",
+        "value": "Separate sample photograph"
+      },
+      {
+        "label": "Final sheen choice",
+        "value": "Still open",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-room.png",
+    "video": "paint-room.mp4",
+    "compareMedia": "paint-sheen.png",
+    "compareLabels": [
+      "Room walkthrough",
+      "Sheen reference"
+    ],
+    "action": "Pull both stops",
+    "reply": "Good, I can see both — trim still needs the satin sample though.",
+    "result": "Room and sample references kept together. Coverage and final sheen remain separate checks.",
+    "status": "pending",
+    "marketPains": [
+      "specifications"
+    ],
+    "boundary": "Compares a walkthrough clip with a separate sheen photograph. It does not measure area or confirm sheen for either surface."
+  },
+  {
+    "id": "gpt-walkthrough-followup",
+    "concept": "walkthrough",
+    "mode": "followup",
+    "category": "lighting",
+    "title": "Dev flags a ladder issue after the walkthrough",
+    "user": "Dev just texted — says he needs a taller ladder after watching that walkthrough clip.",
+    "assistant": "Noted on the same clip's thread: Dev needs a taller ladder for the junction box. Still his call to confirm reach on site.",
+    "sourceLabel": "Dev · text · Sep 12",
+    "sourceNote": "Follow-up tied to the Sep 9 walkthrough clip. Ladder need is Dev's field note, not a measured clearance.",
+    "evidence": [
+      {
+        "label": "Linked to",
+        "value": "Sep 9 walkthrough clip"
+      },
+      {
+        "label": "Note from",
+        "value": "Dev · text"
+      },
+      {
+        "label": "Ladder needed",
+        "value": "Taller, unspecified",
+        "state": "warning"
+      }
+    ],
+    "media": "lighting-room.png",
+    "video": "lighting-room.mp4",
+    "action": "Log Dev's note",
+    "reply": "Good catch — I'll get him the taller ladder before Thursday.",
+    "result": "Ladder note logged against the walkthrough clip for the install date.",
+    "status": "pending",
+    "marketPains": [
+      "specifications"
+    ],
+    "boundary": "Records Dev's field note. It does not measure ceiling height or resolve the ladder need."
+  },
+  {
+    "id": "gpt-quantity-direct",
+    "concept": "quantity",
+    "mode": "direct",
+    "category": "tiles",
+    "title": "Check for a duplicate tile PO, then size the order",
+    "user": "58 sq ft entered for the bathroom floor — check we're not already ordering this, then size it.",
+    "assistant": "No existing tile PO on Job 2281. At 58 ft² +10% waste over 10.5 ft²/box, that's 7 boxes — $1,253. Draft PO-5521?",
+    "sourceLabel": "Maya · entered area · Sep 12",
+    "sourceNote": "Area entered manually, verify on site. Waste factor is a standard straight-lay allowance, not a supplier quote.",
+    "evidence": [
+      {
+        "label": "Entered area",
+        "value": "58 ft²"
+      },
+      {
+        "label": "Duplicate PO check",
+        "value": "None found",
+        "state": "confirmed"
+      },
+      {
+        "label": "Order size",
+        "value": "7 boxes · $1,253"
+      }
+    ],
+    "media": "tiles-room.png",
+    "action": "Draft PO-5521",
+    "reply": "Draft it — that's the number I had too.",
+    "result": "PO-5521 drafted for 7 boxes at $1,253; no duplicate order created.",
+    "status": "confirmed",
+    "marketPains": [
+      "duplicate-orders",
+      "quantity"
+    ],
+    "boundary": "Waste factor is a standard allowance, not a site-verified takeoff. Area still needs on-site confirmation."
+  },
+  {
+    "id": "gpt-quantity-photo",
+    "concept": "quantity",
+    "mode": "photo",
+    "category": "framing",
+    "title": "Size the Wall B lumber against the approved schedule",
+    "user": "14 ft run, 8 ft tall — attach this plan photo and tell me what we need.",
+    "assistant": "Per the approved framing schedule at 16-inch spacing: 12 studs, 3 top/bottom plates. That's a materials count, not a structural calc.",
+    "sourceLabel": "Maya · site photo + entered run · Sep 11",
+    "sourceNote": "Run length entered manually against the approved Wall B schedule. Stud count follows that schedule, not new engineering.",
+    "evidence": [
+      {
+        "label": "Wall run",
+        "value": "14 ft × 8 ft"
+      },
+      {
+        "label": "Studs needed",
+        "value": "12 · 16\" o.c."
+      },
+      {
+        "label": "Plates",
+        "value": "3 · per schedule"
+      }
+    ],
+    "media": "framing-plan.png",
+    "action": "Confirm materials count",
+    "reply": "Good, that matches the schedule Dev sent over.",
+    "result": "12 studs and 3 plates confirmed against the approved Wall B schedule.",
+    "status": "confirmed",
+    "marketPains": [
+      "quantity",
+      "specifications"
+    ],
+    "boundary": "Counts materials against an already-approved schedule. It is not a structural design calculation."
+  },
+  {
+    "id": "gpt-quantity-source",
+    "concept": "quantity",
+    "mode": "source",
+    "category": "paint",
+    "title": "Verify coverage against the manufacturer's spec sheet",
+    "user": "Before we order paint — what coverage are you actually assuming?",
+    "assistant": "Opening the spec sheet: 375 ft²/gal per coat. At 340 ft² and 2 coats, that's 2 gallons — assumption made explicit.",
+    "sourceLabel": "Manufacturer coverage sheet",
+    "sourceNote": "Coverage rate cited from the product spec sheet, not estimated. Two coats is the number entered for this hallway.",
+    "evidence": [
+      {
+        "label": "Wall area",
+        "value": "340 ft²"
+      },
+      {
+        "label": "Coats assumed",
+        "value": "2, explicit"
+      },
+      {
+        "label": "Order size",
+        "value": "2 gallons · $108"
+      }
+    ],
+    "media": "paint-swatches.png",
+    "action": "Confirm coverage source",
+    "reply": "Confirm two gallons in the draft, but do not place the order yet.",
+    "result": "Two gallons recorded in the draft using 340 ft², two coats and 375 ft²/gal. No order or charge is made.",
+    "status": "confirmed",
+    "marketPains": [
+      "quantity",
+      "specifications"
+    ],
+    "boundary": "Coverage rate comes from the manufacturer sheet. It does not account for texture or a third coat if needed."
+  },
+  {
+    "id": "gpt-quantity-compare",
+    "concept": "quantity",
+    "mode": "compare",
+    "category": "lighting",
+    "title": "Compare pendant count for two spacing options",
+    "user": "Compare the pendant count for 24-inch spacing versus 18-inch spacing over the island.",
+    "assistant": "The two demo layouts list 3 pendants at $258 or 4 at $344: one extra fixture costs $86. Counts come from the layouts, not the photographs.",
+    "sourceLabel": "Maya · entered island length · Sep 11",
+    "sourceNote": "Demo layouts and an $86 unit quote. Spacing alone does not determine fixture count; installer clearance checks remain separate.",
+    "evidence": [
+      {
+        "label": "24 in spacing",
+        "value": "3 pendants · $258"
+      },
+      {
+        "label": "18 in spacing",
+        "value": "4 pendants · $344"
+      },
+      {
+        "label": "Difference",
+        "value": "+1 pendant · $86"
+      }
+    ],
+    "media": "lighting-room.png",
+    "compareMedia": "lighting-comparison.png",
+    "compareLabels": [
+      "Island context",
+      "Fixture reference"
+    ],
+    "action": "Compare spacing cost",
+    "reply": "Stick with 24 inches, three pendants — that's what Sam approved anyway.",
+    "result": "3-pendant, 24-inch spacing confirmed as the lower-cost, already-approved option.",
+    "status": "confirmed",
+    "marketPains": [
+      "quantity"
+    ],
+    "boundary": "Compares fixture count and price for two spacings. It does not confirm electrical load for either option."
+  },
+  {
+    "id": "gpt-quantity-followup",
+    "concept": "quantity",
+    "mode": "followup",
+    "category": "tiles",
+    "title": "Alcove found on remeasure — amend, don't duplicate, the PO",
+    "user": "Found a 9 sq ft shower alcove we missed — update the order, don't start a new one.",
+    "assistant": "Amending PO-5521, not creating a new PO. 67 ft² +10% waste now needs 8 boxes — one more box, $179 added, total $1,432.",
+    "sourceLabel": "Maya · remeasure · Sep 13",
+    "sourceNote": "Alcove found during install prep. Applied as an amendment to the existing PO-5521 line, not a second order.",
+    "evidence": [
+      {
+        "label": "Added area",
+        "value": "9 ft² alcove"
+      },
+      {
+        "label": "New total",
+        "value": "8 boxes · $1,432"
+      },
+      {
+        "label": "PO action",
+        "value": "Amend PO-5521",
+        "state": "confirmed"
+      }
+    ],
+    "media": "tiles-layout.png",
+    "action": "Amend PO-5521",
+    "reply": "Amend it — good thing you checked before I called in a second order.",
+    "result": "PO-5521 amended to 8 boxes; no duplicate order placed for the alcove.",
+    "status": "confirmed",
+    "marketPains": [
+      "duplicate-orders",
+      "quantity"
+    ],
+    "boundary": "Recalculates boxes for the added area. It does not re-verify the original 58 ft² measurement."
+  },
+  {
+    "id": "gpt-sample-direct",
+    "concept": "sample",
+    "mode": "direct",
+    "category": "framing",
+    "title": "Confirm the connector sample before ordering hardware",
+    "user": "Does this connector sample actually match the spec before we order 40 of them?",
+    "assistant": "The sample ticket lists connector C-114 for the 40-piece draft line. Product identity can be linked, but the approved structural schedule still needs checking.",
+    "sourceLabel": "Spec FH-212 · connector sample",
+    "sourceNote": "Physical sample #C-114 checked against the framing schedule's connector callout. Not a decorative approval.",
+    "evidence": [
+      {
+        "label": "Sample ticket",
+        "value": "C-114 · demo ticket"
+      },
+      {
+        "label": "Structural schedule",
+        "value": "Qualified check pending",
+        "state": "unknown"
+      },
+      {
+        "label": "Draft line",
+        "value": "40 pieces · held",
+        "state": "warning"
+      }
+    ],
+    "media": "framing-connector.png",
+    "action": "Confirm connector match",
+    "reply": "Link the sample ticket and keep those 40 pieces held for the schedule check.",
+    "result": "Sample ticket linked to the held draft line. No structural equivalence or order release is approved.",
+    "status": "pending",
+    "marketPains": [
+      "samples",
+      "specifications"
+    ],
+    "boundary": "Exploratory framing. A physical sample cannot establish structural suitability or replace the approved schedule."
+  },
+  {
+    "id": "gpt-sample-photo",
+    "concept": "sample",
+    "mode": "photo",
+    "category": "paint",
+    "title": "Log the swatch chip batch before drafting the order",
+    "user": "I entered batch B-2291 from the sample ticket. Link that request to the paint order.",
+    "assistant": "Sample request SW-4410 and your entered batch B-2291 are linked to the draft. Supplier confirmation of the production batch is still missing.",
+    "sourceLabel": "Maya · swatch chip photo · Sep 10",
+    "sourceNote": "Batch manually entered from the demo sample ticket. No code is extracted from the blank swatch image.",
+    "evidence": [
+      {
+        "label": "Sample request",
+        "value": "SW-4410 · demo record"
+      },
+      {
+        "label": "Requested batch",
+        "value": "B-2291 · user entered"
+      },
+      {
+        "label": "Production batch",
+        "value": "Supplier confirmation needed",
+        "state": "unknown"
+      }
+    ],
+    "media": "paint-swatches.png",
+    "video": "paint-swatches.mp4",
+    "action": "Log batch to draft order",
+    "reply": "Keep that batch request visible until the supplier confirms it.",
+    "result": "Batch request retained on the draft; matching production stock is not yet confirmed.",
+    "status": "pending",
+    "marketPains": [
+      "samples",
+      "specifications"
+    ],
+    "boundary": "Links a requested chip's batch code to a draft order. It does not confirm Harbor Supply has that batch in stock."
+  },
+  {
+    "id": "gpt-sample-source",
+    "concept": "sample",
+    "mode": "source",
+    "category": "lighting",
+    "title": "Open the showroom sample record for the pendant",
+    "user": "Which exact pendant did the showroom sample match — pull up that record.",
+    "assistant": "Opening the record: showroom sample tied to SKU LX-40, brass, 2700K. Same SKU is on the draft order line.",
+    "sourceLabel": "Showroom sample record · Sep 8",
+    "sourceNote": "Sample requested and identified before the layout approval. Record links SKU to the current draft order line.",
+    "evidence": [
+      {
+        "label": "Sample SKU",
+        "value": "LX-40, brass"
+      },
+      {
+        "label": "Color temp",
+        "value": "2700 K"
+      },
+      {
+        "label": "Draft order line",
+        "value": "Matches SKU",
+        "state": "confirmed"
+      }
+    ],
+    "media": "lighting-pendant.png",
+    "video": "lighting-pendant.mp4",
+    "action": "Open sample record",
+    "reply": "Good, that's the one I liked in person — keep it linked.",
+    "result": "Sample record confirmed against the draft order line; no new approval made.",
+    "status": "confirmed",
+    "marketPains": [
+      "samples",
+      "source-of-truth"
+    ],
+    "boundary": "Confirms the sample's identity and its link to a draft line. It does not confirm current pendant stock."
+  },
+  {
+    "id": "gpt-sample-compare",
+    "concept": "sample",
+    "mode": "compare",
+    "category": "tiles",
+    "title": "Sample matched the batch — or did it",
+    "user": "Compare the approved sample against what actually got delivered.",
+    "assistant": "Sample and delivery references need a product and shade check. Different lighting is not proof of a dye-lot mismatch; keep finish acceptance open.",
+    "sourceLabel": "Approved sample vs delivered batch",
+    "sourceNote": "Separate photographs under different conditions. Supplier product identity and same-light shade review are required.",
+    "evidence": [
+      {
+        "label": "Approved reference",
+        "value": "Warm ivory ribbed sample"
+      },
+      {
+        "label": "Delivery identity",
+        "value": "SKU and batch check pending",
+        "state": "unknown"
+      },
+      {
+        "label": "Finish acceptance",
+        "value": "Held for review",
+        "state": "warning"
+      }
+    ],
+    "media": "tiles-sample.png",
+    "video": "tiles-sample.mp4",
+    "compareMedia": "tiles-batch.png",
+    "compareLabels": [
+      "Approved sample",
+      "Delivered batch"
+    ],
+    "action": "Hold finish release",
+    "reply": "Hold installation. Draft a request for SKU, batch and same-light sample checks.",
+    "result": "Finish acceptance held. Supplier question drafted; no photo-only lot mismatch asserted and no actual message sent.",
+    "status": "blocked",
+    "marketPains": [
+      "samples",
+      "returns"
+    ],
+    "boundary": "Photographs prompt a product and shade review; they do not prove a lot mismatch, return eligibility or replacement date."
+  },
+  {
+    "id": "gpt-sample-followup",
+    "concept": "sample",
+    "mode": "followup",
+    "category": "framing",
+    "title": "Delivered connectors confirmed against the sample",
+    "user": "Dev says the delivered connectors match the sample. Is that enough to release them?",
+    "assistant": "That supports product identity, not structural suitability. Keep the sample link and obtain the approved-schedule check before releasing the hold.",
+    "sourceLabel": "Dev · confirmation · Sep 14",
+    "sourceNote": "Field check against sample #C-114, logged by Dev. Order release follows this confirmation, not a new spec review.",
+    "evidence": [
+      {
+        "label": "Identity check",
+        "value": "Reported by Dev · Sep 14"
+      },
+      {
+        "label": "Sample ticket",
+        "value": "C-114 · retained"
+      },
+      {
+        "label": "Schedule check",
+        "value": "Still required",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-connector.png",
+    "action": "Hold for schedule check",
+    "reply": "Keep them held and prepare the schedule-check request.",
+    "result": "Identity note added; the 40-piece line stays held for qualified schedule review. No order or installation release is made.",
+    "status": "blocked",
+    "marketPains": [
+      "samples",
+      "duplicate-orders"
+    ],
+    "boundary": "Records Dev's field identity confirmation. It does not release the order or establish structural suitability."
+  },
+  {
+    "id": "gpt-quote-direct",
+    "concept": "quote",
+    "mode": "direct",
+    "category": "paint",
+    "title": "Save Dev's start date without losing the condition",
+    "user": "Save Dev's painting start date — don't lose the part about the primer needing to be dry.",
+    "assistant": "Saved: week of Sep 22, conditional on primer dry 24 hours first. Attributed to Dev's Sep 13 text — condition stays attached.",
+    "sourceLabel": "Dev · text · Sep 13",
+    "sourceNote": "“Week of the 22nd works, once primer's had a full day to dry.” Condition kept with the date, not stripped out.",
+    "evidence": [
+      {
+        "label": "Start window",
+        "value": "Week of Sep 22"
+      },
+      {
+        "label": "Condition",
+        "value": "Primer dry 24 hrs"
+      },
+      {
+        "label": "Source",
+        "value": "Dev · text, Sep 13"
+      }
+    ],
+    "media": "paint-room.png",
+    "action": "Save start condition",
+    "reply": "Good, keep that condition visible so nobody schedules him early.",
+    "result": "Start window saved with its drying condition and source attribution intact.",
+    "status": "confirmed",
+    "marketPains": [
+      "specifications",
+      "approvals"
+    ],
+    "boundary": "Preserves what Dev texted. It does not verify actual dry time or confirm the schedule with him again."
+  },
+  {
+    "id": "gpt-quote-photo",
+    "concept": "quote",
+    "mode": "photo",
+    "category": "lighting",
+    "title": "Keep the electrician’s condition beside the fixture photo",
+    "user": "Dev texted “week of Sep 21, once panel space is confirmed.” Save that beside this fixture photo.",
+    "assistant": "Start window and panel-space condition saved from Dev’s text. The fixture photo is supporting context; no handwriting or electrical data is extracted.",
+    "sourceLabel": "Dev · text message · Sep 12",
+    "sourceNote": "“Week of Sep 21, once panel space is confirmed.” Text supplied separately from the fixture image.",
+    "evidence": [
+      {
+        "label": "Install window",
+        "value": "Week of Sep 21"
+      },
+      {
+        "label": "Condition",
+        "value": "Panel space confirmed"
+      },
+      {
+        "label": "Source",
+        "value": "Dev · text message"
+      }
+    ],
+    "media": "lighting-label.png",
+    "action": "Save labeled condition",
+    "reply": "Good — make sure that panel check happens before anyone locks the date in.",
+    "result": "Install date saved with the panel-space condition still attached.",
+    "status": "pending",
+    "marketPains": [
+      "specifications"
+    ],
+    "boundary": "Preserves a supplied text condition. The photo does not confirm panel capacity or electrical suitability."
+  },
+  {
+    "id": "gpt-quote-source",
+    "concept": "quote",
+    "mode": "source",
+    "category": "tiles",
+    "title": "Check the source behind the tile install condition",
+    "user": "Where did that tile start date and its condition actually come from?",
+    "assistant": "Opening the transcript: Dev's Sep 12 text sets install after the floor patch is dry. Condition still linked to that date.",
+    "sourceLabel": "Dev · text transcript · Sep 12",
+    "sourceNote": "Original message viewed in full. Confirms the dry-floor condition is still attached, not dropped in later edits.",
+    "evidence": [
+      {
+        "label": "Start date",
+        "value": "After patch dries"
+      },
+      {
+        "label": "Condition",
+        "value": "Floor patch dry"
+      },
+      {
+        "label": "Source",
+        "value": "Dev · text, Sep 12"
+      }
+    ],
+    "media": "tiles-room.png",
+    "action": "Open transcript source",
+    "reply": "Good, that's exactly what he told me — back to the thread.",
+    "result": "Transcript reviewed; date and condition confirmed unchanged, returned to thread.",
+    "status": "confirmed",
+    "marketPains": [
+      "specifications",
+      "source-of-truth"
+    ],
+    "boundary": "Confirms the original wording of the condition. It does not confirm the patch is actually dry yet."
+  },
+  {
+    "id": "gpt-quote-compare",
+    "concept": "quote",
+    "mode": "compare",
+    "category": "framing",
+    "title": "Compare Dev's two conditional start dates",
+    "user": "Dev gave two different start dates depending on what clears first — compare them.",
+    "assistant": "Dev offered Sep 18 if permit and lumber are ready by Sep 17; otherwise Sep 22, still subject to both. Neither prerequisite can be skipped.",
+    "sourceLabel": "Dev · text · Sep 11",
+    "sourceNote": "Demo Dev text preserves permit AND lumber prerequisites for both possible dates.",
+    "evidence": [
+      {
+        "label": "Earlier window",
+        "value": "Sep 18 · both ready Sep 17"
+      },
+      {
+        "label": "Later window",
+        "value": "Sep 22 · both still required"
+      },
+      {
+        "label": "Selection",
+        "value": "Not confirmed",
+        "state": "unknown"
+      }
+    ],
+    "media": "framing-room.png",
+    "compareMedia": "framing-delivery.png",
+    "compareLabels": [
+      "Permit condition",
+      "Delivery condition"
+    ],
+    "action": "Compare conditions",
+    "reply": "Keep both options, but hold the start until permit and delivery are confirmed.",
+    "result": "Both conditional windows retained. No start authorized without both permit and lumber readiness.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "approvals"
+    ],
+    "boundary": "Preserves two dates as Dev stated them. It does not track live permit or delivery status."
+  },
+  {
+    "id": "gpt-quote-followup",
+    "concept": "quote",
+    "mode": "followup",
+    "category": "paint",
+    "title": "Primer dry — activate Dev's start condition",
+    "user": "Primer's dry as of this morning — update Dev's start condition to active.",
+    "assistant": "Your Sep 16 dry report is recorded against the condition. The proposed week-of-Sep-22 window remains subject to Dev’s schedule confirmation.",
+    "sourceLabel": "Maya · site check · Sep 16",
+    "sourceNote": "Dry confirmation triggers the existing conditional date, not a new schedule. No payment or order state changed.",
+    "evidence": [
+      {
+        "label": "Drying condition",
+        "value": "Reported met · Maya"
+      },
+      {
+        "label": "Start window",
+        "value": "Week of Sep 22 · confirm Dev",
+        "state": "warning"
+      },
+      {
+        "label": "Order / payment",
+        "value": "Unchanged"
+      }
+    ],
+    "media": "paint-room.png",
+    "action": "Activate start condition",
+    "reply": "Keep the report and prepare a message asking Dev to confirm that week.",
+    "result": "Site report retained and schedule-confirmation message drafted. No payment, order or independent drying certification changes.",
+    "status": "pending",
+    "marketPains": [
+      "specifications",
+      "approvals"
+    ],
+    "boundary": "Activates a pre-agreed condition once met. It does not reconfirm the date with Dev directly."
+  }
+]

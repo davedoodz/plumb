@@ -1,0 +1,3113 @@
+{
+  "scope": "All 70 studies: headless layout and interaction-target checks; complete export verification follows in verification.json.",
+  "evidenceFrame": 180,
+  "layoutProof": [
+    {
+      "id": "gpt-capture-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-capture-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-capture-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-capture-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-capture-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-prompt-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-prompt-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-prompt-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-prompt-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-prompt-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-recall-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-recall-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-recall-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-recall-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-recall-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quantity-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quantity-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quantity-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quantity-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quantity-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quote-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quote-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quote-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quote-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-clearance-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-clearance-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-clearance-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-clearance-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-leadtime-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-leadtime-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-leadtime-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-leadtime-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-substitution-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-substitution-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-substitution-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-signoff-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-signoff-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-signoff-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-signoff-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-signoff-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-delivery-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-delivery-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-delivery-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-delivery-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-installerpack-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-installerpack-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-installerpack-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-installerpack-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-installerpack-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-receipt-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-receipt-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-walkthrough-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-walkthrough-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-walkthrough-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-walkthrough-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-walkthrough-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-sample-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-sample-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-sample-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-sample-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-sample-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-quote-photo",
+      "overflow": []
+    },
+    {
+      "id": "gpt-clearance-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-leadtime-compare",
+      "overflow": []
+    },
+    {
+      "id": "gpt-substitution-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-substitution-followup",
+      "overflow": []
+    },
+    {
+      "id": "gpt-delivery-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-receipt-direct",
+      "overflow": []
+    },
+    {
+      "id": "gpt-receipt-source",
+      "overflow": []
+    },
+    {
+      "id": "gpt-receipt-followup",
+      "overflow": []
+    }
+  ],
+  "interactionProof": [
+    {
+      "id": "gpt-capture-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-capture-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-capture-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-capture-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-capture-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-prompt-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-prompt-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-prompt-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-prompt-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-prompt-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-recall-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-recall-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-recall-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-recall-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-recall-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quantity-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quantity-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quantity-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quantity-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quantity-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quote-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quote-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quote-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quote-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-clearance-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-clearance-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-clearance-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-clearance-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-leadtime-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-leadtime-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-leadtime-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-leadtime-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-substitution-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-substitution-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-substitution-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-signoff-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-signoff-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-signoff-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-signoff-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-signoff-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-delivery-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-delivery-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-delivery-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-delivery-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-installerpack-direct",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-installerpack-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-installerpack-source",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-installerpack-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-installerpack-followup",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-receipt-photo",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-receipt-compare",
+      "checks": [
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-walkthrough-direct",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-walkthrough-photo",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-walkthrough-source",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 252,
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-walkthrough-compare",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-walkthrough-followup",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-sample-direct",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-sample-photo",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-sample-source",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 252,
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-sample-compare",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-sample-followup",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-quote-photo",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-clearance-direct",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-leadtime-compare",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-substitution-direct",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-substitution-followup",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-delivery-source",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 252,
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-receipt-direct",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-receipt-source",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 252,
+          "target": "close-source",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    },
+    {
+      "id": "gpt-receipt-followup",
+      "checks": [
+        {
+          "frame": 36,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 180,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 186,
+          "target": "card-action",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 306,
+          "target": "send-message",
+          "hit": true,
+          "overflow": []
+        },
+        {
+          "frame": 420,
+          "target": null,
+          "hit": true,
+          "overflow": []
+        }
+      ]
+    }
+  ],
+  "missingMedia": [],
+  "exportVerification": {
+    "status": "complete",
+    "verifiedCount": 70,
+    "expected": 70,
+    "fullDecode": true,
+    "format": "1080x1920, 30 fps, 480 frames, 16 seconds, H.264 yuv420p, BT.709, silent",
+    "totalSeconds": 1120,
+    "proof": "verification.json",
+    "blocked": []
+  },
+  "galleryVerification": {
+    "scope": "Actual published gallery with all 70 rendered films and 32 generated assets.",
+    "playbackChecks": [
+      {
+        "concept": "capture",
+        "videos": [
+          {
+            "file": "gpt-capture-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160335,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-capture-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160355,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-capture-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160369,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-capture-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160377,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-capture-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160387,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "prompt",
+        "videos": [
+          {
+            "file": "gpt-prompt-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.168414,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-prompt-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.167065,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-prompt-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.167087,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-prompt-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.167099,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-prompt-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.16711,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "recall",
+        "videos": [
+          {
+            "file": "gpt-recall-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160715,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-recall-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160509,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-recall-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160307,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-recall-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.160308,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-recall-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.159874,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "walkthrough",
+        "videos": [
+          {
+            "file": "gpt-walkthrough-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166624,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-walkthrough-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166794,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-walkthrough-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166872,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-walkthrough-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.17816,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-walkthrough-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166543,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "quantity",
+        "videos": [
+          {
+            "file": "gpt-quantity-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.168275,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-quantity-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.168645,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-quantity-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.168261,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-quantity-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.168308,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-quantity-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.161731,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "sample",
+        "videos": [
+          {
+            "file": "gpt-sample-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.170135,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-sample-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.168496,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-sample-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.170031,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-sample-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.16852,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-sample-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.163421,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "quote",
+        "videos": [
+          {
+            "file": "gpt-quote-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.165688,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-quote-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.167146,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-quote-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.165706,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-quote-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.165766,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-quote-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.165782,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "clearance",
+        "videos": [
+          {
+            "file": "gpt-clearance-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.16623,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-clearance-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166377,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-clearance-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166186,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-clearance-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166202,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-clearance-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.174581,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "leadtime",
+        "videos": [
+          {
+            "file": "gpt-leadtime-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.168666,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-leadtime-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.167228,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-leadtime-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.167223,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-leadtime-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.180098,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-leadtime-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.167224,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "substitution",
+        "videos": [
+          {
+            "file": "gpt-substitution-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.161669,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-substitution-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.163479,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-substitution-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.161715,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-substitution-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.161667,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-substitution-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.161762,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "signoff",
+        "videos": [
+          {
+            "file": "gpt-signoff-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.169945,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-signoff-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.164922,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-signoff-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.177428,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-signoff-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.169788,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-signoff-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.169956,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "delivery",
+        "videos": [
+          {
+            "file": "gpt-delivery-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.167551,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-delivery-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.182122,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-delivery-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166891,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-delivery-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.16689,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-delivery-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.166787,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "installerpack",
+        "videos": [
+          {
+            "file": "gpt-installerpack-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.163725,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-installerpack-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.163204,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-installerpack-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.163082,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-installerpack-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.163101,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-installerpack-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.163118,
+            "paused": true,
+            "error": null
+          }
+        ]
+      },
+      {
+        "concept": "receipt",
+        "videos": [
+          {
+            "file": "gpt-receipt-direct.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.165164,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-receipt-photo.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.164784,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-receipt-source.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.164531,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-receipt-compare.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.164801,
+            "paused": true,
+            "error": null
+          },
+          {
+            "file": "gpt-receipt-followup.mp4",
+            "duration": 16,
+            "width": 1080,
+            "height": 1920,
+            "time": 0.164545,
+            "paused": true,
+            "error": null
+          }
+        ]
+      }
+    ],
+    "all": {
+      "count": 70,
+      "playDisabled": true
+    },
+    "counts": {
+      "tiles": 18,
+      "framing": 18,
+      "paint": 17,
+      "lighting": 17
+    },
+    "review": {
+      "file": "gpt-receipt-followup.mp4",
+      "duration": 16
+    },
+    "reviewClosed": true,
+    "assets": {
+      "images": 24,
+      "videos": [
+        {
+          "file": "tiles-room.mp4",
+          "duration": 5,
+          "width": 1440,
+          "height": 1080,
+          "error": null
+        },
+        {
+          "file": "tiles-sample.mp4",
+          "duration": 5,
+          "width": 1440,
+          "height": 1080,
+          "error": null
+        },
+        {
+          "file": "framing-room.mp4",
+          "duration": 5,
+          "width": 1440,
+          "height": 1080,
+          "error": null
+        },
+        {
+          "file": "framing-delivery.mp4",
+          "duration": 5,
+          "width": 1440,
+          "height": 1080,
+          "error": null
+        },
+        {
+          "file": "paint-swatches.mp4",
+          "duration": 5,
+          "width": 1440,
+          "height": 1080,
+          "error": null
+        },
+        {
+          "file": "paint-room.mp4",
+          "duration": 5,
+          "width": 1440,
+          "height": 1080,
+          "error": null
+        },
+        {
+          "file": "lighting-pendant.mp4",
+          "duration": 5,
+          "width": 1440,
+          "height": 1080,
+          "error": null
+        },
+        {
+          "file": "lighting-room.mp4",
+          "duration": 5,
+          "width": 1440,
+          "height": 1080,
+          "error": null
+        }
+      ]
+    },
+    "responsive": {
+      "desktop": {
+        "width": 1500,
+        "overflow": false
+      },
+      "mobile": {
+        "width": 390,
+        "overflow": false
+      }
+    },
+    "visualReview": [
+      "1500x1100 desktop gallery",
+      "390x844 mobile gallery and film controls"
+    ],
+    "screenshots": [
+      "review-desktop.png",
+      "review-mobile.png",
+      "review-mobile-film.png"
+    ]
+  }
+}

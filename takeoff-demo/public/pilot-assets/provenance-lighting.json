@@ -1,0 +1,93 @@
+[
+  {
+    "id": "lighting-room",
+    "kind": "image",
+    "localFile": "public/pilot-assets/lighting-room.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photograph of a kitchen mid-renovation, a plain island counter below with two ceiling mounting points prepared for pendant lights, capped junction boxes with wires tucked in safely and not being handled, no visible power tools active, natural daylight through a nearby window, plain unfinished ceiling, realistic amateur snapshot, high detail, no people",
+    "jobId": "f3b0001c-fc5f-4b6d-be88-fbded3651363",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212740_f3b0001c-fc5f-4b6d-be88-fbded3651363.png",
+    "synthetic": true
+  },
+  {
+    "id": "lighting-pendant",
+    "kind": "image",
+    "localFile": "public/pilot-assets/lighting-pendant.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone close-up photograph of two pendant light fixtures resting on a padded workbench mat, one a matte black metal dome shade, the other a warm brushed brass dome shade, showing fine material and finish texture, soft indoor daylight from a side window, blank fixtures with no text or certification marks, realistic amateur snapshot quality, high detail, no people",
+    "jobId": "869e5682-ed5a-45f2-b234-5d77e8d5f541",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212922_869e5682-ed5a-45f2-b234-5d77e8d5f541.png",
+    "synthetic": true
+  },
+  {
+    "id": "lighting-comparison",
+    "kind": "image",
+    "localFile": "public/pilot-assets/lighting-comparison.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photograph of two matte black dome pendant light fixtures placed side by side on a plain neutral tabletop, both similar in shade shape but with visibly different sized ceiling canopy mounts, one canopy noticeably larger than the other, soft even daylight, no text or branding visible, realistic amateur snapshot quality, high detail, no people",
+    "jobId": "dd09818d-3514-48b2-a6cc-b1b325e37a48",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212925_dd09818d-3514-48b2-a6cc-b1b325e37a48.png",
+    "synthetic": true
+  },
+  {
+    "id": "lighting-delivery",
+    "kind": "image",
+    "localFile": "public/pilot-assets/lighting-delivery.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photograph of a single pendant light fixture nestled in opened molded cardboard packaging with protective foam inserts, sitting on a floor at a residential site mid-delivery, packaging flaps open, natural daylight, blank packaging with no text or logos, realistic amateur snapshot quality, high detail, no people",
+    "jobId": "6382a3aa-9480-49f1-825f-c68d77cddf73",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_213102_6382a3aa-9480-49f1-825f-c68d77cddf73.png",
+    "synthetic": true
+  },
+  {
+    "id": "lighting-damage",
+    "kind": "image",
+    "localFile": "public/pilot-assets/lighting-damage.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone evidence photograph of a frosted glass pendant light shade with a visible crack running across its surface, resting beside its opened protective packaging on a flat surface, no hands or fingers touching the cracked edges, neutral indoor daylight, realistic close inspection angle, high detail, no people",
+    "jobId": "dc00832a-1bb2-46f3-a968-7e6c7caa1af5",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_213103_dc00832a-1bb2-46f3-a968-7e6c7caa1af5.png",
+    "synthetic": true
+  },
+  {
+    "id": "lighting-label",
+    "kind": "image",
+    "localFile": "public/pilot-assets/lighting-label.png",
+    "model": "Nano Banana 2",
+    "provider": "Google Flow",
+    "prompt": "Documentary lighting receiving photograph, 4:3. Underside of an unpowered pendant ceiling canopy on a neutral workbench. Show a plain blank rectangular manufacturer label panel and separate mounting hardware. Realistic materials and soft daylight, no readable text, no logos, no certification marks, no live wiring.",
+    "jobId": "6d387117-6f0e-4d09-996f-839667fcc8d6",
+    "url": "https://flow-content.google/image/6d387117-6f0e-4d09-996f-839667fcc8d6?Expires=1789552844&KeyName=labs-flow-prod-cdn-key&Signature=0Pyuavungb6vJODJwb1dTuJYZRg",
+    "synthetic": true
+  },
+  {
+    "id": "lighting-pendant-video",
+    "kind": "video",
+    "localFile": "public/pilot-assets/lighting-pendant.mp4",
+    "model": "Veo 3.1 Fast",
+    "provider": "Google Flow",
+    "prompt": "Slow documentary camera drift around the pendant light fixture. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+    "jobId": "b95706d0-6d57-4fa7-841f-3304570777f0",
+    "url": "https://flow-content.google/video/b95706d0-6d57-4fa7-841f-3304570777f0?Expires=1789559762&KeyName=labs-flow-prod-cdn-key&Signature=mCC3j5tupxtm7XnJec6jipCbTH8",
+    "synthetic": true,
+    "nativeWidth": 1280,
+    "nativeHeight": 720,
+    "nativeDuration": 8,
+    "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+  },
+  {
+    "id": "lighting-room-video",
+    "kind": "video",
+    "localFile": "public/pilot-assets/lighting-room.mp4",
+    "model": "Veo 3.1 Fast",
+    "provider": "Google Flow",
+    "prompt": "Slow documentary camera drift around the kitchen ceiling and island lighting context. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+    "jobId": "18c36f76-62b9-4a13-95df-75003530e667",
+    "url": "https://flow-content.google/video/18c36f76-62b9-4a13-95df-75003530e667?Expires=1789559762&KeyName=labs-flow-prod-cdn-key&Signature=LqzgT6lyBU0SwmlHUCRbOSDFCfY",
+    "synthetic": true,
+    "nativeWidth": 1280,
+    "nativeHeight": 720,
+    "nativeDuration": 8,
+    "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+  }
+]

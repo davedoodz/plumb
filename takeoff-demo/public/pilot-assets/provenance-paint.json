@@ -1,0 +1,92 @@
+[
+  {
+    "id": "paint-room",
+    "kind": "image",
+    "localFile": "public/pilot-assets/paint-room.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photograph of a modest, slightly worn living room mid-preparation for repainting: canvas drop cloths spread over the floor, blue painter's tape neatly lining the wooden trim and window frames, a couple of small plaster patch repairs visible and slightly sanded on the wall, walls in a plain off-white primer color, soft overcast daylight through a window, no people, no text, no logos, realistic amateur snapshot quality, natural imperfect framing, high detail",
+    "jobId": "ddb7f891-8118-42fe-a747-a299d59db4b0",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212408_ddb7f891-8118-42fe-a747-a299d59db4b0.png",
+    "synthetic": true
+  },
+  {
+    "id": "paint-swatches",
+    "kind": "image",
+    "localFile": "public/pilot-assets/paint-swatches.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photograph of three painted rectangular paint swatches directly on a living room wall beside a window, warm neutral tones ranging from soft ivory to warm greige to light taupe, blank swatches with no text or labels, natural daylight streaming from the window, plain wall texture, realistic amateur snapshot, high detail, no people",
+    "jobId": "658b30db-688f-4480-b40c-1203906b598a",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_211948_658b30db-688f-4480-b40c-1203906b598a.png",
+    "synthetic": true
+  },
+  {
+    "id": "paint-sheen",
+    "kind": "image",
+    "localFile": "public/pilot-assets/paint-sheen.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone close-up photograph at a low angle of two small painted sample boards leaning side by side against a wall, both painted the same neutral warm white, left board matte finish absorbing light evenly, right board eggshell finish showing a soft sheen and gentle highlight reflection, raking natural window light emphasizing the texture difference, no text or labels on boards, realistic amateur snapshot, high detail, no people",
+    "jobId": "7a3e32ae-68bf-4c14-a980-3b1f7e79b3a6",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212408_7a3e32ae-68bf-4c14-a980-3b1f7e79b3a6.png",
+    "synthetic": true
+  },
+  {
+    "id": "paint-delivery",
+    "kind": "image",
+    "localFile": "public/pilot-assets/paint-delivery.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photograph of four plain unbranded metal paint tins with sealed lids, standing upright in a sturdy corrugated cardboard tray, sitting on a dusty plywood floor at a renovation site, tins have blank plain labels with no text or logos, natural daylight from a nearby window, realistic amateur snapshot quality, high detail, no people",
+    "jobId": "d5fbf1a5-7cec-4677-aa62-4c61e47b6fea",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212544_d5fbf1a5-7cec-4677-aa62-4c61e47b6fea.png",
+    "synthetic": true
+  },
+  {
+    "id": "paint-damage",
+    "kind": "image",
+    "localFile": "public/pilot-assets/paint-damage.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone evidence photograph of a single plain metal paint tin with a visible dent in its side, a thin trail of dried paint leaking from the seam, isolated on a plastic protective drop sheet, small dried paint spill pooled beside it, neutral indoor daylight, blank label with no text or branding, realistic close inspection angle, high detail, no people",
+    "jobId": "ebdaa057-3efb-4128-8683-9b3ad4187472",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212551_ebdaa057-3efb-4128-8683-9b3ad4187472.png",
+    "synthetic": true
+  },
+  {
+    "id": "paint-batch",
+    "kind": "image",
+    "localFile": "public/pilot-assets/paint-batch.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photograph of two plain metal paint tins standing side by side, each with a blank rectangular label panel with no text or codes, positioned beside two matching neutral painted sample boards leaning against a wall, soft natural daylight, realistic amateur snapshot quality, high detail, no people",
+    "jobId": "c3b1df6c-4ce9-41d3-b3e2-24ce357e5ed8",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212739_c3b1df6c-4ce9-41d3-b3e2-24ce357e5ed8.png",
+    "synthetic": true
+  },
+  {
+    "id": "paint-swatches-video",
+    "kind": "video",
+    "localFile": "public/pilot-assets/paint-swatches.mp4",
+    "model": "Veo 3.1 Fast",
+    "provider": "Google Flow",
+    "prompt": "Slow documentary camera drift around the interior paint swatch comparison. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+    "jobId": "85aed660-bc0e-4abe-a84c-dffb6f3b502e",
+    "url": "https://flow-content.google/video/85aed660-bc0e-4abe-a84c-dffb6f3b502e?Expires=1789559480&KeyName=labs-flow-prod-cdn-key&Signature=hMqCTmohb1DIQNk6rL9KVlZD7yg",
+    "synthetic": true,
+    "nativeWidth": 1280,
+    "nativeHeight": 720,
+    "nativeDuration": 8,
+    "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+  },
+  {
+    "id": "paint-room-video",
+    "kind": "video",
+    "localFile": "public/pilot-assets/paint-room.mp4",
+    "model": "Veo 3.1 Fast",
+    "provider": "Google Flow",
+    "prompt": "Slow documentary camera drift around the room prepared for interior painting. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+    "jobId": "6b840b6b-8b2b-4bfc-a911-8bf27fb8912d",
+    "url": "https://flow-content.google/video/6b840b6b-8b2b-4bfc-a911-8bf27fb8912d?Expires=1789561144&KeyName=labs-flow-prod-cdn-key&Signature=2IxY6_NOQ7800Ca6WnQX7S-6hCM",
+    "synthetic": true,
+    "nativeWidth": 1280,
+    "nativeHeight": 720,
+    "nativeDuration": 8,
+    "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "incident": "A generation worker resubmitted jobs while an earlier background pipeline remained active after recovery.",
+  "disclosedToUser": true,
+  "stopped": true,
+  "source": "higgsfield generate list --size100 --json and worker admission",
+  "duplicatePromptGroups": [
+    {
+      "prompt": "Documentary iPhone photo taken from directly overhead, cream-colored rectangular ceramic tiles dry-laid in a herringbone pattern on a plywood subfloor, blue painter's tape marking boundary lines on the floor around the layout, natural window light casting soft shadows, no rulers, no numbers, no readable measurements, no people, realistic phone snapshot.",
+      "jobs": [
+        {
+          "id": "2a9c9db0-b891-4d32-a666-47bdd1a806ed",
+          "createdAt": "2026-09-15T21:24:43.146846Z",
+          "status": "completed"
+        },
+        {
+          "id": "3eac1dfd-b140-43d2-9289-63dc74d8aee4",
+          "createdAt": "2026-09-15T21:22:32.414116Z",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "prompt": "Documentary iPhone photo of wrapped tile cartons stacked on a wooden pallet at a residential home's front entry, plain brown cardboard boxes with unreadable generic printing, shrink wrap partially visible, driveway and porch steps in frame, overcast daylight, no logos, no people, candid delivery photo.",
+      "jobs": [
+        {
+          "id": "6401c4e6-6e57-47ff-b5ff-cca15f2ab9af",
+          "createdAt": "2026-09-15T21:26:35.310381Z",
+          "status": "completed"
+        },
+        {
+          "id": "941e172a-8a74-40ee-a592-849c7b95f145",
+          "createdAt": "2026-09-15T21:26:29.249241Z",
+          "status": "completed"
+        },
+        {
+          "id": "6870da63-429b-4d41-9dc1-d990beeb05ac",
+          "createdAt": "2026-09-15T21:22:32.334667Z",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "prompt": "Documentary iPhone close-up evidence photo of a cream ceramic tile with a visibly chipped corner resting beside an opened cardboard carton with packing foam, natural window light, slightly harsh flash-lit closeup style typical of damage claim photos, no text, no logos, no people.",
+      "jobs": [
+        {
+          "id": "b024113d-3922-49bb-80d8-f0bdf73539f4",
+          "createdAt": "2026-09-15T21:28:12.1554Z",
+          "status": "completed"
+        },
+        {
+          "id": "90a4f964-5f61-460f-828e-4214d1eb5e14",
+          "createdAt": "2026-09-15T21:26:39.165922Z",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "prompt": "Documentary iPhone photo comparing two small stacks of the same cream ceramic tile side by side on a plywood surface, consistent daylight from a window showing a subtle visible shade difference between the two stacks, no text, no logos, no people, realistic phone snapshot with natural color rendition.",
+      "jobs": [
+        {
+          "id": "cb73ab79-380d-4928-85d0-a879b7c57b26",
+          "createdAt": "2026-09-15T21:30:13.066936Z",
+          "status": "completed"
+        },
+        {
+          "id": "fb181d7f-b16e-4a78-9278-95cbd356a951",
+          "createdAt": "2026-09-15T21:28:47.156021Z",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "prompt": "Documentary iPhone photo of an interior renovation space with one wall of exposed timber stud framing, vertical studs evenly spaced, other walls finished drywall, tidy organized site with tools set neatly against a wall, natural daylight through a window, no workers or people visible, realistic phone snapshot.",
+      "jobs": [
+        {
+          "id": "c318d1cc-db11-41cc-a70d-b4bb61bd7a86",
+          "createdAt": "2026-09-15T21:31:58.841782Z",
+          "status": "completed"
+        },
+        {
+          "id": "8317a16e-969c-436e-a9a2-64891228c440",
+          "createdAt": "2026-09-15T21:28:50.080831Z",
+          "status": "completed"
+        }
+      ]
+    }
+  ],
+  "confirmedExtraSubmissions": 6,
+  "creditCharge": "Actual per-job billing not exposed in this history; not claimed or estimated here.",
+  "remediation": "Stop submissions, preserve completed output provenance, switch remaining generation to Google Flow with user approval. Do not retry jobs without first reconciling running and completed job IDs."
+}

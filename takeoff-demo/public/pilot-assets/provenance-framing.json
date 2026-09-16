@@ -1,0 +1,94 @@
+[
+  {
+    "id": "framing-room",
+    "kind": "image",
+    "localFile": "public/pilot-assets/framing-room.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo of an interior renovation space with one wall of exposed timber stud framing, vertical studs evenly spaced, other walls finished drywall, tidy organized site with tools set neatly against a wall, natural daylight through a window, no workers or people visible, realistic phone snapshot.",
+    "jobId": "8317a16e-969c-436e-a9a2-64891228c440",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_212850_8317a16e-969c-436e-a9a2-64891228c440.png",
+    "synthetic": true
+  },
+  {
+    "id": "framing-stack",
+    "kind": "image",
+    "localFile": "public/pilot-assets/framing-stack.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo of neatly stacked dimensional timber lumber boards resting on wooden spacer sticks, under a covered carport-style roof at a residential site, natural daylight filtering in from the open side, no logos, no readable stamps, no people, candid site photo.",
+    "jobId": "3171e717-752f-4c8b-81cc-a723fa21842b",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_213042_3171e717-752f-4c8b-81cc-a723fa21842b.png",
+    "synthetic": true
+  },
+  {
+    "id": "framing-plan",
+    "kind": "image",
+    "localFile": "public/pilot-assets/framing-plan.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo of a generic hand-drawn architectural sketch on paper lying on a plywood workbench beside a few cut pieces of timber and a carpenter's pencil, the sketch showing simple wall outlines with no readable text, numbers, or certification marks, natural daylight, no people.",
+    "jobId": "b802308f-8250-4964-99ed-71649cabad3e",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_213045_b802308f-8250-4964-99ed-71649cabad3e.png",
+    "synthetic": true
+  },
+  {
+    "id": "framing-delivery",
+    "kind": "image",
+    "localFile": "public/pilot-assets/framing-delivery.png",
+    "model": "gpt_image_2",
+    "prompt": "Documentary iPhone photo of a bundled stack of lumber sitting near the edge of a narrow residential driveway, the front half of a plain white delivery truck partially visible at the edge of frame with no visible logos or text, overcast daylight, no people, candid delivery snapshot.",
+    "jobId": "1baf4e17-bfbd-46e9-b926-642319179134",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GerpN5Ykxr8pvmVuTk3YguVETh/hf_20260915_213244_1baf4e17-bfbd-46e9-b926-642319179134.png",
+    "synthetic": true
+  },
+  {
+    "id": "framing-damage",
+    "kind": "image",
+    "localFile": "public/pilot-assets/framing-damage.png",
+    "model": "Nano Banana 2",
+    "provider": "Google Flow",
+    "prompt": "Documentary renovation receiving photograph, 4:3. A visibly bowed timber board lies beside two straight boards on a flat workbench, with a straightedge showing the gap. Natural workshop light, realistic unfinished wood, clear visual comparison, no person, no readable labels, no logos, no certification marks. Not an installed structural assembly.",
+    "jobId": "59e2604d-f580-4b2f-8885-98f7b598794f",
+    "url": "https://flow-content.google/image/59e2604d-f580-4b2f-8885-98f7b598794f?Expires=1789552712&KeyName=labs-flow-prod-cdn-key&Signature=KWRMYoWFDy9ovxwfdE9dhHNIEOU",
+    "synthetic": true
+  },
+  {
+    "id": "framing-connector",
+    "kind": "image",
+    "localFile": "public/pilot-assets/framing-connector.png",
+    "model": "Nano Banana 2",
+    "provider": "Google Flow",
+    "prompt": "Documentary renovation material photograph, 4:3. Generic galvanized framing connectors and loose matching fasteners neatly arranged beside an unfinished timber offcut on a workbench. Natural workshop light, realistic metal and wood. Uninstalled components, no claimed load rating, no stamped text, no logos or certification marks.",
+    "jobId": "b9c6795c-b07b-4724-a253-56e64960e5c4",
+    "url": "https://flow-content.google/image/b9c6795c-b07b-4724-a253-56e64960e5c4?Expires=1789552816&KeyName=labs-flow-prod-cdn-key&Signature=598x53zSCB91rAR24ae8iHnfnFU",
+    "synthetic": true
+  },
+  {
+    "id": "framing-room-video",
+    "kind": "video",
+    "localFile": "public/pilot-assets/framing-room.mp4",
+    "model": "Veo 3.1 Fast",
+    "provider": "Google Flow",
+    "prompt": "Slow documentary camera drift through this unfinished framing room. Preserve every stud, opening, floor and tool in the starting frame. Keep the main wall centered. Subtle natural parallax for eight seconds, with quiet ambient room tone. No people, construction changes, music, speech or text.",
+    "jobId": "36e6f9c1-8092-4b05-ac81-4f58af3d5359",
+    "url": "https://flow-content.google/video/36e6f9c1-8092-4b05-ac81-4f58af3d5359?Expires=1789559105&KeyName=labs-flow-prod-cdn-key&Signature=WAD9V9XA3-eTON5lvPyiogw59hk",
+    "synthetic": true,
+    "nativeWidth": 1280,
+    "nativeHeight": 720,
+    "nativeDuration": 8,
+    "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+  },
+  {
+    "id": "framing-delivery-video",
+    "kind": "video",
+    "localFile": "public/pilot-assets/framing-delivery.mp4",
+    "model": "Veo 3.1 Fast",
+    "provider": "Google Flow",
+    "prompt": "Slow documentary camera drift around the driveway lumber delivery. Preserve the exact objects, materials, colors, arrangement and lighting in the starting image. Keep the subject centered inside the middle 4:3 area. Restrained natural parallax for eight seconds with quiet ambient room tone. No new people, objects, text, music or speech.",
+    "jobId": "c9b21b7c-af25-4156-b556-c76d2ac79a0c",
+    "url": "https://flow-content.google/video/c9b21b7c-af25-4156-b556-c76d2ac79a0c?Expires=1789559109&KeyName=labs-flow-prod-cdn-key&Signature=6FoFWKFwqgA-uAFnR6dwP7WObZ4",
+    "synthetic": true,
+    "nativeWidth": 1280,
+    "nativeHeight": 720,
+    "nativeDuration": 8,
+    "processing": "First 5 seconds; center 4:3 crop; upscale native 720p crop to 1440x1080; 30 fps; audio removed."
+  }
+]

@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Takeoff — ChatGPT conversation studies</title>
+    <style>
+      :root {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+        color: #151515;
+        background: #f7f7f7;
+        font-synthesis: none;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        max-width: 1680px;
+        margin: auto;
+        padding: 48px 32px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 40px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #ddd;
+      }
+      h1 {
+        font-size: clamp(34px, 4.5vw, 62px);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+        font-weight: 600;
+        max-width: 800px;
+        margin: 16px 0 20px;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+      }
+      .intro {
+        font-size: 17px;
+        line-height: 1.5;
+        max-width: 690px;
+        color: #666;
+      }
+      header aside {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #666;
+        min-width: 230px;
+      }
+      .controls {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #f7f7f7f5;
+        padding: 22px 0;
+        display: flex;
+        gap: 12px;
+        align-items: end;
+        border-bottom: 1px solid #ddd;
+        flex-wrap: wrap;
+      }
+      label {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      select,
+      button {
+        font: inherit;
+        color: inherit;
+        background: white;
+        border: 1px solid #d3d3d3;
+        border-radius: 10px;
+        min-height: 42px;
+        padding: 9px 12px;
+      }
+      select {
+        max-width: 310px;
+      }
+      button {
+        cursor: pointer;
+        font-size: 13px;
+      }
+      button.primary {
+        background: #151515;
+        color: white;
+        border-color: #151515;
+      }
+      button:disabled {
+        opacity: 0.35;
+        cursor: default;
+      }
+      :focus-visible {
+        outline: 3px solid #2a6df0;
+        outline-offset: 3px;
+      }
+      #count {
+        font-size: 12px;
+        color: #777;
+        margin-left: auto;
+        padding-bottom: 12px;
+      }
+      section {
+        margin-top: 32px;
+      }
+      h2 {
+        font-size: 24px;
+        letter-spacing: -0.6px;
+        margin-bottom: 8px;
+      }
+      .section-note {
+        color: #777;
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 850px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 26px;
+      }
+      article {
+        min-width: 0;
+      }
+      .mode {
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0 0 10px;
+      }
+      .category {
+        font-weight: 400;
+        color: #777;
+        display: block;
+        margin-top: 5px;
+      }
+      video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 9/16;
+        background: #eee;
+        border-radius: 15px;
+        border: 1px solid #e3e3e3;
+      }
+      h3 {
+        font-size: 15px;
+        line-height: 1.3;
+        margin: 13px 0 8px;
+        min-height: 40px;
+      }
+      .scenario {
+        font-size: 13px;
+        line-height: 1.5;
+        color: #666;
+        min-height: 60px;
+      }
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: center;
+        margin: 14px 0;
+      }
+      a {
+        color: #31536c;
+        font-size: 12px;
+        text-underline-offset: 3px;
+      }
+      details {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-top: 14px;
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 550;
+      }
+      details p {
+        color: #666;
+      }
+      details ul {
+        padding-left: 18px;
+      }
+      .market {
+        border-top: 1px solid #ddd;
+        margin-top: 42px;
+        padding-top: 20px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .market a {
+        font-size: 14px;
+      }
+      .media-grid {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 24px;
+      }
+      .media-grid img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+      .media-grid video {
+        aspect-ratio: 4/3;
+      }
+      .media-grid figure {
+        margin: 0;
+      }
+      .media-grid figcaption {
+        font-size: 12px;
+        color: #666;
+        margin-top: 7px;
+      }
+      dialog {
+        padding: 18px;
+        border: 1px solid #ddd;
+        border-radius: 22px;
+        max-width: min(94vw, 650px);
+        max-height: 94vh;
+        width: 100%;
+        background: #fafafa;
+      }
+      dialog::backdrop {
+        background: #0009;
+      }
+      dialog .dialog-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 16px;
+      }
+      dialog h2 {
+        font-size: 18px;
+        margin: 0;
+      }
+      dialog video {
+        height: 72vh;
+        width: auto;
+        max-width: 100%;
+        margin: auto;
+      }
+      dialog p {
+        font-size: 13px;
+        color: #666;
+      }
+      .empty {
+        font-size: 16px;
+        color: #666;
+        padding: 50px 0;
+      }
+      footer {
+        border-top: 1px solid #ddd;
+        padding-top: 24px;
+        margin-top: 48px;
+        font-size: 12px;
+        color: #777;
+        line-height: 1.7;
+      }
+      @media (max-width: 1200px) {
+        .grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .media-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 700px) {
+        main {
+          padding: 28px 18px;
+        }
+        header {
+          display: block;
+        }
+        header aside {
+          margin-top: 24px;
+        }
+        .controls {
+          position: static;
+        }
+        label {
+          width: 100%;
+        }
+        select {
+          max-width: none;
+          width: 100%;
+        }
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 12px;
+        }
+        .scenario {
+          min-height: 0;
+        }
+        .actions {
+          flex-wrap: wrap;
+        }
+        .media-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        h3 {
+          min-height: 0;
+          font-size: 14px;
+        }
+        #count {
+          margin-left: 0;
+        }
+        dialog video {
+          height: 65vh;
+        }
+      }
+      @media (max-width: 430px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        h3 {
+          font-size: 17px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <div class="eyebrow">Takeoff / Conversation pilot studies</div>
+          <h1>One familiar conversation.<br />Seventy procurement decisions.</h1>
+          <p class="intro">
+            Fourteen procurement concepts, five ways to work through each—inside
+            a shared ChatGPT iOS-style interface. New scenario media for tiles,
+            framing, interior paint, and light fixtures.
+          </p>
+        </div>
+        <aside>
+          70 studies · 16 seconds each<br />1080 × 1920 · 30 fps · silent<br />Built
+          for review. Not approved or shipped.<br /><a
+            href="https://mobbin.com/apps/chat-gpt-ios-a96b7f4c-6bfa-4c9d-a6b7-562160feb391/a0b14f48-3d1c-4286-828b-e95ad04fef10/screens"
+            >ChatGPT iOS reference on Mobbin</a
+          >
+        </aside>
+      </header>
+      <div class="controls">
+        <label>Concept<select id="concept"></select></label
+        ><label>Conversation pattern<select id="mode"></select></label
+        ><label>Pilot category<select id="category"></select></label
+        ><button id="play" class="primary">Play comparison</button
+        ><button id="pause">Pause all</button
+        ><span id="count" aria-live="polite"></span>
+      </div>
+      <section>
+        <h2 id="heading"></h2>
+        <p id="description" class="section-note"></p>
+        <div id="grid" class="grid"></div>
+      </section>
+      <details class="market">
+        <summary>Market alignment and limits</summary>
+        <p>
+          Every study is checked against Obsidian’s
+          <strong>plumb-market-validation.md</strong>. This collection now
+          explicitly explores duplicate-PO checks, separate approval authority,
+          dated delivery records, receiving exceptions, sample continuity, and
+          job/PO evidence. These are simulated workflows, not implemented
+          supplier integrations or proof of adoption.
+        </p>
+        <p>
+          <strong>Framing is exploratory:</strong> the note recommends flooring,
+          not framing. Structural suitability and electrical safety remain with
+          qualified professionals. Photos do not establish measurements,
+          certification, or return eligibility.
+        </p>
+        <p>
+          Conversation is the user-selected design direction—not a validated
+          replacement for phone ordering. Supplier channel preference, actual
+          integration, and operational outcomes still need pilot evidence.
+        </p>
+        <a href="market-validation.json">Read the 70-study market matrix</a> ·
+        <a href="design-reference.json"
+          >Read the observed design-system reference</a
+        >
+        · <a href="verification.json">Video verification</a> ·
+        <a href="interface-verification.json">Browser review evidence</a>
+        · <a href="media-verification.json">Generated media verification</a>
+      </details>
+      <details id="media-library" class="market">
+        <summary>Generated media library — 24 images and 8 videos</summary>
+        <p>
+          Original AI-generated scenario media; provider details are recorded with each asset. All scenes are
+          synthetic; labels, approvals and supplier records shown in the studies
+          are demo data.
+        </p>
+        <div id="media-grid" class="media-grid"></div>
+      </details>
+      <footer>
+        ChatGPT interface reference studied through authenticated Mobbin MCP.
+        Procurement cards and all scenarios are Takeoff concept work; no
+        affiliation with OpenAI is implied. No messages, orders, approvals,
+        charges or refunds are sent by these videos.<br /><a
+          href="../variants/index.html?concept=capture"
+          >Previous five-direction collection</a
+        >
+      </footer>
+    </main>
+    <dialog id="review">
+      <div class="dialog-top">
+        <h2 id="review-title"></h2>
+        <button id="close">Close</button>
+      </div>
+      <video id="review-video" controls muted playsinline></video>
+      <p id="review-boundary"></p>
+    </dialog>
+    <script type="module">
+      async function loadJSON(path) {
+        try {
+          const response = await fetch(path);
+          if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+          return await response.json();
+        } catch (error) {
+          document.querySelector("#count").textContent = "Unable to load the review collection.";
+          document.querySelector("#play").disabled = true;
+          throw error;
+        }
+      }
+      const manifest = await loadJSON("manifest.json");
+      const matrix = await loadJSON("market-validation.json");
+      const $ = (s) => document.querySelector(s);
+      const params = new URLSearchParams(location.search);
+      const names = {
+        tiles: "Tiles",
+        framing: "Framing · exploratory",
+        paint: "Interior paint",
+        lighting: "Light fixtures",
+      };
+      const fields = ["concept", "mode", "category"];
+      const options = {
+        concept: [
+          ["all", "All fourteen concepts"],
+          ...manifest.concepts.map((c, i) => [
+            c.id,
+            `${String(i + 1).padStart(2, "0")} / ${c.title}`,
+          ]),
+        ],
+        mode: [
+          ["all", "All five patterns"],
+          ...manifest.modes.map((m) => [m.id, m.name]),
+        ],
+        category: [
+          ["all", "All four categories"],
+          ...manifest.categories.map((c) => [c, names[c]]),
+        ],
+      };
+      for (const field of fields) {
+        for (const [value, label] of options[field]) {
+          const o = new Option(label, value);
+          $("#" + field).add(o);
+        }
+        const desired =
+          params.get(field) || (field === "concept" ? "capture" : "all");
+        $("#" + field).value = options[field].some((x) => x[0] === desired)
+          ? desired
+          : "all";
+        $("#" + field).addEventListener("change", render);
+      }
+      function pause() {
+        document.querySelectorAll("video").forEach((v) => v.pause());
+      }
+      function node(tag, text, className) {
+        const el = document.createElement(tag);
+        if (text) el.textContent = text;
+        if (className) el.className = className;
+        return el;
+      }
+      let shown = [];
+      function render() {
+        pause();
+        const selection = Object.fromEntries(
+          fields.map((f) => [f, $("#" + f).value]),
+        );
+        history.replaceState(null, "", "?" + new URLSearchParams(selection));
+        shown = manifest.items.filter((s) =>
+          fields.every((f) => selection[f] === "all" || s[f] === selection[f]),
+        );
+        $("#grid").replaceChildren();
+        $("#count").textContent = `${shown.length} of 70 studies`;
+        $("#play").disabled = shown.length === 0 || shown.length > 5;
+        $("#play").title =
+          shown.length > 5
+            ? "Filter to five or fewer studies for synchronized playback"
+            : "";
+        const concept = manifest.concepts.find(
+          (c) => c.id === selection.concept,
+        );
+        $("#heading").textContent = concept?.title || "Conversation studies";
+        $("#description").textContent =
+          concept?.brief ||
+          "Filter by concept, interaction pattern, or pilot category. No clips autoplay.";
+        for (const s of shown) {
+          const card = node("article");
+          const mode = node(
+            "div",
+            manifest.modes.find((m) => m.id === s.mode).name,
+            "mode",
+          );
+          mode.append(node("span", names[s.category], "category"));
+          const video = node("video");
+          video.src = s.filename;
+          video.poster = s.poster;
+          video.controls = true;
+          video.muted = true;
+          video.playsInline = true;
+          video.preload = "none";
+          video.setAttribute("aria-label", s.title);
+          const actions = node("div", null, "actions");
+          const larger = node("button", "Review larger");
+          larger.dataset.review = s.id;
+          larger.onclick = () => {
+            pause();
+            $("#review-title").textContent = s.title;
+            $("#review-boundary").textContent = s.boundary;
+            $("#review-video").src = s.filename;
+            $("#review-video").poster = s.poster;
+            $("#review").showModal();
+          };
+          const download = node("a", "Download");
+          download.href = s.filename;
+          download.download = s.filename;
+          actions.append(larger, download);
+          const detail = node("details");
+          detail.append(
+            node(
+              "summary",
+              "Market check · " +
+                matrix.entries.find((x) => x.id === s.id).alignment,
+            ),
+          );
+          detail.append(
+            node("p", "Addresses: " + s.marketPains.join(", ")),
+            node("p", s.boundary),
+          );
+          const transcript = node("details");
+          transcript.append(node("summary", "Read conversation"));
+          for (const [speaker, text] of [
+            ["You", s.user],
+            ["Assistant", s.assistant],
+            ["You", s.reply],
+            ["Assistant", s.result],
+          ])
+            transcript.append(node("p", speaker + ": " + text));
+          card.append(
+            mode,
+            video,
+            node("h3", s.title),
+            node("p", s.user, "scenario"),
+            actions,
+            detail,
+            transcript,
+          );
+          $("#grid").append(card);
+        }
+        if (!shown.length)
+          $("#grid").append(
+            node(
+              "p",
+              "No studies match this combination. Choose another filter.",
+              "empty",
+            ),
+          );
+      }
+      $("#play").onclick = async () => {
+        const videos = [...document.querySelectorAll("#grid video")];
+        await Promise.all(
+          videos.map(
+            (v) =>
+              new Promise((resolve, reject) => {
+                if (v.readyState >= 2) return resolve();
+                v.addEventListener("loadeddata", resolve, { once: true });
+                v.addEventListener("error", reject, { once: true });
+                v.preload = "auto";
+                v.load();
+              }),
+          ),
+        );
+        videos.forEach((v) => {
+          v.currentTime = 0;
+        });
+        await Promise.all(videos.map((v) => v.play()));
+      };
+      $("#pause").onclick = pause;
+      function close() {
+        const v = $("#review-video");
+        v.pause();
+        v.removeAttribute("src");
+        v.load();
+        $("#review").close();
+      }
+      $("#close").onclick = close;
+      $("#review").addEventListener("cancel", (e) => {
+        e.preventDefault();
+        close();
+      });
+      let libraryLoaded = false;
+      $("#media-library").addEventListener("toggle", async () => {
+        if (!$("#media-library").open || libraryLoaded) return;
+        libraryLoaded = true;
+        for (const category of manifest.categories) {
+          const media = await fetch(`assets/provenance-${category}.json`).then(
+            (r) => r.json(),
+          );
+          for (const item of media) {
+            const figure = node("figure");
+            const filename = item.localFile.split("/").pop();
+            const el = node(item.kind === "video" ? "video" : "img");
+            el.src = "assets/" + filename;
+            if (item.kind === "video") {
+              el.controls = true;
+              el.muted = true;
+              el.preload = "none";
+              el.playsInline = true;
+            } else {
+              el.loading = "lazy";
+              el.alt = item.id;
+            }
+            figure.append(el, node("figcaption", item.id));
+            $("#media-grid").append(figure);
+          }
+        }
+      });
+      render();
+    </script>
+  </body>
+</html>
