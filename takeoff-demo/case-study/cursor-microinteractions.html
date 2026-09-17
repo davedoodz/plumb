@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cursor morph studies — case study sidebar</title>
+<meta name="description" content="Ten cursor microinteraction studies for the case-study section navigation.">
+<style>
+@font-face{font-family:Beatrice;src:url('assets/fonts/beatrice-regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Beatrice;src:url('assets/fonts/beatrice-medium.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:Beatrice;src:url('assets/fonts/beatrice-semibold.ttf') format('truetype');font-weight:600;font-display:swap}
+:root{--paper:#fff;--ink:#000;--muted:#aaa;--line:#e5e5e5;--font:Beatrice,Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--font);-webkit-font-smoothing:antialiased}
+.page{max-width:1240px;margin:0 auto;padding:64px 32px 120px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:44px;line-height:1.05;letter-spacing:-.02em;margin:14px 0 18px;font-weight:600}
+.lede{max-width:640px;color:#444;margin:0 0 10px}
+.hint{max-width:640px;color:var(--muted);font-size:13px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:56px}
+.study{background:var(--paper);padding:22px 24px 24px;display:flex;flex-direction:column}
+.head{display:flex;align-items:baseline;gap:10px;margin-bottom:2px}
+.num{font:11px/1 var(--mono);color:var(--muted);padding-top:2px}
+.name{font-size:16px;font-weight:600;letter-spacing:-.01em}
+.morph{font:11px/1.5 var(--mono);color:var(--muted);margin:0 0 14px 28px}
+.note{margin:14px 0 0;font-size:13px;color:#555;max-width:44ch}
+.stage{position:relative;height:392px;border:1px dashed var(--line);border-radius:4px;overflow:hidden;cursor:none;background:var(--paper)}
+.tocwrap{position:absolute;left:26px;top:26px;width:196px}
+.toc{font-size:14px;position:relative}
+.toc a{display:block;padding:5px 0;text-decoration:none;color:var(--muted);transition:color .18s ease,transform .24s cubic-bezier(.2,.8,.2,1)}
+.toc a.active{color:#000}
+.toc a.hot{color:#000}
+.toc .back{font-size:12px;margin-bottom:26px}
+.toc a:focus-visible{outline:2px solid #000;outline-offset:5px;color:#000}
+.toc a span{pointer-events:none}
+.layer{position:absolute;inset:0;pointer-events:none}
+.layer>*{opacity:0}
+.layer>.p-rail{opacity:1}
+.toc.ink{-webkit-mask-image:radial-gradient(circle 0 at 0 0,#000 58%,rgba(0,0,0,0) 100%);mask-image:radial-gradient(circle 0 at 0 0,#000 58%,rgba(0,0,0,0) 100%)}
+.off{position:absolute;right:14px;bottom:10px;font:10px/1 var(--mono);color:#ccc;letter-spacing:.08em}
+
+/* 01 magnet bar */
+.p-dot{position:absolute;left:0;top:0;width:8px;height:8px;background:#000;border-radius:999px;transition:width .26s cubic-bezier(.2,.9,.2,1),height .26s cubic-bezier(.2,.9,.2,1),border-radius .26s,opacity .2s}
+.p-dot.on{width:22px;height:2px;border-radius:1px}
+/* 02 blend invert */
+.p-blob{position:absolute;left:0;top:0;width:15px;height:15px;border-radius:999px;background:#fff;mix-blend-mode:difference}
+/* 03 caret to rule */
+.p-caret{position:absolute;left:0;top:0;width:2px;height:17px;background:#000;transition:width .24s cubic-bezier(.2,.9,.2,1),height .24s cubic-bezier(.2,.9,.2,1)}
+/* 04 label pill */
+.p-pill{position:absolute;left:0;top:0;display:flex;align-items:center;justify-content:center;height:12px;padding:0;background:#000;color:#fff;border-radius:999px;font-size:11px;letter-spacing:.02em;white-space:nowrap;overflow:hidden;width:12px;box-shadow:0 0 0 0 #fff;transition:width .3s cubic-bezier(.2,.9,.2,1),height .3s cubic-bezier(.2,.9,.2,1),padding .3s,box-shadow .3s}
+.p-pill.on{box-shadow:0 0 0 4px #fff}
+.p-pill i{opacity:0;transition:opacity .16s ease;font-style:normal}
+.p-pill.on i{opacity:1}
+/* 05 brackets */
+.p-brk{position:absolute;left:0;top:0;font:16px/1 var(--mono);color:#000;transition:opacity .2s}
+/* 06 elastic rail */
+.p-rail{position:absolute;left:0;top:0;overflow:visible}
+.p-rail path{fill:none;stroke:var(--line);stroke-width:1}
+.p-rail path.live{stroke:#000}
+.p-rail circle{fill:#000}
+/* 07 aperture */
+.p-ring{position:absolute;left:0;top:0;width:18px;height:18px;border-radius:999px;border:1px solid #000;transition:width .26s cubic-bezier(.2,.9,.2,1),height .26s cubic-bezier(.2,.9,.2,1)}
+.p-ring .arc{position:absolute;inset:1px;border-radius:999px;background:conic-gradient(#000 var(--p,0deg),rgba(0,0,0,0) 0);transition:background .3s ease}
+.p-ring .pip{position:absolute;left:50%;top:50%;width:3px;height:3px;margin:-1.5px;border-radius:999px;background:#000;opacity:0;transition:opacity .2s}
+.p-ring.on .pip{opacity:1}
+/* 08 ink mask */
+.toc.ink{position:absolute;inset:0}
+.toc.ink a{color:#000;-webkit-text-stroke:.45px #000}
+/* 09 comet */
+.p-seg{position:absolute;left:0;top:0;background:#000;width:9px;height:9px;border-radius:2px}
+.p-arrow{position:absolute;left:0;top:0;font:13px/1 var(--font);color:#fff;background:#000;width:18px;height:18px;border-radius:3px;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .18s ease}
+/* 10 readout */
+.p-tag{position:absolute;left:0;top:0;background:#000;color:#fff;font:11px/1 var(--mono);padding:5px 6px;border-radius:3px;transform-origin:left center;transition:opacity .16s ease}
+.p-stem{position:absolute;left:0;top:0;height:1px;background:#000;transform-origin:left center}
+.p-seed{position:absolute;left:0;top:0;width:7px;height:7px;border-radius:999px;background:#000;transition:opacity .16s ease}
+
+@media(max-width:900px){.grid{grid-template-columns:1fr}h1{font-size:34px}.page{padding:40px 20px 80px}}
+@media(prefers-reduced-motion:reduce){*{transition-duration:0s!important}}
+</style></head>
+<body>
+<div class="page">
+  <div class="eyebrow">Interaction studies · Case study sidebar</div>
+  <h1>Ten cursor morphs for the section navigation.</h1>
+  <p class="lede">Each stage replicates the live left rail from <code>/case-study/index.html</code> — same 196px column, 14px Beatrice, <code>#aaa</code> idle, black on hover and active. Only the cursor behaviour changes.</p>
+  <p class="hint">Move the pointer inside a dashed stage; the native cursor is hidden there. Press to see the pressed state. Keyboard users keep the standard focus ring — every morph is decorative only.</p>
+  <div class="grid" id="grid"></div>
+</div>
+<script>
+const SECTIONS=['Overview','Solution','Core Flows','Research','Before You Order','Handoff & Follow-through','Design Decisions','Real-world Constraints','Reflection'];
+const ACTIVE='Core Flows';
+const RM=matchMedia('(prefers-reduced-motion:reduce)');
+const lerp=(a,b,t)=>RM.matches?b:a+(b-a)*t;
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+
+function makeNav(){
+  const nav=document.createElement('nav');
+  nav.className='toc';
+  const back=document.createElement('a');
+  back.href='javascript:void 0';back.className='back';back.innerHTML='<span>← All studies</span>';
+  nav.append(back);
+  SECTIONS.forEach(s=>{
+    const a=document.createElement('a');
+    a.href='javascript:void 0';
+    if(s===ACTIVE)a.className='active';
+    a.innerHTML='<span>'+s+'</span>';
+    nav.append(a);
+  });
+  return nav;
+}
+function el(cls,html){const d=document.createElement('div');d.className=cls;if(html!=null)d.innerHTML=html;return d;}
+function box(node,stage){
+  const r=node.getBoundingClientRect(),s=stage.getBoundingClientRect();
+  return {l:r.left-s.left,t:r.top-s.top,w:r.width,h:r.height,cx:r.left-s.left+r.width/2,cy:r.top-s.top+r.height/2,r:r.right-s.left,b:r.bottom-s.top};
+}
+const put=(node,x,y,extra)=>{node.style.transform='translate('+x+'px,'+y+'px) translate(-50%,-50%)'+(extra||'');};
+
+const VARIANTS=[
+{ id:'magnet', name:'Magnetic bar', morph:'dot 8px → bar 22×2, snapped to the row',
+  note:'The dot is free until a row claims it: then it flattens into a marker at the row’s left edge and pushes the label 14px right. The cursor becomes the list’s bullet.',
+  build(c){
+    const dot=el('p-dot');c.layer.append(dot);
+    c.links.forEach(a=>a.style.willChange='transform');
+    return {
+      leave(){c.links.forEach(a=>a.style.transform='');},
+      frame(s){
+        const hot=s.hover?box(s.hover,c.stage):null;
+        const tx=hot?hot.l-13:s.px, ty=hot?hot.cy:s.py;
+        s.x=lerp(s.x,tx,hot?0.28:0.22);s.y=lerp(s.y,ty,hot?0.3:0.22);
+        dot.classList.toggle('on',!!hot);
+        dot.style.opacity=s.inside?1:0;
+        put(dot,s.x,s.y,s.down?' scale(.7)':'');
+        c.links.forEach(a=>a.style.transform=a===s.hover?'translateX(14px)':'');
+      }};
+  }},
+{ id:'invert', name:'Difference lens', morph:'15px disc → 48px lens, mix-blend-mode: difference',
+  note:'No colour is declared for the hover state. The disc inverts whatever it covers, so grey labels read black and black labels read white — the row seems to light up from behind.',
+  build(c){
+    const blob=el('p-blob');c.layer.append(blob);
+    return {frame(s){
+      s.x=lerp(s.x,s.px,0.3);s.y=lerp(s.y,s.py,0.3);
+      const k=s.hover?3.2:1, d=Math.min(Math.hypot(s.vx,s.vy)/26,.5);
+      const sx=(k*(1+d)).toFixed(3), sy=(k*(1-d*.7)).toFixed(3);
+      blob.style.opacity=s.inside?1:0;
+      put(blob,s.x,s.y,' scale('+sx+','+sy+')'+(s.down?' scale(.8)':''));
+    }};
+  }},
+{ id:'caret', name:'Caret to rule', morph:'text caret 2×17 → underline the label’s exact width',
+  note:'Reading cue, not a pointer: the caret says “this is text”, then lies down as the link underline. Width is measured from the label span, so the rule stops where the words stop.',
+  build(c){
+    const car=el('p-caret');c.layer.append(car);
+    return {frame(s){
+      const t=s.hover?box(s.hover.firstElementChild,c.stage):null;
+      car.style.width=(t?t.w:2)+'px';car.style.height=(t?2:17)+'px';
+      const tx=t?t.cx:s.px, ty=t?t.b+4:s.py;
+      s.x=lerp(s.x,tx,.3);s.y=lerp(s.y,ty,.3);
+      car.style.opacity=s.inside?(s.down?.55:1):0;
+      put(car,s.x,s.y);
+    }};
+  }},
+{ id:'pill', name:'Intent pill', morph:'12px disc → pill with the destination label',
+  note:'The cursor answers “what happens if I click”. It names the target section and tilts with horizontal speed, so the label feels carried rather than pasted on.',
+  build(c){
+    const pill=el('p-pill','<i></i>');c.layer.append(pill);
+    const label=pill.firstElementChild;
+    return {
+      enter(s){const i=c.links.indexOf(s.hover);label.textContent=i>0?'Jump · '+String(i).padStart(2,'0'):'Back to index';},
+      frame(s){
+        const on=!!s.hover;
+        pill.classList.toggle('on',on);
+        pill.style.width=on?'auto':'12px';
+        pill.style.height=on?'26px':'12px';
+        pill.style.padding=on?'0 11px':'0';
+        s.x=lerp(s.x,s.px+(on?30:0),.26);s.y=lerp(s.y,s.py+(on?23:0),.26);
+        pill.style.opacity=s.inside?1:0;
+        put(pill,s.x,s.y,' rotate('+clamp(s.vx*.5,-9,9).toFixed(2)+'deg)'+(s.down?' scale(.94)':''));
+      }};
+  }},
+{ id:'brackets', name:'Framing brackets', morph:'crosshair pair → brackets around the label',
+  note:'Two glyphs travel apart to clamp the row, borrowing a selection gesture from code editors. It marks the target’s bounds instead of drawing a new shape over it.',
+  build(c){
+    const L=el('p-brk','[');const R=el('p-brk',']');c.layer.append(L,R);
+    return {frame(s){
+      const t=s.hover?box(s.hover.firstElementChild,c.stage):null;
+      const lx=t?t.l-9:s.px-7, rx=t?t.r+9:s.px+7, y=t?t.cy:s.py;
+      s.x=lerp(s.x,lx,.28);s.x2=lerp(s.x2==null?rx:s.x2,rx,.28);s.y=lerp(s.y,y,.28);
+      const k=t?1.5:1, sc=' scale(1,'+(k*(s.down?.8:1)).toFixed(2)+')';
+      L.style.opacity=R.style.opacity=s.inside?1:0;
+      put(L,s.x,s.y,sc);put(R,s.x2,s.y,sc);
+    }};
+  }},
+{ id:'rail', name:'Elastic rail', morph:'cursor becomes a node on a rail that bends toward it',
+  note:'The sidebar’s hairline reacts before the row does. The pointer is absorbed into the rail as a node, and the curve springs back when it leaves — one shared object instead of two.',
+  build(c){
+    const H=c.nav.getBoundingClientRect().height;
+    const ns='http://www.w3.org/2000/svg';
+    const svg=document.createElementNS(ns,'svg');
+    svg.setAttribute('class','p-rail');svg.setAttribute('width',60);svg.setAttribute('height',H+10);
+    svg.style.left='0px';svg.style.top='26px';
+    const path=document.createElementNS(ns,'path');
+    const node=document.createElementNS(ns,'circle');node.setAttribute('r',4);node.style.opacity=0;
+    svg.append(path,node);c.layer.append(svg);
+    const RX=8;
+    return {frame(s){
+      const t=s.hover?box(s.hover,c.stage):null;
+      const amp=s.inside?clamp((s.px-RX)*.12,0,t?9:7):0;
+      const ty=(t?t.cy:s.py)-26;
+      s.x=lerp(s.x,amp,.2);s.y=lerp(s.y,clamp(ty,0,H),.24);
+      path.setAttribute('d','M'+RX+',0 Q'+(RX+s.x*1.6)+','+s.y+' '+RX+','+H);
+      path.classList.toggle('live',!!t);
+      node.setAttribute('cx',RX+s.x*1.2);node.setAttribute('cy',s.y);
+      node.setAttribute('r',(t?5:3.8)*(s.down?.7:1));
+      node.style.opacity=s.inside?1:0;
+    }};
+  }},
+{ id:'aperture', name:'Aperture ring', morph:'18px ring → 26px ring docked in the gutter, arc = section depth',
+  note:'The ring doubles as a scroll preview: it leaves the pointer, docks beside the row, and fills its arc to show how far into the page that section sits.',
+  build(c){
+    const ring=el('p-ring','<div class="arc"></div><div class="pip"></div>');c.layer.append(ring);
+    const DOCK=()=>box(c.nav,c.stage).r+22;
+    return {frame(s){
+      const i=s.hover?c.links.indexOf(s.hover):-1;
+      const t=s.hover?box(s.hover,c.stage):null;
+      const on=i>0;
+      ring.classList.toggle('on',!!s.hover);
+      ring.style.width=ring.style.height=(t?26:18)+'px';
+      ring.style.setProperty('--p',(on?(i/SECTIONS.length)*360:0)+'deg');
+      s.x=lerp(s.x,t?DOCK():s.px,.26);s.y=lerp(s.y,t?t.cy:s.py,.26);
+      ring.style.opacity=s.inside?1:0;
+      put(ring,s.x,s.y,s.down?' scale(.82)':'');
+    }};
+  }},
+{ id:'ink', name:'Ink reveal', morph:'the cursor is the mask — a 38px→78px window of inked type',
+  note:'A black, stroke-thickened copy of the list sits above the grey one and is masked to a soft circle at the pointer. Nothing moves and no glyph reflows; the type just inks in where you look.',
+  build(c){
+    const ink=c.nav.cloneNode(true);ink.classList.add('ink');
+    ink.style.pointerEvents='none';ink.setAttribute('aria-hidden','true');
+    ink.querySelectorAll('a').forEach(a=>{a.removeAttribute('href');a.removeAttribute('tabindex')});
+    c.wrap.append(ink);
+    return {frame(s){
+      s.x=lerp(s.x,s.px,.32);s.y=lerp(s.y,s.py,.32);
+      s.r=lerp(s.r||34,s.inside?(s.hover?78:38)*(s.down?.8:1):0,.22);
+      const w=c.wrap.getBoundingClientRect(),st=c.stage.getBoundingClientRect();
+      const m='radial-gradient(circle '+s.r.toFixed(1)+'px at '+(s.x-(w.left-st.left)).toFixed(1)+'px '+(s.y-(w.top-st.top)).toFixed(1)+'px, #000 58%, rgba(0,0,0,0) 100%)';
+      ink.style.webkitMaskImage=m;ink.style.maskImage=m;
+    }};
+  }},
+{ id:'comet', name:'Stacking comet', morph:'five lagging squares → one block with an arrow',
+  note:'Speed is drawn as a trail, then spent: the segments collapse into a single tile beside the row and show the direction of travel. Motion history becomes an affordance.',
+  build(c){
+    const segs=[0,1,2,3,4].map(()=>{const d=el('p-seg');c.layer.append(d);return d;});
+    const arrow=el('p-arrow','→');c.layer.append(arrow);
+    return {frame(s){
+      s.trail=s.trail||segs.map(()=>({x:s.px,y:s.py}));
+      const t=s.hover?box(s.hover,c.stage):null;
+      const tx=t?box(s.hover.firstElementChild,c.stage).r+18:s.px, ty=t?t.cy:s.py;
+      s.trail.forEach((p,i)=>{
+        const k=t?.3:.34-i*.05;
+        p.x=lerp(p.x,i?s.trail[i-1].x:tx,k);
+        p.y=lerp(p.y,i?s.trail[i-1].y:ty,k);
+        const sz=t?(i?0:18):9-i;
+        segs[i].style.width=segs[i].style.height=sz+'px';
+        segs[i].style.opacity=s.inside?(t?(i?0:1):1-i*.16):0;
+        put(segs[i],p.x,p.y,s.down&&!i?' scale(.85)':'');
+      });
+      arrow.style.opacity=t&&s.inside?1:0;
+      put(arrow,s.trail[0].x,s.trail[0].y,s.down?' scale(.85)':'');
+    }};
+  }},
+{ id:'readout', name:'Numeric readout', morph:'7px seed → numbered tag tethered to the row',
+  note:'A tag prints the section number and a hairline tether ties it back to the label, so the pointer states which item it owns. The tag squashes on press to confirm the hit.',
+  build(c){
+    const seed=el('p-seed');const tag=el('p-tag','01');const stem=el('p-stem');
+    c.layer.append(stem,tag,seed);
+    const RIGHT=()=>box(c.nav,c.stage).r+34;
+    return {frame(s){
+      const t=s.hover?box(s.hover.firstElementChild,c.stage):null;
+      const i=t?c.links.indexOf(s.hover):0;
+      if(t)tag.textContent=i>0?String(i).padStart(2,'0'):'↩';
+      const tagX=t?RIGHT():s.px, tagY=t?t.cy:s.py;
+      s.x=lerp(s.x,tagX,.28);s.y=lerp(s.y,tagY,.28);
+      seed.style.opacity=s.inside&&!t?1:0;
+      tag.style.opacity=t&&s.inside?1:0;
+      put(seed,s.px,s.py);
+      tag.style.transform='translate('+s.x.toFixed(1)+'px,'+(s.y-9).toFixed(1)+'px)'+(s.down?' scaleY(.74)':'');
+      if(t){
+        const ax=t.r+8, ay=t.cy, dx=s.x-6-ax, dy=(s.y-ay);
+        const len=Math.hypot(dx,dy);
+        stem.style.width=Math.max(0,len).toFixed(1)+'px';
+        stem.style.transform='translate('+ax+'px,'+ay+'px) rotate('+(Math.atan2(dy,dx)*180/Math.PI).toFixed(2)+'deg)';
+        stem.style.opacity=s.inside&&len>8?1:0;
+      } else stem.style.opacity=0;
+    }};
+  }}
+];
+
+const live=new Set();
+let raf=null;
+function tick(){
+  live.forEach(s=>{s.impl.frame(s);s.vx*=.86;s.vy*=.86;});
+  raf=live.size?requestAnimationFrame(tick):null;
+}
+function start(){if(!raf)raf=requestAnimationFrame(tick);}
+
+const grid=document.getElementById('grid');
+VARIANTS.forEach((v,idx)=>{
+  const card=el('study');card.classList.add('study');card.dataset.variant=v.id;
+  card.innerHTML='<div class="head"><span class="num">'+String(idx+1).padStart(2,'0')+'</span><span class="name"></span></div><p class="morph"></p>';
+  card.querySelector('.name').textContent=v.name;
+  card.querySelector('.morph').textContent=v.morph;
+  const stage=el('stage');
+  const wrap=el('tocwrap');
+  const nav=makeNav();
+  wrap.append(nav);
+  const layer=el('layer');
+  stage.append(wrap,layer,el('off',v.id));
+  card.append(stage);
+  const note=document.createElement('p');note.className='note';note.textContent=v.note;card.append(note);
+  grid.append(card);
+
+  const links=[...nav.querySelectorAll('a')];
+  const ctx={stage,wrap,nav,layer,links};
+  const impl=v.build(ctx);
+  const s={px:0,py:0,x:0,y:0,vx:0,vy:0,hover:null,down:false,inside:false,impl};
+
+  stage.addEventListener('pointermove',e=>{
+    const r=stage.getBoundingClientRect();
+    const nx=e.clientX-r.left,ny=e.clientY-r.top;
+    s.vx=nx-s.px;s.vy=ny-s.py;s.px=nx;s.py=ny;
+    if(!s.inside){s.inside=true;s.x=nx;s.y=ny;s.x2=nx;}
+    live.add(s);start();
+  });
+  stage.addEventListener('pointerleave',()=>{
+    s.inside=false;s.hover=null;s.down=false;
+    if(impl.leave)impl.leave(s);
+    setTimeout(()=>{if(!s.inside){impl.frame(s);live.delete(s);}},420);
+  });
+  stage.addEventListener('pointerdown',()=>{s.down=true;});
+  addEventListener('pointerup',()=>{s.down=false;});
+  links.forEach(a=>{
+    a.addEventListener('pointerenter',()=>{s.hover=a;links.forEach(l=>l.classList.toggle('hot',l===a));if(impl.enter)impl.enter(s);});
+    a.addEventListener('pointerleave',()=>{if(s.hover===a){s.hover=null;a.classList.remove('hot');}});
+    a.addEventListener('click',e=>e.preventDefault());
+  });
+});
+</script>
+</body></html>
