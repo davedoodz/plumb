@@ -96,6 +96,20 @@ All records are synthetic. Framing remains exploratory, not engineering or insta
 The complete generated-video archive is in `public/videos/saved-exports/`.
 Its manifest records 180 unchanged exports and their SHA-256 hashes. Third-party inspiration is separate.
 
+## Short interaction concept films
+
+The corrected deliverable is fourteen silent 12-second MP4 films, not interactive prototypes.
+Each film shows one need, one distinct interaction, and one payoff in the ChatGPT visual system.
+
+- Gallery: `/interaction-films/index.html?concept=capture` on the existing `out` preview server.
+- Source and concept briefs: `src/interaction-films/`.
+- Preserved exports, gallery, storyboards, and decode evidence: `public/videos/interaction-films/`.
+- Rebuild: `node interaction-films.mjs render`, then `node interaction-films.mjs verify` and `node interaction-films.mjs publish`.
+- Export format: 1080 × 1920, 30 fps, H.264, 360 frames, no audio.
+
+These are choreographed concept animations with synthetic records, not recordings of working camera, voice extraction, or AR integrations.
+Existing films and interactive studies remain separate and unchanged.
+
 ## Decisions
 
 - The brief specifies 75 seconds but its scene timings total 78. All card scene boundaries stay intact; the closing hold is three seconds instead of six.

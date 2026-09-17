@@ -1,0 +1,123 @@
+{
+  "count": 14,
+  "totalSeconds": 168,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "fullDecode": true,
+  "silent": true,
+  "rows": [
+    {
+      "id": "capture",
+      "file": "01-capture.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 695965,
+      "sha256": "4996f1b434b875aa45c30f5115d65aa2c84b7bb814c0ff840dc089da005c37b7"
+    },
+    {
+      "id": "prompt",
+      "file": "02-prompt.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 924581,
+      "sha256": "4476b1aaed0df8def4176707eeec4ad4c8961c76f5347ccae0ea2ff2acfb4bee"
+    },
+    {
+      "id": "recall",
+      "file": "03-recall.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 331527,
+      "sha256": "e847bffbb4a65003700118b101f1ed841cc8e6b80b136cd304dd757164a985be"
+    },
+    {
+      "id": "walkthrough",
+      "file": "04-walkthrough.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 686948,
+      "sha256": "c450c94b0a5ece0a27e7581626bf8392b3a148061bee740241b9cb6c5afefa2f"
+    },
+    {
+      "id": "quantity",
+      "file": "05-quantity.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 587085,
+      "sha256": "1973219c908e840ec30ac116c0e8710306fc3a45f37ba4e89a8513bf6125c9e3"
+    },
+    {
+      "id": "sample",
+      "file": "06-sample.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 1320618,
+      "sha256": "48c2db11c684534d8064741b261717aa82395fcaec45e390cb6579d871b14cfd"
+    },
+    {
+      "id": "quote",
+      "file": "07-quote.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 321935,
+      "sha256": "b2702effdbe38769209b1b57ef6887fb7131fb05ea4b9c3198f5f3f9b0b460bc"
+    },
+    {
+      "id": "clearance",
+      "file": "08-clearance.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 860708,
+      "sha256": "1706ebb92f0bb728f60f721f160e92338d7b729690a2f43ea27907e1f3fe4dca"
+    },
+    {
+      "id": "leadtime",
+      "file": "09-leadtime.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 282816,
+      "sha256": "7b218efa5908bb0eea290a7fc95778b7b1a75f78d27a6d4245397aaacf91daf7"
+    },
+    {
+      "id": "substitution",
+      "file": "10-substitution.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 521916,
+      "sha256": "5a2996e97b1976d4538f53a39f5f96bf8137095478b8c4d7ec93640be89966b8"
+    },
+    {
+      "id": "signoff",
+      "file": "11-signoff.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 297873,
+      "sha256": "2aba0696a861d63cddbaf548584d2bc3a075b2c8b5e5b09fc2bf45fa9cb2e29c"
+    },
+    {
+      "id": "delivery",
+      "file": "12-delivery.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 882150,
+      "sha256": "8ddaa07f6911a751aa2847b7110a8f10980e27e3d8c53cfac980db2fb0a574b2"
+    },
+    {
+      "id": "installerpack",
+      "file": "13-installerpack.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 1187101,
+      "sha256": "761056006a3f191502d9d00f7acd8fc5e2d7e5eea12e2da7a63f99caf691da04"
+    },
+    {
+      "id": "receipt",
+      "file": "14-receipt.mp4",
+      "seconds": 12,
+      "frames": 360,
+      "bytes": 976762,
+      "sha256": "6f6ea241a259d24e67ffaf23af64834c156c1dc2383f1a05b5ae0df3b00d784f"
+    }
+  ]
+}

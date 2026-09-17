@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-09-16T19:29:56.582Z",
+  "url": "http://127.0.0.1:3219/interaction-films/index.html?concept=capture",
+  "allFourteenPlayed": true,
+  "each": {
+    "duration": 12,
+    "width": 1080,
+    "height": 1920,
+    "videoError": null
+  },
+  "controls": {
+    "seekSeconds": 9.509159,
+    "replaySeconds": 0,
+    "pause": true,
+    "download": "01-capture.mp4"
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    }
+  ],
+  "reducedMotionInitiallyPaused": true,
+  "surface": "windowless Chrome headless shell",
+  "acceptance": "Needs David visual review; not shipped"
+}

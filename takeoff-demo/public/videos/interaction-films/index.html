@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Takeoff — One interaction. One clear idea.</title>
+    <style>
+      :root {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+        color: #222;
+        background: #f3f3f0;
+        font-synthesis: none;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      button,
+      a {
+        color: inherit;
+      }
+      button {
+        font: inherit;
+        cursor: pointer;
+      }
+      a {
+        text-underline-offset: 3px;
+      }
+      button:focus-visible,
+      a:focus-visible,
+      video:focus-visible {
+        outline: 3px solid #55799d;
+        outline-offset: 5px;
+      }
+      .top {
+        max-width: 1330px;
+        margin: 0 auto;
+        padding: 28px 30px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #dcdcd7;
+        font-size: 12px;
+      }
+      .top a {
+        text-decoration: none;
+        font-weight: 650;
+        letter-spacing: 0.08em;
+      }
+      .top span {
+        color: #888;
+      }
+      .intro {
+        max-width: 1270px;
+        margin: 43px auto 32px;
+        padding: 0 30px;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .intro h1 {
+        font-size: 45px;
+        line-height: 1.06;
+        font-weight: 500;
+        letter-spacing: -0.05em;
+        margin: 0;
+      }
+      .intro p {
+        font-size: 13px;
+        line-height: 1.65;
+        color: #74746f;
+        max-width: 270px;
+        margin: 0;
+      }
+      .cinema {
+        max-width: 1210px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        padding: 0 45px 45px;
+        align-items: center;
+      }
+      .screen {
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+      .screen video {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: min(69vh, 760px);
+        min-height: 530px;
+        background: #f1f1ef;
+        border-radius: 21px;
+        box-shadow: 0 15px 45px #0000000b;
+      }
+      .details {
+        max-width: 420px;
+      }
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: 0.13em;
+        color: #8a8a84;
+        margin-bottom: 17px;
+      }
+      .modality {
+        display: inline-block;
+        padding: 8px 11px;
+        background: #e6e6e0;
+        border-radius: 20px;
+        font-size: 11px;
+      }
+      .details h2 {
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 1.08;
+        letter-spacing: -0.045em;
+        margin: 23px 0 18px;
+      }
+      .idea {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #6b6b65;
+      }
+      .beats {
+        margin: 30px 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 19px;
+      }
+      .beats li {
+        display: grid;
+        grid-template-columns: 37px 1fr;
+        gap: 12px;
+        font-size: 12px;
+        line-height: 1.55;
+        color: #777;
+      }
+      .beats time {
+        font-size: 10px;
+        color: #9b9b95;
+        font-variant-numeric: tabular-nums;
+        padding-top: 2px;
+      }
+      .actions {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .actions button,
+      .actions a {
+        font-size: 12px;
+        border: 1px solid #d3d3cc;
+        border-radius: 20px;
+        background: transparent;
+        padding: 10px 16px;
+        text-decoration: none;
+      }
+      .actions button:first-child {
+        background: #222;
+        color: #fff;
+        border-color: #222;
+      }
+      .note {
+        font-size: 10px;
+        line-height: 1.7;
+        color: #999;
+        margin-top: 21px;
+      }
+      .collection {
+        max-width: 1270px;
+        margin: 10px auto 0;
+        padding: 0 30px 70px;
+      }
+      .collection-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #d8d8d2;
+        padding: 26px 0 22px;
+      }
+      .collection-header h2 {
+        font-size: 14px;
+        font-weight: 550;
+        margin: 0;
+      }
+      .collection-header p {
+        font-size: 11px;
+        color: #8a8a84;
+        margin: 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 15px;
+      }
+      .film-card {
+        background: none;
+        border: 0;
+        padding: 0;
+        text-align: left;
+        min-width: 0;
+        border-radius: 13px;
+      }
+      .poster {
+        overflow: hidden;
+        border-radius: 12px;
+        background: #e9e9e4;
+        position: relative;
+        aspect-ratio: 9/14;
+        outline: 1px solid #deded8;
+        outline-offset: -1px;
+      }
+      .poster img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 37%;
+        display: block;
+      }
+      .film-card[aria-current="true"] .poster {
+        outline: 2px solid #222;
+        outline-offset: 3px;
+      }
+      .poster:after {
+        content: "▶";
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #222d;
+        color: white;
+        display: grid;
+        place-items: center;
+        font-size: 8px;
+      }
+      .film-card small {
+        display: block;
+        color: #92928b;
+        font-size: 9px;
+        margin: 13px 0 5px;
+      }
+      .film-card strong {
+        display: block;
+        font-size: 11px;
+        line-height: 1.35;
+        font-weight: 500;
+      }
+      .footer {
+        font-size: 10px;
+        line-height: 1.7;
+        color: #999;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 34px;
+      }
+      #error {
+        color: #924b31;
+        font-size: 13px;
+      }
+      .sr {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+      }
+      @media (max-width: 1000px) {
+        .cinema {
+          gap: 35px;
+        }
+        .grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        .screen video {
+          height: 650px;
+          min-height: 0;
+        }
+        .details h2 {
+          font-size: 31px;
+        }
+      }
+      @media (max-width: 650px) {
+        .top {
+          padding: 23px 20px;
+        }
+        .top span {
+          font-size: 10px;
+        }
+        .intro {
+          display: block;
+          margin: 28px 0;
+          padding: 0 20px;
+        }
+        .intro h1 {
+          font-size: 34px;
+        }
+        .intro p {
+          margin-top: 16px;
+          max-width: none;
+          font-size: 12px;
+        }
+        .cinema {
+          display: flex;
+          flex-direction: column;
+          gap: 28px;
+          padding: 0 20px 32px;
+        }
+        .screen {
+          width: 100%;
+        }
+        .screen video {
+          height: auto;
+          width: 100%;
+          max-width: 360px;
+          min-height: 0;
+        }
+        .details {
+          width: 100%;
+          max-width: 420px;
+        }
+        .details h2 {
+          font-size: 31px;
+        }
+        .beats {
+          margin: 24px 0;
+        }
+        .collection {
+          padding: 0 20px 40px;
+        }
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 24px 15px;
+        }
+        .film-card strong {
+          font-size: 13px;
+        }
+        .film-card small {
+          font-size: 10px;
+        }
+        .footer {
+          display: block;
+        }
+        .collection-header p {
+          font-size: 10px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <a href="#">TAKEOFF / CONCEPT FILMS</a
+      ><span>14 short demos · ChatGPT design studies</span>
+    </header>
+    <main>
+      <section class="intro">
+        <h1>One interaction.<br />One clear idea.</h1>
+        <p>
+          Short films, not product walkthroughs.<br />Each demo makes one need,
+          one gesture,<br />and one useful outcome visible.
+        </p>
+      </section>
+      <section class="cinema" id="cinema" aria-label="Selected concept film">
+        <div class="screen">
+          <video
+            id="film"
+            controls
+            playsinline
+            loop
+            preload="metadata"
+            aria-label="Selected short concept demonstration"
+          ></video>
+        </div>
+        <div class="details">
+          <div class="eyebrow" id="index">CONCEPT FILM</div>
+          <span id="modality" class="modality"></span>
+          <h2 id="title"></h2>
+          <p id="idea" class="idea"></p>
+          <ol class="beats" id="beats"></ol>
+          <div class="actions">
+            <button id="play">Play film</button
+            ><button id="replay">Replay</button
+            ><a id="download" download>Download MP4</a>
+          </div>
+          <p class="note">
+            12 seconds · 1080 × 1920 · Silent<br />Choreographed concept
+            animations, not recordings of a working integration. Camera, voice
+            extraction and AR behavior are design proposals.
+          </p>
+          <p id="error" role="status"></p>
+        </div>
+      </section>
+      <section class="collection" aria-labelledby="collection-title">
+        <div class="collection-header">
+          <h2 id="collection-title">All fourteen concepts</h2>
+          <p>Choose a film to watch above</p>
+        </div>
+        <div class="grid" id="grid"></div>
+        <div class="footer">
+          <span
+            >Synthetic project content · Independent study · Not affiliated with
+            OpenAI</span
+          ><a href="../chatgpt-studies/index.html"
+            >Earlier conversation films</a
+          >
+        </div>
+      </section>
+    </main>
+    <script type="module">
+      const video = document.querySelector("#film");
+      let items = [],
+        current = null;
+      const esc = (s) =>
+        String(s).replace(
+          /[&<>"']/g,
+          (c) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            })[c],
+        );
+      function select(id, play = false) {
+        const item = items.find((x) => x.id === id) || items[0];
+        current = item;
+        video.pause();
+        video.src = item.file;
+        video.poster = item.poster;
+        video.setAttribute(
+          "aria-label",
+          item.title + " — twelve-second concept film",
+        );
+        document.querySelector("#index").textContent =
+          `CONCEPT ${String(item.index).padStart(2, "0")} / 14 · ${item.category.toUpperCase()}`;
+        document.querySelector("#modality").textContent = item.modality;
+        document.querySelector("#title").textContent = item.title;
+        document.querySelector("#idea").textContent = item.idea;
+        document.querySelector("#beats").innerHTML = item.beats
+          .map(
+            (b, i) =>
+              `<li><time>${["0:00", "0:02", "0:09"][i]}</time><span>${esc(b)}</span></li>`,
+          )
+          .join("");
+        document.querySelector("#download").href = item.file;
+        document.querySelector("#download").download = item.file;
+        document
+          .querySelectorAll(".film-card")
+          .forEach((el) =>
+            el.setAttribute("aria-current", String(el.dataset.id === item.id)),
+          );
+        const url = new URL(location.href);
+        url.searchParams.set("concept", item.id);
+        history.replaceState(null, "", url);
+        document.querySelector("#play").textContent = "Play film";
+        document.querySelector("#error").textContent = "";
+        if (play)
+          video.play().catch(() => {
+            document.querySelector("#error").textContent =
+              "Press play to start this film.";
+          });
+      }
+      document.querySelector("#play").onclick = () =>
+        video.paused
+          ? video
+              .play()
+              .catch(
+                () =>
+                  (document.querySelector("#error").textContent =
+                    "The film could not play. Try the MP4 download."),
+              )
+          : video.pause();
+      document.querySelector("#replay").onclick = () => {
+        video.currentTime = 0;
+        video.play().catch(() => {});
+      };
+      video.onplay = () =>
+        (document.querySelector("#play").textContent = "Pause film");
+      video.onpause = () =>
+        (document.querySelector("#play").textContent = "Play film");
+      video.onerror = () =>
+        (document.querySelector("#error").textContent =
+          "This film could not load. Try the MP4 download.");
+      try {
+        const response = await fetch("manifest.json");
+        if (!response.ok) throw Error("Manifest unavailable");
+        const data = await response.json();
+        items = data.items;
+        document.querySelector("#grid").innerHTML = items
+          .map(
+            (s) =>
+              `<button class="film-card" data-id="${esc(s.id)}" aria-label="Watch ${esc(s.title)}"><div class="poster"><img src="${esc(s.poster)}" alt="" loading="lazy"></div><small>${String(s.index).padStart(2, "0")} · ${esc(s.modality)}</small><strong>${esc(s.title)}</strong></button>`,
+          )
+          .join("");
+        document.querySelectorAll(".film-card").forEach(
+          (el) =>
+            (el.onclick = () => {
+              select(el.dataset.id, true);
+              document.querySelector("#cinema").scrollIntoView({
+                block: "start",
+                behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+                  ? "instant"
+                  : "smooth",
+              });
+            }),
+        );
+        select(new URLSearchParams(location.search).get("concept"));
+      } catch (error) {
+        document.querySelector("#error").textContent = error.message;
+      }
+    </script>
+  </body>
+</html>

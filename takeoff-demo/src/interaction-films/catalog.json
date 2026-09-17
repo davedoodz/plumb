@@ -1,0 +1,170 @@
+[
+  {
+    "id": "capture",
+    "title": "Attach the detail, not just the photo",
+    "category": "Lighting",
+    "modality": "Camera → annotation",
+    "idea": "A photo becomes useful when the exact point and its context travel with it.",
+    "beats": [
+      "Open the camera from a question about the mounting point.",
+      "Capture the room, then pin the exact ceiling point.",
+      "The annotated photo collapses into the conversation with its note."
+    ]
+  },
+  {
+    "id": "prompt",
+    "title": "Ask for the missing angle",
+    "category": "Tiles",
+    "modality": "Photo library → guided capture",
+    "idea": "The assistant asks for one missing piece of evidence instead of making a guess.",
+    "beats": [
+      "Two photos are attached, but the threshold is missing.",
+      "The missing slot opens the photo library; one angle is selected.",
+      "The evidence set completes and the next question becomes precise."
+    ]
+  },
+  {
+    "id": "recall",
+    "title": "Bring back the reason",
+    "category": "Paint",
+    "modality": "Source timeline",
+    "idea": "Recall the decision and its reason, not merely the last image.",
+    "beats": [
+      "Ask why the warm-white finish was chosen.",
+      "Scrub a compact timeline from sample to approval.",
+      "The answer arrives with the exact source, date and decision owner."
+    ]
+  },
+  {
+    "id": "walkthrough",
+    "title": "Turn a spoken concern into a hold",
+    "category": "Framing",
+    "modality": "Voice → actionable note",
+    "idea": "A site observation becomes one explicit unresolved action.",
+    "beats": [
+      "Start a voice note beside the framing photo.",
+      "The spoken example resolves into highlighted room, issue and action.",
+      "A missing-blocking hold attaches to the spec, not a false approval."
+    ]
+  },
+  {
+    "id": "quantity",
+    "title": "Let the assumptions change the number",
+    "category": "Tiles",
+    "modality": "Spatial takeoff",
+    "idea": "Quantities stay trustworthy when their assumptions remain visible and editable.",
+    "beats": [
+      "The plan shows the entered room dimensions.",
+      "Subtract a cabinet footprint and drag the waste allowance.",
+      "The box count updates with the formula still attached."
+    ]
+  },
+  {
+    "id": "sample",
+    "title": "Compare the same detail",
+    "category": "Tiles",
+    "modality": "Aligned image comparison",
+    "idea": "Compare a material detail in place instead of mentally matching two distant images.",
+    "beats": [
+      "Open the delivered sample against the approved reference.",
+      "Drag a wipe across the matching detail and zoom together.",
+      "Flag the difference for site-light review rather than claiming a measured color match."
+    ]
+  },
+  {
+    "id": "quote",
+    "title": "Expose the cost outside the headline",
+    "category": "Tiles",
+    "modality": "File attachment → source-linked totals",
+    "idea": "The useful price includes the lines hidden outside the headline figure.",
+    "beats": [
+      "Attach a short supplier quote.",
+      "Freight and tax lift out of their source lines into the calculation.",
+      "The delivered total replaces the headline price without losing provenance."
+    ]
+  },
+  {
+    "id": "clearance",
+    "title": "Place it, then question the fit",
+    "category": "Lighting",
+    "modality": "AR placement concept",
+    "idea": "A room placement helps frame the next measured question; it is not installation approval.",
+    "beats": [
+      "The room becomes the placement surface.",
+      "Drag a pendant over the table and adjust its drop.",
+      "A clearance callout keeps measured inputs separate from visual fit."
+    ]
+  },
+  {
+    "id": "leadtime",
+    "title": "Move the date, reveal the consequence",
+    "category": "Tiles",
+    "modality": "Dependency calendar",
+    "idea": "A delivery slip should visibly move the work that depends on it.",
+    "beats": [
+      "The promised delivery and installer start appear on one calendar.",
+      "Drag delivery three days later.",
+      "The dependent start moves and an unconfirmed booking is flagged."
+    ]
+  },
+  {
+    "id": "substitution",
+    "title": "Change the object, keep the intent",
+    "category": "Lighting",
+    "modality": "Three-dimensional comparison",
+    "idea": "Inspect a substitute in three dimensions while preserving the original design constraints.",
+    "beats": [
+      "Orbit the original pendant.",
+      "Swipe to the alternative while keeping orientation and scale.",
+      "The changed silhouette and unresolved specification checks stay visible together."
+    ]
+  },
+  {
+    "id": "signoff",
+    "title": "One approval cannot stand in for two",
+    "category": "Tiles",
+    "modality": "Split-authority approval",
+    "idea": "Budget approval and trade suitability are different decisions.",
+    "beats": [
+      "A single proceed action reveals two approval lanes.",
+      "The homeowner approves cost while the trade lane stays pending.",
+      "The purchase remains on hold until the second authority confirms."
+    ]
+  },
+  {
+    "id": "delivery",
+    "title": "Receive the exception, not just the boxes",
+    "category": "Framing",
+    "modality": "Receiving scan → reconciliation",
+    "idea": "The receiving record should make shortages and damage impossible to miss.",
+    "beats": [
+      "A delivery label maps to the expected order.",
+      "The count is entered one short and a damaged item is marked.",
+      "Only the exceptions become the follow-up record."
+    ]
+  },
+  {
+    "id": "installerpack",
+    "title": "Give each trade the right layer",
+    "category": "Framing",
+    "modality": "Layered handoff",
+    "idea": "One plan can produce a focused, revision-aware handoff for each trade.",
+    "beats": [
+      "A crowded plan shows several trade layers.",
+      "Switch to framing and fade unrelated layers.",
+      "The selected revision and unresolved item travel into the handoff pack."
+    ]
+  },
+  {
+    "id": "receipt",
+    "title": "Let the evidence build the return",
+    "category": "Paint",
+    "modality": "Evidence collection → return draft",
+    "idea": "A return draft should assemble around the damage evidence, not the other way around.",
+    "beats": [
+      "Pair the damaged can with its delivery record.",
+      "Select the damage detail and confirm the affected quantity.",
+      "The evidence folds into a ready-to-review return draft, not a sent request."
+    ]
+  }
+]
