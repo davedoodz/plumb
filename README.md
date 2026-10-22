@@ -1,65 +1,80 @@
 # Plumb
 
-A native iOS prototype for artists selling original work, and for the people buying it.
+```
+                 ┌───────────────────┐
+                 │   ┌───────────┐   │
+                 │   │ \   |   / │   │
+                 │   │   \ | /   │   │
+                 │   │────●────  │   │     a plumb line
+                 │   │   / | \   │   │     finds true —
+                 │   │ /   |   \ │   │     so does this app
+                 │   └───────────┘   │
+                 └─────────┬─────────┘
+                            \
+                             \   145 cm
+                              \
+                               ◆  ← true vertical, always
+        ───────────────────────────────────────────
+                        (the sofa line)
+```
 
-One painting. Two sides of the same measurement problem.
+A native iOS prototype for artists selling original work, and for the people buying it. One painting, two sides of the same measurement problem.
 
-**Capture** — the artist photographs a piece in the studio. Plumb returns the four numbers a listing actually needs (image size, framed size, boxed size, weight), suggests a price from the area, and shows how an AI shopping assistant would describe the work from those fields. If a field is empty, the assistant says so instead of guessing.
+## What it is
 
-**On the wall** — the buyer sees the same piece at true scale on their own wall. Plumb draws the two rules a framer would apply: centre at eye height, and the work sized against the furniture below it. Fits, or go one size up. Swap the frame, buy, and the listing flips to sold while the artist is still in the studio.
+A painting is hard to sell from a flat photo because the one thing that actually matters — does it fit, at true size, in this specific spot on this specific wall — never makes it into the listing. Plumb tries to fix that from both ends of the sale.
 
-The numbers captured in the studio are the numbers that make the wall preview correct. Get the measurement wrong at one end and the preview lies at the other. That link is the argument: a listing isn't metadata, it's what the buying decision is built out of.
+**Capture**, for the artist: photograph the piece in the studio and get back the four numbers a listing actually needs — image size, framed size, boxed size, weight — plus a price suggestion from the area, plus a preview of how an AI shopping assistant would describe the work from those fields. If a number is missing, the assistant says so instead of making one up.
 
----
+**On the wall**, for the buyer: see the same piece at true scale on your own wall through AR Quick Look, with a framer's two rules drawn over it — centred at eye height, sized against the furniture underneath. Fits, or size up. Swap the frame, buy, and the listing flips to sold while the artist is still in the studio.
 
-## Why now
+Same `Artwork` model powers both ends, which is the actual argument of the project: a listing isn't metadata bolted onto a photo, it's the numbers the buying decision is built out of. Get the measurement wrong in the studio and the wall preview lies later.
 
-Online art listings still ask buyers to trust flat photos for a spatial decision. The missing facts are usually the basic ones: true image size, framed size, boxed size, weight, and how the piece sits against furniture.
+## Highlights
 
-AR placement can show scale, but scale alone is not the whole decision. Plumb puts the trade's rules on top of the preview: centre the work at eye height, size it against the furniture below it, and make the captured measurements drive the buyer view.
-
----
+- **One record, two flows.** The dimensions the artist enters in Capture are the exact numbers that place the piece correctly in On the wall — no separate buyer-side estimate to drift out of sync.
+- **Empty fields are spoken, not guessed.** The agent-facing preview calls out what it doesn't know rather than inventing a plausible-sounding number.
+- **Rules, not just scale.** AR placement alone tells you the object is the right size; Plumb also draws the hang-height and furniture-proportion rules a framer would actually use.
+- **Stock = 1, and it stays visible.** A sold piece flips to a "Sold" badge rather than disappearing, so the listing still works as portfolio after the sale.
 
 ## Scope
 
-Ten screens, one `Artwork` model, one catalog of eight works.
+Ten screens total, one `Artwork` model, one catalog of eight works.
 
-**Capture**
-1. Camera with frame-edge detection
-2. Dimensions — image / framed / boxed
-3. Listing preview with price suggestion
-4. How an agent reads this
-5. Published (stock = 1)
+**Capture** — camera with frame-edge detection → dimensions (image / framed / boxed) → listing preview with price suggestion → "how an agent reads this" → published (stock = 1).
 
-**On the wall**
-1. Feed
-2. AR Quick Look at true scale
-3. Rule overlay — centreline, scale against furniture
-4. Frame swap
-5. Buy → sold
+**On the wall** — feed → AR Quick Look at true scale → rule overlay (centreline + furniture-width rule) → frame swap → buy → sold.
 
-**Not in scope:** login, payments, backend, real vision model, anchored AR annotations, sculpture, editions, commissions, crating.
-
----
+Deliberately out of scope for this prototype: login, payments, a backend, a real vision model, anchored AR annotations, sculpture, editions, commissions, crating.
 
 ## Stack
 
-SwiftUI, VisionKit, AR Quick Look (USDZ), Blender for assets. No backend. Simulator plus one physical device.
+SwiftUI, VisionKit, AR Quick Look (USDZ assets), Blender for the 3D/print assets. No backend — the catalog is a static JSON file. Built and reviewed on the simulator plus one physical device.
 
----
+## Try it
 
-## Status
+There's no app to build yet — this repo is the planning and prototyping layer that comes before the Xcode project. What you can look at right now:
 
-Pre-build. See `docs/PLAN.md` for the 30-day schedule and `docs/CONTEXT.md` for the full research and decision history.
+```
+open docs/skeletons/spec-sheet.html    # a related web-side skeleton, in any browser
+open docs/skeletons/three-scales.html  # token/systems-tool skeleton
+open docs/skeletons/place-it.html      # AR-placement research skeleton
+```
 
----
+Each is a self-contained static HTML file — no build step, just open it in a browser.
 
 ## Repo layout
 
 ```
-Plumb/              Xcode project (to be created)
 docs/
-  CONTEXT.md        research, decisions, and why the project is shaped this way
-  PLAN.md           30-day prototyping plan
-  catalog.json      the eight works, shared across all surfaces
+  PLAN.md             30-day day-by-day prototyping plan
+  catalog.json        the Artwork schema — eight works, shared across all surfaces
+  skeletons/          static HTML mockups used to work out layout and tokens
+    spec-sheet.html
+    three-scales.html
+    place-it.html
 ```
+
+## Status
+
+Pre-build: the plan, the shared data model, and the visual skeletons exist; the SwiftUI app itself hasn't been started. `docs/PLAN.md` has the full day-by-day build order if you want to see where it's headed.
